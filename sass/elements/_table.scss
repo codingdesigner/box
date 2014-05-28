@@ -1,24 +1,35 @@
 //////////////////////////////
 // table Element
-//
-// The partial and folder structure for this element should be as follows:
-// _table.scss
-// table (folder)
-//   _mixins.scss
-//   _extends.scss
-//
-// Automatic Sass parsing is done through special comment blocks
-//  - Start styling block for base element: @{element}
-//  - End styling block for base element:   {element}@
-//
-//  - Start styling block for specific element configuration: @{element--configuration}
-//  - End styling block for specific element configuration:   {element--configuration}@
 //////////////////////////////
 
-@import 'table/mixins';
-@import 'table/extends';
+//////////////////////////////
+// table Element Default Variables
+$table-extend:      true !default;
+//////////////////////////////
+
+@mixin table-base($extend: $table-extend) {
+  @if not ($extend) {
+    //
+  }
+  @else {
+    @extend %table-base;
+  }
+}
 
 
+
+//////////////////////////////
+// table Element Extendable Classes
+//////////////////////////////
+%table-base {
+  @include table-base($extend: false);
+}
+
+
+
+//////////////////////////////
+// styles
+//////////////////////////////
 table {
   width: 100%;
 }

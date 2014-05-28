@@ -102,6 +102,20 @@ module.exports = function(grunt) {
 			sass: {
 				files: ['sass/{,**/}*.scss'],
 				tasks: ['compass:dev']
+			},
+			css: {
+				files: ['css/{,**/}*.css'],
+				tasks: ['copy:dev']
+			},
+			images: {
+				files: ['images/**']
+			},
+			js: {
+				files: [
+					'js/{,**/}*.js',
+					'!js/{,**/}*.js'
+				],
+				tasks: ['jshint', 'uglify:dev']
 			}
 		},
 
@@ -121,6 +135,41 @@ module.exports = function(grunt) {
 					imagesDir: 'images-min',
 					force: true
 				}
+			}
+		},
+
+		copy: {
+			dev: {
+				files: [
+					{
+						expand: true,
+						src: 'css/*',
+						dest: '../box-patternlab/patternlab/source/',
+						filter: 'isFile'
+					},
+					{
+						expand: true,
+						src: 'js/*',
+						dest: '../box-patternlab/patternlab/source/',
+						filter: 'isFile'
+					},
+					{
+						expand: true,
+						src: 'images/**',
+						dest: '../box-patternlab/patternlab/source/',
+						filter: 'isFile'
+					}
+				]
+			},
+			dist: {
+				files: [
+					{
+						expand: true,
+						cwd: 'images',
+						src: ['**', '!**/*.svg', '!**/*.png', '!**/*.jpg'],
+						dest: 'images-min'
+					}
+				]
 			}
 		}
 
@@ -145,6 +194,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-compass');
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-zip' );
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	// Default task
 	grunt.registerTask( 'default', [ 'jshint', 'cssmin', 'uglify', 'qunit' ] );

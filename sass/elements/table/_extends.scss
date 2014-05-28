@@ -1,7 +1,0 @@
-//////////////////////////////
-// table Element Extendable Classes
-//////////////////////////////
-
-%table-base {
-  @include table-base($extend: false);
-}

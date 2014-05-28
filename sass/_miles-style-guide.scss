@@ -47,35 +47,29 @@ $support-for-original-webkit-gradients : false !default;
 @import "elements/p";
 @import "elements/heading";
 @import "elements/link";
-@import "elements/form";
+// @import "elements/form";
 @import "elements/table";
 @import "elements/inline";
+@import "components/list";
 //////////////////////////////
 
 //////////////////////////////
 // COMPONENTS
-@import "components/a11y";
-@import "components/icon";
-@import "components/baseline";
-@import "components/border";
-@import "components/offside-nav";
-@import "components/header";
-@import "components/blockquote";
-@import "components/button";
-@import "components/heading-custom";
-@import "components/links";
-@import "components/list";
-@import "components/message";
-@import "components/pager";
-// @import "components/speech-bubble";
-// @import "components/bird-feed";
-@import "components/footer";
-// @import "components/feature";
-// @import "components/press";
-// @import "components/social-link";
-// @import "components/testimonials";
-@import "components/user-generated";
-@import "components/scratch";
+// @import "components/a11y";
+// @import "components/icon";
+// @import "components/baseline";
+// @import "components/border";
+// @import "components/offside-nav";
+// @import "components/header";
+// @import "components/blockquote";
+// @import "components/button";
+// @import "components/heading-custom";
+// @import "components/links";
+// @import "components/message";
+// @import "components/pager";
+// @import "components/footer";
+// @import "components/user-generated";
+// @import "components/scratch";
 //////////////////////////////
 
 //////////////////////////////
