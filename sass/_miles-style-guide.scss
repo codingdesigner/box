@@ -40,6 +40,8 @@ $support-for-original-webkit-gradients : false !default;
 @import "global/extends/all";
 // //////////////////////////////
 
+@import "theme";
+
 //////////////////////////////
 // ELEMENTS
 @import "elements/html";
@@ -47,10 +49,10 @@ $support-for-original-webkit-gradients : false !default;
 @import "elements/p";
 @import "elements/heading";
 @import "elements/link";
-// @import "elements/form";
 @import "elements/table";
 @import "elements/inline";
 @import "components/list";
+// @import "elements/form";
 //////////////////////////////
 
 //////////////////////////////

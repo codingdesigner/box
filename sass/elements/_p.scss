@@ -33,9 +33,9 @@ $p-extend:       true !default;
   @include p-base($extend: false);
 }
 
-%p-intro {
-  @include p-adjust(em(ms(1)), $base-line-px * 1.25);
-}
+// %p-intro {
+//   @include p-adjust(em(ms(1)), $base-line-px * 1.25);
+// }
 
 
 //////////////////////////////
@@ -43,7 +43,7 @@ $p-extend:       true !default;
 //////////////////////////////
 p {
   @extend %p-base;
-  .field-intro & {
-    @extend %p-intro;
-  }
+  // .field-intro & {
+  //   @extend %p-intro;
+  // }
 }

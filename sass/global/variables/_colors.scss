@@ -21,8 +21,8 @@ $cs-primary         : $orange;
 // @debug hue($green);
 // @debug saturation($NEW);
 // @debug lightness($NEW);
-$blue        : adjust-color($cs-primary, $hue: 172.88467deg, $saturation: -6.36248%, $lightness: -26.86275%);
-$green        : adjust-color($cs-primary, $hue: 75.52814deg, $saturation: -52.72029%, $lightness: 8.03922%);
+$blue               : adjust-color($cs-primary, $hue: 172.88467deg, $saturation: -6.36248%, $lightness: -26.86275%);
+$green              : adjust-color($cs-primary, $hue: 75.52814deg, $saturation: -52.72029%, $lightness: 8.03922%);
 $orange-light       : tint($orange, 55%);
 $orange-less-light  : adjust-color($orange, $hue: -0.52755deg, $saturation: -12.29451%, $lightness: 17.2549%);;
 // $orange
@@ -84,8 +84,8 @@ $white-shades            : shade-stack($white);
 //////////////////////////////
 // Background Colors
 //////////////////////////////
-$cs-background: $cool-white;
-$cs-border-color: $orange;
+$cs-background: $gray-dark;
+// $cs-border-color: $orange;
 
 // link colors
 $cs-link-normal: $blue;
@@ -106,7 +106,7 @@ $cs-link-background-bkg: $cs-background;
 //////////////////////////////
 $cs-text-dark: $black;
 $cs-text-light: $white;
-$cs-text: $cs-text-dark;
+$cs-text: $cs-text-light;
 
 
 //////////////////////////////

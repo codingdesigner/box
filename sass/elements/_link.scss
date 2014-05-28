@@ -105,9 +105,9 @@ $unset-background-links-extend: true;
   @extend %link-background-extend;
 }
 
-%nav-links {
-  @include set-link-colors($blue-slate, $orange, $orange, $blue-slate, $blue-slate, $extend: false);
-}
+// %nav-links {
+//   @include set-link-colors($blue-slate, $orange, $orange, $blue-slate, $blue-slate, $extend: false);
+// }
 
 // %links-white {
 //   padding: 0 0.5em;
@@ -115,18 +115,18 @@ $unset-background-links-extend: true;
 //   @include set-link-colors($cool-white, $white, $white, $cool-white, $cool-white, $extend: false);
 // }
 
-%links-dark-blue {
-  @include set-link-colors($blue-dark, $white, $white, $blue-dark, $blue-dark, $extend: false);
-}
+// %links-dark-blue {
+//   @include set-link-colors($blue-dark, $white, $white, $blue-dark, $blue-dark, $extend: false);
+// }
 
-%links-on-orange {
-  @include set-link-colors($orange-darkerer, $white, $white, $orange-darkerer, $orange-darkerer, $extend: false);
-  @include set-background-links($orange-less-light, $blue-very-light, $blue-very-light, $orange-less-light, $blue-very-light, $bkg: $orange, $extend: false);
-}
+// %links-on-orange {
+//   @include set-link-colors($orange-darkerer, $white, $white, $orange-darkerer, $orange-darkerer, $extend: false);
+//   @include set-background-links($orange-less-light, $blue-very-light, $blue-very-light, $orange-less-light, $blue-very-light, $bkg: $orange, $extend: false);
+// }
 
-%tab-links {
-  @include set-link-colors($white, $blue-very-light, $blue-very-light, $white, $white, $extend: false);
-}
+// %tab-links {
+//   @include set-link-colors($white, $blue-very-light, $blue-very-light, $white, $white, $extend: false);
+// }
 
 
 
