@@ -1,0 +1,17 @@
+//////////////////////////////
+// reset Element Mixins
+//////////////////////////////
+
+//////////////////////////////
+// reset Element Default Variables
+$reset-extend:           true !default;
+//////////////////////////////
+
+// @mixin reset-base($extend: $reset-extend) {
+//   @if not ($extend) {
+
+//   }
+//   @else {
+//     @extend %reset-base;
+//   }
+// }

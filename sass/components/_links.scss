@@ -1,0 +1,18 @@
+//////////////////////////////
+// links Component
+//
+// The partial and folder structure for this component should be as follows:
+// _links.scss
+// links (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import "links/mixins";
+@import "links/extends";
+
+[class^='external-links'] {
+  ul {
+    @extend %UL-narrow-list;
+  }
+}

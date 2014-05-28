@@ -1,0 +1,32 @@
+//////////////////////////////
+// table Element
+//
+// The partial and folder structure for this element should be as follows:
+// _table.scss
+// table (folder)
+//   _mixins.scss
+//   _extends.scss
+//
+// Automatic Sass parsing is done through special comment blocks
+//  - Start styling block for base element: @{element}
+//  - End styling block for base element:   {element}@
+//
+//  - Start styling block for specific element configuration: @{element--configuration}
+//  - End styling block for specific element configuration:   {element--configuration}@
+//////////////////////////////
+
+@import 'table/mixins';
+@import 'table/extends';
+
+
+table {
+  width: 100%;
+}
+
+thead {
+  border-bottom: 1px solid $gray;
+}
+
+th {
+  font-weight: bold;
+}

@@ -1,0 +1,20 @@
+//////////////////////////////
+// Body Element
+//
+// The partial and folder structure for this element should be as follows:
+// _body.scss
+// body (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import 'body/mixins';
+@import 'body/extends';
+
+body {
+  @extend %body-base;
+  @extend %body-border;
+  &[data-menu-position='open'] {
+    border-left: none;
+  }
+}

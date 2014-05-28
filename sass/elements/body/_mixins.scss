@@ -1,0 +1,62 @@
+//////////////////////////////
+// Body Element Mixins
+//////////////////////////////
+
+//////////////////////////////
+// Body Element Default Variables
+$body-font-stack:        $font-body !default;
+$body-text-color:        $cs-text !default;
+$body-background-color:  $cs-background !default;
+$body-border-color:      $cs-border-color !default;
+$body-enable-ligatures:  true !default;
+$body-extend:            true !default;
+$body-border-width:      0.25em;
+$body-border-width-wide: 0.75em;
+//////////////////////////////
+
+@mixin body-base($font: $body-font-stack, $color: $body-text-color, $background: $body-background-color, $ligatures: $body-enable-ligatures, $extend: $body-extend) {
+  @if not ($extend) {
+    font-family: $font;
+    color: $color;
+    background: $background;
+    margin: 0;
+    overflow-x: hidden;
+    @if $ligatures {
+      @include enable-ligatures();
+    }
+  }
+  @else {
+    @extend %body-base;
+  }
+}
+
+@mixin body-border($width: $body-border-width, $border-color: $body-border-color, $extend: $body-extend) {
+  @if not ($extend) {
+    border: $width solid $border-color;
+    padding: 0 $width;
+    @include breakpoint($bp-wide-border) {
+      border-width: $body-border-width-wide;
+    }
+  }
+  @else {
+    @extend %body-border;
+  }
+}
+
+@mixin body-unpad($width: $body-border-width, $extend: true) {
+  @if not ($extend) {
+    margin: {
+      left: -$width;
+      right: -$width;
+    }
+    @include breakpoint($bp-wide-border) {
+      border: {
+        left-width: $body-border-width-wide;
+        right-width: $body-border-width-wide;
+      }
+    }
+  }
+  @else {
+    @extend %body-unpad;
+  }
+}

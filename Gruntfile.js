@@ -39,16 +39,10 @@ module.exports = function(grunt) {
 
 		sass: {
 			main: {
-				files: {
-					'css/theme/default.css': 'css/theme/source/default.scss',
-					'css/theme/beige.css': 'css/theme/source/beige.scss',
-					'css/theme/night.css': 'css/theme/source/night.scss',
-					'css/theme/serif.css': 'css/theme/source/serif.scss',
-					'css/theme/simple.css': 'css/theme/source/simple.scss',
-					'css/theme/sky.css': 'css/theme/source/sky.scss',
-					'css/theme/moon.css': 'css/theme/source/moon.scss',
-					'css/theme/solarized.css': 'css/theme/source/solarized.scss',
-					'css/theme/blood.css': 'css/theme/source/blood.scss'
+				files: ['sass/{,**/}*.scss'],
+				tasks: ['compass'],
+				options: {
+					livereload: false
 				}
 			}
 		},
@@ -104,10 +98,42 @@ module.exports = function(grunt) {
 			theme: {
 				files: [ 'css/theme/source/*.scss', 'css/theme/template/*.scss' ],
 				tasks: 'themes'
+			},
+			sass: {
+				files: ['sass/{,**/}*.scss'],
+				tasks: ['compass:dev']
+			}
+		},
+
+		compass: {
+			options: {
+				config: 'config.rb',
+				bundleExec: true
+			},
+			dev: {
+				options: {
+					environment: 'development'
+				}
+			},
+			dist: {
+				options: {
+					environment: 'production',
+					imagesDir: 'images-min',
+					force: true
+				}
 			}
 		}
 
 	});
+
+
+	// grunt.event.on('watch', function(action, filepath) {
+	// 	grunt.config([
+	// 		'compass'
+	// 	], filepath);
+	// });
+
+
 
 	// Dependencies
 	grunt.loadNpmTasks( 'grunt-contrib-qunit' );
@@ -116,6 +142,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
+	grunt.loadNpmTasks( 'grunt-contrib-compass');
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-zip' );
 

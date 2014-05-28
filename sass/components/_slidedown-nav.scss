@@ -1,0 +1,97 @@
+//////////////////////////////
+// slidedown Nav Component
+//
+// The partial and folder structure for this component should be as follows:
+// _slidedown.scss
+// slidedown (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import "slidedown-nav/mixins";
+@import "slidedown-nav/extends";
+
+//////////////////////////////
+// Variables
+$bp-nav-slidedown: max-width 779px;
+$bp-nav-wide: 780px;
+//////////////////////////////
+
+.menu-trigger {
+  position: absolute;
+  top: 0.5em;
+  right: 0;
+  z-index: 100;
+  font-size: 1.2em;
+  @include mq($bp-nav-wide) {
+    @include a11y-hidden($a11y-focusable: true, $extend: false);
+  }
+}
+
+// slidedown menu inactive
+%nav-transition {
+  @include transition-property(all);
+  @include transition-duration(.2s);
+  @include transition-timing-function(ease-in);
+  @include apply-origin(0 0, true);
+}
+
+@include mq($bp-nav-slidedown) {
+  body {
+    position: relative;
+  }
+  [role="navigation"] {
+    @include transition-property(all);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in);
+    @include apply-origin(0 0, true);
+  }
+  [role="navigation"] {
+    @include transform3d( translateY(-100%) );
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: gray;
+  }
+}
+
+// slidedown menu active
+[data-nav-offside-active="true"] {
+  @include mq($bp-nav-slidedown) {
+    [role="navigation"] {
+      @include transform3d( translateY(0) );
+    }
+    // [role="banner"] {
+    //   @include transform3d( translateX(250px) );
+    // }
+    // [role="main"] {
+    //   @include transform3d( translateX(250px) );
+    // }
+  }
+}
+
+#clear-pane {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  width: 100%;
+  height: 100%;
+}
+
+// wide menu layout
+@include mq($bp-nav-wide) {
+  body {
+    @include display-flex;
+    @include flex-direction(column);
+  }
+  [role="banner"] {
+    @include order(1);
+  }
+  [role="main"] {
+    @include order(3);
+  }
+  [role="navigation"] {
+    @include order(2);
+  }
+}
+

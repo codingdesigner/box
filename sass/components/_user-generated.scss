@@ -1,0 +1,26 @@
+//////////////////////////////
+// user-generated Component
+//
+// The partial and folder structure for this component should be as follows:
+// _user-generated.scss
+// user-generated (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import "user-generated/mixins";
+@import "user-generated/extends";
+
+.user-generated {
+  .field-image {
+    @extend %body-unpad;
+    img {
+      box-shadow: $cool-white-shade 0 0 0 5px;
+    }
+  }
+}
+.media-youtube-video {
+  @extend %body-unpad;
+  @include ir(640/380, 100%, "iframe");
+  clear: both;
+}

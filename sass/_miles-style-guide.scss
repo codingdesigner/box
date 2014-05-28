@@ -1,0 +1,85 @@
+//////////////////////////////
+// Style Guide
+//
+// This is your style guide. There are many like it, but this one is yours. All of the styling that you would like to be exported into your final Style Guide should either be written in here or imported into here from global or partials
+//////////////////////////////
+
+////////////////////////////
+// LEGACY AND EXPERIMENTAL BROWSER SUPPORT
+$support-for-original-webkit-gradients : false !default;
+////////////////////////////
+
+////////////////////////
+// CSS Reset
+// @import "normalize";
+////////////////////////
+
+////////////////////////
+// Compass Extensions
+@import "compass";
+@import "toolkit";
+@import "toolkit/kickstart";
+// @import "toolkit/colors";
+// @import "toolkit/fonts";
+// @import "toolkit/triangle";
+@import "breakpoint";
+@import "singularitygs";
+@import "modular-scale";
+@import "color-schemer";
+// @import "singularity-extras";
+////////////////////////
+
+//////////////////////////////
+// GLOBALS
+// @import "compass/reset";
+@import "compass/support";
+@import "global/functions/all";
+@import "global/variables/all";
+@import "elements/reset";
+@import "global/mixins/all";
+@import "global/extends/all";
+// //////////////////////////////
+
+//////////////////////////////
+// ELEMENTS
+@import "elements/html";
+@import "elements/body";
+@import "elements/p";
+@import "elements/heading";
+@import "elements/link";
+@import "elements/form";
+@import "elements/table";
+@import "elements/inline";
+//////////////////////////////
+
+//////////////////////////////
+// COMPONENTS
+@import "components/a11y";
+@import "components/icon";
+@import "components/baseline";
+@import "components/border";
+@import "components/offside-nav";
+@import "components/header";
+@import "components/blockquote";
+@import "components/button";
+@import "components/heading-custom";
+@import "components/links";
+@import "components/list";
+@import "components/message";
+@import "components/pager";
+// @import "components/speech-bubble";
+// @import "components/bird-feed";
+@import "components/footer";
+// @import "components/feature";
+// @import "components/press";
+// @import "components/social-link";
+// @import "components/testimonials";
+@import "components/user-generated";
+@import "components/scratch";
+//////////////////////////////
+
+//////////////////////////////
+// LAYOUTS
+// @import "layouts/layout";
+// // @import "layouts/client-layout";
+// //////////////////////////////

@@ -1,0 +1,20 @@
+//////////////////////////////
+// List Component
+//
+// The partial and folder structure for this component should be as follows:
+// _list.scss
+// list (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import "list/mixins";
+@import "list/extends";
+
+.inline-list {
+  @extend %inline-list;
+}
+
+.no-bullets {
+  @extend %no-bullets;
+}

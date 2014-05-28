@@ -1,0 +1,11 @@
+//////////////////////////////
+// p Element Extendable Classes
+//////////////////////////////
+
+%p-base {
+  @include p-base($extend: false);
+}
+
+%p-intro {
+  @include p-adjust(em(ms(1)), $base-line-px * 1.25);
+}

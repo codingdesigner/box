@@ -1,0 +1,16 @@
+//////////////////////////////
+// Link Element
+//
+// The partial and folder structure for this element should be as follows:
+// _link.scss
+// link (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import 'link/mixins';
+@import 'link/extends';
+
+a {
+  @extend %links-extend;
+}

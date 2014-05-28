@@ -1,0 +1,19 @@
+//////////////////////////////
+// p Element
+//
+// The partial and folder structure for this element should be as follows:
+// _p.scss
+// p (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import 'p/mixins';
+@import 'p/extends';
+
+p {
+  @extend %p-base;
+  .field-intro & {
+    @extend %p-intro;
+  }
+}
