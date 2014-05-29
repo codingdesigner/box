@@ -29,6 +29,8 @@ $support-for-original-webkit-gradients : false !default;
 // @import "singularity-extras";
 ////////////////////////
 
+@import "reveal";
+
 //////////////////////////////
 // GLOBALS
 // @import "compass/reset";
@@ -79,3 +81,9 @@ $support-for-original-webkit-gradients : false !default;
 // @import "layouts/layout";
 // // @import "layouts/client-layout";
 // //////////////////////////////
+
+//////////////////////////////
+// SLIDES
+@import "slides/main-title";
+// //////////////////////////////
+

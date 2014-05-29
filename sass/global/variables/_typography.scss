@@ -2,25 +2,27 @@
 // Typography
 //////////////////////////////
 
-$archer: 'Archer SSm A', 'Archer SSm B', serif;
-$archer-sc: 'Archer SSm small caps A', 'Archer SSm small caps B', serif;
-$whitney: 'Whitney SSm A', 'Whitney SSm B', sans-serif;
-$whitney-sc: 'Whitney SSm small caps A', 'Whitney SSm small caps B', sans-serif;
+$franklin-gothic: "franklin-gothic-urw-cond", sans-serif;
+$alt-gothic: "alternate-gothic-no-1-d", sans-serif;
+$lust-script: "lust-script-display", sans-serif;
+$jubilat: "jubilat", sans-serif;
 
 //////////////////////
 // Default font stacks
-$font-sans: $whitney;
-$font-serifs: $archer;
-$font-slab: $archer;
+$font-sans: $franklin-gothic;
+$font-serifs: $jubilat;
+$font-gothic: $alt-gothic;
+$font-slab: $jubilat;
+$font-script: $lust-script;
 $font-mono: 'Source Code Pro', monospace;
 //////////////////////
 
 //////////////////////
 // General font variables
 $font-body: $font-sans;
-$font-headline: $font-slab;
-$font-logo: $font-slab;
-$font-amp: $font-slab;
+$font-headline: $font-gothic;
+// $font-logo: $font-slab;
+$font-amp: $font-script;
 //////////////////////
 
 ////////////////////////////
@@ -28,15 +30,15 @@ $font-amp: $font-slab;
 //
 // Values used to determine modular scale values
 // http://modularscale.com/
-$ms-ratio: $fourth;
+$ms-ratio: $phi;
 // $ms-base: 1em 2.75em;
-$ms-base: 16px 44px;
+$ms-base: 36px ;
 ////////////////////////////
 
 //////////////////////
 // Font size and line-height
 $base-font-size  : ms(0); // 16px
-$base-line-px    : 26px;
+$base-line-px    : 44px;
 $base-line-em    : em($base-line-px);
 $base-line-height: unitless($base-line-em);
 //////////////////////
@@ -45,11 +47,11 @@ $base-line-height: unitless($base-line-em);
 // Headings
 // create a list of heading sizes, H1 - H6
 // default example uses modular scale
-$heading-sizes       : em(ms(4)) em(ms(3)) em(ms(2)) em(ms(1)) em(ms(1)) em(ms(1));
-$heading-line-heights: unitless(em($base-line-px * 1.5, ms(4))) unitless(em($base-line-px * 1.5, ms(3))) unitless(em($base-line-px * 1.25, ms(2))) unitless(em($base-line-px, ms(1))) unitless(em($base-line-px, ms(1))) unitless(em($base-line-px, ms(1)));
+$heading-sizes       : em(ms(3)) em(ms(2)) em(ms(1)) em(ms(1)) em(ms(1)) em(ms(1));
+$heading-line-heights: unitless(em($base-line-px * 2.5, ms(3))) unitless(em($base-line-px * 2, ms(2))) unitless(em($base-line-px * 1.25, ms(1))) unitless(em($base-line-px, ms(1))) unitless(em($base-line-px, ms(1))) unitless(em($base-line-px, ms(1)));
 
-$heading-sizes-small       : em(ms(3)) em(ms(2)) em(ms(1)) em(ms(0)) em(ms(0)) em(ms(0));
-$heading-line-heights-small: unitless(em($base-line-px * 1.5, ms(3))) unitless(em($base-line-px * 1.25, ms(2))) unitless(em($base-line-px, ms(1))) false false false;
+// $heading-sizes-small       : em(ms(3)) em(ms(2)) em(ms(1)) em(ms(0)) em(ms(0)) em(ms(0));
+// $heading-line-heights-small: unitless(em($base-line-px * 1.5, ms(3))) unitless(em($base-line-px * 1.25, ms(2))) unitless(em($base-line-px, ms(1))) false false false;
 //////////////////////
 
 

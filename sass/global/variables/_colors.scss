@@ -1,52 +1,41 @@
 // COLORS
-$black              : #1f1f1f;
-$white              : #fefefe;
-$orange             : #f08c49;
-$gray               : mix($black, $white);
-$cs-primary         : $orange;
+$black      : #000000;
+$white      : #fefefe;
+$red        : #D6504F;
+$cs-primary : $red;
 
 //////////////////////////////
 // derived colors
-// $NEW              : #A9CA98;
+// $NEW              : #D9DBDA;
 // @debug hue($NEW);
-// @debug "h: " hue($NEW) - hue($cs-primary);
+// $adjust-hue: hue($NEW) - hue($cs-primary);
+// @debug "h: " $adjust-hue;
 // @debug "---";
 // @debug saturation($NEW);
-// @debug "s: " saturation($NEW) - saturation($cs-primary);
+// $adjust-sat: saturation($NEW) - saturation($cs-primary);
+// @debug "s: " $adjust-sat;
 // @debug "---";
 // @debug lightness($NEW);
-// @debug "l: " lightness($NEW) - lightness($cs-primary);
+// $adjust-lightness: lightness($NEW) - lightness($cs-primary);
+// @debug "l: " $adjust-lightness;
 // @debug "---";
-// $NEW        : adjust-color($cs-primary, $hue: 75.52814deg, $saturation: -52.72029%, $lightness: 8.03922%);
-// @debug hue($green);
+// $NEW        : adjust-color($cs-primary, $hue: $adjust-hue, $saturation: $adjust-sat, $lightness: $adjust-lightness);
+// @debug hue($NEW);
 // @debug saturation($NEW);
 // @debug lightness($NEW);
-$blue               : adjust-color($cs-primary, $hue: 172.88467deg, $saturation: -6.36248%, $lightness: -26.86275%);
-$green              : adjust-color($cs-primary, $hue: 75.52814deg, $saturation: -52.72029%, $lightness: 8.03922%);
-$orange-light       : tint($orange, 55%);
-$orange-less-light  : adjust-color($orange, $hue: -0.52755deg, $saturation: -12.29451%, $lightness: 17.2549%);;
-// $orange
-$orange-dark        : adjust-color($orange, $lightness: -10%);
-$orange-darker      : adjust-color($orange, $lightness: -15%);
-$orange-darkerer    : adjust-color($orange, $hue: 0.07449deg, $saturation: -27.02509%, $lightness: -33.52941%);
-$orange-chocolate   : adjust-color($orange, $hue: 7.23249deg, $saturation: 3.68996%, $lightness: -51.17647%);
-$blue-very-light    : adjust-color($blue, $hue: 0.69054deg, $saturation: -38.87421%, $lightness: 57.05882%);
-$blue-light         : adjust-color($blue, $hue: 0.69054deg, $saturation: -38.87421%, $lightness: 40%);
-// $blue
-$blue-dark          : adjust-color($blue, $lightness: -10%);
-$blue-slate         : adjust-color($blue, $hue: 16.95652deg, $saturation: -57.30817%, $lightness: -13.13725%);
-$blue-slate-mult    : blend-multiply(rgba($blue-slate, 0.2), $blue-slate);
-// $green
+// @debug "adjust-color($cs-primary, $hue: #{$adjust-hue}, $saturation: #{$adjust-sat}, $lightness: #{$adjust-lightness});";
+$antique      : adjust-color($cs-primary, $hue: 43.55556deg, $saturation: -30.29709%, $lightness: 33.33333%);
+// $red
+$blue         : adjust-color($cs-primary, $hue: 202.274deg, $saturation: -4.01989%, $lightness: 7.84314%);
+$orange       : adjust-color($cs-primary, $hue: 40.08536deg, $saturation: 26.09211%, $lightness: 9.01961%);
+$orange-vivid : adjust-color($cs-primary, $hue: 18.74337deg, $saturation: 35.79797%, $lightness: 3.13725%);
+$yellow       : adjust-color($cs-primary, $hue: 56.02614deg, $saturation: 28.12618%, $lightness: 1.96078%);
+$green        : adjust-color($cs-primary, $hue: 61.16629deg, $saturation: 2.85352%, $lightness: -2.35294%);
+$lavender     : adjust-color($cs-primary, $hue: 280.46465deg, $saturation: -39.763%, $lightness: 23.33333%);
 // $white
-$cool-white         : tint($blue, 98%);
-$cool-white-shade   : shade($cool-white, 2%);
-$gray-lighter       : adjust-color($gray, $lightness: 36.86275%);
-$gray-light         : adjust-color($gray, $hue: 60deg, $saturation: 0.82645%, $lightness: -3.13725%);
-$gray-extra-light   : adjust-color($gray-light, $lightness: 30%);
-$gray-trans         : rgba($gray-light, 0.3);
-// $gray
-$gray-med           : adjust-color($gray, $lightness: -31.76471%);
-$gray-dark          : adjust-color($gray, $lightness: -38.03922%);
+$gray-dark    : adjust-color($cs-primary, $hue: 37.05556deg, $saturation: -50.09077%, $lightness: -44.5098%);
+$gray-light   : adjust-color($cs-primary, $hue: 149.55556deg, $saturation: -59.50928%, $lightness: 28.03922%);
+$gray         : mix($gray-dark, $gray-light);
 // $black
 //////////////////////////////
 
@@ -69,14 +58,14 @@ $cs-color-model:        ryb;
 
 //////////////////////////////
 // Color Scheme Colors
-$primary-tints           : tint-stack($orange);
-$primary-shades          : shade-stack($orange);
+$primary-tints           : tint-stack($red);
+$primary-shades          : shade-stack($red);
 $secondary-tints         : tint-stack($blue);
 $secondary-shades        : shade-stack($blue);
-$tertiary-tints          : tint-stack($blue-slate);
-$tertiary-shades         : shade-stack($blue-slate);
-$quaternary-tints        : tint-stack($green);
-$quaternary-shades       : shade-stack($green);
+$tertiary-tints          : tint-stack($lavender);
+$tertiary-shades         : shade-stack($lavender);
+$quaternary-tints        : tint-stack($red);
+$quaternary-shades       : shade-stack($red);
 $black-tints             : tint-stack($black);
 $white-shades            : shade-stack($white);
 //////////////////////////////
@@ -84,20 +73,20 @@ $white-shades            : shade-stack($white);
 //////////////////////////////
 // Background Colors
 //////////////////////////////
-$cs-background: $gray-dark;
+$cs-background: $antique;
 // $cs-border-color: $orange;
 
 // link colors
 $cs-link-normal: $blue;
-$cs-link-hover: $orange;
-$cs-link-active: $orange;
+$cs-link-hover: $red;
+$cs-link-active: $red;
 $cs-link-visited: $blue;
-$cs-link-focus: $orange;
-$cs-link-background-normal: $blue-light;
-$cs-link-background-hover: $blue;
-$cs-link-background-active: $blue;
-$cs-link-background-visited: $blue-light;
-$cs-link-background-focus: $blue;
+$cs-link-focus: $red;
+$cs-link-background-normal: $blue;
+$cs-link-background-hover: $lavender;
+$cs-link-background-active: $lavender;
+$cs-link-background-visited: $blue;
+$cs-link-background-focus: $lavender;
 $cs-link-background-bkg: $cs-background;
 
 
@@ -106,7 +95,7 @@ $cs-link-background-bkg: $cs-background;
 //////////////////////////////
 $cs-text-dark: $black;
 $cs-text-light: $white;
-$cs-text: $cs-text-light;
+$cs-text: $cs-text-dark;
 
 
 //////////////////////////////
