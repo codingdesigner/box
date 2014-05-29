@@ -2133,8 +2133,11 @@ th {
   position: absolute;
   color: #d6504f;
   top: .9em;
-  left: 6em;
+  left: 9em;
   text-align: right;
+}
+#main-title h2 .word4 {
+  display: block;
 }
 #main-title p {
   position: absolute;

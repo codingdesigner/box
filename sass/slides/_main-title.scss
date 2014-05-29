@@ -19,8 +19,11 @@
     position: absolute;
     color: $red;
     top: .9em;
-    left: 6em;
+    left: 9em;
     text-align: right;
+    .word4 {
+      display: block;
+    }
   }
   p {
     position: absolute;
