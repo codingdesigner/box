@@ -4,21 +4,28 @@
     font-family: $font-script;
     text-transform: lowercase;
     text-align: left;
+    position: relative;
+    top: 15%;
     .word1 {
       display: block;
     }
     .word2 {
-      margin-left: 0.5em;
+      margin-left: 1em;
     }
     .word9 {
-      margin-left: 6em;
+      margin-left: 5.3em;
+    }
+    .word11 {
+      position: absolute;
+      right: 51px;
+      font-size: 1.6em;
     }
   }
   h2 {
     @extend %h3;
     position: absolute;
     color: $red;
-    top: .9em;
+    top: 2.3em;
     left: 9em;
     text-align: right;
     .word4 {
@@ -30,7 +37,7 @@
     color: $white;
     text-transform: uppercase;
     bottom: 0.5em;
-    right: 3em;
+    right: 4em;
     text-align: right;
     background: $blue;
     padding: 0 0.25em;

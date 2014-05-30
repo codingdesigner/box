@@ -78,12 +78,12 @@ $support-for-original-webkit-gradients : false !default;
 
 //////////////////////////////
 // LAYOUTS
-// @import "layouts/layout";
-// // @import "layouts/client-layout";
+@import "layouts/layout";
 // //////////////////////////////
 
 //////////////////////////////
 // SLIDES
 @import "slides/main-title";
+@import "slides/contact";
 // //////////////////////////////
 

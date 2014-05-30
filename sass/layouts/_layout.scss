@@ -3,8 +3,19 @@
 // Add your layouts here.
 //////////////////////////////
 
-[class*="container"] {
-  @include clearfix();
-  // @include background-grid();
+.reveal {
+  .slides {
+    > section {
+      padding: 0;
+    }
+  }
+  section {
+    height: 100%;
+    // padding: 0.25em;
+    padding: 0;
+    &.present:not(.stack) {
+      box-shadow: rgba($gray-dark, 0.1) 0 0 1em;
+    }
+  }
 }
 
