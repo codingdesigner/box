@@ -1995,7 +1995,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, .base--STYLED h3, .reveal h3, #main-title h2, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
@@ -2006,13 +2006,13 @@ p {
   margin-bottom: 0.64919em;
 }
 
-.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present {
+.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1 {
   font-size: 2.61803em;
   line-height: 0.93369;
   margin-bottom: 1.05041em;
 }
 
-.base--STYLED h3, .reveal h3, #main-title h2 {
+.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment {
   font-size: 1.61803em;
   line-height: 0.94422;
   margin-bottom: 1.69959em;
@@ -2114,7 +2114,7 @@ body {
 }
 
 #main-title h1 {
-  font-family: "lust-script-display", sans-serif;
+  font-family: "lust-script-display", script;
   text-transform: lowercase;
   text-align: left;
   position: relative;
@@ -2173,7 +2173,7 @@ body {
   padding: 1em 0.2em 0;
 }
 #contact h1 {
-  font-family: "jubilat", sans-serif;
+  font-family: "jubilat", derifs;
   color: #d6504f;
   margin-bottom: 0;
   text-align: left;
@@ -2255,7 +2255,7 @@ body {
 #music-nerd h1 {
   color: #f5ea3a;
   mix-blend-mode: screen;
-  font-family: "lust-script-display", sans-serif;
+  font-family: "lust-script-display", script;
 }
 
 .my-bands h1 {
@@ -2315,7 +2315,7 @@ body {
   z-index: 2;
 }
 #design-in-browser .css {
-  font-family: "lust-script-display", sans-serif;
+  font-family: "lust-script-display", script;
   color: #f5ea3a;
   mix-blend-mode: overlay;
   bottom: 0.5em;
@@ -2379,6 +2379,140 @@ body {
   background-size: 100% 133%, contain;
   background-repeat: no-repeat;
   background-position: 50% 0%, 50% 2em;
+}
+
+#what-are-we-designing h1 {
+  text-transform: uppercase;
+  margin: 13px 0 0 113px;
+  text-align: left;
+  color: #7f7e7b;
+}
+#what-are-we-designing h1 .word1, #what-are-we-designing h1 .word2, #what-are-we-designing h1 .word3 {
+  letter-spacing: 13px;
+  position: relative;
+  top: 20px;
+}
+#what-are-we-designing h1 .word4 {
+  position: absolute;
+  font-weight: bold;
+  left: 57px;
+  top: 85px;
+  color: #d6504f;
+  font-family: "mitigate", derifs;
+  text-transform: lowercase;
+}
+#what-are-we-designing h1 .word4 [class^="char"] {
+  position: relative;
+}
+#what-are-we-designing h1 .word4 .char1 {
+  top: 3px;
+}
+#what-are-we-designing h1 .word4 .char2 {
+  top: 39px;
+}
+#what-are-we-designing h1 .word4 .char3 {
+  top: 29px;
+}
+#what-are-we-designing h1 .word4 .char4 {
+  top: 14px;
+}
+#what-are-we-designing h1 .word4 .char6 {
+  top: 8px;
+}
+#what-are-we-designing h1 .word4 .char7 {
+  top: 33px;
+}
+#what-are-we-designing h1 .word4 .char8 {
+  top: 5px;
+}
+#what-are-we-designing h1 .word4 .char9 {
+  top: 26px;
+  left: -18px;
+}
+#what-are-we-designing h1 .word4 .char10 {
+  font-size: 1.5em;
+  position: absolute;
+  right: -43px;
+  top: 58px;
+  z-index: 100;
+  color: #25221d;
+}
+#what-are-we-designing .jazz-bars {
+  mix-blend-mode: multiply;
+  position: absolute;
+  left: 0.6em;
+  bottom: 1.4em;
+  width: 64%;
+  height: auto;
+}
+#what-are-we-designing ul {
+  list-style: none;
+  margin: 140px 0 0;
+  float: right;
+  width: 100%;
+  overflow: hidden;
+}
+#what-are-we-designing ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+#what-are-we-designing ul [class^="line"] {
+  float: right;
+  max-width: 300px;
+  padding-right: 0.5em;
+}
+#what-are-we-designing .fragment {
+  line-height: 0.75;
+  margin-bottom: 0.4em;
+  padding-top: 8px;
+  color: #efebe0;
+  text-transform: uppercase;
+  mix-blend-mode: multiply;
+  background-color: #d6504f;
+  position: relative;
+  left: -100%;
+  -moz-transition-property: left;
+  -o-transition-property: left;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+#what-are-we-designing .fragment:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#what-are-we-designing .fragment.visible {
+  left: 0;
+}
+#what-are-we-designing .not-web .word1, #what-are-we-designing .design-systems .word2, #what-are-we-designing .small-large .word1 {
+  color: #f5ea3a;
+  mix-blend-mode: screen;
+}
+#what-are-we-designing .not-web .word3 {
+  display: block;
+  letter-spacing: 8px;
+}
+#what-are-we-designing .design-systems span {
+  display: block;
+}
+#what-are-we-designing .design-systems .word1 {
+  letter-spacing: 4.5px;
+}
+#what-are-we-designing .small-large .word1, #what-are-we-designing .small-large .word2 {
+  font-size: 0.8em;
+}
+#what-are-we-designing .small-large .word3, #what-are-we-designing .small-large .word4 {
+  font-size: 1.4em;
+}
+#what-are-we-designing .small-large .word3 {
+  display: block;
+  color: #f5ea3a;
+  mix-blend-mode: screen;
 }
 
 html.pl {
@@ -2446,11 +2580,11 @@ html.pl body {
 }
 
 .font-lust-script {
-  font-family: "lust-script-display", sans-serif;
+  font-family: "lust-script-display", script;
 }
 
 .font-jubilat {
-  font-family: "jubilat", sans-serif;
+  font-family: "jubilat", derifs;
 }
 
 .sg-ms li {

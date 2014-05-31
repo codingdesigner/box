@@ -4,8 +4,9 @@
 
 $franklin-gothic: "franklin-gothic-urw-cond", sans-serif;
 $alt-gothic: "alternate-gothic-no-1-d", sans-serif;
-$lust-script: "lust-script-display", sans-serif;
-$jubilat: "jubilat", sans-serif;
+$lust-script: "lust-script-display", script;
+$jubilat: "jubilat", derifs;
+$mitigate: "mitigate", derifs;
 
 //////////////////////
 // Default font stacks
@@ -13,6 +14,7 @@ $font-sans: $franklin-gothic;
 $font-serifs: $jubilat;
 $font-gothic: $alt-gothic;
 $font-slab: $jubilat;
+$font-slab-condensed: $mitigate;
 $font-script: $lust-script;
 $font-mono: 'Source Code Pro', monospace;
 //////////////////////

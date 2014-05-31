@@ -8,4 +8,7 @@ $(document).ready(function() {
   $("#design-in-browser h1").lettering('words');
   $("#design-in-browser .medium").lettering('words');
   $("#design-in-browser .present").lettering('words');
+
+  $("#what-are-we-designing h1").lettering('words').children('span').lettering();
+  $("#what-are-we-designing .fragment").lettering('lines').children('span').lettering('words');
 });
