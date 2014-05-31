@@ -1,7 +1,7 @@
 body {
     background: {
       color: $white;
-      image: image-url('meh.ro9682.jpg');
+      image: image-url('vinyl.jpg');
       repeat: no-repeat;
       position: 50% 50%;
       attachment: static;
@@ -9,6 +9,14 @@ body {
   // .rekkid & {}
 }
 [data-state="rekkid"] {
-  background-color: $antique;
+  background: {
+    color: $antique;
+    image: image-url('paper.jpg');
+    repeat: no-repeat;
+    position: 50% 50%;
+    attachment: static;
+    size: cover;
+    blend-mode: multiply;
+  }
   box-shadow: rgba($gray-dark, 0.8) 0 0 1em;
 }

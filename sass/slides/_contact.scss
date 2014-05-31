@@ -55,7 +55,6 @@
     bottom: -0.5em;
     left: -0.5em;
     @include filter( grayscale(1));
-    // opacity: 0.8;
     mix-blend-mode: darken;
     clip: rect(1.5em, 15em, 13em, 17px);
   }

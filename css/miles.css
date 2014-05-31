@@ -1995,18 +1995,18 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, .base--STYLED h2, .reveal h2, #main-title h1, .base--STYLED h3, .reveal h3, #main-title h2, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, .base--STYLED h3, .reveal h3, #main-title h2, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
 
-.base--STYLED h1, .reveal h1 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css {
   font-size: 4.23607em;
   line-height: 0.72132;
   margin-bottom: 0.64919em;
 }
 
-.base--STYLED h2, .reveal h2, #main-title h1 {
+.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present {
   font-size: 2.61803em;
   line-height: 0.93369;
   margin-bottom: 1.05041em;
@@ -2088,7 +2088,7 @@ th {
 
 body {
   background-color: #fefefe;
-  background-image: url('../images/meh.ro9682.jpg');
+  background-image: url('../images/vinyl.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: static;
@@ -2096,6 +2096,12 @@ body {
 
 [data-state="rekkid"] {
   background-color: #efebe0;
+  background-image: url('../images/paper.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: static;
+  background-size: cover;
+  background-blend-mode: multiply;
   box-shadow: rgba(37, 34, 29, 0.8) 0 0 1em;
 }
 
@@ -2275,6 +2281,104 @@ body {
 
 #method-result {
   background-image: url('../images/method-result.png');
+}
+
+#design-in-browser h1 {
+  margin-top: 19px;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  color: #fd7738;
+}
+#design-in-browser h1 .word2, #design-in-browser h1 .word3 {
+  font-size: .5em;
+  color: #f5c45e;
+}
+#design-in-browser h1 .word2 {
+  top: 13px;
+  position: absolute;
+}
+#design-in-browser h1 .word4 {
+  -moz-transition-property: top;
+  -o-transition-property: top;
+  -webkit-transition-property: top;
+  transition-property: top;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  position: relative;
+  top: 0;
+}
+#design-in-browser .fragment {
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 2;
+}
+#design-in-browser .css {
+  font-family: "lust-script-display", sans-serif;
+  color: #f5ea3a;
+  mix-blend-mode: overlay;
+  bottom: 0.5em;
+  left: 50%;
+  -moz-transform: translateX(-50%) scale(1.5);
+  -ms-transform: translateX(-50%) scale(1.5);
+  -webkit-transform: translateX(-50%) scale(1.5);
+  transform: translateX(-50%) scale(1.5);
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 8px;
+}
+#design-in-browser .css.current-fragment ~ .browser {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+#design-in-browser .css.visible:not(.current-fragment):after {
+  content: "CSS";
+  position: absolute;
+  display: block;
+  color: #73b3da;
+  mix-blend-mode: multiply;
+  left: 8px;
+  top: -1px;
+  white-space: nowrap;
+}
+#design-in-browser .medium {
+  position: absolute;
+  top: 1.27em;
+  left: 1.23em;
+  letter-spacing: -3px;
+  text-align: left;
+  color: #73b3da;
+}
+#design-in-browser .medium .word3 {
+  display: block;
+  letter-spacing: 15px;
+  position: relative;
+  top: -0.15em;
+}
+#design-in-browser .present {
+  position: absolute;
+  top: 0.5em;
+  left: 5.22em;
+  letter-spacing: -2.5px;
+  text-align: left;
+  color: #73b3da;
+}
+#design-in-browser .present .word4 {
+  display: none;
+}
+#design-in-browser .present.current-fragment ~ h1 .word4 {
+  top: 0.75em;
+}
+#design-in-browser .browser {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 68%;
+  z-index: 1;
+  background-image: url('../images/monitor.svg'), url('../images/time-out-painting.jpg');
+  background-size: 100% 133%, contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0%, 50% 2em;
 }
 
 html.pl {
