@@ -28,15 +28,18 @@ html.pl {
 }
 
 // TYPE
-// .font-smallcaps {
-//   @extend %small-caps-subtitle;
-// }
-// .font-secondary {
-//   @extend %slab-medium;
-// }
-// .font-secondary-smallcaps {
-//   @extend %slab-sc-medium;
-// }
+.font-franklin {
+  font-family: $franklin-gothic;
+}
+.font-alt-gothic {
+  font-family: $alt-gothic;
+}
+.font-lust-script {
+  font-family: $lust-script;
+}
+.font-jubilat {
+  font-family: $jubilat;
+}
 
 // MODULAR SCALE
 .sg-ms {

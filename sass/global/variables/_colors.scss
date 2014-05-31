@@ -58,22 +58,28 @@ $cs-color-model:        ryb;
 
 //////////////////////////////
 // Color Scheme Colors
-$primary-tints           : tint-stack($red);
-$primary-shades          : shade-stack($red);
-$secondary-tints         : tint-stack($blue);
-$secondary-shades        : shade-stack($blue);
-$tertiary-tints          : tint-stack($lavender);
-$tertiary-shades         : shade-stack($lavender);
-$quaternary-tints        : tint-stack($red);
-$quaternary-shades       : shade-stack($red);
-$black-tints             : tint-stack($black);
-$white-shades            : shade-stack($white);
+$red-tints           : tint-stack($red);
+$red-shades          : shade-stack($red);
+$blue-tints          : tint-stack($blue);
+$blue-shades         : shade-stack($blue);
+$orange-tints        : tint-stack($orange);
+$orange-shades       : shade-stack($orange);
+$orange-vivid-tints  : tint-stack($orange-vivid);
+$orange-vivid-shades : shade-stack($orange-vivid);
+$yellow-tints        : tint-stack($yellow);
+$yellow-shades       : shade-stack($yellow);
+$green-tints         : tint-stack($green);
+$green-shades        : shade-stack($green);
+$lavender-tints      : tint-stack($lavender);
+$lavender-shades     : shade-stack($lavender);
+$black-tints         : tint-stack($black);
+$white-shades        : shade-stack($white);
 //////////////////////////////
 
 //////////////////////////////
 // Background Colors
 //////////////////////////////
-$cs-background: $antique;
+$cs-background: $red;
 // $cs-border-color: $orange;
 
 // link colors
@@ -87,7 +93,7 @@ $cs-link-background-hover: $lavender;
 $cs-link-background-active: $lavender;
 $cs-link-background-visited: $blue;
 $cs-link-background-focus: $lavender;
-$cs-link-background-bkg: $cs-background;
+$cs-link-background-bkg: transparent;
 
 
 //////////////////////////////
@@ -106,17 +112,17 @@ $cs-border: $gray;
 //////////////////////////////
 // Status Colors
 //////////////////////////////
-$cs-status-status  : nth($quaternary-tints, 4);
-$cs-status-warning : nth($secondary-tints, 6);
-$cs-status-error   : nth($primary-tints, 5);
+// $cs-status-status  : nth($quaternary-tints, 4);
+// $cs-status-warning : nth($secondary-tints, 6);
+// $cs-status-error   : nth($primary-tints, 5);
 
 //////////////////////////////
 // Component defaults
 //////////////////////////////
 // Buttons
-$cs-button-color-default: $gray;
+// $cs-button-color-default: $gray;
 //////////////////////////////
 // Messages
-$cs-message-text-color-default: nth($secondary-tints, 3);
-$cs-message-bkg-color-default: $cs-status-status;
+// $cs-message-text-color-default: nth($secondary-tints, 3);
+// $cs-message-bkg-color-default: $cs-status-status;
 //////////////////////////////

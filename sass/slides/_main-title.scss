@@ -6,6 +6,7 @@
     text-align: left;
     position: relative;
     top: 15%;
+    left: 0.1em;
     .word1 {
       display: block;
     }
@@ -28,6 +29,7 @@
     top: 2.3em;
     left: 9em;
     text-align: right;
+    text-transform: uppercase;
     .word4 {
       display: block;
     }
@@ -36,7 +38,7 @@
     position: absolute;
     color: $white;
     text-transform: uppercase;
-    bottom: 0.5em;
+    bottom: 2.5em;
     right: 4em;
     text-align: right;
     background: $blue;

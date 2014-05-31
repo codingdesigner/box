@@ -82,6 +82,31 @@ $unset-background-links-extend: true;
   }
 }
 
+@mixin set-border-links($link-background-normal: $link-background-normal-default, $link-background-hover: $link-background-hover-default, $link-background-active: $link-background-active-default, $link-background-visited: $link-background-visited-default, $link-background-focus: $link-background-focus-default, $link-background-size: $link-background-size-default, $bkg: $link-background-bkg-default, $extend: $set-background-links-default) {
+  @if $extend {
+    @extend %link-border-extend;
+  }
+  @else {
+    text-decoration: none;
+    // @include text-shadow($bkg -1px 1px 0, $bkg 0 1px 0, $bkg 1px 1px 0);
+    &, &:link {
+      border-bottom: $link-background-size solid $link-background-normal;
+    }
+  }
+}
+
+@mixin unset-border-links($extend: $unset-background-links-extend) {
+  @if $extend {
+    @extend %link-unset-border-extend;
+  }
+  @else {
+    text-decoration: initial;
+    &, &:link {
+      border-bottom: none;
+    }
+  }
+}
+
 
 
 //////////////////////////////
@@ -100,9 +125,17 @@ $unset-background-links-extend: true;
   @include unset-background-links(false);
 }
 
+%link-border-extend {
+  @include set-border-links($extend: false);
+}
+
+%link-unset-border-extend {
+  @include unset-border-links(false);
+}
+
 %links-extend {
   @extend %link-colors-extend;
-  @extend %link-background-extend;
+  @extend %link-border-extend;
 }
 
 // %nav-links {

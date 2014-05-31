@@ -1,0 +1,14 @@
+body {
+    background: {
+      color: $white;
+      image: image-url('meh.ro9682.jpg');
+      repeat: no-repeat;
+      position: 50% 50%;
+      attachment: static;
+    }
+  // .rekkid & {}
+}
+[data-state="rekkid"] {
+  background-color: $antique;
+  box-shadow: rgba($gray-dark, 0.8) 0 0 1em;
+}

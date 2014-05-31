@@ -1,0 +1,23 @@
+#link-to-presentation {
+  background: {
+    color: $blue;
+    image: image-url('miles-davis-france-67.jpg');
+    attachment: static;
+    position: 50% 4.5em;
+    repeat: no-repeat;
+    size: contain;
+    blend-mode: multiply;
+  }
+  h1 {
+    color: $orange-vivid;
+    mix-blend-mode: screen;
+    margin-top: 1em;
+    text-transform: uppercase;
+  }
+  p {
+    position: relative;
+    top: -3em;
+    right: 2em;
+    text-align: right;
+  }
+}

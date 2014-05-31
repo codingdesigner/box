@@ -1832,6 +1832,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+#music-nerd h1, .my-bands h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
 code {
   font-family: "Source Code Pro", monospace;
 }
@@ -1868,7 +1878,7 @@ em {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /*********************************************
@@ -1966,7 +1976,7 @@ html {
 body {
   font-family: "franklin-gothic-urw-cond", sans-serif;
   color: black;
-  background: #efebe0;
+  background: #d6504f;
   margin: 0;
   overflow-x: hidden;
   -webkit-font-feature-settings: "liga","dlig";
@@ -2041,30 +2051,9 @@ a:not(.button):active {
 
 a {
   text-decoration: none;
-  text-shadow: #efebe0 -1px 1px 0, #efebe0 0 1px 0, #efebe0 1px 1px 0;
-  background-image: -moz-linear-gradient(bottom, #73b3da 1px, #efebe0 2px);
-  background-image: -webkit-linear-gradient(bottom, #73b3da 1px, #efebe0 2px);
-  background-image: linear-gradient(to top, #73b3da 1px, #efebe0 2px);
 }
-a:visited {
-  background-image: -moz-linear-gradient(bottom, #73b3da 1px, #efebe0 2px);
-  background-image: -webkit-linear-gradient(bottom, #73b3da 1px, #efebe0 2px);
-  background-image: linear-gradient(to top, #73b3da 1px, #efebe0 2px);
-}
-a:focus {
-  background-image: -moz-linear-gradient(bottom, #d2c3d9 1px, #efebe0 2px);
-  background-image: -webkit-linear-gradient(bottom, #d2c3d9 1px, #efebe0 2px);
-  background-image: linear-gradient(to top, #d2c3d9 1px, #efebe0 2px);
-}
-a:hover {
-  background-image: -moz-linear-gradient(bottom, #d2c3d9 1px, #efebe0 2px);
-  background-image: -webkit-linear-gradient(bottom, #d2c3d9 1px, #efebe0 2px);
-  background-image: linear-gradient(to top, #d2c3d9 1px, #efebe0 2px);
-}
-a:active {
-  background-image: -moz-linear-gradient(bottom, #d2c3d9 1px, #efebe0 2px);
-  background-image: -webkit-linear-gradient(bottom, #d2c3d9 1px, #efebe0 2px);
-  background-image: linear-gradient(to top, #d2c3d9 1px, #efebe0 2px);
+a, a:link {
+  border-bottom: 1px solid #73b3da;
 }
 
 table {
@@ -2097,15 +2086,25 @@ th {
   margin-left: 0;
 }
 
+body {
+  background-color: #fefefe;
+  background-image: url('../images/meh.ro9682.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: static;
+}
+
+[data-state="rekkid"] {
+  background-color: #efebe0;
+  box-shadow: rgba(37, 34, 29, 0.8) 0 0 1em;
+}
+
 .reveal .slides > section {
   padding: 0;
 }
 .reveal section {
   height: 100%;
   padding: 0;
-}
-.reveal section.present:not(.stack) {
-  box-shadow: rgba(37, 34, 29, 0.1) 0 0 1em;
 }
 
 #main-title h1 {
@@ -2114,6 +2113,7 @@ th {
   text-align: left;
   position: relative;
   top: 15%;
+  left: 0.1em;
 }
 #main-title h1 .word1 {
   display: block;
@@ -2135,6 +2135,7 @@ th {
   top: 2.3em;
   left: 9em;
   text-align: right;
+  text-transform: uppercase;
 }
 #main-title h2 .word4 {
   display: block;
@@ -2143,7 +2144,7 @@ th {
   position: absolute;
   color: #fefefe;
   text-transform: uppercase;
-  bottom: 0.5em;
+  bottom: 2.5em;
   right: 4em;
   text-align: right;
   background: #73b3da;
@@ -2163,18 +2164,42 @@ th {
   background-color: #f5c45e;
   padding: 0.2em;
   height: 8em;
-  padding: 3.2em 0.2em 0;
+  padding: 1em 0.2em 0;
 }
 #contact h1 {
   font-family: "jubilat", sans-serif;
-  color: #25221d;
+  color: #d6504f;
   margin-bottom: 0;
   text-align: left;
+  text-transform: uppercase;
+}
+#contact h1 .word1 {
+  display: inline-block;
+  -moz-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -moz-transform: rotate(-90deg) scale(0.35);
+  -ms-transform: rotate(-90deg) scale(0.35);
+  -webkit-transform: rotate(-90deg) scale(0.35);
+  transform: rotate(-90deg) scale(0.35);
+  margin-left: -2em;
+}
+#contact h1 .word3 {
+  position: relative;
+  top: -0.7em;
+  left: 3em;
+}
+#contact h1 .word3 [class^="char"]:nth-of-type(1n + 5) {
+  position: relative;
+  top: 0.7em;
+  left: -5.64em;
 }
 #contact h2 {
   color: #efebe0;
   text-align: right;
-  margin: 0;
+  margin: -0.33em 0 00;
+  text-transform: uppercase;
 }
 #contact ul {
   text-transform: uppercase;
@@ -2195,8 +2220,61 @@ th {
   left: -0.5em;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
-  opacity: 0.5;
+  mix-blend-mode: darken;
   clip: rect(1.5em, 15em, 13em, 17px);
+}
+
+#link-to-presentation {
+  background-color: #73b3da;
+  background-image: url('../images/miles-davis-france-67.jpg');
+  background-attachment: static;
+  background-position: 50% 4.5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: multiply;
+}
+#link-to-presentation h1 {
+  color: #fd7738;
+  mix-blend-mode: screen;
+  margin-top: 1em;
+  text-transform: uppercase;
+}
+#link-to-presentation p {
+  position: relative;
+  top: -3em;
+  right: 2em;
+  text-align: right;
+}
+
+#music-nerd h1 {
+  color: #f5ea3a;
+  mix-blend-mode: screen;
+  font-family: "lust-script-display", sans-serif;
+}
+
+.my-bands h1 {
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #f5ea3a;
+  mix-blend-mode: screen;
+}
+
+#prelapse, #blinder, #method-result {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+#prelapse {
+  background-image: url('../images/prelapse.jpg');
+}
+
+#blinder {
+  background-image: url('../images/blinder.jpg');
+}
+
+#method-result {
+  background-image: url('../images/method-result.png');
 }
 
 html.pl {
@@ -2253,6 +2331,22 @@ html.pl body {
   -ms-text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
+}
+
+.font-franklin {
+  font-family: "franklin-gothic-urw-cond", sans-serif;
+}
+
+.font-alt-gothic {
+  font-family: "alternate-gothic-no-1-d", sans-serif;
+}
+
+.font-lust-script {
+  font-family: "lust-script-display", sans-serif;
+}
+
+.font-jubilat {
+  font-family: "jubilat", sans-serif;
 }
 
 .sg-ms li {

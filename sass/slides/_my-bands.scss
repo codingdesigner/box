@@ -1,0 +1,30 @@
+.my-bands {
+  h1 {
+    @extend %center-vert-horiz;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: $yellow;
+    mix-blend-mode: screen;
+  }
+}
+
+%cd-background {
+  background: {
+    repeat: no-repeat;
+    position: 50% 50%;
+    size: contain;
+  }
+}
+
+#prelapse {
+  @extend %cd-background;
+  background-image: image-url('prelapse.jpg');
+}
+#blinder {
+  @extend %cd-background;
+  background-image: image-url('blinder.jpg');
+}
+#method-result {
+  @extend %cd-background;
+  background-image: image-url('method-result.png');
+}
