@@ -1,0 +1,13 @@
+#style-guides {
+  background: {
+    color: $gray-dark;
+  }
+  h1 {
+    font-family: $font-gothic;
+    text-transform: uppercase;
+    color: $gray-light;
+    background: {
+      color: $green;
+    }
+  }
+}

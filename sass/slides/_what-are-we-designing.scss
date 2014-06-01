@@ -7,13 +7,11 @@
   }
 }
 
-
 #what-are-we-designing {
   h1 {
     @extend %h2;
     text-transform: uppercase;
     margin: 13px 0 0 113px;
-    // font-family: $font-sans;
     text-align: left;
     color: $gray;
     .word1, .word2, .word3 {
