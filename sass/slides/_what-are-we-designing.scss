@@ -1,12 +1,3 @@
-@include animate(designin) {
-  from {
-    opacity: 0;
-  }
-  to   {
-    opacity: 1;
-  }
-}
-
 #what-are-we-designing {
   h1 {
     @extend %h2;
@@ -74,7 +65,7 @@
         @for $i from 1 through 10 {
           .char#{$i} {
             $delay: ($i * 0.05) + 0.5s;
-            @include experimental(animation, designin 0.33s ease-in $delay 1 forwards);
+            @include experimental(animation, fade-in 0.33s ease-in $delay 1 forwards);
           }
         }
       }

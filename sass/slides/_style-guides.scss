@@ -1,13 +1,37 @@
-#style-guides {
-  background: {
-    color: $gray-dark;
+@include animate(brings-us-to-style-guides) {
+  from {
+    top: 100px;
   }
+  to   {
+    top: 0;
+  }
+}
+
+#style-guides {
   h1 {
     font-family: $font-gothic;
     text-transform: uppercase;
-    color: $gray-light;
-    background: {
-      color: $green;
+    text-align: right;
+    @extend %h2;
+    margin-bottom: 0.25em;
+    border-bottom: 8px solid $red;
+    overflow: hidden;
+    .word5, .word6 {
+      color: $red;
+      top: 100px;
+      position: relative;
     }
+  }
+  &.present {
+    h1 {
+      .word5, .word6 {
+        @include experimental(animation, brings-us-to-style-guides 0.33s ease-in .33s 1 forwards);
+      }
+    }
+  }
+  .illustration {
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }

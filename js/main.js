@@ -11,4 +11,6 @@ $(document).ready(function() {
 
   $("#what-are-we-designing h1").lettering('words').children('span').lettering();
   $("#what-are-we-designing .fragment").lettering('lines').children('span').lettering('words');
+
+  $("#style-guides h1").lettering('words');
 });
