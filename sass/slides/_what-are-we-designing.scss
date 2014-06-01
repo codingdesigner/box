@@ -1,3 +1,13 @@
+@include animate(designin) {
+  from {
+    opacity: 0;
+  }
+  to   {
+    opacity: 1;
+  }
+}
+
+
 #what-are-we-designing {
   h1 {
     @extend %h2;
@@ -20,9 +30,9 @@
       color: $red;
       font-family: $font-slab-condensed;
       text-transform: lowercase;
-      // mix-blend-mode: multiply;
       [class^="char"] {
         position: relative;
+        opacity: 0;
       }
       .char1{
         top: 3px;
@@ -60,13 +70,25 @@
       }
     }
   }
+  &.present {
+    h1 {
+      .word4 {
+        @for $i from 1 through 10 {
+          .char#{$i} {
+            $delay: ($i * 0.05) + 0.5s;
+            @include experimental(animation, designin 0.33s ease-in $delay 1 forwards);
+          }
+        }
+      }
+    }
+  }
   .jazz-bars {
     mix-blend-mode: multiply;
     position: absolute;
     left: 0.6em;
-    bottom: 1.4em;
-    width: 64%;
-    height: auto;
+    top: 203px;
+    width: 614px;
+    height: 448px;
   }
   ul {
     @include no-bullets;

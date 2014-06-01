@@ -2381,6 +2381,24 @@ body {
   background-position: 50% 0%, 50% 2em;
 }
 
+@-webkit-keyframes designin {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes designin {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 #what-are-we-designing h1 {
   text-transform: uppercase;
   margin: 13px 0 0 113px;
@@ -2403,6 +2421,7 @@ body {
 }
 #what-are-we-designing h1 .word4 [class^="char"] {
   position: relative;
+  opacity: 0;
 }
 #what-are-we-designing h1 .word4 .char1 {
   top: 3px;
@@ -2437,13 +2456,83 @@ body {
   z-index: 100;
   color: #25221d;
 }
+#what-are-we-designing.present h1 .word4 .char1 {
+  -webkit-animation: designin 0.33s ease-in 0.55s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 0.55s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 0.55s 1 forwards;
+  -o-animation: designin 0.33s ease-in 0.55s 1 forwards;
+  animation: designin 0.33s ease-in 0.55s 1 forwards;
+}
+#what-are-we-designing.present h1 .word4 .char2 {
+  -webkit-animation: designin 0.33s ease-in 0.6s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 0.6s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 0.6s 1 forwards;
+  -o-animation: designin 0.33s ease-in 0.6s 1 forwards;
+  animation: designin 0.33s ease-in 0.6s 1 forwards;
+}
+#what-are-we-designing.present h1 .word4 .char3 {
+  -webkit-animation: designin 0.33s ease-in 0.65s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 0.65s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 0.65s 1 forwards;
+  -o-animation: designin 0.33s ease-in 0.65s 1 forwards;
+  animation: designin 0.33s ease-in 0.65s 1 forwards;
+}
+#what-are-we-designing.present h1 .word4 .char4 {
+  -webkit-animation: designin 0.33s ease-in 0.7s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 0.7s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 0.7s 1 forwards;
+  -o-animation: designin 0.33s ease-in 0.7s 1 forwards;
+  animation: designin 0.33s ease-in 0.7s 1 forwards;
+}
+#what-are-we-designing.present h1 .word4 .char5 {
+  -webkit-animation: designin 0.33s ease-in 0.75s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 0.75s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 0.75s 1 forwards;
+  -o-animation: designin 0.33s ease-in 0.75s 1 forwards;
+  animation: designin 0.33s ease-in 0.75s 1 forwards;
+}
+#what-are-we-designing.present h1 .word4 .char6 {
+  -webkit-animation: designin 0.33s ease-in 0.8s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 0.8s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 0.8s 1 forwards;
+  -o-animation: designin 0.33s ease-in 0.8s 1 forwards;
+  animation: designin 0.33s ease-in 0.8s 1 forwards;
+}
+#what-are-we-designing.present h1 .word4 .char7 {
+  -webkit-animation: designin 0.33s ease-in 0.85s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 0.85s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 0.85s 1 forwards;
+  -o-animation: designin 0.33s ease-in 0.85s 1 forwards;
+  animation: designin 0.33s ease-in 0.85s 1 forwards;
+}
+#what-are-we-designing.present h1 .word4 .char8 {
+  -webkit-animation: designin 0.33s ease-in 0.9s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 0.9s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 0.9s 1 forwards;
+  -o-animation: designin 0.33s ease-in 0.9s 1 forwards;
+  animation: designin 0.33s ease-in 0.9s 1 forwards;
+}
+#what-are-we-designing.present h1 .word4 .char9 {
+  -webkit-animation: designin 0.33s ease-in 0.95s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 0.95s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 0.95s 1 forwards;
+  -o-animation: designin 0.33s ease-in 0.95s 1 forwards;
+  animation: designin 0.33s ease-in 0.95s 1 forwards;
+}
+#what-are-we-designing.present h1 .word4 .char10 {
+  -webkit-animation: designin 0.33s ease-in 1s 1 forwards;
+  -moz-animation: designin 0.33s ease-in 1s 1 forwards;
+  -ms-animation: designin 0.33s ease-in 1s 1 forwards;
+  -o-animation: designin 0.33s ease-in 1s 1 forwards;
+  animation: designin 0.33s ease-in 1s 1 forwards;
+}
 #what-are-we-designing .jazz-bars {
   mix-blend-mode: multiply;
   position: absolute;
   left: 0.6em;
-  bottom: 1.4em;
-  width: 64%;
-  height: auto;
+  top: 203px;
+  width: 614px;
+  height: 448px;
 }
 #what-are-we-designing ul {
   list-style: none;
