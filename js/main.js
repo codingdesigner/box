@@ -13,4 +13,6 @@ $(document).ready(function() {
   $("#what-are-we-designing .fragment").lettering('lines').children('span').lettering('words');
 
   $("#style-guides h1").lettering('words');
+
+  $("#bad-style-guides h1").lettering('words');
 });

@@ -27,6 +27,19 @@
           position: relative;
           top: 0.7em;
           left: -5.64em;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &.present {
+    h1 {
+      .word3 {
+        @for $i from 5 through 9 {
+          .char#{$i} {
+            $delay: ($i * 0.05) + 1.3s;
+            @include experimental(animation, fade-in 0.33s ease-in $delay 1 forwards);
+          }
         }
       }
     }
@@ -52,7 +65,7 @@
   }
   .hat-fool {
     position: absolute;
-    bottom: -0.5em;
+    bottom: -31px;
     left: -0.5em;
     @include filter( grayscale(1));
     mix-blend-mode: darken;

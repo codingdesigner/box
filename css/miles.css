@@ -1825,6 +1825,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+.reveal img {
+  vertical-align: bottom;
+}
+
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
@@ -2006,7 +2014,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
@@ -2023,7 +2031,7 @@ p {
   margin-bottom: 1.05041em;
 }
 
-.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment {
+.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1 {
   font-size: 1.61803em;
   line-height: 0.94422;
   margin-bottom: 1.69959em;
@@ -2211,6 +2219,42 @@ body {
   position: relative;
   top: 0.7em;
   left: -5.64em;
+  opacity: 0;
+}
+#contact.present h1 .word3 .char5 {
+  -webkit-animation: fade-in 0.33s ease-in 1.55s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 1.55s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 1.55s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 1.55s 1 forwards;
+  animation: fade-in 0.33s ease-in 1.55s 1 forwards;
+}
+#contact.present h1 .word3 .char6 {
+  -webkit-animation: fade-in 0.33s ease-in 1.6s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 1.6s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 1.6s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 1.6s 1 forwards;
+  animation: fade-in 0.33s ease-in 1.6s 1 forwards;
+}
+#contact.present h1 .word3 .char7 {
+  -webkit-animation: fade-in 0.33s ease-in 1.65s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 1.65s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 1.65s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 1.65s 1 forwards;
+  animation: fade-in 0.33s ease-in 1.65s 1 forwards;
+}
+#contact.present h1 .word3 .char8 {
+  -webkit-animation: fade-in 0.33s ease-in 1.7s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 1.7s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 1.7s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 1.7s 1 forwards;
+  animation: fade-in 0.33s ease-in 1.7s 1 forwards;
+}
+#contact.present h1 .word3 .char9 {
+  -webkit-animation: fade-in 0.33s ease-in 1.75s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 1.75s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 1.75s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 1.75s 1 forwards;
+  animation: fade-in 0.33s ease-in 1.75s 1 forwards;
 }
 #contact h2 {
   color: #efebe0;
@@ -2233,7 +2277,7 @@ body {
 }
 #contact .hat-fool {
   position: absolute;
-  bottom: -0.5em;
+  bottom: -31px;
   left: -0.5em;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
@@ -2636,6 +2680,61 @@ body {
   animation: brings-us-to-style-guides 0.33s ease-in 0.33s 1 forwards;
 }
 #style-guides .illustration {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#bad-style-guides {
+  background-color: #25221d;
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(214, 80, 79, 0.5) 15px, rgba(214, 80, 79, 0.5) 187px);
+  background-blend-mode: screen;
+}
+#bad-style-guides h1 {
+  text-align: right;
+  text-transform: uppercase;
+  font-family: "franklin-gothic-urw-cond", sans-serif;
+  color: #d3d742;
+  mix-blend-mode: screen;
+}
+#bad-style-guides h1 [class^="word"] {
+  padding: 0 6px;
+  border-style: solid;
+  border-color: #73b3da;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  position: relative;
+}
+#bad-style-guides h1 [class^="word"]:after {
+  font-size: 22.24922px;
+  color: #73b3da;
+  position: absolute;
+  right: -88px;
+  top: 24px;
+}
+#bad-style-guides h1 .word1 {
+  margin-right: 86.66px;
+}
+#bad-style-guides h1 .word1:before {
+  content: "[LOGO TBD]";
+  font-size: 22.24922px;
+  color: #73b3da;
+  position: absolute;
+  left: -200px;
+  top: 24px;
+}
+#bad-style-guides h1 .word1:after {
+  content: "86.66px";
+  right: -88px;
+}
+#bad-style-guides h1 .word2 {
+  margin-right: 82.17px;
+}
+#bad-style-guides h1 .word2:after {
+  content: "82.17";
+  right: -78px;
+}
+#bad-style-guides .illustration {
   position: absolute;
   left: 0;
   bottom: 0;

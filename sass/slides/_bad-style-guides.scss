@@ -1,0 +1,59 @@
+#bad-style-guides {
+  background: {
+    color: $gray-dark;
+    image: repeating-linear-gradient(90deg, transparent, transparent 15px, rgba($red, 0.5) 15px, rgba($red, 0.5) 187px );
+    blend-mode: screen;
+  }
+  h1 {
+    text-align: right;
+    text-transform: uppercase;
+    font-family: $font-sans;
+    @extend %h3;
+    color: $green;
+    mix-blend-mode: screen;
+    [class^="word"] {
+      padding: 0 6px;
+      border: {
+        style: solid;
+        color: $blue;
+        left-width: 2px;
+        right-width: 2px;
+      }
+      position: relative;
+      &:after {
+        font-size: ms(-1);
+        color: $blue;
+        position: absolute;
+        right: -88px;
+        top: 24px;
+      }
+    }
+    .word1 {
+      margin-right: 86.66px;
+      &:before {
+        content: "[LOGO TBD]";
+        font-size: ms(-1);
+        color: $blue;
+        position: absolute;
+        left: -200px;
+        top: 24px;
+      }
+      &:after {
+        content: "86.66px";
+        right: -88px;
+      }
+    }
+    .word2 {
+      margin-right: 82.17px;
+      &:after {
+        content: "82.17";
+        right: -78px;
+      }
+    }
+  }
+  .illustration {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

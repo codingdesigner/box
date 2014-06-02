@@ -15,9 +15,6 @@
 //  - End styling block for specific element configuration:   {element--configuration}@
 //////////////////////////////
 
-@import 'reset/mixins';
-@import 'reset/extends';
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -58,3 +55,11 @@ a img {
   @include reset-image-anchor-border;
 }
 @include reset-html5;
+
+img {
+  max-width: 100%;
+  height: auto;
+  .reveal & {
+    vertical-align: bottom;
+  }
+}
