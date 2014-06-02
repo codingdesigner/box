@@ -2,7 +2,7 @@
   h1 {
     @extend %center-vert-horiz;
     white-space: nowrap;
-    text-transform: uppercase;
+    @extend %uppercase;
     color: $yellow;
     mix-blend-mode: screen;
   }

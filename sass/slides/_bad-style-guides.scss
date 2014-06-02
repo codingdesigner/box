@@ -6,8 +6,8 @@
   }
   h1 {
     text-align: right;
-    text-transform: uppercase;
-    font-family: $font-sans;
+    @extend %uppercase;
+    @extend %sans;
     @extend %h3;
     color: $green;
     mix-blend-mode: screen;

@@ -1,7 +1,7 @@
 #what-are-we-designing {
   h1 {
     @extend %h2;
-    text-transform: uppercase;
+    @extend %uppercase;
     margin: 13px 0 0 113px;
     text-align: left;
     color: $gray;
@@ -14,11 +14,11 @@
       @extend %h3;
       position: absolute;
       font-weight: bold;
-      left: 57px;
+      left: 75px;
       top: 85px;
       color: $red;
-      font-family: $font-slab-condensed;
-      text-transform: lowercase;
+      @extend %slab-condensed;
+      @extend %lowercase;
       [class^="char"] {
         position: relative;
         opacity: 0;
@@ -98,7 +98,7 @@
     margin-bottom: 0.4em;
     padding-top: 8px;
     color: $antique;
-    text-transform: uppercase;
+    @extend %uppercase;
     mix-blend-mode: multiply;
     background-color: $red;
     position: relative;

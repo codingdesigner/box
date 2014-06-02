@@ -1,17 +1,42 @@
+%sans {
+  font-family: $font-sans;
+}
+
 %serif {
   font-family: $font-serifs;
 }
 
-%sans {
-  font-family: $font-sans;
+%gothic {
+  font-family: $font-gothic;
 }
+
+%slab {
+  font-family: $font-slab;
+}
+
+%slab-condensed {
+  font-family: $font-slab-condensed;
+}
+
+%script {
+  font-family: $font-script;
+}
+
 
 %mono {
   font-family: $font-mono;
 }
 
+%lowercase {
+  text-transform: lowercase;
+}
+
 %uppercase {
   text-transform: uppercase;
+}
+
+%titlecase {
+  text-transform: capitalize
 }
 
 %amp {

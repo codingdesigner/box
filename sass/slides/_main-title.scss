@@ -1,8 +1,8 @@
 #main-title {
   h1 {
     @extend %h2;
-    font-family: $font-script;
-    text-transform: lowercase;
+    @extend %script;
+    @extend %lowercase;
     text-align: left;
     position: relative;
     top: 15%;
@@ -29,7 +29,7 @@
     top: 2.3em;
     left: 9em;
     text-align: right;
-    text-transform: uppercase;
+    @extend %uppercase;
     .word4 {
       display: block;
     }
@@ -37,7 +37,7 @@
   p {
     position: absolute;
     color: $white;
-    text-transform: uppercase;
+    @extend %uppercase;
     bottom: 2.5em;
     right: 4em;
     text-align: right;

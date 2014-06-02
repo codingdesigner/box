@@ -9,8 +9,8 @@
 
 #style-guides {
   h1 {
-    font-family: $font-gothic;
-    text-transform: uppercase;
+    @extend %gothic;
+    @extend %uppercase;
     text-align: right;
     @extend %h2;
     margin-bottom: 0.25em;

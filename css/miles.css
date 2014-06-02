@@ -19,27 +19,6 @@ img, video {
 /*********************************************
  * RESET STYLES
  *********************************************/
-html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal iframe,
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal p, .reveal blockquote, .reveal pre,
-.reveal a, .reveal abbr, .reveal acronym, .reveal address, .reveal big, .reveal cite, .reveal code,
-.reveal del, .reveal dfn, .reveal em, .reveal img, .reveal ins, .reveal kbd, .reveal q, .reveal s, .reveal samp,
-.reveal small, .reveal strike, .reveal strong, .reveal sub, .reveal sup, .reveal tt, .reveal var,
-.reveal b, .reveal u, .reveal i, .reveal center,
-.reveal dl, .reveal dt, .reveal dd, .reveal ol, .reveal ul, .reveal li,
-.reveal fieldset, .reveal form, .reveal label, .reveal legend,
-.reveal table, .reveal caption, .reveal tbody, .reveal tfoot, .reveal thead, .reveal tr, .reveal th, .reveal td,
-.reveal article, .reveal aside, .reveal canvas, .reveal details, .reveal embed,
-.reveal figure, .reveal figcaption, .reveal footer, .reveal header, .reveal hgroup,
-.reveal menu, .reveal nav, .reveal output, .reveal ruby, .reveal section, .reveal summary,
-.reveal time, .reveal mark, .reveal audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
 .reveal article, .reveal aside, .reveal details, .reveal figcaption, .reveal figure,
 .reveal footer, .reveal header, .reveal hgroup, .reveal menu, .reveal nav, .reveal section {
   display: block;
@@ -1795,7 +1774,7 @@ time, mark, audio, video {
 
 ol, ul {
   margin: 0;
-  padding-left: 2em;
+  padding-left: 0;
 }
 
 table {
@@ -1851,28 +1830,6 @@ img {
     opacity: 1;
   }
 }
-#music-nerd h1, .my-bands h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-code {
-  font-family: "Source Code Pro", monospace;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-em {
-  font-style: italic;
-}
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -1887,19 +1844,6 @@ em {
 /*********************************************
  * HEADERS
  *********************************************/
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-  margin: 0 0 20px 0;
-  font-family: "alternate-gothic-no-1-d", sans-serif;
-  line-height: 0.9em;
-  letter-spacing: 0.02em;
-  text-transform: none;
-}
-
 /*********************************************
  * LINKS
  *********************************************/
@@ -2133,8 +2077,6 @@ body {
 }
 
 #main-title h1 {
-  font-family: "lust-script-display", script;
-  text-transform: lowercase;
   text-align: left;
   position: relative;
   top: 15%;
@@ -2160,7 +2102,6 @@ body {
   top: 2.3em;
   left: 9em;
   text-align: right;
-  text-transform: uppercase;
 }
 #main-title h2 .word4 {
   display: block;
@@ -2168,7 +2109,6 @@ body {
 #main-title p {
   position: absolute;
   color: #fefefe;
-  text-transform: uppercase;
   bottom: 2.5em;
   right: 4em;
   text-align: right;
@@ -2192,11 +2132,10 @@ body {
   padding: 1em 0.2em 0;
 }
 #contact h1 {
-  font-family: "jubilat", derifs;
   color: #d6504f;
   margin-bottom: 0;
+  margin-left: 32px;
   text-align: left;
-  text-transform: uppercase;
 }
 #contact h1 .word1 {
   display: inline-block;
@@ -2260,10 +2199,8 @@ body {
   color: #efebe0;
   text-align: right;
   margin: -0.33em 0 00;
-  text-transform: uppercase;
 }
 #contact ul {
-  text-transform: uppercase;
   list-style: none;
   margin-left: 0;
   margin-top: 1em;
@@ -2277,12 +2214,12 @@ body {
 }
 #contact .hat-fool {
   position: absolute;
-  bottom: -31px;
-  left: -0.5em;
+  bottom: 0;
+  left: 0;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   mix-blend-mode: darken;
-  clip: rect(1.5em, 15em, 13em, 17px);
+  clip: rect(2.4em, 16em, 14em, 0px);
 }
 
 #link-to-presentation {
@@ -2298,7 +2235,6 @@ body {
   color: #fd7738;
   mix-blend-mode: screen;
   margin-top: 1em;
-  text-transform: uppercase;
 }
 #link-to-presentation p {
   position: relative;
@@ -2310,12 +2246,10 @@ body {
 #music-nerd h1 {
   color: #f5ea3a;
   mix-blend-mode: screen;
-  font-family: "lust-script-display", script;
 }
 
 .my-bands h1 {
   white-space: nowrap;
-  text-transform: uppercase;
   color: #f5ea3a;
   mix-blend-mode: screen;
 }
@@ -2340,7 +2274,6 @@ body {
 
 #design-in-browser h1 {
   margin-top: 19px;
-  text-transform: uppercase;
   letter-spacing: -3px;
   color: #fd7738;
 }
@@ -2366,11 +2299,9 @@ body {
 }
 #design-in-browser .fragment {
   position: absolute;
-  text-transform: uppercase;
   z-index: 2;
 }
 #design-in-browser .css {
-  font-family: "lust-script-display", script;
   color: #f5ea3a;
   mix-blend-mode: overlay;
   bottom: 0.5em;
@@ -2437,7 +2368,6 @@ body {
 }
 
 #what-are-we-designing h1 {
-  text-transform: uppercase;
   margin: 13px 0 0 113px;
   text-align: left;
   color: #7f7e7b;
@@ -2450,11 +2380,9 @@ body {
 #what-are-we-designing h1 .word4 {
   position: absolute;
   font-weight: bold;
-  left: 57px;
+  left: 75px;
   top: 85px;
   color: #d6504f;
-  font-family: "mitigate", derifs;
-  text-transform: lowercase;
 }
 #what-are-we-designing h1 .word4 [class^="char"] {
   position: relative;
@@ -2593,7 +2521,6 @@ body {
   margin-bottom: 0.4em;
   padding-top: 8px;
   color: #efebe0;
-  text-transform: uppercase;
   mix-blend-mode: multiply;
   background-color: #d6504f;
   position: relative;
@@ -2660,8 +2587,6 @@ body {
   }
 }
 #style-guides h1 {
-  font-family: "alternate-gothic-no-1-d", sans-serif;
-  text-transform: uppercase;
   text-align: right;
   margin-bottom: 0.25em;
   border-bottom: 8px solid #d6504f;
@@ -2692,8 +2617,6 @@ body {
 }
 #bad-style-guides h1 {
   text-align: right;
-  text-transform: uppercase;
-  font-family: "franklin-gothic-urw-cond", sans-serif;
   color: #d3d742;
   mix-blend-mode: screen;
 }
@@ -2738,6 +2661,56 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+#music-nerd h1, .my-bands h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#bad-style-guides h1 {
+  font-family: "franklin-gothic-urw-cond", sans-serif;
+}
+
+#style-guides h1 {
+  font-family: "alternate-gothic-no-1-d", sans-serif;
+}
+
+#contact h1 {
+  font-family: "jubilat", derifs;
+}
+
+#what-are-we-designing h1 .word4 {
+  font-family: "mitigate", derifs;
+}
+
+#main-title h1, #music-nerd h1, #design-in-browser .css {
+  font-family: "lust-script-display", script;
+}
+
+code {
+  font-family: "Source Code Pro", monospace;
+}
+
+#main-title h1, #what-are-we-designing h1 .word4 {
+  text-transform: lowercase;
+}
+
+#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1 {
+  text-transform: uppercase;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }
 
 html.pl {

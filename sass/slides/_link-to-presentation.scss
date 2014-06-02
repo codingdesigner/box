@@ -12,7 +12,7 @@
     color: $orange-vivid;
     mix-blend-mode: screen;
     margin-top: 1em;
-    text-transform: uppercase;
+    @extend %uppercase;
   }
   p {
     position: relative;

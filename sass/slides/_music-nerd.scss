@@ -3,6 +3,6 @@
     @extend %center-vert-horiz;
     color: $yellow;
     mix-blend-mode: screen;
-    font-family: $font-script;
+    @extend %script;
   }
 }

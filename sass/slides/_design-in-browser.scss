@@ -1,7 +1,7 @@
 #design-in-browser {
   h1 {
     margin-top: 19px;
-    text-transform: uppercase;
+    @extend %uppercase;
     letter-spacing: -3px;
     color: $orange-vivid;
     .word2, .word3 {
@@ -21,12 +21,12 @@
   }
   .fragment {
     position: absolute;
-    text-transform: uppercase;
+    @extend %uppercase;
     z-index: 2;
   }
   .css {
     @extend %h1;
-    font-family: $font-script;
+    @extend %script;
     color: $yellow;
     mix-blend-mode: overlay;
     bottom: 0.5em;

@@ -7,11 +7,12 @@
    padding: 1em 0.2em 0;
   }
   h1 {
-    font-family: $font-slab;
+    @extend %slab;
     color: $red;
     margin-bottom: 0;
+    margin-left: 32px;
     text-align: left;
-    text-transform: uppercase;
+    @extend %uppercase;
     .word1 {
       display: inline-block;
       @include transform-origin(100%, 0%);
@@ -48,10 +49,10 @@
     color: $antique;
     text-align: right;
     margin: -0.33em 0 00;
-    text-transform: uppercase;
+    @extend %uppercase;
   }
   ul {
-    text-transform: uppercase;
+    @extend %uppercase;
     list-style: none;
     margin-left: 0;
     margin-top: 1em;
@@ -65,10 +66,10 @@
   }
   .hat-fool {
     position: absolute;
-    bottom: -31px;
-    left: -0.5em;
+    bottom: 0;
+    left: 0;
     @include filter( grayscale(1));
     mix-blend-mode: darken;
-    clip: rect(1.5em, 15em, 13em, 17px);
+    clip: rect(2.4em, 16em, 14em, 0px);
   }
 }
