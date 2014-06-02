@@ -2615,6 +2615,15 @@ body {
   background-image: repeating-linear-gradient(90deg, transparent, transparent 15px, rgba(214, 80, 79, 0.5) 15px, rgba(214, 80, 79, 0.5) 187px);
   background-blend-mode: screen;
 }
+#bad-style-guides .fa-pied-piper {
+  font-style: normal;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 157px;
+  color: #00ca00;
+  font-size: 94.24922px;
+}
 #bad-style-guides h1 {
   text-align: right;
   color: #d3d742;
@@ -2638,14 +2647,6 @@ body {
 #bad-style-guides h1 .word1 {
   margin-right: 86.66px;
   border-left: none;
-}
-#bad-style-guides h1 .word1:before {
-  content: "[LOGO TBD]";
-  font-size: 22.24922px;
-  color: #73b3da;
-  position: absolute;
-  left: -200px;
-  top: 24px;
 }
 #bad-style-guides h1 .word1:after {
   content: "86.66px";
@@ -2671,13 +2672,13 @@ body {
   overflow: visible;
   text-indent: -47px;
   right: auto;
-  left: -430px;
+  left: -438px;
   white-space: nowrap;
   height: 100%;
   padding-right: 8px;
   text-align: left;
   line-height: 1.6;
-  top: 17px;
+  top: 15px;
   height: 40px;
 }
 #bad-style-guides .illustration {
