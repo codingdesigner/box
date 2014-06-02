@@ -2637,6 +2637,7 @@ body {
 }
 #bad-style-guides h1 .word1 {
   margin-right: 86.66px;
+  border-left: none;
 }
 #bad-style-guides h1 .word1:before {
   content: "[LOGO TBD]";
@@ -2656,6 +2657,28 @@ body {
 #bad-style-guides h1 .word2:after {
   content: "82.17";
   right: -78px;
+}
+#bad-style-guides h1 .word3 {
+  border-right: none;
+}
+#bad-style-guides h1 .word3:after {
+  content: "17pt ";
+  display: block;
+  border-style: solid;
+  border-color: #73b3da;
+  border-width: 2px 0 2px 2px;
+  width: 9px;
+  overflow: visible;
+  text-indent: -47px;
+  right: auto;
+  left: -430px;
+  white-space: nowrap;
+  height: 100%;
+  padding-right: 8px;
+  text-align: left;
+  line-height: 1.6;
+  top: 17px;
+  height: 40px;
 }
 #bad-style-guides .illustration {
   position: absolute;

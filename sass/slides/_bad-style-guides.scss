@@ -30,6 +30,7 @@
     }
     .word1 {
       margin-right: 86.66px;
+      border-left: none;
       &:before {
         content: "[LOGO TBD]";
         font-size: ms(-1);
@@ -48,6 +49,30 @@
       &:after {
         content: "82.17";
         right: -78px;
+      }
+    }
+    .word3 {
+      border-right: none;
+      &:after {
+        content: "17pt ";
+        display: block;
+        border: {
+          style: solid;
+          color: $blue;
+          width: 2px 0 2px 2px;
+        }
+        width: 9px;
+        overflow: visible;
+        text-indent: -47px;
+        right: auto;
+        left: -430px;
+        white-space: nowrap;
+        height: 100%;
+        padding-right: 8px;
+        text-align: left;
+        line-height: 1.6;
+        top: 17px;
+        height: 40px;
       }
     }
   }
