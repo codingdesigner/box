@@ -1958,7 +1958,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
@@ -1969,7 +1969,7 @@ p {
   margin-bottom: 0.64919em;
 }
 
-.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1 {
+.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1 {
   font-size: 2.61803em;
   line-height: 0.93369;
   margin-bottom: 1.05041em;
@@ -2743,6 +2743,28 @@ body {
   right: 1em;
 }
 
+#component-driven {
+  background-color: #f5c45e;
+  background-image: url('../images/into-something.jpg');
+  padding-top: 0;
+}
+#component-driven h1 {
+  background-color: #efebe0;
+  margin: 0 0 0 0;
+  text-align: left;
+  padding: 0 20px;
+  line-height: 0.7;
+}
+#component-driven h1 .talking-about {
+  color: #7f7e7b;
+  font-size: 58.24922px;
+}
+#component-driven h1 .component-driven-design {
+  display: block;
+  position: relative;
+  left: 37px;
+}
+
 #music-nerd h1, .my-bands h1 {
   position: absolute;
   top: 50%;
@@ -2765,7 +2787,7 @@ body {
   font-family: "jubilat", derifs;
 }
 
-#what-are-we-designing h1 .word4 {
+#what-are-we-designing h1 .word4, #component-driven h1 {
   font-family: "mitigate", derifs;
 }
 
@@ -2777,7 +2799,7 @@ code {
   font-family: "Source Code Pro", monospace;
 }
 
-#main-title h1, #what-are-we-designing h1 .word4 {
+#main-title h1, #what-are-we-designing h1 .word4, #component-driven h1 {
   text-transform: lowercase;
 }
 
