@@ -1958,7 +1958,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
@@ -1969,7 +1969,7 @@ p {
   margin-bottom: 0.64919em;
 }
 
-.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1 {
+.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1 {
   font-size: 2.61803em;
   line-height: 0.93369;
   margin-bottom: 1.05041em;
@@ -2655,7 +2655,7 @@ body {
   margin-right: 82.17px;
 }
 #bad-style-guides h1 .word2:after {
-  content: "82.17";
+  content: "82.17px";
   right: -78px;
 }
 #bad-style-guides h1 .word3 {
@@ -2684,6 +2684,66 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+#as-design-tool {
+  outline: 12px double #73b3da;
+  background-color: black;
+  background-image: url('../images/brad-frost-bw.jpg');
+  background-blend-mode: luminosity;
+  color: #d9dbda;
+}
+#as-design-tool h1 {
+  margin-top: 40px;
+  margin-left: 0.5em;
+  margin-bottom: 0;
+  text-align: left;
+}
+#as-design-tool h1 .word4, #as-design-tool h1 .word5 {
+  color: #d6504f;
+  mix-blend-mode: screen;
+}
+#as-design-tool ul {
+  text-align: left;
+  margin-left: 1.3em;
+  display: block;
+  list-style-type: none;
+}
+#as-design-tool ul li {
+  display: inline-block;
+  margin-right: 2em;
+}
+#as-design-tool .fragment {
+  position: relative;
+}
+#as-design-tool .fragment:after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-top: 12px;
+  width: 220px;
+  height: 200px;
+  border: 1px dashed red;
+}
+#as-design-tool .atomic:after {
+  content: "atomic illustration FPO";
+}
+#as-design-tool .pattern:after {
+  content: "pattern illustration FPO";
+}
+#as-design-tool figure img {
+  display: none;
+}
+#as-design-tool figure figcaption {
+  text-align: right;
+  font-size: 22.24922px;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
 }
 
 #music-nerd h1, .my-bands h1 {
@@ -2724,7 +2784,7 @@ code {
   text-transform: lowercase;
 }
 
-#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1 {
+#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul {
   text-transform: uppercase;
 }
 

@@ -15,4 +15,6 @@ $(document).ready(function() {
   $("#style-guides h1").lettering('words');
 
   $("#bad-style-guides h1").lettering('words');
+
+  $("#as-design-tool h1").lettering('words');
 });

@@ -1,0 +1,67 @@
+#as-design-tool {
+  outline: 12px double $blue;
+  background: {
+    color: $black;
+    image: image-url('brad-frost-bw.jpg');
+    blend-mode: luminosity;
+  }
+  color: $gray-light;
+  h1 {
+    @extend %h2;
+    @extend %uppercase;
+    margin-top: 40px;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+    text-align: left;
+    .word4, .word5 {
+      color: $red;
+      mix-blend-mode: screen;
+    }
+  }
+  ul {
+    @extend %uppercase;
+    text-align: left;
+    margin-left: 1.3em;
+    display: block;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      margin-right: 2em;
+    }
+  }
+  .fragment {
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      @include transform(translateX(-50%));
+      margin-top: 12px;
+      width: 220px;
+      height: 200px;
+      border: 1px dashed red;
+    }
+  }
+  .atomic {
+    &:after {
+      content: "atomic illustration FPO";
+    }
+  }
+  .pattern {
+    &:after {
+      content: "pattern illustration FPO";
+    }
+  }
+  figure {
+    img {
+      display: none;
+    }
+    figcaption {
+      text-align: right;
+      font-size: ms(-1);
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+    }
+  }
+}
