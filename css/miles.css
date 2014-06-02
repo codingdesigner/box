@@ -2716,9 +2716,9 @@ body {
 #as-design-tool .fragment {
   position: relative;
 }
-#as-design-tool .fragment:after {
+#as-design-tool .fragment .illustration {
   position: absolute;
-  top: 100%;
+  top: 126%;
   left: 50%;
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -2727,13 +2727,9 @@ body {
   margin-top: 12px;
   width: 220px;
   height: 200px;
-  border: 1px dashed red;
-}
-#as-design-tool .atomic:after {
-  content: "atomic illustration FPO";
-}
-#as-design-tool .pattern:after {
-  content: "pattern illustration FPO";
+  margin: 0 auto;
+  display: block;
+  width: 135px;
 }
 #as-design-tool figure img {
   display: none;

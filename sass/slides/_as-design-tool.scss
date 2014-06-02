@@ -31,25 +31,17 @@
   }
   .fragment {
     position: relative;
-    &:after {
+    .illustration {
       position: absolute;
-      top: 100%;
+      top: 126%;
       left: 50%;
       @include transform(translateX(-50%));
       margin-top: 12px;
       width: 220px;
       height: 200px;
-      border: 1px dashed red;
-    }
-  }
-  .atomic {
-    &:after {
-      content: "atomic illustration FPO";
-    }
-  }
-  .pattern {
-    &:after {
-      content: "pattern illustration FPO";
+      margin: 0 auto;
+      display: block;
+      width: 135px;
     }
   }
   figure {
