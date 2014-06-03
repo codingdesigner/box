@@ -1,0 +1,41 @@
+#hard-bop {
+  background: {
+    image: image-url('herbiehancock-pov.png');
+    size: contain;
+    position: 0 100%;
+  }
+  h1 {
+    position: absolute;
+    @extend %h1;
+    color: $gray-light;
+    text-align: left;
+    @extend %uppercase;
+    left: 30px;
+    bottom: 30px;
+    margin: 0 0 0 0;
+  }
+  ul {
+    width: 100%;
+    text-align: right;
+    @extend %uppercase;
+    margin: 0;
+    padding-right: 1em;
+    font-weight: bold;
+    li {
+      list-style-type: none;
+    }
+  }
+  .melody {
+    color: $blue;
+  }
+  .key {
+    color: $orange;
+  }
+  .chords {
+    color: $green;
+  }
+  .form {
+    color: $red;
+  }
+
+}
