@@ -21,4 +21,6 @@ $(document).ready(function() {
   $("#organizing-aesthetics h1").lettering('words');
 
   $("#musical-thinking h1").lettering('words').children('span').lettering();
+
+  $("#content-first-design h1").lettering('words').children('span').lettering('words');
 });
