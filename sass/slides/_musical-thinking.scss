@@ -1,0 +1,29 @@
+#musical-thinking {
+  background: {
+    image: image-url('our-man-in-paris.png');
+    size: 80%;
+    position: 100% 100%;
+  }
+  h1 {
+    @extend %gothic;
+    @extend %h3;
+    @extend %uppercase;
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    top: 3.6em;
+    left: 3.6em;
+    line-height: 1.1;
+    [class^='word'] {
+      display: block;
+    }
+    [class^='char'] {
+      &:nth-of-type(odd) {
+        color: $blue;
+      }
+      &:nth-of-type(even) {
+        color: $red;
+      }
+    }
+  }
+}

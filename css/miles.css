@@ -1958,7 +1958,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
@@ -1975,7 +1975,7 @@ p {
   margin-bottom: 1.05041em;
 }
 
-.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1 {
+.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1 {
   font-size: 1.61803em;
   line-height: 0.94422;
   margin-bottom: 1.69959em;
@@ -2854,6 +2854,29 @@ body {
   color: #d6504f;
 }
 
+#musical-thinking {
+  background-image: url('../images/our-man-in-paris.png');
+  background-size: 80%;
+  background-position: 100% 100%;
+}
+#musical-thinking h1 {
+  text-align: right;
+  margin: 0;
+  position: absolute;
+  top: 3.6em;
+  left: 3.6em;
+  line-height: 1.1;
+}
+#musical-thinking h1 [class^='word'] {
+  display: block;
+}
+#musical-thinking h1 [class^='char']:nth-of-type(odd) {
+  color: #73b3da;
+}
+#musical-thinking h1 [class^='char']:nth-of-type(even) {
+  color: #d6504f;
+}
+
 #music-nerd h1, .my-bands h1 {
   position: absolute;
   top: 50%;
@@ -2868,7 +2891,7 @@ body {
   font-family: "franklin-gothic-urw-cond", sans-serif;
 }
 
-#style-guides h1, #organizing-aesthetics h1 {
+#style-guides h1, #organizing-aesthetics h1, #musical-thinking h1 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
@@ -2892,7 +2915,7 @@ code {
   text-transform: lowercase;
 }
 
-#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1 {
+#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1 {
   text-transform: uppercase;
 }
 

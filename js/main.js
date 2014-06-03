@@ -19,4 +19,6 @@ $(document).ready(function() {
   $("#as-design-tool h1").lettering('words');
 
   $("#organizing-aesthetics h1").lettering('words');
+
+  $("#musical-thinking h1").lettering('words').children('span').lettering();
 });
