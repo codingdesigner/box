@@ -1,0 +1,39 @@
+#component-second {
+  background: {
+    image: image-url('tina-brooks.svg');
+    size: cover;
+    position: 0 0.5em;
+  }
+  h1 {
+    @extend %h3;
+    @extend %slab;
+    @extend %uppercase;
+    text-align: right;
+    margin: 0;
+    position: relative;
+    top: 45px;
+    right: 39px;
+    .word1 {
+      color: $blue;
+    }
+  }
+  ul {
+    margin: 0;
+    position: absolute;
+    top: 3.4em;
+    left: 30px;
+    width: 11em;
+    text-align: left;
+    @extend %script;
+    // @extend %uppercase;
+    color: $white;
+    letter-spacing: 1px;
+    // mix-blend-mode: screen;
+    li {
+      list-style-type: none;
+      height: 4.7em;
+      margin-bottom: 0.5em;
+      padding-top: 0.5em;
+    }
+  }
+}

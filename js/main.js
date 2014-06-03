@@ -23,4 +23,6 @@ $(document).ready(function() {
   $("#musical-thinking h1").lettering('words').children('span').lettering();
 
   $("#content-first-design h1").lettering('words').children('span').lettering('words');
+
+  $("#component-second h1").lettering('words');
 });

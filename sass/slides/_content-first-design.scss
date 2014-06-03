@@ -18,6 +18,7 @@
         overflow: hidden;
         position: relative;
         @include transform-origin( 0 50% );
+        opacity: 0;
         span {
           display: block;
           position: relative;
@@ -60,6 +61,18 @@
         top: -15px;
         left: 25px;
         height: 1.2em;
+      }
+    }
+  }
+  &.present {
+    h1 {
+      > {
+        @for $i from 1 through 5 {
+          .word#{$i} {
+            $delay: ($i * 0.5) + 0.25s;
+            @include experimental(animation, fade-in 0.33s ease-in $delay 1 forwards);
+          }
+        }
       }
     }
   }

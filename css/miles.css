@@ -1958,7 +1958,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
@@ -1975,7 +1975,7 @@ p {
   margin-bottom: 1.05041em;
 }
 
-.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1 {
+.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1 {
   font-size: 1.61803em;
   line-height: 0.94422;
   margin-bottom: 1.69959em;
@@ -2884,7 +2884,7 @@ body {
 .compare-design-music h1 {
   letter-spacing: 1px;
   color: #fefefe;
-  margin: 1em 0 0;
+  margin: 0.25em 0 0;
 }
 
 .music-table {
@@ -2902,8 +2902,8 @@ body {
 .music-table tr:nth-of-type(2) td {
   padding-top: 3em;
 }
-.music-table tr td:nth-last-of-type(1n+2) {
-  border-right: 2px dotted rgba(217, 219, 218, 0.5);
+.music-table tr:nth-of-type(3) td {
+  padding-top: 2em;
 }
 
 #content-first-design {
@@ -2926,6 +2926,7 @@ body {
   -ms-transform-origin: 0 50% 50%;
   -webkit-transform-origin: 0 50% 50%;
   transform-origin: 0 50% 50%;
+  opacity: 0;
 }
 #content-first-design h1 > [class^="word"] span {
   display: block;
@@ -2990,6 +2991,41 @@ body {
   left: 25px;
   height: 1.2em;
 }
+#content-first-design.present h1 > .word1 {
+  -webkit-animation: fade-in 0.33s ease-in 0.75s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 0.75s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 0.75s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 0.75s 1 forwards;
+  animation: fade-in 0.33s ease-in 0.75s 1 forwards;
+}
+#content-first-design.present h1 > .word2 {
+  -webkit-animation: fade-in 0.33s ease-in 1.25s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 1.25s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 1.25s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 1.25s 1 forwards;
+  animation: fade-in 0.33s ease-in 1.25s 1 forwards;
+}
+#content-first-design.present h1 > .word3 {
+  -webkit-animation: fade-in 0.33s ease-in 1.75s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 1.75s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 1.75s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 1.75s 1 forwards;
+  animation: fade-in 0.33s ease-in 1.75s 1 forwards;
+}
+#content-first-design.present h1 > .word4 {
+  -webkit-animation: fade-in 0.33s ease-in 2.25s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 2.25s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 2.25s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 2.25s 1 forwards;
+  animation: fade-in 0.33s ease-in 2.25s 1 forwards;
+}
+#content-first-design.present h1 > .word5 {
+  -webkit-animation: fade-in 0.33s ease-in 2.75s 1 forwards;
+  -moz-animation: fade-in 0.33s ease-in 2.75s 1 forwards;
+  -ms-animation: fade-in 0.33s ease-in 2.75s 1 forwards;
+  -o-animation: fade-in 0.33s ease-in 2.75s 1 forwards;
+  animation: fade-in 0.33s ease-in 2.75s 1 forwards;
+}
 #content-first-design ul {
   margin: 0;
   position: absolute;
@@ -3001,6 +3037,38 @@ body {
 }
 #content-first-design ul li {
   list-style-type: none;
+}
+
+#component-second {
+  background-image: url('../images/tina-brooks.svg');
+  background-size: cover;
+  background-position: 0 0.5em;
+}
+#component-second h1 {
+  text-align: right;
+  margin: 0;
+  position: relative;
+  top: 45px;
+  right: 39px;
+}
+#component-second h1 .word1 {
+  color: #73b3da;
+}
+#component-second ul {
+  margin: 0;
+  position: absolute;
+  top: 3.4em;
+  left: 30px;
+  width: 11em;
+  text-align: left;
+  color: #fefefe;
+  letter-spacing: 1px;
+}
+#component-second ul li {
+  list-style-type: none;
+  height: 4.7em;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
 }
 
 #music-nerd h1, .my-bands h1 {
@@ -3021,7 +3089,7 @@ body {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
-#contact h1 {
+#contact h1, #component-second h1 {
   font-family: "jubilat", derifs;
 }
 
@@ -3029,7 +3097,7 @@ body {
   font-family: "mitigate", derifs;
 }
 
-#main-title h1, #music-nerd h1, #design-in-browser .css {
+#main-title h1, #music-nerd h1, #design-in-browser .css, #component-second ul {
   font-family: "lust-script-display", script;
 }
 
@@ -3037,11 +3105,11 @@ code {
   font-family: "Source Code Pro", monospace;
 }
 
-#main-title h1, #what-are-we-designing h1 .word4, #component-driven h1, .compare-design-music h1, .music-table {
+#main-title h1, #what-are-we-designing h1 .word4, #component-driven h1, .compare-design-music h1, .music-table tbody {
   text-transform: lowercase;
 }
 
-#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul {
+#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1 {
   text-transform: uppercase;
 }
 
