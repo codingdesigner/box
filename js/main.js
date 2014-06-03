@@ -25,4 +25,6 @@ $(document).ready(function() {
   $("#content-first-design h1").lettering('words').children('span').lettering('words');
 
   $("#component-second h1").lettering('words');
+
+  $("#aesthetic-foundation h1").lettering('words');
 });
