@@ -33,4 +33,6 @@ $(document).ready(function() {
   $("#modular-scale h1").lettering('words').children('span').lettering();
 
   $("#color-schemer h1").lettering('words').children('span').lettering();
+
+  $("#teams p").lettering();
 });

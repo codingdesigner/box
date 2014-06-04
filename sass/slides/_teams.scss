@@ -1,0 +1,61 @@
+#teams {
+  h1 {
+    @extend %h3;
+    @extend %serif;
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  p {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    font-size: ms(5);
+    @extend %uppercase;
+    font-weight: bold;
+    line-height: 0.63;
+    text-align: left;
+    [class^="char"] {
+      position: absolute;
+    }
+    .char1, .char2 {
+      top: 0;
+    }
+    .char2 {
+      left: 0.55em;
+    }
+    .char3, .char4, .char5 {
+      top: 0.7em;
+    }
+    .char4 {
+      left: 0.25em;
+    }
+    .char5 {
+      left: 0.62em;
+    }
+  }
+  .red-dot {
+    background-color: $orange-vivid;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    &:nth-of-type(1) {
+      top: 94px;
+      left: 116px;
+    }
+    &:nth-of-type(2) {
+      top: 150px;
+      left: 132px;
+    }
+    &:nth-of-type(3) {
+      top: 205px;
+      left: 115px;
+    }
+    &:nth-of-type(4) {
+      top: 262px;
+      left: 131px;
+    }
+  }
+}

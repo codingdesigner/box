@@ -1958,7 +1958,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, #modular-scale h2, #color-schemer h1, #color-schemer h2, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, #modular-scale h2, #color-schemer h1, #color-schemer h2, #performance h1, #teams h1, #singularity h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
@@ -1975,7 +1975,7 @@ p {
   margin-bottom: 1.05041em;
 }
 
-.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, #modular-scale h2, #color-schemer h1, #color-schemer h2 {
+.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, #modular-scale h2, #color-schemer h1, #color-schemer h2, #performance h1, #teams h1, #singularity h1 {
   font-size: 1.61803em;
   line-height: 0.94422;
   margin-bottom: 1.69959em;
@@ -3396,6 +3396,257 @@ body {
   color: #fd7738;
 }
 
+#performance h1 {
+  color: #d6504f;
+  text-align: right;
+  background-image: url('../images/jackie-mclean.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  margin: 0.5em 30px 0 0;
+  padding-right: 132px;
+  height: 110px;
+}
+#performance .its-time {
+  font-size: 94.24922px;
+  word-wrap: break-word;
+  line-height: 0.87;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: left;
+}
+
+#teams h1 {
+  text-align: right;
+  padding-right: 30px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+#teams p {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 399.24613px;
+  font-weight: bold;
+  line-height: 0.63;
+  text-align: left;
+}
+#teams p [class^="char"] {
+  position: absolute;
+}
+#teams p .char1, #teams p .char2 {
+  top: 0;
+}
+#teams p .char2 {
+  left: 0.55em;
+}
+#teams p .char3, #teams p .char4, #teams p .char5 {
+  top: 0.7em;
+}
+#teams p .char4 {
+  left: 0.25em;
+}
+#teams p .char5 {
+  left: 0.62em;
+}
+#teams .red-dot {
+  background-color: #fd7738;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+}
+#teams .red-dot:nth-of-type(1) {
+  top: 94px;
+  left: 116px;
+}
+#teams .red-dot:nth-of-type(2) {
+  top: 150px;
+  left: 132px;
+}
+#teams .red-dot:nth-of-type(3) {
+  top: 205px;
+  left: 115px;
+}
+#teams .red-dot:nth-of-type(4) {
+  top: 262px;
+  left: 131px;
+}
+
+#singularity h1 {
+  position: absolute;
+  text-align: left;
+  left: 600px;
+  bottom: 30px;
+  color: red;
+  mix-blend-mode: multiply;
+}
+#singularity .columns {
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+#singularity .col {
+  height: 11em;
+  background-color: #25221d;
+}
+#singularity .col.jazzbo {
+  background-image: url('../images/hubbard.jpg');
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  background-size: contain;
+}
+#singularity .set-one .col-1 {
+  width: 9.09091%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+#singularity .set-one .col-2 {
+  width: 9.09091%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 11.36364%;
+  clear: none;
+}
+#singularity .set-one .col-3 {
+  width: 9.09091%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 22.72727%;
+  clear: none;
+}
+#singularity .set-one .col-4 {
+  width: 9.09091%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 34.09091%;
+  clear: none;
+}
+#singularity .set-one .col-5 {
+  width: 9.09091%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 45.45455%;
+  clear: none;
+}
+#singularity .set-one .col-6 {
+  width: 9.09091%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 56.81818%;
+  clear: none;
+  margin-top: 2em;
+}
+#singularity .set-one .col-7 {
+  width: 9.09091%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 68.18182%;
+  clear: none;
+}
+#singularity .set-one .col-8 {
+  width: 9.09091%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 79.54545%;
+  clear: none;
+}
+#singularity .set-one .col-9 {
+  width: 9.09091%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+#singularity .set-two .col-1 {
+  width: 9.7561%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+#singularity .set-two .col-2 {
+  width: 19.5122%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 12.19512%;
+  clear: none;
+}
+#singularity .set-two .col-3 {
+  width: 9.7561%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 34.14634%;
+  clear: none;
+}
+#singularity .set-two .col-4 {
+  width: 19.5122%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 46.34146%;
+  clear: none;
+  margin-top: 2em;
+}
+#singularity .set-two .col-5 {
+  width: 9.7561%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 68.29268%;
+  clear: none;
+}
+#singularity .set-two .col-6 {
+  width: 19.5122%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+#singularity .set-three .col-1 {
+  width: 45.07042%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+#singularity .set-three .col-2 {
+  width: 5.6338%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 46.47887%;
+  clear: none;
+}
+#singularity .set-three .col-3 {
+  width: 16.90141%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 53.52113%;
+  clear: none;
+  margin-top: 2em;
+}
+#singularity .set-three .col-4 {
+  width: 28.16901%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+#singularity ul {
+  margin: 0;
+  position: absolute;
+  bottom: 1.5em;
+  left: 30px;
+  text-align: left;
+  color: #73b3da;
+  mix-blend-mode: multiply;
+}
+#singularity ul li {
+  list-style-type: none;
+}
+
 #music-nerd h1, .my-bands h1 {
   position: absolute;
   top: 50%;
@@ -3410,7 +3661,11 @@ body {
   font-family: "franklin-gothic-urw-cond", sans-serif;
 }
 
-#style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2 {
+#teams h1 {
+  font-family: "jubilat", derifs;
+}
+
+#style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #singularity h1 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
@@ -3422,7 +3677,7 @@ body {
   font-family: "mitigate", derifs;
 }
 
-#main-title h1, #music-nerd h1, #design-in-browser .css, #component-second ul {
+#main-title h1, #music-nerd h1, #design-in-browser .css, #component-second ul, #performance .its-time {
   font-family: "lust-script-display", script;
 }
 
@@ -3434,11 +3689,11 @@ code {
   font-family: "Source Code Pro", monospace;
 }
 
-#main-title h1, #what-are-we-designing h1 .word4, #component-driven h1, .compare-design-music h1, .music-table tbody, #aesthetic-foundation h1, #color-schemer h1, #color-schemer h2 {
+#main-title h1, #what-are-we-designing h1 .word4, #component-driven h1, .compare-design-music h1, .music-table tbody, #aesthetic-foundation h1, #color-schemer h1, #color-schemer h2, #singularity h1 {
   text-transform: lowercase;
 }
 
-#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul {
+#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul, #performance h1, #teams p, #singularity ul {
   text-transform: uppercase;
 }
 
