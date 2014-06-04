@@ -1,0 +1,98 @@
+$sg-7: 7;
+$sg-7g: .25;
+
+#eq {
+  h1 {
+    @extend %h3;
+    @extend %slab;
+    @extend %lowercase;
+    position: absolute;
+    text-align: left;
+    right: 30px;
+    bottom: 125px;
+    color: red;
+    margin-bottom: 0;
+    white-space: nowrap;
+    mix-blend-mode: multiply;
+  }
+  h2 {
+    @extend %h2;
+    @extend %slab;
+    position: absolute;
+    text-align: left;
+    right: 30px;
+    bottom: 55px;
+    color: red;
+    margin-bottom: 0;
+    mix-blend-mode: multiply;
+  }
+  .columns {
+    position: absolute;
+    top: 1.5em;
+    width: 80%;
+    left: 50%;
+    @include transform( translateX(-50%));
+    mix-blend-mode: multiply;
+  }
+  .col {
+    height: 10em;
+    background-color: $gray-dark;
+    @include transform-origin(50%, 100%);
+    &.jazzbo {
+      background: {
+        image: image-url('snugug.png');
+        position: 0 100%;
+        repeat: no-repeat;
+        blend-mode: luminosity;
+        size: contain;
+      }
+    }
+  }
+  @include layout($sg-7, $sg-7g) {
+    .col-1 {
+      @include grid-span(1, 1);
+      @include transform( translateY(1.5em) rotate(-5deg) );
+    }
+    .col-2 {
+      @include grid-span(1, 2);
+      @include transform( translateY(-0.75em) rotate(2deg) );
+    }
+    .col-3 {
+      @include grid-span(1, 3);
+      @include transform( translateY(0) rotate(3deg) );
+    }
+    .col-4 {
+      @include grid-span(1, 4);
+      @include transform( translateY(-1.5em) rotate(1deg) );
+    }
+    .col-5 {
+      @include grid-span(1, 5);
+      @include transform( translateY(0) rotate(2deg) );
+    }
+    .col-6 {
+      @include grid-span(1, 6);
+      @include transform( translateY(3em) rotate(-2deg) );
+    }
+    .col-7 {
+      @include grid-span(1, 7);
+      @include transform( translateY(-0.25em) rotate(5deg) );
+    }
+  }
+  ul {
+    margin: 0;
+    position: absolute;
+    bottom: 1.5em;
+    left: 30px;
+    text-align: left;
+    @extend %uppercase;
+    color: $red;
+    mix-blend-mode: multiply;
+    li {
+      list-style-type: none;
+      // background-color: rgba($white, 0.8);
+      // display: inline-block;
+      // margin-bottom: 0.2em;
+      // padding: 0 0.5em;
+    }
+  }
+}
