@@ -27,4 +27,6 @@ $(document).ready(function() {
   $("#component-second h1").lettering('words');
 
   $("#aesthetic-foundation h1").lettering('words');
+
+  $("#find-typeface h1").lettering('words');
 });

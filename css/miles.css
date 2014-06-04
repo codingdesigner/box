@@ -1958,7 +1958,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
@@ -1969,13 +1969,13 @@ p {
   margin-bottom: 0.64919em;
 }
 
-.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1 {
+.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1 {
   font-size: 2.61803em;
   line-height: 0.93369;
   margin-bottom: 1.05041em;
 }
 
-.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1 {
+.base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2 {
   font-size: 1.61803em;
   line-height: 0.94422;
   margin-bottom: 1.69959em;
@@ -2799,6 +2799,7 @@ body {
   position: absolute;
   top: -1em;
   color: #d6504f;
+  width: 100%;
 }
 
 #hard-bop {
@@ -2813,6 +2814,10 @@ body {
   left: 30px;
   bottom: 30px;
   margin: 0 0 0 0;
+}
+#hard-bop #jump-monk {
+  width: 960px;
+  height: 143px;
 }
 #hard-bop ul {
   width: 100%;
@@ -2904,6 +2909,9 @@ body {
 }
 .music-table tr:nth-of-type(3) td {
   padding-top: 2em;
+}
+.music-table tr td {
+  vertical-align: top;
 }
 
 #content-first-design {
@@ -3101,6 +3109,77 @@ body {
   list-style-type: none;
 }
 
+#find-typeface {
+  overflow: hidden;
+}
+#find-typeface h1 {
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: -432px;
+  line-height: 0.67;
+  height: 4em;
+  width: 860px;
+  padding-top: 1.35em;
+  z-index: 2;
+  background-image: repeating-linear-gradient(180deg, transparent, transparent 0.67em, #f5ea3a 0.67em, #f5ea3a 1.34em);
+}
+#find-typeface h1 [class^="word"] {
+  display: inline-block;
+  position: relative;
+}
+#find-typeface h1 .word1 {
+  display: block;
+}
+#find-typeface h1 .word4 {
+  display: block;
+}
+#find-typeface h2 {
+  color: #f5ea3a;
+  text-align: left;
+  mix-blend-mode: multiply;
+  margin: 0 0 0 1em;
+}
+#find-typeface ul {
+  margin: 0;
+  position: absolute;
+  top: 2em;
+  left: 58px;
+  width: 100%;
+  text-align: left;
+  color: #25221d;
+  letter-spacing: 1px;
+  mix-blend-mode: multiply;
+}
+#find-typeface ul li {
+  list-style-type: none;
+  display: inline;
+}
+#find-typeface ul li:nth-of-type(even) {
+  color: #f5ea3a;
+}
+#find-typeface figure {
+  position: absolute;
+  bottom: 0;
+  width: 960px;
+  height: 518px;
+  z-index: 1;
+}
+#find-typeface footer {
+  position: absolute;
+  text-align: right;
+  right: 1em;
+  bottom: 0.5em;
+  z-index: 3;
+}
+
 #music-nerd h1, .my-bands h1 {
   position: absolute;
   top: 50%;
@@ -3115,7 +3194,7 @@ body {
   font-family: "franklin-gothic-urw-cond", sans-serif;
 }
 
-#style-guides h1, #organizing-aesthetics h1, #musical-thinking h1 {
+#style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
@@ -3131,6 +3210,10 @@ body {
   font-family: "lust-script-display", script;
 }
 
+#find-typeface h1, #find-typeface h2 {
+  font-family: "motor-stencil", sans-serif;
+}
+
 code {
   font-family: "Source Code Pro", monospace;
 }
@@ -3139,7 +3222,7 @@ code {
   text-transform: lowercase;
 }
 
-#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul {
+#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul {
   text-transform: uppercase;
 }
 

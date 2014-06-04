@@ -1,0 +1,75 @@
+#find-typeface {
+  overflow: hidden;
+  h1 {
+    @extend %h2;
+    @extend %stencil;
+    @extend %uppercase;
+    @include transform-origin(50%, 0);
+    @include transform(rotate(45deg));
+    position: absolute;
+    top: 0;
+    right: -432px;
+    line-height: 0.67;
+    height: 4em;
+    width: 860px;
+    padding-top: 1.35em;
+    z-index: 2;
+    background: {
+      image: repeating-linear-gradient(180deg, transparent, transparent 0.67em, $yellow 0.67em, $yellow 1.34em );
+    }
+    // mix-blend-mode: multiply;
+    [class^="word"] {
+      display: inline-block;
+      position: relative;
+    }
+    .word1 {
+      display: block;
+    }
+    .word4 {
+      display: block;
+    }
+  }
+  h2 {
+    @extend %h3;
+    @extend %stencil;
+    @extend %uppercase;
+    color: $yellow;
+    text-align: left;
+    mix-blend-mode: multiply;
+    margin: 0 0 0 1em;
+  }
+  ul {
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 58px;
+    width: 100%;
+    text-align: left;
+    @extend %gothic;
+    @extend %uppercase;
+    color: $gray-dark;
+    letter-spacing: 1px;
+    mix-blend-mode: multiply;
+    li {
+      list-style-type: none;
+      display: inline;
+      &:nth-of-type(even) {
+        color: $yellow;
+      }
+    }
+  }
+  figure {
+    position: absolute;
+    bottom: 0;
+    width: 960px;
+    height: 518px;
+    z-index: 1;
+  }
+  footer {
+    position: absolute;
+    text-align: right;
+    right: 1em;
+    bottom: 0.5em;
+    z-index: 3;
+  }
+}
