@@ -1,0 +1,60 @@
+#breakpoint {
+  background: {
+    image: image-url('breaking-point.jpg');
+    size: contain;
+    position: 100% 100%;
+    repeat: no-repeat;
+    blend-mode: multiply;
+  }
+  padding: 0;
+  h1 {
+    @extend %h3;
+    @extend %uppercase;
+    text-align: left;
+    padding-top: 95px;
+    padding-left: 30px;
+    margin-bottom: 0;
+    background-color: $red;
+    background-blend-mode: multiply;
+    color: $white;
+  }
+  .hubbard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    // outline: 1px solid red;
+    width: 550px;
+    border-left: 3em solid $lavender;
+    background-color: $blue;
+    img {
+      mix-blend-mode: multiply;
+    }
+  }
+  h2 {
+    @extend %h1;
+    @extend %gothic;
+    position: relative;
+    top: 0.7em;
+    left: 30px;
+    &:after {
+      content: "!";
+    }
+  }
+  ul {
+    margin: 0;
+    position: absolute;
+    bottom: 1.5em;
+    left: 30px;
+    text-align: left;
+    @extend %uppercase;
+    color: $red;
+    // mix-blend-mode: multiply;
+    li {
+      list-style-type: none;
+      background-color: rgba($white, 0.8);
+      display: inline-block;
+      margin-bottom: 0.2em;
+      padding: 0 0.5em;
+    }
+  }
+}
