@@ -1,0 +1,34 @@
+#pattern-lab {
+  h1 {
+    @extend %gothic;
+    @extend %uppercase;
+    text-align: right;
+    @extend %h2;
+    margin-top: -20px;
+    padding-top: 29px;
+    margin-bottom: 0.25em;
+    // border-bottom: 8px solid $red;
+    background: {
+      color: $orange-vivid;
+    }
+    color: $white;
+    overflow: hidden;
+    .word5, .word6 {
+      color: $red;
+      top: 100px;
+      position: relative;
+    }
+  }
+  &.present {
+    h1 {
+      .word5, .word6 {
+        @include experimental(animation, brings-us-to-style-guides 0.33s ease-in .33s 1 forwards);
+      }
+    }
+  }
+  .illustration {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

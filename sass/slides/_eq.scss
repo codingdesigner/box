@@ -95,4 +95,21 @@ $sg-7g: .25;
       // padding: 0 0.5em;
     }
   }
+  .codes {
+    position: relative;
+    top: 1em;
+  }
+  pre {
+    box-shadow: none;
+    margin: 0;
+  }
+  code {
+    color: $white;
+    display: block;
+    background: {
+      color: rgba($gray-dark, 0.8);
+    }
+    position: relative;
+    top: 2em;
+  }
 }

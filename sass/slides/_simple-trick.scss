@@ -1,0 +1,42 @@
+#simple-trick {
+  background: {
+    image: image-url('coltrane-ascension.png');
+    position: 0 100%;
+    repeat: no-repeat;
+    blend-mode: multiply;
+    size: initial;
+  }
+  h1 {
+    @extend %h3;
+    @extend %gothic;
+    // @extend %uppercase;
+    line-height: 1.2;
+    text-align: right;
+    width: 5em;
+    float: right;
+    margin-right: 30px;
+    mix-blend-mode: multiply;
+    margin-bottom: 0.5em;
+    [class^="char"] {
+      &:nth-of-type(6n+1) { color: $orange; }
+      &:nth-of-type(6n+2) { color: $lavender; }
+      &:nth-of-type(6n+3) { color: $green; }
+      &:nth-of-type(6n+4) { color: $blue; }
+      &:nth-of-type(6n+5) { color: $orange-vivid; }
+      &:nth-of-type(6n+6) { color: $red; }
+    }
+  }
+  p {
+    // font-size: ms(-1);
+    float: right;
+    text-align: right;
+    clear: right;
+    margin-right: 30px;
+    max-width: 500px;
+  }
+  footer {
+    a:link {
+      color: $gray-dark;
+    }
+  }
+}

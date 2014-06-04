@@ -1,0 +1,24 @@
+#jazzbos-are-cool {
+  background: {
+    image: image-url("reid-miles-covers.jpg");
+  }
+  h1 {
+    @extend %slab-condensed;
+    @extend %uppercase;
+    color: $red;
+    position: absolute;
+    top: 50%;
+    // @include transform( translateY(-30%));
+    z-index: 2;
+    text-shadow: rgba($black, 0.5) 0 0 0.25em;
+  }
+  .workin {
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform( translateY(-50%) translateX(-50%) );
+    box-shadow: rgba($black, 0.5) 0 0 1em 0.5em;
+  }
+}

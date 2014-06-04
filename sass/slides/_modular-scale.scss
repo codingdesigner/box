@@ -84,8 +84,8 @@
     text-align: left;
     @extend %gothic;
     @extend %uppercase;
-    color: $gray-dark;
     letter-spacing: 1px;
+    color: $gray-dark;
     mix-blend-mode: multiply;
     li {
       list-style-type: none;
@@ -94,7 +94,7 @@
         //
       }
       &:nth-of-type(even) {
-        color: $yellow;
+        color: $orange;
       }
     }
   }
@@ -121,5 +121,13 @@
     width: 342px;
     height: 360px;
     z-index: 1;
+    figcaption {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding-bottom: 8px;
+      font-size: ms(-1);
+      background-color: $gray-light;
+    }
   }
 }

@@ -80,4 +80,22 @@ $sg-4g: .25;
       list-style-type: none;
     }
   }
+  code {
+    color: $white;
+    display: block;
+    background: {
+      color: rgba($gray-dark, 0.8);
+    }
+    position: relative;
+    top: 2em;
+    opacity: 0;
+    pre {
+      box-shadow: none;
+    }
+  }
+  .current-fragment {
+    code {
+      @include experimental(animation, fade-in 0.33s ease-in 2s 1 forwards);
+    }
+  }
 }

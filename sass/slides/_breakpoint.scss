@@ -1,3 +1,6 @@
+$sg-code-2: 2;
+$sg-code-2g: .025;
+
 #breakpoint {
   background: {
     image: image-url('breaking-point.jpg');
@@ -55,6 +58,33 @@
       display: inline-block;
       margin-bottom: 0.2em;
       padding: 0 0.5em;
+    }
+  }
+  .codes {
+    color: $white;
+    display: block;
+    // position: relative;
+    // top: 2em;
+    pre {
+      box-shadow: none;
+    }
+    &.visible {
+      + ul {
+        display: none;
+      }
+    }
+    code {
+      background: {
+        color: rgba($gray-dark, 0.8);
+      }
+      @include layout($sg-code-2, $sg-code-2g) {
+        &.sass {
+          @include grid-span(1, 1);
+        }
+        &.compiled {
+          @include grid-span(1, 2);
+        }
+      }
     }
   }
 }

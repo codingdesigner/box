@@ -1,0 +1,32 @@
+#thanks {
+  h1 {
+    @extend %script;
+    @extend %lowercase;
+    position: relative;
+    top: 10%;
+    left: 0.1em;
+  }
+  ul {
+    margin-left: 0;
+    margin-bottom: 20px;
+    li {
+      @extend %uppercase;
+      list-style-type: none;
+      padding: 3px;
+      margin-bottom: 0.1em;
+      background-color: $white;
+      &:nth-of-type(6n+1) { background-color: $orange; }
+      &:nth-of-type(6n+2) { background-color: $lavender; }
+      &:nth-of-type(6n+3) { background-color: $green; }
+      &:nth-of-type(6n+4) { background-color: $blue; }
+      &:nth-of-type(6n+5) { background-color: $orange-vivid; }
+      &:nth-of-type(6n+6) { background-color: $red; }
+    }
+    a:link {
+      color: $white;
+    }
+  }
+  .name {
+    @extend %script;
+  }
+}

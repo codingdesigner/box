@@ -35,4 +35,6 @@ $(document).ready(function() {
   $("#color-schemer h1").lettering('words').children('span').lettering();
 
   $("#teams p").lettering();
+
+  $("#simple-trick h1").lettering();
 });
