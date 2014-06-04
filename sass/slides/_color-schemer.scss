@@ -14,9 +14,14 @@
     left: 0;
     mix-blend-mode: multiply;
   }
-  #wheel {
+  #spinner {
     @include transform-origin(center);
     @include experimental(animation, rotate 100s linear 0s infinite none);
+    .fragment {
+      mix-blend-mode: screen;
+    }
+  }
+  #wheel {
     mix-blend-mode: color;
   }
 
@@ -40,6 +45,23 @@
     top: 3.5em;
     padding-right: 12px;
     color: $orange-vivid;
+  }
+
+  ul {
+    margin: 0;
+    position: absolute;
+    bottom: 10.5em;
+    right: 30px;
+    width: 16em;
+    text-align: right;
+    @extend %uppercase;
+    color: $blue;
+    li {
+      list-style-type: none;
+      &:nth-of-type(2) {
+        color: $orange-vivid;
+      }
+    }
   }
 
 }

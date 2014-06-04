@@ -3345,7 +3345,7 @@ body {
   left: 0;
   mix-blend-mode: multiply;
 }
-#color-schemer #wheel {
+#color-schemer #spinner {
   -moz-transform-origin: center 50%;
   -ms-transform-origin: center 50%;
   -webkit-transform-origin: center 50%;
@@ -3355,6 +3355,11 @@ body {
   -ms-animation: rotate 100s linear 0s infinite none;
   -o-animation: rotate 100s linear 0s infinite none;
   animation: rotate 100s linear 0s infinite none;
+}
+#color-schemer #spinner .fragment {
+  mix-blend-mode: screen;
+}
+#color-schemer #wheel {
   mix-blend-mode: color;
 }
 #color-schemer h1, #color-schemer h2 {
@@ -3373,6 +3378,21 @@ body {
 #color-schemer h2 {
   top: 3.5em;
   padding-right: 12px;
+  color: #fd7738;
+}
+#color-schemer ul {
+  margin: 0;
+  position: absolute;
+  bottom: 10.5em;
+  right: 30px;
+  width: 16em;
+  text-align: right;
+  color: #73b3da;
+}
+#color-schemer ul li {
+  list-style-type: none;
+}
+#color-schemer ul li:nth-of-type(2) {
   color: #fd7738;
 }
 
@@ -3418,7 +3438,7 @@ code {
   text-transform: lowercase;
 }
 
-#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul {
+#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul {
   text-transform: uppercase;
 }
 
