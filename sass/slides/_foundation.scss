@@ -1,0 +1,15 @@
+.foundation {
+  footer {
+    position: absolute;
+    text-align: right;
+    right: 1em;
+    bottom: 0.5em;
+    z-index: 3;
+    font-size: ms(-1);
+    width: 100%;
+    a:link {
+      color: $white;
+      display: inline;
+    }
+  }
+}

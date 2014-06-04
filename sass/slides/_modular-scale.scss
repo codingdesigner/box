@@ -1,0 +1,125 @@
+#modular-scale {
+  h1 {
+    font-size: ms(0);
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    @include transform(translateX(-50%));
+    width: 430px;
+    height: 5em;
+    @extend %uppercase;
+    mix-blend-mode: multiply;
+    [class^="word"] {
+      position: absolute;
+      top: -4px;
+      left: 0;
+    }
+    .word1{
+      font-size: ms(1);
+      color: $orange-vivid;
+    }
+    .word2{
+      display: block;
+      @include rotate(-90deg);
+      top: 45px;
+      left: 19px;
+      color: $orange;
+    }
+    .word3{
+      font-size: ms(3);
+      left: 41px;
+      top: 30px;
+      color: $red;
+      span {
+        position: relative;
+        &:nth-of-type(3) {
+          top: 11px;
+        }
+        &:nth-of-type(3) {
+          top: -38px;
+        }
+        &:nth-of-type(4) {
+          top: -5px;
+        }
+        &:nth-of-type(5) {
+          top: -38px;
+        }
+      }
+    }
+    .word4{
+      font-size: ms(1);
+      display: block;
+      left: 236px;
+      top: 28px;
+      @include rotate(90deg);
+      color: $orange-vivid;
+    }
+    .word5{
+      font-size: ms(2);
+      left: 298px;
+      top: 18px;
+      color: $orange;
+    }
+  }
+  h2 {
+    @extend %h3;
+    @extend %uppercase;
+    position: absolute;
+    text-align: left;
+    bottom: 258px;
+    left: 30px;
+    color: $orange-vivid;
+    mix-blend-mode: multiply;
+    &:after {
+      content: " / ";
+    }
+  }
+  ul {
+    margin: 0;
+    position: absolute;
+    top: 8.2em;
+    left: 11.3em;
+    text-align: left;
+    @extend %gothic;
+    @extend %uppercase;
+    color: $gray-dark;
+    letter-spacing: 1px;
+    mix-blend-mode: multiply;
+    li {
+      list-style-type: none;
+      display: inline;
+      &.limitations:not(.visible) {
+        //
+      }
+      &:nth-of-type(even) {
+        color: $yellow;
+      }
+    }
+  }
+  .examples {
+    $bg-color: mix($red, $gray-dark, 25%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10em;
+    background: {
+      color: $bg-color;
+      image: image-url('mccoy.jpg');
+      blend-mode: screen;
+      position: 100% 0;
+      size: contain;
+      repeat: no-repeat;
+    }
+  }
+  figure {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    width: 342px;
+    height: 360px;
+    z-index: 1;
+  }
+}
