@@ -31,4 +31,6 @@ $(document).ready(function() {
   $("#find-typeface h1").lettering('words');
 
   $("#modular-scale h1").lettering('words').children('span').lettering();
+
+  $("#color-schemer h1").lettering('words').children('span').lettering();
 });
