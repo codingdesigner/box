@@ -2121,6 +2121,10 @@ body {
 #main-title p .word1 {
   letter-spacing: 4px;
 }
+#main-title kbd {
+  font-weight: bold;
+  color: #d6504f;
+}
 
 #contact {
   position: relative;
