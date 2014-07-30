@@ -29,4 +29,19 @@
   .name {
     @extend %script;
   }
+  footer {
+    .me {
+      float: left;
+      max-width: 50%;
+      width: 100%;
+    }
+    .p2 {
+      float: right;
+      max-width: 50%;
+      width: 100%;
+      img {
+        max-width: 7em;
+      }
+    }
+  }
 }

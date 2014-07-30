@@ -2286,6 +2286,10 @@ body {
   top: 50%;
   z-index: 2;
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 0.25em;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -1px;
 }
 #jazzbos-are-cool .workin {
   position: relative;
@@ -2324,6 +2328,7 @@ body {
   transition-duration: 0.8s;
   position: relative;
   top: 0;
+  padding-bottom: 1em;
 }
 #design-in-browser .fragment {
   position: absolute;
@@ -4037,6 +4042,19 @@ body {
 }
 #thanks ul a:link {
   color: #fefefe;
+}
+#thanks footer .me {
+  float: left;
+  max-width: 50%;
+  width: 100%;
+}
+#thanks footer .p2 {
+  float: right;
+  max-width: 50%;
+  width: 100%;
+}
+#thanks footer .p2 img {
+  max-width: 7em;
 }
 
 #music-nerd h1, .my-bands h1 {
