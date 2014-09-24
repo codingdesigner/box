@@ -2722,7 +2722,7 @@ body {
 
 #as-design-tool {
   background-color: black;
-  background-image: url('../images/brad-frost-bw.jpg');
+  background-image: url('../images/miles-birth-of-cool.jpg');
   background-blend-mode: luminosity;
   color: #d9dbda;
 }
@@ -2779,6 +2779,7 @@ body {
   background-color: #f5c45e;
   background-image: url('../images/into-something.jpg');
   padding-top: 0;
+  position: relative;
 }
 #component-driven h1 {
   background-color: #efebe0;
@@ -2795,6 +2796,19 @@ body {
   display: block;
   position: relative;
   left: 37px;
+}
+#component-driven ul {
+  position: relative;
+  margin-left: 0;
+  list-style: none;
+  color: #fefefe;
+  left: -2.1em;
+  top: 2em;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+#component-driven ul li {
+  padding-left: 0;
 }
 
 #component-style-guide ul, #looks-like-jazz .train {
@@ -4075,7 +4089,7 @@ body {
   font-family: "jubilat", derifs;
 }
 
-#style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #singularity h1, #breakpoint h2, #simple-trick h1 {
+#style-guides h1, #component-driven ul, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #singularity h1, #breakpoint h2, #simple-trick h1 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
@@ -4103,7 +4117,7 @@ code {
   text-transform: lowercase;
 }
 
-#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #jazzbos-are-cool h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul, #performance h1, #teams p, #pattern-lab h1, #singularity ul, #breakpoint h1, #breakpoint ul, #eq ul, #thanks ul li {
+#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #jazzbos-are-cool h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #component-driven ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul, #performance h1, #teams p, #pattern-lab h1, #singularity ul, #breakpoint h1, #breakpoint ul, #eq ul, #thanks ul li {
   text-transform: uppercase;
 }
 

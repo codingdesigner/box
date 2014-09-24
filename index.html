@@ -63,15 +63,16 @@
             <h2>Mason Wendell</h2>
           </hgroup>
 					<ul>
-           <li><strong>Senior Designer/Developer, Phase2</strong></li>
+           <li><strong>Senior Designer, Phase2</strong></li>
 							<li>
 								<strong>codingdesigner</strong> on the internet:
 								<a href="http://twitter.com/codingdesigner">Twitter</a>
 								<a href="http://github.com/codingdesigner">GitHub</a>
 							</li>
-							<li>
-								<a href="http://thecodingdesigner.com">TheCodingDesigner.com</a>
-							</li>
+							<!--<li>-->
+								<!--<a href="http://thecodingdesigner.com">TheCodingDesigner.com</a>-->
+							<!--</li>-->
+              <li>Creator of <a href="http://breakpoint-sass.com/">Breakpoint Sass</a></li>
 							<li>
 								Co-Organizer of
 								<a href="github.com/team-sass">Team Sass</a>
@@ -87,10 +88,12 @@
           </figure>
 				</section>
 
-				<!-- Slide #xx -->
+				<!-- Slide THIS PRESENTATION #xx -->
 				<section id="link-to-presentation" data-state="rekkid">
 					<h1>This Presentation</h1>
 					<p><a href="http://codingdesigner.github.io/box">codingdesigner.github.io/box</a></p>
+          <p class="fragment">Reid Miles &amp; Blue Note</p>
+          <p class="fragment">SVG, CSS Blend Modes</p>
           <p class="fragment">Bugs? Let me know <a href="https://github.com/codingdesigner/box/issues">on github</a>.</p>
 				</section>
 
@@ -225,8 +228,7 @@
               </li>
         		</ul>
             <figure class="illustration">
-              <img src="images/brad-frost-bw.jpg" alt="Brad Frost - Photo by Jeffery Zeldman">
-              <figcaption><a href="https://www.flickr.com/photos/zeldman/9606474245/in/photolist-fCTG7i-fDbf9C-fDbeZs-61eegF-eCCsQN-61ktkj-exF1ax-deANPZ-dAfHDA-4tmXfF-gwEqjv-61inF5-4tmXaR-61iaB5-4ifUEB-dbVpqd-eyrkn8-dAagn4-eyqs9Z-dAe3hp-eyrkyM-fPbqxL-eyrm3r-fK1Hvk-eyuuq7-e1QMYr-dAe3BB-eCCtk5-eCzhSB-eCzfag-eCzha8-eCzisP-eCzho8-k11y6r-fLUEvZ-k11wuk-k11uCp-k12nPR-ehSA2F-k14cw3-k122Wz-k13SuL-k11svZ-k12w96-k11Dxt-k148sw-fHJ9Hx-k13M3y-k13UBb-k11hSR">Brad Frost - Photo by Jeffery Zeldman</a></figcaption>
+              <img src="images/miles-birth-of-cool.jpg" alt="Miles Davis">
             </figure>
             <aside class="notes">
               <p>I'm suggesting that we flip this process and start with the style guide and treat it like a **design tool**. I'm certainly not the first. Brad Frost has written about this extensively. You may have seen him write about the concept of <span class="bullet-point">**atomic design**</span>. He proposes starting with the smallest things you can design, calling them atoms, and working your way up through bigger and bigger constructs until you've designed full templates and pages. At Phase2 we've been using <span class="bullet-point">**Pattern Lab**</span>, his styleguide creation tool on many of our projects. We'll be looking at that later.</p>
@@ -237,12 +239,17 @@
         </section>
 
         <section>
-        	<!-- Slide #xx -->
+        	<!-- Slide component-driven #xx -->
         	<section id="component-driven" data-state="rekkid">
         		<h1>
               <span class="talking-about">We’re Talkin’ About </span>
               <span class="component-driven-design">Component-Driven Design</span>
             </h1>
+            <ul>
+              <li class="fragment">self-contained chunk of design</li>
+              <li class="fragment">extension of well-formed content</li>
+              <li class="fragment">assembled into other components and combined into layouts</li>
+            </ul>
             <aside class="notes">
               A bit more of a direct way to look at this is to see that each piece, whether it's an atom, a molecule, a menu, an image gallery, an author byline, or whatever is a Component. A design component is a **self-contained chunk of design and is an extension of well-formed content**. And components can be assembled into other components and combined into layouts. So instead of designing a page the goal is to design an interlocking family of components that become our design language.
             </aside>

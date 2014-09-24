@@ -4,6 +4,7 @@
     image: image-url("into-something.jpg");
   }
   padding-top: 0;
+  position: relative;
   h1 {
     background-color: $antique;
     @extend %h2;
@@ -21,6 +22,21 @@
       display: block;
       position: relative;
       left: 37px;
+    }
+  }
+  ul {
+    position: relative;
+    margin-left: 0;
+    list-style: none;
+    color: $white;
+    left: -2.1em;
+    top: 2em;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    @extend %gothic;
+    @extend %uppercase;
+    li {
+      padding-left: 0;
     }
   }
 }
