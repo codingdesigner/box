@@ -2825,9 +2825,6 @@ body {
 #component-style-guide li, #looks-like-jazz .illustration {
   list-style-type: none;
   display: block;
-  width: 100%;
-  height: 100%;
-  background: #fefefe;
 }
 
 .giant-steps h1 {
@@ -2836,11 +2833,19 @@ body {
   letter-spacing: -2px;
 }
 
-#component-style-guide li {
-  position: relative;
+#component-style-guide .initial-screen {
+  position: absolute;
+  top: 146px;
+  left: 27px;
+  width: 905px;
+  height: 526px;
 }
-#component-style-guide li:not(.current-fragment) {
-  display: none;
+#component-style-guide .initial-screen image {
+  width: 100%;
+  height: 100%;
+}
+#component-style-guide li {
+  position: absolute;
 }
 #component-style-guide li h3 {
   position: absolute;
