@@ -2811,18 +2811,18 @@ body {
   padding-left: 0;
 }
 
-#component-style-guide ul, #looks-like-jazz .train {
+.giant-steps figure, #looks-like-jazz .train {
   position: absolute;
   width: 100%;
   height: 83%;
   border: 0.75em solid #d6504f;
-  padding: 2em;
+  padding: 0;
   left: 0;
   bottom: 0;
   margin: 0;
 }
 
-#component-style-guide li, #looks-like-jazz .illustration {
+.giant-steps li, #looks-like-jazz .illustration {
   list-style-type: none;
   display: block;
 }
@@ -2831,27 +2831,23 @@ body {
   text-transform: uppercase;
   color: #d6504f;
   letter-spacing: -2px;
+  text-align: left;
+  margin-left: 1.5rem;
 }
 
-#component-style-guide .initial-screen {
+.giant-steps li {
   position: absolute;
-  top: 146px;
-  left: 27px;
-  width: 905px;
-  height: 526px;
+  top: 0;
+  left: 0;
 }
-#component-style-guide .initial-screen image {
-  width: 100%;
-  height: 100%;
-}
-#component-style-guide li {
+.giant-steps li h3 {
   position: absolute;
-}
-#component-style-guide li h3 {
-  position: absolute;
-  top: -1em;
   color: #d6504f;
   width: 100%;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  font-size: 152.49845px;
 }
 
 #hard-bop {
@@ -2882,16 +2878,40 @@ body {
   list-style-type: none;
 }
 #hard-bop .melody {
-  color: #73b3da;
+  color: #6198b9;
+}
+#hard-bop .melody-stroke {
+  stroke: #6198b9;
+}
+#hard-bop .melody-fill {
+  fill: #6198b9;
 }
 #hard-bop .key {
-  color: #f5c45e;
+  color: #c49c4b;
+}
+#hard-bop .key-stroke {
+  stroke: #c49c4b;
+}
+#hard-bop .key-fill {
+  fill: #c49c4b;
 }
 #hard-bop .chords {
-  color: #d3d742;
+  color: #a8ac34;
+}
+#hard-bop .chords-stroke {
+  stroke: #a8ac34;
+}
+#hard-bop .chords-fill {
+  fill: #a8ac34;
 }
 #hard-bop .form {
   color: #d6504f;
+}
+#hard-bop .form-stroke {
+  stroke: #d6504f;
+}
+#hard-bop .form-fill {
+  fill: #d6504f;
 }
 
 #organizing-aesthetics {
@@ -3210,8 +3230,13 @@ body {
 #find-typeface h2 {
   color: #f5ea3a;
   text-align: left;
-  mix-blend-mode: multiply;
   margin: 0 0 0 1em;
+  background-color: #25221d;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  display: inline-block;
+  position: absolute;
+  left: 0;
 }
 #find-typeface ul {
   margin: 0;
@@ -3230,13 +3255,38 @@ body {
 }
 #find-typeface ul li:nth-of-type(even) {
   color: #f5ea3a;
+  background-color: #25221d;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
 }
-#find-typeface figure {
+#find-typeface figure, #find-typeface .code {
   position: absolute;
   bottom: 0;
   width: 960px;
   height: 518px;
   z-index: 1;
+}
+#find-typeface .code {
+  background-color: #efebe0;
+  text-align: left;
+  padding-left: 1rem;
+}
+#find-typeface .code:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  border-width: 300px 0 0 300px;
+  border-style: solid;
+  border-color: #efebe0 transparent transparent transparent;
+}
+#find-typeface .code h3 {
+  margin-bottom: 0;
+}
+#find-typeface .code pre {
+  margin-left: 0;
 }
 
 #modular-scale h1 {
@@ -4086,35 +4136,35 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 
-#bad-style-guides h1, #aesthetic-foundation h1 {
+#bad-style-guides h1, #aesthetic-foundation h1, .sans {
   font-family: "franklin-gothic-urw-cond", sans-serif;
 }
 
-#teams h1 {
+#teams h1, .serif {
   font-family: "jubilat", derifs;
 }
 
-#style-guides h1, #component-driven ul, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #singularity h1, #breakpoint h2, #simple-trick h1 {
+#style-guides h1, #component-driven ul, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #singularity h1, #breakpoint h2, #simple-trick h1, .gothic {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
-#contact h1, #component-second h1, #eq h1, #eq h2 {
+#contact h1, #component-second h1, #eq h1, #eq h2, .slab {
   font-family: "jubilat", derifs;
 }
 
-#jazzbos-are-cool h1, #what-are-we-designing h1 .word4, #component-driven h1, .giant-steps h1, #component-style-guide li h3, .compare-design-music h1, .music-table thead {
+#jazzbos-are-cool h1, #what-are-we-designing h1 .word4, #component-driven h1, .giant-steps h1, .giant-steps li h3, .compare-design-music h1, .music-table thead, .slab-condensed {
   font-family: "mitigate", derifs;
 }
 
-#main-title h1, #music-nerd h1, #design-in-browser .css, #component-second ul, #performance .its-time, #thanks h1, #thanks .name {
+#main-title h1, #music-nerd h1, #design-in-browser .css, #component-second ul, #performance .its-time, #thanks h1, #thanks .name, .script {
   font-family: "lust-script-display", script;
 }
 
-#find-typeface h1, #find-typeface h2 {
+#find-typeface h1, #find-typeface h2, .stencil {
   font-family: "motor-stencil", sans-serif;
 }
 
-code {
+code, #find-typeface .code {
   font-family: "Source Code Pro", monospace;
 }
 

@@ -29,17 +29,46 @@
       list-style-type: none;
     }
   }
+
+  $blue--hardbop: shade($blue, 15%);
+  $orange--hardbop: shade($orange, 20%);
+  $green--hardbop: shade($green, 20%);
+  $red--hardbop: $red;
   .melody {
-    color: $blue;
+    color: $blue--hardbop;
+  }
+  .melody-stroke {
+    stroke: $blue--hardbop;
+  }
+  .melody-fill {
+    fill: $blue--hardbop;
   }
   .key {
-    color: $orange;
+    color: $orange--hardbop;
+  }
+  .key-stroke {
+    stroke: $orange--hardbop;
+  }
+  .key-fill {
+    fill: $orange--hardbop;
   }
   .chords {
-    color: $green;
+    color: $green--hardbop;
+  }
+  .chords-stroke {
+    stroke: $green--hardbop;
+  }
+  .chords-fill {
+    fill: $green--hardbop;
   }
   .form {
-    color: $red;
+    color: $red--hardbop;
+  }
+  .form-stroke {
+    stroke: $red--hardbop;
+  }
+  .form-fill {
+    fill: $red--hardbop;
   }
 
 }

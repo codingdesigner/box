@@ -3,7 +3,7 @@
   width: 100%;
   height: 83%;
   border: 0.75em solid $red;
-  padding: 2em;
+  padding: 0;
   left: 0;
   bottom: 0;
   margin: 0;
@@ -23,27 +23,31 @@
     @extend %h2;
     color: $red;
     letter-spacing: -2px;
+    text-align: left;
+    margin-left: 1.5rem;
   }
 }
 
-#component-style-guide {
-  .initial-screen {
-    position: absolute;
-    top: 146px;
-    left: 27px;
-    width: 905px;
-    height: 526px;
-    image {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  ul {
+.giant-steps {
+//  .initial-screen {
+//    position: absolute;
+//    top: 146px;
+//    left: 27px;
+//    width: 905px;
+//    height: 526px;
+//    image {
+//      width: 100%;
+//      height: 100%;
+//    }
+//  }
+  figure {
     @extend %giant-steps-image-parent;
   }
   li {
     @extend %giant-steps-image-child;
     position: absolute;
+    top: 0;
+    left: 0;
 //    position: relative;
 //    &:not(.current-fragment) {
 //      display: none;
@@ -54,10 +58,14 @@
 //    }
     h3 {
       position: absolute;
-      top: -1em;
+//      top: -1em;
       @extend %slab-condensed;
       color: $red;
       width: 100%;
+      right: 0;
+      bottom: 0;
+      text-align: right;
+      font-size: ms(3);
     }
   }
 }

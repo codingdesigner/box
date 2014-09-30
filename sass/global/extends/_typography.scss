@@ -1,29 +1,50 @@
 %sans {
   font-family: $font-sans;
 }
+.sans {
+  @extend %sans;
+}
 
 %serif {
   font-family: $font-serifs;
+}
+.serif {
+  @extend %serif;
 }
 
 %gothic {
   font-family: $font-gothic;
 }
+.gothic {
+  @extend %gothic;
+}
 
 %slab {
   font-family: $font-slab;
+}
+.slab {
+  @extend %slab;
 }
 
 %slab-condensed {
   font-family: $font-slab-condensed;
 }
+.slab-condensed {
+  @extend %slab-condensed;
+}
 
 %script {
   font-family: $font-script;
 }
+.script {
+  @extend %script;
+}
 
 %stencil {
   font-family: $font-stencil;
+}
+.stencil {
+  @extend %stencil;
 }
 
 %mono {
