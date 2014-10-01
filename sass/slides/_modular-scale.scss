@@ -153,15 +153,29 @@ $modular-scale-bg-color: mix($red, $gray-dark, 25%);
     &.full {
       width: 100%;
     }
+    &.giant {
+      top: -340px;
+      right: 0;
+      background: white;
+      height: 700px;
+    }
     &[class^="discontent"] {
+//      background-color: $modular-scale-bg-color;
+      img {
+        max-width: 492px;
+      }
       figcaption {
-        background-color: transparent;
-        left: 470px;
-        width: 488px;
+//        background-color: transparent;
+        background-color: rgba($modular-scale-bg-color, 0.8);
+        left: 400px;
+        width: 560px;
         top: 0;
       }
       h2 {
-        @extend %slab;
+//        @extend %slab;
+        &:after {
+          content: none;
+        }
       }
       ul {
         @extend %slab;
@@ -170,16 +184,14 @@ $modular-scale-bg-color: mix($red, $gray-dark, 25%);
     }
     &.discontent {
       h2 {
-        color: white;
-        mix-blend-mode: initial;
-        left: 2rem;
-        &:after {
-          content: none;
-        }
+//        color: white;
+//        mix-blend-mode: initial;
+//        left: 2rem;
+
       }
       ul {
-        top: 2em;
-        left: 2rem;
+        top: 4em;
+        left: 1.25rem;
         color: $white;
         mix-blend-mode: initial;
         li {
@@ -215,15 +227,21 @@ $modular-scale-bg-color: mix($red, $gray-dark, 25%);
           &:nth-of-type(4) {
             &:before {
               width: 10em;
-              @include rotate(-19deg);
+              @include rotate(-13deg);
             }
           }
           &:nth-of-type(5) {
             &:before {
-              width: 4em;
-              @include rotate(-64deg);
+              width: 2em;
+              @include rotate(-32deg);
             }
           }
+        }
+      }
+      &.giant {
+        h2 {
+          color: $red;
+          @include rotate(90deg);
         }
       }
     }

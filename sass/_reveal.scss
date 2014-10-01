@@ -210,6 +210,19 @@ body {
 }
 
 
+.reveal {
+  .slides {
+    section {
+      .fragment {
+        &.direct {
+          @include transition(none);
+        }
+      }
+    }
+  }
+}
+
+
 /*********************************************
  * DEFAULT ELEMENT STYLES
  *********************************************/
