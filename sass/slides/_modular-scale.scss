@@ -1,3 +1,14 @@
+@include animate(scale-type) {
+  from {
+    @include transform(scale(0.1));
+  }
+  to   {
+    @include transform(scale(1));
+  }
+}
+
+$modular-scale-bg-color: mix($red, $gray-dark, 25%);
+
 #modular-scale {
   h1 {
     font-size: ms(0);
@@ -63,6 +74,25 @@
       color: $orange;
     }
   }
+  &.present {
+    [class^="char"] {
+      display: inline-block;
+      @include transform(scale(0.1));
+      @include animation-name(scale-type);
+      @include animation-timing-function(ease-in);
+      @include animation-iteration-count(1);
+      @include animation-fill-mode(both);
+      @for $i from 1 through 7 {
+        &:nth-of-type(#{$i}) {
+          $duration: #{random() * $i}s;
+          $delay: 0.33s * $i;
+          @include animation-duration($duration);
+          @include animation-delay($delay);
+          //            @include animation(scale-type 0.66s ease-in $delay 1  forwards);
+        }
+      }
+    }
+  }
   h2 {
     @extend %h3;
     @extend %uppercase;
@@ -99,14 +129,13 @@
     }
   }
   .examples {
-    $bg-color: mix($red, $gray-dark, 25%);
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 10em;
     background: {
-      color: $bg-color;
+      color: $modular-scale-bg-color;
       image: image-url('mccoy.jpg');
       blend-mode: screen;
       position: 100% 0;
@@ -121,6 +150,121 @@
     width: 342px;
     height: 360px;
     z-index: 1;
+    &.full {
+      width: 100%;
+    }
+    &[class^="discontent"] {
+      figcaption {
+        background-color: transparent;
+        left: 470px;
+        width: 488px;
+        top: 0;
+      }
+      h2 {
+        @extend %slab;
+      }
+      ul {
+        @extend %slab;
+        text-transform: none;
+      }
+    }
+    &.discontent {
+      h2 {
+        color: white;
+        mix-blend-mode: initial;
+        left: 2rem;
+        &:after {
+          content: none;
+        }
+      }
+      ul {
+        top: 2em;
+        left: 2rem;
+        color: $white;
+        mix-blend-mode: initial;
+        li {
+          display: block;
+          position: relative;
+          &:before {
+            position: absolute;
+            content: "";
+            width: 1em;
+            height: 0;
+            top: 45%;
+            right: 100%;
+            margin-right: 0.5rem;
+            border-top: 3px solid $white;
+            border-bottom: 3px solid $modular-scale-bg-color;
+            @include transform-origin(100%, 50%);
+          }
+          &:nth-of-type(1) {
+            &:before {
+              width: 1.5em;
+            }
+          }
+          &:nth-of-type(2) {
+            &:before {
+              @include rotate(9deg);
+            }
+          }
+          &:nth-of-type(3) {
+            &:before {
+              @include rotate(-9deg);
+            }
+          }
+          &:nth-of-type(4) {
+            &:before {
+              width: 10em;
+              @include rotate(-19deg);
+            }
+          }
+          &:nth-of-type(5) {
+            &:before {
+              width: 4em;
+              @include rotate(-64deg);
+            }
+          }
+        }
+      }
+    }
+    &.discontent-blocks {
+      ul {
+        color: $white;
+        mix-blend-mode: initial;
+        left: 50%;
+        top: 50%;
+        min-width: 300px;
+        @include transform(translateX(-50%) translateY(-50%));
+        li {
+          &.block {
+            @include hide-text();
+            display: inline-block;
+            background-color: $modular-scale-bg-color;
+            background-color: $white;
+          }
+          &.px87 {
+            width: 5.4375em;
+            height: 5.4375em;
+          }
+          &.px11 {
+            width: 0.6875em;
+            height: 0.6875em;
+          }
+          &.px16 {
+            width: 1em;
+            height: 1em;
+          }
+          &.px24 {
+            width: 1.5em;
+            height: 1.5em;
+          }
+          &.px36 {
+            width: 2.25em;
+            height: 2.25em;
+          }
+        }
+      }
+    }
     figcaption {
       position: absolute;
       width: 100%;

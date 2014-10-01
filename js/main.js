@@ -74,6 +74,7 @@ $(document).ready(function() {
   Reveal.addEventListener( 'slidechanged', function( event ) {
     // event.previousSlide, event.currentSlide, event.indexh, event.indexv
     var $currentSlide_ID = $(event.currentSlide).attr("id");
+    //console.log($currentSlide_ID);
     if ($currentSlide_ID === "find-typeface") {
       start_rotate_fonts($("#find-typeface h1 span"));
     } else {
@@ -84,7 +85,7 @@ $(document).ready(function() {
   Reveal.addEventListener( 'fragmentshown', function( event ) {
     // event.fragment = the fragment DOM element
     var $current_fragment_text = $(event.fragment).text();
-    console.log($current_fragment_text);
+    //console.log($current_fragment_text);
     if ($current_fragment_text === "Typecast") {
       stop_rotate_fonts($("#find-typeface h1 span"));
     }

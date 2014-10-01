@@ -3289,6 +3289,36 @@ body {
   margin-left: 0;
 }
 
+@-webkit-keyframes scale-type {
+  from {
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+
+  to {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes scale-type {
+  from {
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+
+  to {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 #modular-scale h1 {
   font-size: 36px;
   line-height: 1;
@@ -3361,6 +3391,81 @@ body {
   top: 18px;
   color: #f5c45e;
 }
+#modular-scale.present [class^="char"] {
+  display: inline-block;
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -moz-animation-name: scale-type;
+  -webkit-animation-name: scale-type;
+  animation-name: scale-type;
+  -moz-animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#modular-scale.present [class^="char"]:nth-of-type(1) {
+  -moz-animation-duration: 0.62139s;
+  -webkit-animation-duration: 0.62139s;
+  animation-duration: 0.62139s;
+  -moz-animation-delay: 0.33s;
+  -webkit-animation-delay: 0.33s;
+  animation-delay: 0.33s;
+}
+#modular-scale.present [class^="char"]:nth-of-type(2) {
+  -moz-animation-duration: 0.80581s;
+  -webkit-animation-duration: 0.80581s;
+  animation-duration: 0.80581s;
+  -moz-animation-delay: 0.66s;
+  -webkit-animation-delay: 0.66s;
+  animation-delay: 0.66s;
+}
+#modular-scale.present [class^="char"]:nth-of-type(3) {
+  -moz-animation-duration: 1.86699s;
+  -webkit-animation-duration: 1.86699s;
+  animation-duration: 1.86699s;
+  -moz-animation-delay: 0.99s;
+  -webkit-animation-delay: 0.99s;
+  animation-delay: 0.99s;
+}
+#modular-scale.present [class^="char"]:nth-of-type(4) {
+  -moz-animation-duration: 1.60861s;
+  -webkit-animation-duration: 1.60861s;
+  animation-duration: 1.60861s;
+  -moz-animation-delay: 1.32s;
+  -webkit-animation-delay: 1.32s;
+  animation-delay: 1.32s;
+}
+#modular-scale.present [class^="char"]:nth-of-type(5) {
+  -moz-animation-duration: 2.75056s;
+  -webkit-animation-duration: 2.75056s;
+  animation-duration: 2.75056s;
+  -moz-animation-delay: 1.65s;
+  -webkit-animation-delay: 1.65s;
+  animation-delay: 1.65s;
+}
+#modular-scale.present [class^="char"]:nth-of-type(6) {
+  -moz-animation-duration: 3.27083s;
+  -webkit-animation-duration: 3.27083s;
+  animation-duration: 3.27083s;
+  -moz-animation-delay: 1.98s;
+  -webkit-animation-delay: 1.98s;
+  animation-delay: 1.98s;
+}
+#modular-scale.present [class^="char"]:nth-of-type(7) {
+  -moz-animation-duration: 3.14644s;
+  -webkit-animation-duration: 3.14644s;
+  animation-duration: 3.14644s;
+  -moz-animation-delay: 2.31s;
+  -webkit-animation-delay: 2.31s;
+  animation-delay: 2.31s;
+}
 #modular-scale h2 {
   position: absolute;
   text-align: left;
@@ -3409,6 +3514,120 @@ body {
   width: 342px;
   height: 360px;
   z-index: 1;
+}
+#modular-scale figure.full {
+  width: 100%;
+}
+#modular-scale figure[class^="discontent"] figcaption {
+  background-color: transparent;
+  left: 470px;
+  width: 488px;
+  top: 0;
+}
+#modular-scale figure[class^="discontent"] ul {
+  text-transform: none;
+}
+#modular-scale figure.discontent h2 {
+  color: white;
+  mix-blend-mode: initial;
+  left: 2rem;
+}
+#modular-scale figure.discontent h2:after {
+  content: none;
+}
+#modular-scale figure.discontent ul {
+  top: 2em;
+  left: 2rem;
+  color: #fefefe;
+  mix-blend-mode: initial;
+}
+#modular-scale figure.discontent ul li {
+  display: block;
+  position: relative;
+}
+#modular-scale figure.discontent ul li:before {
+  position: absolute;
+  content: "";
+  width: 1em;
+  height: 0;
+  top: 45%;
+  right: 100%;
+  margin-right: 0.5rem;
+  border-top: 3px solid #fefefe;
+  border-bottom: 3px solid #512d29;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+#modular-scale figure.discontent ul li:nth-of-type(1):before {
+  width: 1.5em;
+}
+#modular-scale figure.discontent ul li:nth-of-type(2):before {
+  -moz-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  -webkit-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+#modular-scale figure.discontent ul li:nth-of-type(3):before {
+  -moz-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  -webkit-transform: rotate(-9deg);
+  transform: rotate(-9deg);
+}
+#modular-scale figure.discontent ul li:nth-of-type(4):before {
+  width: 10em;
+  -moz-transform: rotate(-19deg);
+  -ms-transform: rotate(-19deg);
+  -webkit-transform: rotate(-19deg);
+  transform: rotate(-19deg);
+}
+#modular-scale figure.discontent ul li:nth-of-type(5):before {
+  width: 4em;
+  -moz-transform: rotate(-64deg);
+  -ms-transform: rotate(-64deg);
+  -webkit-transform: rotate(-64deg);
+  transform: rotate(-64deg);
+}
+#modular-scale figure.discontent-blocks ul {
+  color: #fefefe;
+  mix-blend-mode: initial;
+  left: 50%;
+  top: 50%;
+  min-width: 300px;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+#modular-scale figure.discontent-blocks ul li.block {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  display: inline-block;
+  background-color: #512d29;
+  background-color: #fefefe;
+}
+#modular-scale figure.discontent-blocks ul li.px87 {
+  width: 5.4375em;
+  height: 5.4375em;
+}
+#modular-scale figure.discontent-blocks ul li.px11 {
+  width: 0.6875em;
+  height: 0.6875em;
+}
+#modular-scale figure.discontent-blocks ul li.px16 {
+  width: 1em;
+  height: 1em;
+}
+#modular-scale figure.discontent-blocks ul li.px24 {
+  width: 1.5em;
+  height: 1.5em;
+}
+#modular-scale figure.discontent-blocks ul li.px36 {
+  width: 2.25em;
+  height: 2.25em;
 }
 #modular-scale figure figcaption {
   position: absolute;
@@ -4148,7 +4367,7 @@ body {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
-#contact h1, #component-second h1, #eq h1, #eq h2, .slab {
+#contact h1, #component-second h1, #modular-scale figure[class^="discontent"] h2, #modular-scale figure[class^="discontent"] ul, #eq h1, #eq h2, .slab {
   font-family: "jubilat", derifs;
 }
 

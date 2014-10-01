@@ -685,26 +685,51 @@ $font-slab: $archer, serif;
         	<!-- Slide #xx -->
         	<section id="modular-scale" class="foundation" data-state="rekkid">
         		<h1>Finding the Right Type Sizes</h1>
-        		<h2>Sassy Modular Scale</h2>
+        		<h2 class="fragment" data-fragment-index="3">Sassy Modular Scale</h2>
         		<ul>
-              <li class="ratios fragment" data-fragment-index="1">Use ratios to establish sizes</li>
-              <li class="limitations fragment" data-fragment-index="2">Set of Limitations</li>
+              <li class="ratios fragment" data-fragment-index="3">Use ratios to establish sizes</li>
+              <li class="limitations fragment" data-fragment-index="4">Set of Limitations</li>
         		</ul>
             <div class="examples">
-              <figure class="illustration fragment" data-fragment-index="1">
+              <figure class="discontent full fragment current-visible" data-fragment-index="1">
+                <img src="images/ss-modularscale-discontent.jpg" alt="screen shot from thegreatdiscontent.com">
+                <figcaption>
+                  <h2>The Great Discontent</h2>
+                  <ul>
+                    <li class="px87">87px / 5.4375em</li>
+                    <li class="px11">11px / 0.6875em</li>
+                    <li class="px16">16px / 1em</li>
+                    <li class="px24">24px / 1.5em</li>
+                    <li class="px36">36px / 2.25em</li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <figure class="discontent-blocks full fragment current-visible" data-fragment-index="2">
+                <img src="images/ss-modularscale-discontent.jpg" alt="screen shot from thegreatdiscontent.com">
+                <figcaption>
+                  <ul>
+                    <li class="px11 block">11px / 0.6875em</li>
+                    <li class="px16 block">16px / 1em</li>
+                    <li class="px24 block">24px / 1.5em</li>
+                    <li class="px36 block">36px / 2.25em</li>
+                    <li class="px87 block">87px / 5.4375em</li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <figure class="illustration fragment" data-fragment-index="3">
                 <img src="images/ss-modularscale-1.jpg" alt="screen shot of a modular scale">
                 <figcaption><code>$ms-ratio: $fourth; <br/>$ms-base: 16px 44px;</code></figcaption>
               </figure>
-              <figure class="illustration fragment" data-fragment-index="3">
+              <figure class="illustration fragment" data-fragment-index="5">
                 <img src="images/ss-modularscale-2.jpg" alt="screen shot of a modular scale">
                 <figcaption><code>$ms-ratio: $minor-third; <br/>$ms-base: 16px 44px;</code></figcaption>
               </figure>
-              <figure class="illustration fragment" data-fragment-index="4">
+              <figure class="illustration fragment" data-fragment-index="6">
                 <img src="images/ss-modularscale-3.jpg" alt="screen shot of a modular scale">
                 <figcaption><code>$ms-ratio: $golden; <br/>$ms-base: 16px 44px;</code></figcaption>
               </figure>
             </div>
-        		<footer>
+        		<footer class="fragment" data-fragment-index="3">
         		  <a href="http://modularscale.com/">modularscale.com</a> -
         			<a href="http://github.com/Team-Sass/modular-scale">github.com/Team-Sass/modular-scale</a>
         		</footer>
