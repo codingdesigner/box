@@ -838,25 +838,26 @@ $font-slab: $archer, serif;
                 </g>
               </g>
               <g id="scheme1" class="fragment" data-fragment-index="2">
-                <rect x="639.5" y="340" fill="#0392CE" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <text x="639.5" y="355" dx="-240" class="svg-cs-primary">$cs-primary: #0392CE;</text>
+                <rect x="639.5" y="340" fill="#0392CE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" width="52" height="52"/>
                 <rect x="722.5" y="340" fill="#036A8E" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
                 <rect x="805.5" y="340" fill="#035572" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
                 <rect x="884.5" y="340" fill="#012B3A" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
-                <text x="639.5" y="415" dx="82" class="svg-cs-scheme">$cs-scheme: mono;</text>
+                <text x="639.5" y="415" dx="108" class="svg-cs-scheme">$cs-scheme: mono;</text>
               </g>
               <g id="scheme2" class="fragment" data-fragment-index="3">
-                <rect x="639.5" y="440" fill="#0392CE" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
-                <rect x="722.5" y="440" fill="#004aff" stroke="#FDFFFE" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="639.5" y="440" fill="#0392CE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="722.5" y="440" fill="#004aff" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
                 <rect x="805.5" y="440" fill="#6cff00" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
-                <rect x="884.5" y="440" fill="#e4ff00" stroke="#FDFFFE" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
-                <text x="639.5" y="515" dx="20" class="svg-cs-scheme">$cs-scheme: analagous;</text>
+                <rect x="884.5" y="440" fill="#e4ff00" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <text x="639.5" y="515" dx="55" class="svg-cs-scheme">$cs-scheme: analagous;</text>
               </g>
               <g id="scheme3" class="fragment" data-fragment-index="4">
-                <rect x="639.5" y="540" fill="#0392CE" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
-                <rect x="722.5" y="540" fill="#FD5308" stroke="#FDFFFE" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="639.5" y="540" fill="#0392CE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="722.5" y="540" fill="#FD5308" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
                 <rect x="805.5" y="540" fill="#FABC02" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
-                <rect x="884.5" y="540" fill="#A7194B" stroke="#FDFFFE" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
-                <text x="639.5" y="615" dx="71" class="svg-cs-scheme">$cs-scheme: triad;</text>
+                <rect x="884.5" y="540" fill="#A7194B" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <text x="639.5" y="615" dx="100" class="svg-cs-scheme">$cs-scheme: triad;</text>
               </g>
             </svg>
         		<h1>Finding the Right Colors</h1>
@@ -906,21 +907,25 @@ $font-slab: $archer, serif;
         	<!-- Slide #xx -->
         	<section id="pattern-lab" data-state="rekkid">
         		<h1>Pattern Lab</h1>
-            <figure class="illustration ">
-              <img src="images/ss-canary-pl-colors.jpg" alt="Pattern Lab ">
-            </figure>
-            <figure class="illustration fragment">
-              <img src="images/ss-canary-pl-type-components.jpg" alt="Pattern Lab ">
-            </figure>
-            <figure class="illustration fragment">
-              <img src="images/ss-canary-pl-block-components.jpg" alt="Pattern Lab ">
-            </figure>
-            <figure class="illustration fragment">
-              <img src="images/ss-canary-pl-organisms.jpg" alt="Pattern Lab ">
-            </figure>
-        		<figure class="illustration fragment">
-              <img src="images/ss-canary-pl-template.jpg" alt="Pattern Lab ">
-            </figure>
+            <div class="live-examples">
+              <iframe src="http://sassconf.com/styleguide/public/?p=templates-style-tile" width="960px" height="584px" frameborder="0"></iframe>
+              <!--<iframe class="fragment current-visible" src="http://2014.canarypromo.com/patternlab/public/?p=templates-client" width="960px" height="584px" frameborder="0"></iframe>-->
+            </div>
+            <!--<figure class="illustration ">-->
+              <!--<img src="images/ss-canary-pl-colors.jpg" alt="Pattern Lab ">-->
+            <!--</figure>-->
+            <!--<figure class="illustration fragment">-->
+              <!--<img src="images/ss-canary-pl-type-components.jpg" alt="Pattern Lab ">-->
+            <!--</figure>-->
+            <!--<figure class="illustration fragment">-->
+              <!--<img src="images/ss-canary-pl-block-components.jpg" alt="Pattern Lab ">-->
+            <!--</figure>-->
+            <!--<figure class="illustration fragment">-->
+              <!--<img src="images/ss-canary-pl-organisms.jpg" alt="Pattern Lab ">-->
+            <!--</figure>-->
+        		<!--<figure class="illustration fragment">-->
+              <!--<img src="images/ss-canary-pl-template.jpg" alt="Pattern Lab ">-->
+            <!--</figure>-->
             <aside class="notes">
               I've been using Pattern lab as an example here so I want to give you a brief tour of some of the things I like about it. Pattern Lab is centered arround giving you a low-friction way to define whatever design components you need, organize them into whatever categories or groupings you like, assemble them into bigger components, and then templates, and finally pages. You can add whatever CSS and JavaScript you want. You don't have to use Sass (altho *really?*) and you're really free to use any front end technique you like. One of my favourite bits of the UI is that it lets you quickly drag the width slider to see how the design works at different breakpoints. For me it's really about enabling the design iterations to go quickly and to give you clarity on the global shape of the design language as it progresses.
             </aside>

@@ -13,18 +13,22 @@
     }
     color: $white;
     overflow: hidden;
-    .word5, .word6 {
-      color: $red;
-      top: 100px;
-      position: relative;
-    }
+//    .word5, .word6 {
+//      color: $red;
+//      top: 100px;
+//      position: relative;
+//    }
   }
-  &.present {
-    h1 {
-      .word5, .word6 {
-        @include experimental(animation, brings-us-to-style-guides 0.33s ease-in .33s 1 forwards);
-      }
-    }
+//  &.present {
+//    h1 {
+//      .word5, .word6 {
+//        @include experimental(animation, brings-us-to-style-guides 0.33s ease-in .33s 1 forwards);
+//      }
+//    }
+//  }
+  .live-examples {
+    position: relative;
+    top: -1.5rem;
   }
   .illustration {
     position: absolute;

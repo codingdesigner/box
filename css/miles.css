@@ -3421,57 +3421,57 @@ body {
   animation-fill-mode: both;
 }
 #modular-scale.present [class^="char"]:nth-of-type(1) {
-  -moz-animation-duration: 0.72508s;
-  -webkit-animation-duration: 0.72508s;
-  animation-duration: 0.72508s;
+  -moz-animation-duration: 0.05581s;
+  -webkit-animation-duration: 0.05581s;
+  animation-duration: 0.05581s;
   -moz-animation-delay: 0.33s;
   -webkit-animation-delay: 0.33s;
   animation-delay: 0.33s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(2) {
-  -moz-animation-duration: 0.38731s;
-  -webkit-animation-duration: 0.38731s;
-  animation-duration: 0.38731s;
+  -moz-animation-duration: 0.26978s;
+  -webkit-animation-duration: 0.26978s;
+  animation-duration: 0.26978s;
   -moz-animation-delay: 0.66s;
   -webkit-animation-delay: 0.66s;
   animation-delay: 0.66s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(3) {
-  -moz-animation-duration: 0.81093s;
-  -webkit-animation-duration: 0.81093s;
-  animation-duration: 0.81093s;
+  -moz-animation-duration: 0.11556s;
+  -webkit-animation-duration: 0.11556s;
+  animation-duration: 0.11556s;
   -moz-animation-delay: 0.99s;
   -webkit-animation-delay: 0.99s;
   animation-delay: 0.99s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(4) {
-  -moz-animation-duration: 1.13393s;
-  -webkit-animation-duration: 1.13393s;
-  animation-duration: 1.13393s;
+  -moz-animation-duration: 2.40504s;
+  -webkit-animation-duration: 2.40504s;
+  animation-duration: 2.40504s;
   -moz-animation-delay: 1.32s;
   -webkit-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(5) {
-  -moz-animation-duration: 0.89064s;
-  -webkit-animation-duration: 0.89064s;
-  animation-duration: 0.89064s;
+  -moz-animation-duration: 0.10596s;
+  -webkit-animation-duration: 0.10596s;
+  animation-duration: 0.10596s;
   -moz-animation-delay: 1.65s;
   -webkit-animation-delay: 1.65s;
   animation-delay: 1.65s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(6) {
-  -moz-animation-duration: 1.95759s;
-  -webkit-animation-duration: 1.95759s;
-  animation-duration: 1.95759s;
+  -moz-animation-duration: 4.26117s;
+  -webkit-animation-duration: 4.26117s;
+  animation-duration: 4.26117s;
   -moz-animation-delay: 1.98s;
   -webkit-animation-delay: 1.98s;
   animation-delay: 1.98s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(7) {
-  -moz-animation-duration: 1.75929s;
-  -webkit-animation-duration: 1.75929s;
-  animation-duration: 1.75929s;
+  -moz-animation-duration: 3.01022s;
+  -webkit-animation-duration: 3.01022s;
+  animation-duration: 3.01022s;
   -moz-animation-delay: 2.31s;
   -webkit-animation-delay: 2.31s;
   animation-delay: 2.31s;
@@ -4385,8 +4385,8 @@ body {
 #color-schemer #wheel {
   mix-blend-mode: color;
 }
-#color-schemer .svg-cs-scheme {
-  font-size: 22.24922px;
+#color-schemer .svg-cs-scheme, #color-schemer .svg-cs-primary {
+  font-size: 20px;
   fill: black;
 }
 #color-schemer #scheme2 .svg-cs-scheme, #color-schemer #scheme3 .svg-cs-scheme {
@@ -4518,17 +4518,9 @@ body {
   color: #fefefe;
   overflow: hidden;
 }
-#pattern-lab h1 .word5, #pattern-lab h1 .word6 {
-  color: #d6504f;
-  top: 100px;
+#pattern-lab .live-examples {
   position: relative;
-}
-#pattern-lab.present h1 .word5, #pattern-lab.present h1 .word6 {
-  -webkit-animation: brings-us-to-style-guides 0.33s ease-in 0.33s 1 forwards;
-  -moz-animation: brings-us-to-style-guides 0.33s ease-in 0.33s 1 forwards;
-  -ms-animation: brings-us-to-style-guides 0.33s ease-in 0.33s 1 forwards;
-  -o-animation: brings-us-to-style-guides 0.33s ease-in 0.33s 1 forwards;
-  animation: brings-us-to-style-guides 0.33s ease-in 0.33s 1 forwards;
+  top: -1.5rem;
 }
 #pattern-lab .illustration {
   position: absolute;
@@ -5090,7 +5082,7 @@ body {
   font-family: "motor-stencil", sans-serif;
 }
 
-code, #find-typeface .code, #color-schemer .svg-cs-scheme {
+code, #find-typeface .code, #color-schemer .svg-cs-scheme, #color-schemer .svg-cs-primary {
   font-family: "Source Code Pro", monospace;
 }
 

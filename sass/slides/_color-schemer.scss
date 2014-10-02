@@ -28,9 +28,9 @@
   #wheel {
     mix-blend-mode: color;
   }
-  .svg-cs-scheme {
+  .svg-cs-scheme, .svg-cs-primary {
     @extend %mono;
-    font-size: ms(-1);
+    font-size: 20px;
     fill: $black;
   }
   #scheme2, #scheme3 {
