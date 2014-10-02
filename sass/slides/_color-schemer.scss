@@ -16,9 +16,13 @@
   }
   #spinner {
     @include transform-origin(center);
-    @include experimental(animation, rotate 100s linear 0s infinite none);
     .fragment {
       mix-blend-mode: screen;
+    }
+  }
+  &.present {
+    #spinner {
+      @include experimental(animation, rotate 100s linear 0s infinite none);
     }
   }
   #wheel {
@@ -65,3 +69,4 @@
   }
 
 }
+
