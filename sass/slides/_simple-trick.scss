@@ -25,6 +25,10 @@
       &:nth-of-type(6n+5) { color: $orange-vivid; }
       &:nth-of-type(6n+6) { color: $red; }
     }
+    &.lie {
+      width: auto;
+      clear: both;
+    }
   }
   p {
     // font-size: ms(-1);
