@@ -188,6 +188,13 @@ body {
   color: #1b91ff;
 }
 
+.reveal .slides section .fragment.direct {
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
 /*********************************************
  * DEFAULT ELEMENT STYLES
  *********************************************/
@@ -3411,57 +3418,57 @@ body {
   animation-fill-mode: both;
 }
 #modular-scale.present [class^="char"]:nth-of-type(1) {
-  -moz-animation-duration: 0.62139s;
-  -webkit-animation-duration: 0.62139s;
-  animation-duration: 0.62139s;
+  -moz-animation-duration: 0.87103s;
+  -webkit-animation-duration: 0.87103s;
+  animation-duration: 0.87103s;
   -moz-animation-delay: 0.33s;
   -webkit-animation-delay: 0.33s;
   animation-delay: 0.33s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(2) {
-  -moz-animation-duration: 0.80581s;
-  -webkit-animation-duration: 0.80581s;
-  animation-duration: 0.80581s;
+  -moz-animation-duration: 1.20697s;
+  -webkit-animation-duration: 1.20697s;
+  animation-duration: 1.20697s;
   -moz-animation-delay: 0.66s;
   -webkit-animation-delay: 0.66s;
   animation-delay: 0.66s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(3) {
-  -moz-animation-duration: 1.86699s;
-  -webkit-animation-duration: 1.86699s;
-  animation-duration: 1.86699s;
+  -moz-animation-duration: 2.73261s;
+  -webkit-animation-duration: 2.73261s;
+  animation-duration: 2.73261s;
   -moz-animation-delay: 0.99s;
   -webkit-animation-delay: 0.99s;
   animation-delay: 0.99s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(4) {
-  -moz-animation-duration: 1.60861s;
-  -webkit-animation-duration: 1.60861s;
-  animation-duration: 1.60861s;
+  -moz-animation-duration: 1.65006s;
+  -webkit-animation-duration: 1.65006s;
+  animation-duration: 1.65006s;
   -moz-animation-delay: 1.32s;
   -webkit-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(5) {
-  -moz-animation-duration: 2.75056s;
-  -webkit-animation-duration: 2.75056s;
-  animation-duration: 2.75056s;
+  -moz-animation-duration: 0.13451s;
+  -webkit-animation-duration: 0.13451s;
+  animation-duration: 0.13451s;
   -moz-animation-delay: 1.65s;
   -webkit-animation-delay: 1.65s;
   animation-delay: 1.65s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(6) {
-  -moz-animation-duration: 3.27083s;
-  -webkit-animation-duration: 3.27083s;
-  animation-duration: 3.27083s;
+  -moz-animation-duration: 1.52779s;
+  -webkit-animation-duration: 1.52779s;
+  animation-duration: 1.52779s;
   -moz-animation-delay: 1.98s;
   -webkit-animation-delay: 1.98s;
   animation-delay: 1.98s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(7) {
-  -moz-animation-duration: 3.14644s;
-  -webkit-animation-duration: 3.14644s;
-  animation-duration: 3.14644s;
+  -moz-animation-duration: 2.39105s;
+  -webkit-animation-duration: 2.39105s;
+  animation-duration: 2.39105s;
   -moz-animation-delay: 2.31s;
   -webkit-animation-delay: 2.31s;
   animation-delay: 2.31s;
@@ -3518,26 +3525,30 @@ body {
 #modular-scale figure.full {
   width: 100%;
 }
+#modular-scale figure.giant {
+  top: -340px;
+  right: 0;
+  background: white;
+  height: 700px;
+}
+#modular-scale figure[class^="discontent"] img {
+  max-width: 492px;
+}
 #modular-scale figure[class^="discontent"] figcaption {
-  background-color: transparent;
-  left: 470px;
-  width: 488px;
+  background-color: rgba(81, 45, 41, 0.8);
+  left: 400px;
+  width: 560px;
   top: 0;
+}
+#modular-scale figure[class^="discontent"] h2:after {
+  content: none;
 }
 #modular-scale figure[class^="discontent"] ul {
   text-transform: none;
 }
-#modular-scale figure.discontent h2 {
-  color: white;
-  mix-blend-mode: initial;
-  left: 2rem;
-}
-#modular-scale figure.discontent h2:after {
-  content: none;
-}
 #modular-scale figure.discontent ul {
-  top: 2em;
-  left: 2rem;
+  top: 4em;
+  left: 1.25rem;
   color: #fefefe;
   mix-blend-mode: initial;
 }
@@ -3577,17 +3588,24 @@ body {
 }
 #modular-scale figure.discontent ul li:nth-of-type(4):before {
   width: 10em;
-  -moz-transform: rotate(-19deg);
-  -ms-transform: rotate(-19deg);
-  -webkit-transform: rotate(-19deg);
-  transform: rotate(-19deg);
+  -moz-transform: rotate(-13deg);
+  -ms-transform: rotate(-13deg);
+  -webkit-transform: rotate(-13deg);
+  transform: rotate(-13deg);
 }
 #modular-scale figure.discontent ul li:nth-of-type(5):before {
-  width: 4em;
-  -moz-transform: rotate(-64deg);
-  -ms-transform: rotate(-64deg);
-  -webkit-transform: rotate(-64deg);
-  transform: rotate(-64deg);
+  width: 2em;
+  -moz-transform: rotate(-32deg);
+  -ms-transform: rotate(-32deg);
+  -webkit-transform: rotate(-32deg);
+  transform: rotate(-32deg);
+}
+#modular-scale figure.discontent.giant h2 {
+  color: #d6504f;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 #modular-scale figure.discontent-blocks ul {
   color: #fefefe;
@@ -3599,15 +3617,6 @@ body {
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-}
-#modular-scale figure.discontent-blocks ul li.block {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  text-transform: capitalize;
-  display: inline-block;
-  background-color: #512d29;
-  background-color: #fefefe;
 }
 #modular-scale figure.discontent-blocks ul li.px87 {
   width: 5.4375em;
@@ -3636,6 +3645,686 @@ body {
   padding-bottom: 8px;
   font-size: 22.24922px;
   background-color: #d9dbda;
+}
+#modular-scale figure li.block {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  display: inline-block;
+  background-color: rgba(254, 254, 254, 0.5);
+  background-color: rgba(245, 196, 94, 0.5);
+  mix-blend-mode: screen;
+}
+#modular-scale figure ul.blocks {
+  width: 600px;
+  position: absolute;
+  top: 12rem;
+  left: 346px;
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+}
+#modular-scale figure ul.blocks li.px16 {
+  width: 16px;
+  height: 16px;
+}
+#modular-scale figure ul.blocks li.px17 {
+  width: 17px;
+  height: 17px;
+}
+#modular-scale figure ul.blocks li.px18 {
+  width: 18px;
+  height: 18px;
+}
+#modular-scale figure ul.blocks li.px19 {
+  width: 19px;
+  height: 19px;
+}
+#modular-scale figure ul.blocks li.px20 {
+  width: 20px;
+  height: 20px;
+}
+#modular-scale figure ul.blocks li.px21 {
+  width: 21px;
+  height: 21px;
+}
+#modular-scale figure ul.blocks li.px22 {
+  width: 22px;
+  height: 22px;
+}
+#modular-scale figure ul.blocks li.px23 {
+  width: 23px;
+  height: 23px;
+}
+#modular-scale figure ul.blocks li.px24 {
+  width: 24px;
+  height: 24px;
+}
+#modular-scale figure ul.blocks li.px25 {
+  width: 25px;
+  height: 25px;
+}
+#modular-scale figure ul.blocks li.px26 {
+  width: 26px;
+  height: 26px;
+}
+#modular-scale figure ul.blocks li.px27 {
+  width: 27px;
+  height: 27px;
+}
+#modular-scale figure ul.blocks li.px28 {
+  width: 28px;
+  height: 28px;
+}
+#modular-scale figure ul.blocks li.px29 {
+  width: 29px;
+  height: 29px;
+}
+#modular-scale figure ul.blocks li.px30 {
+  width: 30px;
+  height: 30px;
+}
+#modular-scale figure ul.blocks li.px31 {
+  width: 31px;
+  height: 31px;
+}
+#modular-scale figure ul.blocks li.px32 {
+  width: 32px;
+  height: 32px;
+}
+#modular-scale figure ul.blocks li.px33 {
+  width: 33px;
+  height: 33px;
+}
+#modular-scale figure ul.blocks li.px34 {
+  width: 34px;
+  height: 34px;
+}
+#modular-scale figure ul.blocks li.px35 {
+  width: 35px;
+  height: 35px;
+}
+#modular-scale figure ul.blocks li.px36 {
+  width: 36px;
+  height: 36px;
+}
+#modular-scale figure ul.blocks li.px37 {
+  width: 37px;
+  height: 37px;
+}
+#modular-scale figure ul.blocks li.px38 {
+  width: 38px;
+  height: 38px;
+}
+#modular-scale figure ul.blocks li.px39 {
+  width: 39px;
+  height: 39px;
+}
+#modular-scale figure ul.blocks li.px40 {
+  width: 40px;
+  height: 40px;
+}
+#modular-scale figure ul.blocks li.px41 {
+  width: 41px;
+  height: 41px;
+}
+#modular-scale figure ul.blocks li.px42 {
+  width: 42px;
+  height: 42px;
+}
+#modular-scale figure ul.blocks li.px43 {
+  width: 43px;
+  height: 43px;
+}
+#modular-scale figure ul.blocks li.px44 {
+  width: 44px;
+  height: 44px;
+}
+#modular-scale figure ul.blocks li.px45 {
+  width: 45px;
+  height: 45px;
+}
+#modular-scale figure ul.blocks li.px46 {
+  width: 46px;
+  height: 46px;
+}
+#modular-scale figure ul.blocks li.px47 {
+  width: 47px;
+  height: 47px;
+}
+#modular-scale figure ul.blocks li.px48 {
+  width: 48px;
+  height: 48px;
+}
+#modular-scale figure ul.blocks li.px49 {
+  width: 49px;
+  height: 49px;
+}
+#modular-scale figure ul.blocks li.px50 {
+  width: 50px;
+  height: 50px;
+}
+#modular-scale figure ul.blocks li.px51 {
+  width: 51px;
+  height: 51px;
+}
+#modular-scale figure ul.blocks li.px52 {
+  width: 52px;
+  height: 52px;
+}
+#modular-scale figure ul.blocks li.px53 {
+  width: 53px;
+  height: 53px;
+}
+#modular-scale figure ul.blocks li.px54 {
+  width: 54px;
+  height: 54px;
+}
+#modular-scale figure ul.blocks li.px55 {
+  width: 55px;
+  height: 55px;
+}
+#modular-scale figure ul.blocks li.px56 {
+  width: 56px;
+  height: 56px;
+}
+#modular-scale figure ul.blocks li.px57 {
+  width: 57px;
+  height: 57px;
+}
+#modular-scale figure ul.blocks li.px58 {
+  width: 58px;
+  height: 58px;
+}
+#modular-scale figure ul.blocks li.px59 {
+  width: 59px;
+  height: 59px;
+}
+#modular-scale figure ul.blocks li.px60 {
+  width: 60px;
+  height: 60px;
+}
+#modular-scale figure ul.blocks li.px61 {
+  width: 61px;
+  height: 61px;
+}
+#modular-scale figure ul.blocks li.px62 {
+  width: 62px;
+  height: 62px;
+}
+#modular-scale figure ul.blocks li.px63 {
+  width: 63px;
+  height: 63px;
+}
+#modular-scale figure ul.blocks li.px64 {
+  width: 64px;
+  height: 64px;
+}
+#modular-scale figure ul.blocks li.px65 {
+  width: 65px;
+  height: 65px;
+}
+#modular-scale figure ul.blocks li.px66 {
+  width: 66px;
+  height: 66px;
+}
+#modular-scale figure ul.blocks li.px67 {
+  width: 67px;
+  height: 67px;
+}
+#modular-scale figure ul.blocks li.px68 {
+  width: 68px;
+  height: 68px;
+}
+#modular-scale figure ul.blocks li.px69 {
+  width: 69px;
+  height: 69px;
+}
+#modular-scale figure ul.blocks li.px70 {
+  width: 70px;
+  height: 70px;
+}
+#modular-scale figure ul.blocks li.px71 {
+  width: 71px;
+  height: 71px;
+}
+#modular-scale figure ul.blocks li.px72 {
+  width: 72px;
+  height: 72px;
+}
+#modular-scale figure ul.blocks li.px73 {
+  width: 73px;
+  height: 73px;
+}
+#modular-scale figure ul.blocks li.px74 {
+  width: 74px;
+  height: 74px;
+}
+#modular-scale figure ul.blocks li.px75 {
+  width: 75px;
+  height: 75px;
+}
+#modular-scale figure ul.blocks li.px76 {
+  width: 76px;
+  height: 76px;
+}
+#modular-scale figure ul.blocks li.px77 {
+  width: 77px;
+  height: 77px;
+}
+#modular-scale figure ul.blocks li.px78 {
+  width: 78px;
+  height: 78px;
+}
+#modular-scale figure ul.blocks li.px79 {
+  width: 79px;
+  height: 79px;
+}
+#modular-scale figure ul.blocks li.px80 {
+  width: 80px;
+  height: 80px;
+}
+#modular-scale figure ul.blocks li.px81 {
+  width: 81px;
+  height: 81px;
+}
+#modular-scale figure ul.blocks li.px82 {
+  width: 82px;
+  height: 82px;
+}
+#modular-scale figure ul.blocks li.px83 {
+  width: 83px;
+  height: 83px;
+}
+#modular-scale figure ul.blocks li.px84 {
+  width: 84px;
+  height: 84px;
+}
+#modular-scale figure ul.blocks li.px85 {
+  width: 85px;
+  height: 85px;
+}
+#modular-scale figure ul.blocks li.px86 {
+  width: 86px;
+  height: 86px;
+}
+#modular-scale figure ul.blocks li.px87 {
+  width: 87px;
+  height: 87px;
+}
+#modular-scale figure ul.blocks li.px88 {
+  width: 88px;
+  height: 88px;
+}
+#modular-scale figure ul.blocks li.px89 {
+  width: 89px;
+  height: 89px;
+}
+#modular-scale figure ul.blocks li.px90 {
+  width: 90px;
+  height: 90px;
+}
+#modular-scale figure ul.blocks li.px91 {
+  width: 91px;
+  height: 91px;
+}
+#modular-scale figure ul.blocks li.px92 {
+  width: 92px;
+  height: 92px;
+}
+#modular-scale figure ul.blocks li.px93 {
+  width: 93px;
+  height: 93px;
+}
+#modular-scale figure ul.blocks li.px94 {
+  width: 94px;
+  height: 94px;
+}
+#modular-scale figure ul.blocks li.px95 {
+  width: 95px;
+  height: 95px;
+}
+#modular-scale figure ul.blocks li.px96 {
+  width: 96px;
+  height: 96px;
+}
+#modular-scale figure ul.blocks li.px97 {
+  width: 97px;
+  height: 97px;
+}
+#modular-scale figure ul.blocks li.px98 {
+  width: 98px;
+  height: 98px;
+}
+#modular-scale figure ul.blocks li.px99 {
+  width: 99px;
+  height: 99px;
+}
+#modular-scale figure ul.blocks li.px100 {
+  width: 100px;
+  height: 100px;
+}
+#modular-scale figure ul.blocks li.px101 {
+  width: 101px;
+  height: 101px;
+}
+#modular-scale figure ul.blocks li.px102 {
+  width: 102px;
+  height: 102px;
+}
+#modular-scale figure ul.blocks li.px103 {
+  width: 103px;
+  height: 103px;
+}
+#modular-scale figure ul.blocks li.px104 {
+  width: 104px;
+  height: 104px;
+}
+#modular-scale figure ul.blocks li.px105 {
+  width: 105px;
+  height: 105px;
+}
+#modular-scale figure ul.blocks li.px106 {
+  width: 106px;
+  height: 106px;
+}
+#modular-scale figure ul.blocks li.px107 {
+  width: 107px;
+  height: 107px;
+}
+#modular-scale figure ul.blocks li.px108 {
+  width: 108px;
+  height: 108px;
+}
+#modular-scale figure ul.blocks li.px109 {
+  width: 109px;
+  height: 109px;
+}
+#modular-scale figure ul.blocks li.px110 {
+  width: 110px;
+  height: 110px;
+}
+#modular-scale figure ul.blocks li.px111 {
+  width: 111px;
+  height: 111px;
+}
+#modular-scale figure ul.blocks li.px112 {
+  width: 112px;
+  height: 112px;
+}
+#modular-scale figure ul.blocks li.px113 {
+  width: 113px;
+  height: 113px;
+}
+#modular-scale figure ul.blocks li.px114 {
+  width: 114px;
+  height: 114px;
+}
+#modular-scale figure ul.blocks li.px115 {
+  width: 115px;
+  height: 115px;
+}
+#modular-scale figure ul.blocks li.px116 {
+  width: 116px;
+  height: 116px;
+}
+#modular-scale figure ul.blocks li.px117 {
+  width: 117px;
+  height: 117px;
+}
+#modular-scale figure ul.blocks li.px118 {
+  width: 118px;
+  height: 118px;
+}
+#modular-scale figure ul.blocks li.px119 {
+  width: 119px;
+  height: 119px;
+}
+#modular-scale figure ul.blocks li.px120 {
+  width: 120px;
+  height: 120px;
+}
+#modular-scale figure ul.blocks li.px121 {
+  width: 121px;
+  height: 121px;
+}
+#modular-scale figure ul.blocks li.px122 {
+  width: 122px;
+  height: 122px;
+}
+#modular-scale figure ul.blocks li.px123 {
+  width: 123px;
+  height: 123px;
+}
+#modular-scale figure ul.blocks li.px124 {
+  width: 124px;
+  height: 124px;
+}
+#modular-scale figure ul.blocks li.px125 {
+  width: 125px;
+  height: 125px;
+}
+#modular-scale figure ul.blocks li.px126 {
+  width: 126px;
+  height: 126px;
+}
+#modular-scale figure ul.blocks li.px127 {
+  width: 127px;
+  height: 127px;
+}
+#modular-scale figure ul.blocks li.px128 {
+  width: 128px;
+  height: 128px;
+}
+#modular-scale figure ul.blocks li.px129 {
+  width: 129px;
+  height: 129px;
+}
+#modular-scale figure ul.blocks li.px130 {
+  width: 130px;
+  height: 130px;
+}
+#modular-scale figure ul.blocks li.px131 {
+  width: 131px;
+  height: 131px;
+}
+#modular-scale figure ul.blocks li.px132 {
+  width: 132px;
+  height: 132px;
+}
+#modular-scale figure ul.blocks li.px133 {
+  width: 133px;
+  height: 133px;
+}
+#modular-scale figure ul.blocks li.px134 {
+  width: 134px;
+  height: 134px;
+}
+#modular-scale figure ul.blocks li.px135 {
+  width: 135px;
+  height: 135px;
+}
+#modular-scale figure ul.blocks li.px136 {
+  width: 136px;
+  height: 136px;
+}
+#modular-scale figure ul.blocks li.px137 {
+  width: 137px;
+  height: 137px;
+}
+#modular-scale figure ul.blocks li.px138 {
+  width: 138px;
+  height: 138px;
+}
+#modular-scale figure ul.blocks li.px139 {
+  width: 139px;
+  height: 139px;
+}
+#modular-scale figure ul.blocks li.px140 {
+  width: 140px;
+  height: 140px;
+}
+#modular-scale figure ul.blocks li.px141 {
+  width: 141px;
+  height: 141px;
+}
+#modular-scale figure ul.blocks li.px142 {
+  width: 142px;
+  height: 142px;
+}
+#modular-scale figure ul.blocks li.px143 {
+  width: 143px;
+  height: 143px;
+}
+#modular-scale figure ul.blocks li.px144 {
+  width: 144px;
+  height: 144px;
+}
+#modular-scale figure ul.blocks li.px145 {
+  width: 145px;
+  height: 145px;
+}
+#modular-scale figure ul.blocks li.px146 {
+  width: 146px;
+  height: 146px;
+}
+#modular-scale figure ul.blocks li.px147 {
+  width: 147px;
+  height: 147px;
+}
+#modular-scale figure ul.blocks li.px148 {
+  width: 148px;
+  height: 148px;
+}
+#modular-scale figure ul.blocks li.px149 {
+  width: 149px;
+  height: 149px;
+}
+#modular-scale figure ul.blocks li.px150 {
+  width: 150px;
+  height: 150px;
+}
+#modular-scale figure ul.blocks li.px151 {
+  width: 151px;
+  height: 151px;
+}
+#modular-scale figure ul.blocks li.px152 {
+  width: 152px;
+  height: 152px;
+}
+#modular-scale figure ul.blocks li.px153 {
+  width: 153px;
+  height: 153px;
+}
+#modular-scale figure ul.blocks li.px154 {
+  width: 154px;
+  height: 154px;
+}
+#modular-scale figure ul.blocks li.px155 {
+  width: 155px;
+  height: 155px;
+}
+#modular-scale figure ul.blocks li.px156 {
+  width: 156px;
+  height: 156px;
+}
+#modular-scale figure ul.blocks li.px157 {
+  width: 157px;
+  height: 157px;
+}
+#modular-scale figure ul.blocks li.px158 {
+  width: 158px;
+  height: 158px;
+}
+#modular-scale figure ul.blocks li.px159 {
+  width: 159px;
+  height: 159px;
+}
+#modular-scale figure ul.blocks li.px160 {
+  width: 160px;
+  height: 160px;
+}
+#modular-scale figure ul.blocks li.px161 {
+  width: 161px;
+  height: 161px;
+}
+#modular-scale figure ul.blocks li.px162 {
+  width: 162px;
+  height: 162px;
+}
+#modular-scale figure ul.blocks li.px163 {
+  width: 163px;
+  height: 163px;
+}
+#modular-scale figure ul.blocks li.px164 {
+  width: 164px;
+  height: 164px;
+}
+#modular-scale figure ul.blocks li.px165 {
+  width: 165px;
+  height: 165px;
+}
+#modular-scale figure ul.blocks li.px166 {
+  width: 166px;
+  height: 166px;
+}
+#modular-scale figure ul.blocks li.px167 {
+  width: 167px;
+  height: 167px;
+}
+#modular-scale figure ul.blocks li.px168 {
+  width: 168px;
+  height: 168px;
+}
+#modular-scale figure ul.blocks li.px169 {
+  width: 169px;
+  height: 169px;
+}
+#modular-scale figure ul.blocks li.px170 {
+  width: 170px;
+  height: 170px;
+}
+#modular-scale figure ul.blocks li.px171 {
+  width: 171px;
+  height: 171px;
+}
+#modular-scale figure ul.blocks li.px172 {
+  width: 172px;
+  height: 172px;
+}
+#modular-scale figure ul.blocks li.px173 {
+  width: 173px;
+  height: 173px;
+}
+#modular-scale figure ul.blocks li.px174 {
+  width: 174px;
+  height: 174px;
+}
+#modular-scale figure ul.blocks li.px175 {
+  width: 175px;
+  height: 175px;
+}
+#modular-scale figure ul.blocks li.px176 {
+  width: 176px;
+  height: 176px;
+}
+#modular-scale figure ul.blocks li.px177 {
+  width: 177px;
+  height: 177px;
+}
+#modular-scale figure ul.blocks li.px178 {
+  width: 178px;
+  height: 178px;
+}
+#modular-scale figure ul.blocks li.px179 {
+  width: 179px;
+  height: 179px;
+}
+#modular-scale figure ul.blocks li.px180 {
+  width: 180px;
+  height: 180px;
 }
 
 @-webkit-keyframes rotate {
@@ -4367,7 +5056,7 @@ body {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
-#contact h1, #component-second h1, #modular-scale figure[class^="discontent"] h2, #modular-scale figure[class^="discontent"] ul, #eq h1, #eq h2, .slab {
+#contact h1, #component-second h1, #modular-scale figure[class^="discontent"] ul, #eq h1, #eq h2, .slab {
   font-family: "jubilat", derifs;
 }
 

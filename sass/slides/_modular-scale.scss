@@ -160,19 +160,16 @@ $modular-scale-bg-color: mix($red, $gray-dark, 25%);
       height: 700px;
     }
     &[class^="discontent"] {
-//      background-color: $modular-scale-bg-color;
       img {
         max-width: 492px;
       }
       figcaption {
-//        background-color: transparent;
         background-color: rgba($modular-scale-bg-color, 0.8);
         left: 400px;
         width: 560px;
         top: 0;
       }
       h2 {
-//        @extend %slab;
         &:after {
           content: none;
         }
@@ -183,12 +180,6 @@ $modular-scale-bg-color: mix($red, $gray-dark, 25%);
       }
     }
     &.discontent {
-      h2 {
-//        color: white;
-//        mix-blend-mode: initial;
-//        left: 2rem;
-
-      }
       ul {
         top: 4em;
         left: 1.25rem;
@@ -254,12 +245,6 @@ $modular-scale-bg-color: mix($red, $gray-dark, 25%);
         min-width: 300px;
         @include transform(translateX(-50%) translateY(-50%));
         li {
-          &.block {
-            @include hide-text();
-            display: inline-block;
-            background-color: $modular-scale-bg-color;
-            background-color: $white;
-          }
           &.px87 {
             width: 5.4375em;
             height: 5.4375em;
@@ -290,6 +275,28 @@ $modular-scale-bg-color: mix($red, $gray-dark, 25%);
       padding-bottom: 8px;
       font-size: ms(-1);
       background-color: $gray-light;
+    }
+    li.block {
+      @include hide-text();
+      display: inline-block;
+      background-color: rgba($white, 0.5);
+      background-color: rgba($orange, 0.5);
+      mix-blend-mode: screen;
+    }
+    ul.blocks {
+      width: 600px;
+      position: absolute;
+      top: 12rem;
+      left: 346px;
+      @include scale(0.9);
+      li {
+        @for $i from 16 through 180 {
+          &.px#{$i} {
+            width: #{$i}px;
+            height: #{$i}px;
+          }
+        }
+      }
     }
   }
 }
