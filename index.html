@@ -651,27 +651,27 @@
             <figure class="illustration fragment roll-in" data-fragment-index="3">
               <img src="images/ss-typecast-3.jpg" alt="screen shot of Typecast comparing">
             </figure>
-            <div class="fragment code">
-              <h3>scss/global/variables/typography</h3>
-              <pre><code data-trim>
-$archer: 'Archer SSm A', 'Archer SSm B', serif;
-$landmark-inline: 'Landmark Inline A', 'Landmark Inline B';
-$landmark-regular: 'Landmark Regular A', 'Landmark Regular B';
-//
-$font-sans: sans-serif;
-$font-serifs: $archer, serif;
-$font-slab: $archer, serif;
-              </code></pre>
-              <h3>scss/global/extends/typography</h3>
-              <pre><code data-trim>
-%font-family-archer { font-family: $archer; }
-%font-family-landmark-regular { font-family: $landmark-regular; }
-%font-family-landmark-inline { font-family: $landmark-inline; }
-//
-%sans { font-family: $font-sans; }
-%serif { font-family: $font-serifs; }
-              </code></pre>
-            </div>
+            <!--<div class="fragment code">-->
+              <!--<h3>scss/global/variables/typography</h3>-->
+              <!--<pre><code data-trim>-->
+<!--$archer: 'Archer SSm A', 'Archer SSm B', serif;-->
+<!--$landmark-inline: 'Landmark Inline A', 'Landmark Inline B';-->
+<!--$landmark-regular: 'Landmark Regular A', 'Landmark Regular B';-->
+<!--//-->
+<!--$font-sans: sans-serif;-->
+<!--$font-serifs: $archer, serif;-->
+<!--$font-slab: $archer, serif;-->
+              <!--</code></pre>-->
+              <!--<h3>scss/global/extends/typography</h3>-->
+              <!--<pre><code data-trim>-->
+<!--%font-family-archer { font-family: $archer; }-->
+<!--%font-family-landmark-regular { font-family: $landmark-regular; }-->
+<!--%font-family-landmark-inline { font-family: $landmark-inline; }-->
+<!--//-->
+<!--%sans { font-family: $font-sans; }-->
+<!--%serif { font-family: $font-serifs; }-->
+              <!--</code></pre>-->
+            <!--</div>-->
         		<footer><a href="http://typecast.com/">typecast.com</a></footer>
             <aside class="notes">
               One of my favorite online tools for typography is **Typecast**. They combine all the webfonts from the leading online providers and allow you to really play with them.
@@ -777,9 +777,12 @@ $font-slab: $archer, serif;
         			<a href="http://github.com/at-import/modular-scale">github.com/at-import/modular-scale</a>
         		</footer>
             <aside class="notes">
-              <p>Once I decide on a font face I like to find a set of font sizes that work harmoniously. For that, my friend Scott Kellum and I wrote Sassy Modular Scale to bring Tim Brown's Modular Scale concept to Sass.</p>
+              <p>Once I decide on a font face I like to find a set of font sizes that work harmoniously.</p>
+              <p>Let's look at an example.</p>
+              <p>**Modular Scale** uses a concept that's been in typographic practice for hundreds of years and uses consistent <span class="bullet-point">ratios to establish relationships between type sizes</span>. In fact the ratios are often expressed as musical intervals. This is a good time to do some experimenting. </p>
+              <p>For that, my friend Scott Kellum and I wrote Sassy Modular Scale to bring Tim Brown's Modular Scale concept to Sass.</p>
 
-              <p>**Modular Scale** uses a concept that's been in typographic practice for hundreds of years and uses consistant <span class="bullet-point">ratios to establish relationships between type sizes</span>. In fact the ratios are often expressed as musical intervals. This is a good time to do some experimenting. In the **Sass version** you have a lot of control to create a scale with a lot of wide jumps in size or something more tightly spaced. The sizes you choose should show the type at its best, and also help to give your design language a certain character. It establishes a <span class="bullet-point">**set of limitations**</span>. Just keep in mind that this is very similar to a musical scale.  You don't have to always play the notes in order.</p>
+              <p>In the **Sass version** you have a lot of control to create a scale with a lot of wide jumps in size or something more tightly spaced. The sizes you choose should show the type at its best, and also help to give your design language a certain character. It establishes a <span class="bullet-point">**set of limitations**</span>. Just keep in mind that this is very similar to a musical scale.  You don't have to always play the notes in order.</p>
             </aside>
         	</section>
         	<!-- Slide #xx -->
@@ -869,7 +872,7 @@ $font-slab: $archer, serif;
         		</ul>
         		<footer><a href="http://github.com/at-import/color-schemer">github.com/at-import/color-schemer</a></footer>
             <aside class="notes">
-              Another Sass tool we can thank Scott Kellum for is **Color Schemer**. This lets you use a <span class="bullet-point">**single seed color**</span> to generate <span class="bullet-point">**harmonious color families**</span>. This is similar to tools like Kuler and Color Scheme Designer that help you use analagous and complimentary colors from the color wheel. Since this is Sass you can <span class="bullet-point">programatically experiment</span> and tweak until you're happy.
+              Another Sass tool we can thank Scott Kellum for is **Color Schemer**. This gives us some very powerful color theory tools in Sass. This lets you use a <span class="bullet-point">**single seed color**</span> to generate <span class="bullet-point">**harmonious color families**</span>. This is similar to tools like Kuler and Color Scheme Designer that help you use analagous and complimentary colors from the color wheel. Since this is Sass you can <span class="bullet-point">programatically experiment</span> and tweak until you're happy.
             </aside>
         	</section>
         </section>
@@ -975,7 +978,9 @@ scss/ (continued)
   style.scss
             </code></pre>
             </div>
-            <aside class="notes"></aside>
+            <aside class="notes">
+              <p>So how is this organized in Sass?</p>
+            </aside>
           </section>
           <section id="sass-variables-color" data-state="rekkid">
             <h1>global/variables/_colors.scss</h1>
@@ -1059,18 +1064,31 @@ $heading-line-heights-small: unitless(em($base-line-px * 1.5, ms(3))) unitless(e
             <div class="full-code-examples">
             <pre><code class="scss" data-trim>
 %serif { font-family: $font-serifs; }
+
 %sans { font-family: $font-sans; }
+
 %mono { font-family: $font-mono; }
+
 %uppercase { text-transform: uppercase; }
+
 %amp { font-family: $font-amp; }
+
 %slab-light { font-family: $font-slab; font-weight: 400; }
+
 %slab-medium { font-family: $font-slab; font-weight: 500; }
+
 %slab-bold { font-family: $font-slab; font-weight: 800; }
+
 %bold { font-weight: bold; }
+
 %italic { font-style: italic; }
+
 %font-family-archer { font-family: $archer; }
+
 %font-family-landmark-regular { font-family: $landmark-regular; }
+
 %font-family-landmark-inline { font-family: $landmark-inline; }
+
             </code></pre>
             </div>
             <aside class="notes"></aside>
