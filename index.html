@@ -930,6 +930,367 @@ $font-slab: $archer, serif;
               I've been using Pattern lab as an example here so I want to give you a brief tour of some of the things I like about it. Pattern Lab is centered arround giving you a low-friction way to define whatever design components you need, organize them into whatever categories or groupings you like, assemble them into bigger components, and then templates, and finally pages. You can add whatever CSS and JavaScript you want. You don't have to use Sass (altho *really?*) and you're really free to use any front end technique you like. One of my favourite bits of the UI is that it lets you quickly drag the width slider to see how the design works at different breakpoints. For me it's really about enabling the design iterations to go quickly and to give you clarity on the global shape of the design language as it progresses.
             </aside>
         	</section>
+          <section id="sass-folders" data-state="rekkid">
+            <h1>Sass folder structure</h1>
+            <div class="full-code-examples">
+            <pre class="half"><code data-trim>
+scss/
+  components/
+    _rhombus.scss
+    _button.scss
+    _footer.scss
+    _header.scss
+    _logo.scss
+    _navigation.scss
+    _schedule.scss
+    _speakers.scss
+  elements/
+    _body.scss
+    _forms.scss
+    _heading.scss
+    _image.scss
+            </code></pre>
+            <pre class="half"><code data-trim>
+scss/ (continued)
+  global/
+    assets/
+      _fonts.scss
+    extends/
+      _flexbox.scss
+      _helpers.scss
+      _typography.scss
+    functions/
+      _calculators.scss
+    mixins/
+      _helpers.scss
+    variables/
+      _breakpoints.scss
+      _colors.scss
+      _settings.scss
+      _type-sizes.scss
+      _typography.scss
+  layouts/
+  patternlab/
+  _scratch.scss
+  style.scss
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <section id="sass-variables-color" data-state="rekkid">
+            <h1>global/variables/_colors.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+// Color Schemer
+$cs-primary: hsl(330, 50%, 55%);
+$cs-scheme: triad; // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+$cs-hue-offset: 55; // Options: 0-100;
+$cs-brightness-offset: 0; // Options: 0-100;
+
+$color--primary: cs-primary();
+$color--secondary: adjust-color(cs-quadrary(), $lightness: -20%, $saturation: -50%);
+$color--tertiary: cs-secondary();
+$color--quadrary: adjust-color(cs-secondary(), $lightness: -10%, $saturation: -20%);
+$color--quintary: adjust-color(cs-tertiary(), $lightness: 10%, $saturation: 20%);
+
+//////////////////////////////
+// Background Colors
+//////////////////////////////
+$cs-background: $color--white;
+$cs-border-color: $color--black;
+
+// link colors
+$cs-link-normal: $color--quadrary;
+$cs-link-visited: $color--quadrary;
+$cs-link-hover: $color--tertiary;
+$cs-link-active: $color--tertiary;
+$cs-link-focus: $color--tertiary;
+$cs-link-background-normal: $color--primary;
+$cs-link-background-visited: $color--primary;
+$cs-link-background-hover: $color--secondary;
+$cs-link-background-active: $color--secondary;
+$cs-link-background-focus: $color--secondary;
+$cs-link-background-bkg: $cs-background;
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <section id="sass-variables-type" data-state="rekkid">
+            <h1>global/variables/_typography.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+// Typography
+$archer: 'Archer SSm A', 'Archer SSm B', serif;
+$landmark-inline: 'Landmark Inline A', 'Landmark Inline B';
+$landmark-regular: 'Landmark Regular A', 'Landmark Regular B';
+
+// Default font stacks
+$font-sans: sans-serif;
+$font-serifs: $archer, serif;
+$font-slab: $archer, serif;
+
+// General font variables
+$font-body: $font-serifs;
+$font-headline: $landmark-regular;
+$font-display: $landmark-inline;
+$font-logo: $font-slab;
+
+// Modular Scale
+$ms-ratio: $major-third $golden;
+$ms-base: 16px;
+
+// Font size and line-height
+$base-font-size: ms(0); // 16px
+$base-line-px: 26px;
+$base-line-em: em($base-line-px);
+$base-line-height: unitless($base-line-em);
+
+// Headings
+$heading-sizes: em(ms(6)) em(ms(5)) em(ms(4)) em(ms(3)) em(ms(2)) em(ms(1));
+$heading-line-heights: unitless(em($base-line-px * 1.5, ms(6))) unitless(em($base-line-px * 1.5, ms(5))) unitless(em($base-line-px * 1.25, ms(4))) unitless(em($base-line-px, ms(3))) unitless(em($base-line-px, ms(2))) unitless(em($base-line-px, ms(1)));
+$heading-sizes-small: em(ms(3)) em(ms(2)) em(ms(1)) em(ms(0)) em(ms(0)) em(ms(0));
+$heading-line-heights-small: unitless(em($base-line-px * 1.5, ms(3))) unitless(em($base-line-px * 1.25, ms(2))) unitless(em($base-line-px, ms(1))) false false false;
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <section id="sass-extends-type" data-state="rekkid">
+            <h1>global/extends/_typography.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+%serif { font-family: $font-serifs; }
+%sans { font-family: $font-sans; }
+%mono { font-family: $font-mono; }
+%uppercase { text-transform: uppercase; }
+%amp { font-family: $font-amp; }
+%slab-light { font-family: $font-slab; font-weight: 400; }
+%slab-medium { font-family: $font-slab; font-weight: 500; }
+%slab-bold { font-family: $font-slab; font-weight: 800; }
+%bold { font-weight: bold; }
+%italic { font-style: italic; }
+%font-family-archer { font-family: $archer; }
+%font-family-landmark-regular { font-family: $landmark-regular; }
+%font-family-landmark-inline { font-family: $landmark-inline; }
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <section id="sass-elements-headings" data-state="rekkid">
+            <h1>elements/_heading.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+// Headings Variables
+$heading-sizes: em(ms(6)) em(ms(5)) em(ms(4)) em(ms(3)) em(ms(2)) em(ms(1));
+$heading-line-heights: unitless(em($base-line-px * 1.5, ms(6))) unitless(em($base-line-px * 1.5, ms(5))) unitless(em($base-line-px * 1.25, ms(4))) unitless(em($base-line-px, ms(3))) unitless(em($base-line-px, ms(2))) unitless(em($base-line-px, ms(1)));
+//////////////////////////////
+
+// Header Element Default Variables
+$heading-base-extend: true !default;
+$heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1) !default;
+
+@mixin heading-base($extend: $heading-base-extend) {
+  @if $extend {
+    @extend %heading-base-extend;
+  } @else {
+    font: {
+      family: $font-headline;
+     weight: normal;
+    }
+  }
+}
+
+@mixin heading-display($extend: $heading-base-extend) {
+  @if $extend {
+    @extend %heading-base-extend;
+  } @else {
+    font: {
+      family: $font-display;
+      weight: normal;
+    }
+  }
+}
+
+@mixin heading-size($size, $line-height: false) {
+  font-size: $size;
+  @if $line-height {
+    line-height: $line-height;
+  }
+}
+
+// Heading Element Extendable Classes
+
+%headings-extend { @include heading-base(false); }
+%headings-display-extend { @include heading-display(false); }
+
+%h1 {
+@extend %headings-display-extend;
+  @include heading-size(nth($heading-sizes, 1), nth($heading-line-heights, 1));
+  margin-bottom: base-line-calc(1, nth($heading-sizes, 1));
+}
+
+// Heading Element Styles
+h1 { @extend %h1; }
+h2 { @extend %h2; }
+h3 { @extend %h3; }
+h4 { @extend %h4; }
+h5 { @extend %h5; }
+h6 { @extend %h6; }
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <section id="sass-components-speakers" data-state="rekkid">
+            <h1>components/_speakers.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+.section-title {
+  @extend %h4;
+  background-color: $color--tertiary;
+  color: $color--white;
+  padding: 0.2em 0.5em;
+  clear: both;
+  display: inline-block;
+  margin-left: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+.included {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: $color--secondary;
+  display: inline-block;
+  margin-left: -1em;
+  background: $color--quintary;
+  color: $color--secondary;
+  padding: 0 0.5em 0 1.5em;
+  white-space: nowrap;
+}
+
+.speaker--section {
+  @include clearfix();
+  clear: both;
+  margin-bottom: 2rem;
+}
+
+.session {
+  margin-bottom: 2rem;
+  clear: both;
+}
+
+.title {
+  @extend %h3;
+  @extend %rhombus;
+  background-color: $color--primary;
+  color: $color--white;
+  padding: 0.2em 0.5em;
+  max-width: 80%;
+  margin-left: 0.5em;
+  margin-bottom: 0.5rem;
+  h1 {
+    @extend %rhombus-reset;
+  }
+}
+
+.images {
+  @include breakpoint($bp--sessions-wrap) {
+    float: left;
+    width: 20rem;
+  }
+  @include breakpoint($bp--sessions-2col) {
+    float: left;
+    width: 20rem;
+  }
+}
+
+.speaker-images {
+  &#{-1} {
+   shape-outside: polygon(0px 0px, 320px 0px, 263px 263px, 0px 264px);
+  }
+  &#{-2} {
+   shape-outside: polygon(0px 0px, 320px 0px, 264px 251px, 320px 520px, 0px 520px);
+  }
+  &#{-3} {
+   shape-outside: polygon(0px 0px, 316px 5px, 272px 254px, 317px 506px, 267px 776px, 0px 776px);
+  }
+  &#{-8} {
+   shape-outside: polygon(0px 0px, 254px -10px, 290px 132px, 266px 260px, 286px 429px, 266px 547px, 0px 552px);
+  }
+}
+
+.speaker-images-0 {
+  display: none;
+  ~ .people {
+    @include breakpoint($bp--sessions-wrap) {
+      .speaker,
+      .occupation {
+        margin-left: 8rem;
+      }
+    }
+  }
+}
+
+.speaker-image {
+  @extend %rhombus--image;
+  .panel & {
+    width: 120px;
+    height: 120px;
+    img {
+      width: 150px;
+      height: 150px;
+      margin-left: -1rem;
+    }
+    &:nth-of-type(2n+2) {
+      margin-top: calc(-120px - 1rem);
+      margin-left: calc(120px + 1rem);
+    }
+    &:nth-of-type(4n+3) {
+      @extend %rhombus-left;
+      img {
+        @extend %rhombus-left-reset;
+        margin-left: -2rem;
+      }
+    }
+    &:nth-of-type(4n+4) {
+      @extend %rhombus;
+      img {
+        @extend %rhombus-reset;
+      }
+    }
+  }
+}
+
+.people {
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.speaker {
+  @extend %featured-person--name;
+}
+
+.occupation {
+  @extend %uppercase;
+  border-bottom: 1px dashed $color--tertiary;
+  margin-bottom: 0.5em;
+  @include breakpoint($bp--sessions-wrap) {
+    margin-left: 10rem;
+  }
+}
+
+.section--details {
+  @include breakpoint($bp--sessions-wrap) {
+   margin-left: 8em;
+  }
+}
+
+.section-details--description {
+  max-width: 30em;
+}
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
           <!-- Slide #xx -->
           <section id="singularity" class="foundation" data-state="rekkid">
             <h1>Singularity</h1>
@@ -948,8 +1309,8 @@ $font-slab: $archer, serif;
               <div class="col col-7"></div>
               <div class="col col-8"></div>
               <div class="col col-9"></div>
-              <code class="code-overlay">
-<pre>$grid-9: 9;
+              <div class="code-overlay">
+<pre><code class="scss" data-trim>$grid-9: 9;
 $grid-9-gutter: .25;
 .columns {
     @include layout($grid-9, $grid-9-gutter) {
@@ -957,8 +1318,8 @@ $grid-9-gutter: .25;
       .col-2 { @include grid-span(1, 2); }
     }
   }
-</pre>
-              </code>
+</code></pre>
+              </div>
             </div>
             <div class="columns set-two fragment current-visible" data-fragment-index="2">
               <div class="col col-1"></div>
@@ -967,8 +1328,8 @@ $grid-9-gutter: .25;
               <div class="col col-4 jazzbo"></div>
               <div class="col col-5"></div>
               <div class="col col-6"></div>
-              <code class="code-overlay">
-<pre>$grid-6: 1 2 1 2 1 2;
+              <div class="code-overlay">
+<pre><code class="scss" data-trim>$grid-6: 1 2 1 2 1 2;
 $grid-6-gutter: .25;
 .columns {
     @include layout($grid-6, $grid-6-gutter) {
@@ -976,16 +1337,16 @@ $grid-6-gutter: .25;
       .col-2 { @include grid-span(1, 2); }
     }
   }
-</pre>
-              </code>
+</code></pre>
+              </div>
             </div>
             <div class="columns set-three fragment current-visible" data-fragment-index="3">
               <div class="col col-1"></div>
               <div class="col col-2"></div>
               <div class="col col-3 jazzbo"></div>
               <div class="col col-4"></div>
-              <code class="code-overlay">
-<pre>$grid-4: 8 1 3 5;
+              <div class="code-overlay">
+<pre><code class="scss" data-trim>$grid-4: 8 1 3 5;
 $grid-4-gutter: .25;
 .columns {
     @include layout($grid-4, $grid-4-gutter) {
@@ -993,8 +1354,8 @@ $grid-4-gutter: .25;
       .col-2 { @include grid-span(1, 2); }
     }
   }
-</pre>
-            </code>
+</code></pre>
+            </div>
             </div>
             <footer><a href="http://github.com/Snugug/eq.js">github.com/Snugug/eq.js</a></footer>
             <aside class="notes">
@@ -1006,8 +1367,8 @@ $grid-4-gutter: .25;
             <h1>Sass Media Queries</h1>
             <h2>Breakpoint</h2>
             <div class="codes fragment" data-fragment-index="4">
-            <code class="code-overlay sass">
-<pre>$basic: 543px;
+            <div class="code-overlay sass">
+<pre><code class="scss" data-trim>$basic: 543px;
 $pair: 456px 794px;
 
 #foo {
@@ -1019,10 +1380,10 @@ $pair: 456px 794px;
     content: 'Paired Media Query';
   }
 }
-</pre>
-            </code>
-            <code class="code-overlay compiled">
-<pre>@media (min-width: 543px) {
+</code></pre>
+            </div>
+            <div class="code-overlay compiled">
+<pre><code class="scss"  data-trim>@media (min-width: 543px) {
   #foo {
     content: 'Basic Media Query';
   }
@@ -1033,8 +1394,8 @@ $pair: 456px 794px;
     content: 'Paired Media Query';
   }
 }
-</pre>
-            </code>
+</code></pre>
+            </div>
             </div>
             <ul>
               <li class="fragment" data-fragment-index="1">Organize By Setting Variables</li>
@@ -1068,18 +1429,14 @@ $pair: 456px 794px;
               <div class="col col-6"></div>
               <div class="col col-7"></div>
             </div>
-            <div class="codes">
-<pre class="fragment"><code class="code-overlay eq"><div class="component"
-  data-eq-pts="small: 400, medium: 600, large: 900">
-</div>
-</code>
+            <div class="codes fragment">
+<pre><code class="html" data-trim>
+<div data-eq-pts="small: 400, large: 600"></div>
+
+<div data-eq-pts="small: 400, large: 600" data-eq-state="large"></div>
+</code></pre>
 </pre>
-<pre class="fragment"><code class="code-overlay eq"><div class="component"
-  data-eq-pts="small: 400, medium: 600, large: 900" data-eq-state="medium">
-</div>
-</code>
-</pre>
-</div>
+            </div>
             <footer><a href="http://github.com/Snugug/eq.js">github.com/Snugug/eq.js</a></footer>
             <aside class="notes">
               Unfortnuately we <span class="bullet-point">**don't have element queries in css**</span>. These would allow us to alter the styling of an element if the container that it's in changes dimensions. Fortunately my friend Sam Richard has written a lightweight javascript implementation called eq.js. It works by setting <span class="bullet-point">**data attributes**</span> to an element under different conditions.

@@ -1,4 +1,4 @@
-#pattern-lab {
+%slide-orange-top-bar {
   h1 {
     @extend %gothic;
     @extend %uppercase;
@@ -6,26 +6,18 @@
     @extend %h2;
     margin-top: -20px;
     padding-top: 29px;
+    padding-right: 0.25em;
     margin-bottom: 0.25em;
-    // border-bottom: 8px solid $red;
     background: {
       color: $orange-vivid;
     }
     color: $white;
     overflow: hidden;
-//    .word5, .word6 {
-//      color: $red;
-//      top: 100px;
-//      position: relative;
-//    }
   }
-//  &.present {
-//    h1 {
-//      .word5, .word6 {
-//        @include experimental(animation, brings-us-to-style-guides 0.33s ease-in .33s 1 forwards);
-//      }
-//    }
-//  }
+}
+
+#pattern-lab {
+  @extend %slide-orange-top-bar;
   .live-examples {
     position: relative;
     top: -1.5rem;
@@ -34,5 +26,52 @@
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+}
+
+%code-slides {
+  @extend %slide-orange-top-bar;
+  .full-code-examples {
+    position: relative;
+    top: -1.5rem;
+    pre {
+      width: 100%;
+      height: 584px;
+      overflow: hidden;
+      margin: 0;
+      &.half {
+        width: 50%;
+        float: left;
+        &:nth-of-type(2) {
+          border-left: 3px solid $white;
+        }
+      }
+    }
+    code {
+      max-height: initial;
+      height: 100%;
+
+    }
+  }
+}
+
+#sass-folders {
+  @extend %code-slides;
+}
+[id^="sass-variables"] {
+  @extend %code-slides;
+}
+[id^="sass-extends"] {
+  @extend %code-slides;
+}
+[id^="sass-elements"] {
+  @extend %code-slides;
+}
+[id^="sass-components"] {
+  @extend %code-slides;
+}
+#sass-variables-type {
+  h1 {
+    font-size: 2.4em;
   }
 }

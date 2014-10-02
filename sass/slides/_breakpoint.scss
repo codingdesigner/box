@@ -73,9 +73,12 @@ $sg-code-2g: .025;
         display: none;
       }
     }
-    code {
+    .code-overlay {
       background: {
         color: rgba($gray-dark, 0.8);
+      }
+      code {
+        background-color: transparent;
       }
       @include layout($sg-code-2, $sg-code-2g) {
         &.sass {

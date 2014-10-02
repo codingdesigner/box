@@ -1965,7 +1965,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, #breakpoint h2, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1, #eq h2, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, #modular-scale h2, #color-schemer h1, #color-schemer h2, #performance h1, #teams h1, #singularity h1, #breakpoint h1, #eq h1, #simple-trick h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, #breakpoint h2, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #eq h2, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, #modular-scale h2, #color-schemer h1, #color-schemer h2, #performance h1, #teams h1, #singularity h1, #breakpoint h1, #eq h1, #simple-trick h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
@@ -1976,7 +1976,7 @@ p {
   margin-bottom: 0.64919em;
 }
 
-.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1, #eq h2 {
+.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #eq h2 {
   font-size: 2.61803em;
   line-height: 0.93369;
   margin-bottom: 1.05041em;
@@ -3421,57 +3421,57 @@ body {
   animation-fill-mode: both;
 }
 #modular-scale.present [class^="char"]:nth-of-type(1) {
-  -moz-animation-duration: 0.05581s;
-  -webkit-animation-duration: 0.05581s;
-  animation-duration: 0.05581s;
+  -moz-animation-duration: 0.1561s;
+  -webkit-animation-duration: 0.1561s;
+  animation-duration: 0.1561s;
   -moz-animation-delay: 0.33s;
   -webkit-animation-delay: 0.33s;
   animation-delay: 0.33s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(2) {
-  -moz-animation-duration: 0.26978s;
-  -webkit-animation-duration: 0.26978s;
-  animation-duration: 0.26978s;
+  -moz-animation-duration: 0.75051s;
+  -webkit-animation-duration: 0.75051s;
+  animation-duration: 0.75051s;
   -moz-animation-delay: 0.66s;
   -webkit-animation-delay: 0.66s;
   animation-delay: 0.66s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(3) {
-  -moz-animation-duration: 0.11556s;
-  -webkit-animation-duration: 0.11556s;
-  animation-duration: 0.11556s;
+  -moz-animation-duration: 0.57453s;
+  -webkit-animation-duration: 0.57453s;
+  animation-duration: 0.57453s;
   -moz-animation-delay: 0.99s;
   -webkit-animation-delay: 0.99s;
   animation-delay: 0.99s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(4) {
-  -moz-animation-duration: 2.40504s;
-  -webkit-animation-duration: 2.40504s;
-  animation-duration: 2.40504s;
+  -moz-animation-duration: 1.10063s;
+  -webkit-animation-duration: 1.10063s;
+  animation-duration: 1.10063s;
   -moz-animation-delay: 1.32s;
   -webkit-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(5) {
-  -moz-animation-duration: 0.10596s;
-  -webkit-animation-duration: 0.10596s;
-  animation-duration: 0.10596s;
+  -moz-animation-duration: 0.28461s;
+  -webkit-animation-duration: 0.28461s;
+  animation-duration: 0.28461s;
   -moz-animation-delay: 1.65s;
   -webkit-animation-delay: 1.65s;
   animation-delay: 1.65s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(6) {
-  -moz-animation-duration: 4.26117s;
-  -webkit-animation-duration: 4.26117s;
-  animation-duration: 4.26117s;
+  -moz-animation-duration: 2.43078s;
+  -webkit-animation-duration: 2.43078s;
+  animation-duration: 2.43078s;
   -moz-animation-delay: 1.98s;
   -webkit-animation-delay: 1.98s;
   animation-delay: 1.98s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(7) {
-  -moz-animation-duration: 3.01022s;
-  -webkit-animation-duration: 3.01022s;
-  animation-duration: 3.01022s;
+  -moz-animation-duration: 1.66879s;
+  -webkit-animation-duration: 1.66879s;
+  animation-duration: 1.66879s;
   -moz-animation-delay: 2.31s;
   -webkit-animation-delay: 2.31s;
   animation-delay: 2.31s;
@@ -4509,15 +4509,17 @@ body {
   color: #fd7738;
 }
 
-#pattern-lab h1 {
+#pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1 {
   text-align: right;
   margin-top: -20px;
   padding-top: 29px;
+  padding-right: 0.25em;
   margin-bottom: 0.25em;
   background-color: #fd7738;
   color: #fefefe;
   overflow: hidden;
 }
+
 #pattern-lab .live-examples {
   position: relative;
   top: -1.5rem;
@@ -4526,6 +4528,32 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+#sass-folders .full-code-examples, [id^="sass-variables"] .full-code-examples, [id^="sass-extends"] .full-code-examples, [id^="sass-elements"] .full-code-examples, [id^="sass-components"] .full-code-examples {
+  position: relative;
+  top: -1.5rem;
+}
+#sass-folders .full-code-examples pre, [id^="sass-variables"] .full-code-examples pre, [id^="sass-extends"] .full-code-examples pre, [id^="sass-elements"] .full-code-examples pre, [id^="sass-components"] .full-code-examples pre {
+  width: 100%;
+  height: 584px;
+  overflow: hidden;
+  margin: 0;
+}
+#sass-folders .full-code-examples pre.half, [id^="sass-variables"] .full-code-examples pre.half, [id^="sass-extends"] .full-code-examples pre.half, [id^="sass-elements"] .full-code-examples pre.half, [id^="sass-components"] .full-code-examples pre.half {
+  width: 50%;
+  float: left;
+}
+#sass-folders .full-code-examples pre.half:nth-of-type(2), [id^="sass-variables"] .full-code-examples pre.half:nth-of-type(2), [id^="sass-extends"] .full-code-examples pre.half:nth-of-type(2), [id^="sass-elements"] .full-code-examples pre.half:nth-of-type(2), [id^="sass-components"] .full-code-examples pre.half:nth-of-type(2) {
+  border-left: 3px solid #fefefe;
+}
+#sass-folders .full-code-examples code, [id^="sass-variables"] .full-code-examples code, [id^="sass-extends"] .full-code-examples code, [id^="sass-elements"] .full-code-examples code, [id^="sass-components"] .full-code-examples code {
+  max-height: initial;
+  height: 100%;
+}
+
+#sass-variables-type h1 {
+  font-size: 2.4em;
 }
 
 #singularity h1 {
@@ -4701,23 +4729,30 @@ body {
 #singularity ul li {
   list-style-type: none;
 }
-#singularity code {
-  color: #fefefe;
-  display: block;
-  background-color: rgba(37, 34, 29, 0.8);
+#singularity .code-overlay {
   position: relative;
   top: 2em;
+}
+#singularity .current-fragment {
   opacity: 0;
 }
-#singularity code pre {
-  box-shadow: none;
-}
-#singularity .current-fragment code {
+#singularity .current-fragment .code-overlay {
   -webkit-animation: fade-in 0.33s ease-in 2s 1 forwards;
   -moz-animation: fade-in 0.33s ease-in 2s 1 forwards;
   -ms-animation: fade-in 0.33s ease-in 2s 1 forwards;
   -o-animation: fade-in 0.33s ease-in 2s 1 forwards;
   animation: fade-in 0.33s ease-in 2s 1 forwards;
+}
+
+.code-overlay {
+  display: block;
+}
+.code-overlay pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.code-overlay code {
+  background-color: rgba(63, 63, 63, 0.9);
 }
 
 #breakpoint {
@@ -4781,17 +4816,20 @@ body {
 #breakpoint .codes.visible + ul {
   display: none;
 }
-#breakpoint .codes code {
+#breakpoint .codes .code-overlay {
   background-color: rgba(37, 34, 29, 0.8);
 }
-#breakpoint .codes code.sass {
+#breakpoint .codes .code-overlay code {
+  background-color: transparent;
+}
+#breakpoint .codes .code-overlay.sass {
   width: 49.38272%;
   float: left;
   margin-right: -100%;
   margin-left: 0;
   clear: none;
 }
-#breakpoint .codes code.compiled {
+#breakpoint .codes .code-overlay.compiled {
   width: 49.38272%;
   float: right;
   margin-left: 0;
@@ -4937,17 +4975,6 @@ body {
   position: relative;
   top: 1em;
 }
-#eq pre {
-  box-shadow: none;
-  margin: 0;
-}
-#eq code {
-  color: #fefefe;
-  display: block;
-  background-color: rgba(37, 34, 29, 0.8);
-  position: relative;
-  top: 2em;
-}
 
 #simple-trick {
   background-image: url('../images/coltrane-ascension.png');
@@ -5062,7 +5089,7 @@ body {
   font-family: "jubilat", derifs;
 }
 
-#component-driven ul, #teams ul, #style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #singularity h1, #breakpoint h2, #simple-trick h1, .gothic {
+#component-driven ul, #teams ul, #style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #singularity h1, #breakpoint h2, #simple-trick h1, .gothic {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
@@ -5090,7 +5117,7 @@ code, #find-typeface .code, #color-schemer .svg-cs-scheme, #color-schemer .svg-c
   text-transform: lowercase;
 }
 
-#component-driven ul, #teams ul, #main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #jazzbos-are-cool h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul, #performance h1, #teams p.unity, #pattern-lab h1, #singularity ul, #breakpoint h1, #breakpoint ul, #eq ul, #thanks ul li {
+#component-driven ul, #teams ul, #main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #jazzbos-are-cool h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul, #performance h1, #teams p.unity, #pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #singularity ul, #breakpoint h1, #breakpoint ul, #eq ul, #thanks ul li {
   text-transform: uppercase;
 }
 

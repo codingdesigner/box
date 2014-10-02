@@ -80,22 +80,33 @@ $sg-4g: .25;
       list-style-type: none;
     }
   }
-  code {
-    color: $white;
-    display: block;
-    background: {
-      color: rgba($gray-dark, 0.8);
-    }
+  .code-overlay {
     position: relative;
     top: 2em;
-    opacity: 0;
-    pre {
-      box-shadow: none;
-    }
   }
   .current-fragment {
-    code {
+    opacity: 0;
+    .code-overlay {
       @include experimental(animation, fade-in 0.33s ease-in 2s 1 forwards);
     }
+  }
+}
+
+.code-overlay {
+  //    color: $white;
+  display: block;
+  //    background: {
+  //      color: rgba($gray-dark, 0.8);
+  //    }
+
+  //    pre {
+  //      box-shadow: none;
+  //    }
+  pre {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  code {
+    background-color: rgba(#3F3F3F, 0.9);
   }
 }
