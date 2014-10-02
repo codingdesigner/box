@@ -3421,57 +3421,57 @@ body {
   animation-fill-mode: both;
 }
 #modular-scale.present [class^="char"]:nth-of-type(1) {
-  -moz-animation-duration: 0.64389s;
-  -webkit-animation-duration: 0.64389s;
-  animation-duration: 0.64389s;
+  -moz-animation-duration: 0.95668s;
+  -webkit-animation-duration: 0.95668s;
+  animation-duration: 0.95668s;
   -moz-animation-delay: 0.33s;
   -webkit-animation-delay: 0.33s;
   animation-delay: 0.33s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(2) {
-  -moz-animation-duration: 0.98797s;
-  -webkit-animation-duration: 0.98797s;
-  animation-duration: 0.98797s;
+  -moz-animation-duration: 1.95009s;
+  -webkit-animation-duration: 1.95009s;
+  animation-duration: 1.95009s;
   -moz-animation-delay: 0.66s;
   -webkit-animation-delay: 0.66s;
   animation-delay: 0.66s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(3) {
-  -moz-animation-duration: 0.59524s;
-  -webkit-animation-duration: 0.59524s;
-  animation-duration: 0.59524s;
+  -moz-animation-duration: 2.74312s;
+  -webkit-animation-duration: 2.74312s;
+  animation-duration: 2.74312s;
   -moz-animation-delay: 0.99s;
   -webkit-animation-delay: 0.99s;
   animation-delay: 0.99s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(4) {
-  -moz-animation-duration: 2.93948s;
-  -webkit-animation-duration: 2.93948s;
-  animation-duration: 2.93948s;
+  -moz-animation-duration: 1.09904s;
+  -webkit-animation-duration: 1.09904s;
+  animation-duration: 1.09904s;
   -moz-animation-delay: 1.32s;
   -webkit-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(5) {
-  -moz-animation-duration: 1.4897s;
-  -webkit-animation-duration: 1.4897s;
-  animation-duration: 1.4897s;
+  -moz-animation-duration: 0.73745s;
+  -webkit-animation-duration: 0.73745s;
+  animation-duration: 0.73745s;
   -moz-animation-delay: 1.65s;
   -webkit-animation-delay: 1.65s;
   animation-delay: 1.65s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(6) {
-  -moz-animation-duration: 5.55662s;
-  -webkit-animation-duration: 5.55662s;
-  animation-duration: 5.55662s;
+  -moz-animation-duration: 1.20814s;
+  -webkit-animation-duration: 1.20814s;
+  animation-duration: 1.20814s;
   -moz-animation-delay: 1.98s;
   -webkit-animation-delay: 1.98s;
   animation-delay: 1.98s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(7) {
-  -moz-animation-duration: 4.89841s;
-  -webkit-animation-duration: 4.89841s;
-  animation-duration: 4.89841s;
+  -moz-animation-duration: 2.35778s;
+  -webkit-animation-duration: 2.35778s;
+  animation-duration: 2.35778s;
   -moz-animation-delay: 2.31s;
   -webkit-animation-delay: 2.31s;
   animation-delay: 2.31s;
@@ -4732,8 +4732,6 @@ body {
 #singularity .code-overlay {
   position: relative;
   top: 2em;
-}
-#singularity .current-fragment {
   opacity: 0;
 }
 #singularity .current-fragment .code-overlay {
