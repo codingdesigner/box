@@ -2075,6 +2075,16 @@ body {
   box-shadow: rgba(37, 34, 29, 0.8) 0 0 1em;
 }
 
+#component-driven ul, #teams ul {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-left: 0;
+  list-style: none;
+}
+#component-driven ul li, #teams ul li {
+  padding-left: 0;
+}
+
 .reveal .slides > section {
   padding: 0;
 }
@@ -2806,16 +2816,9 @@ body {
 }
 #component-driven ul {
   position: relative;
-  margin-left: 0;
-  list-style: none;
   color: #fefefe;
   left: -2.1em;
   top: 2em;
-  line-height: 1.5;
-  letter-spacing: 1px;
-}
-#component-driven ul li {
-  padding-left: 0;
 }
 
 .giant-steps figure, #looks-like-jazz .train {
@@ -3418,57 +3421,57 @@ body {
   animation-fill-mode: both;
 }
 #modular-scale.present [class^="char"]:nth-of-type(1) {
-  -moz-animation-duration: 0.61759s;
-  -webkit-animation-duration: 0.61759s;
-  animation-duration: 0.61759s;
+  -moz-animation-duration: 0.72508s;
+  -webkit-animation-duration: 0.72508s;
+  animation-duration: 0.72508s;
   -moz-animation-delay: 0.33s;
   -webkit-animation-delay: 0.33s;
   animation-delay: 0.33s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(2) {
-  -moz-animation-duration: 0.01241s;
-  -webkit-animation-duration: 0.01241s;
-  animation-duration: 0.01241s;
+  -moz-animation-duration: 0.38731s;
+  -webkit-animation-duration: 0.38731s;
+  animation-duration: 0.38731s;
   -moz-animation-delay: 0.66s;
   -webkit-animation-delay: 0.66s;
   animation-delay: 0.66s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(3) {
-  -moz-animation-duration: 0.35016s;
-  -webkit-animation-duration: 0.35016s;
-  animation-duration: 0.35016s;
+  -moz-animation-duration: 0.81093s;
+  -webkit-animation-duration: 0.81093s;
+  animation-duration: 0.81093s;
   -moz-animation-delay: 0.99s;
   -webkit-animation-delay: 0.99s;
   animation-delay: 0.99s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(4) {
-  -moz-animation-duration: 1.02993s;
-  -webkit-animation-duration: 1.02993s;
-  animation-duration: 1.02993s;
+  -moz-animation-duration: 1.13393s;
+  -webkit-animation-duration: 1.13393s;
+  animation-duration: 1.13393s;
   -moz-animation-delay: 1.32s;
   -webkit-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(5) {
-  -moz-animation-duration: 0.97755s;
-  -webkit-animation-duration: 0.97755s;
-  animation-duration: 0.97755s;
+  -moz-animation-duration: 0.89064s;
+  -webkit-animation-duration: 0.89064s;
+  animation-duration: 0.89064s;
   -moz-animation-delay: 1.65s;
   -webkit-animation-delay: 1.65s;
   animation-delay: 1.65s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(6) {
-  -moz-animation-duration: 0.02489s;
-  -webkit-animation-duration: 0.02489s;
-  animation-duration: 0.02489s;
+  -moz-animation-duration: 1.95759s;
+  -webkit-animation-duration: 1.95759s;
+  animation-duration: 1.95759s;
   -moz-animation-delay: 1.98s;
   -webkit-animation-delay: 1.98s;
   animation-delay: 1.98s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(7) {
-  -moz-animation-duration: 3.98604s;
-  -webkit-animation-duration: 3.98604s;
-  animation-duration: 3.98604s;
+  -moz-animation-duration: 1.75929s;
+  -webkit-animation-duration: 1.75929s;
+  animation-duration: 1.75929s;
   -moz-animation-delay: 2.31s;
   -webkit-animation-delay: 2.31s;
   animation-delay: 2.31s;
@@ -4449,7 +4452,7 @@ body {
   margin-top: 15px;
   margin-bottom: 0;
 }
-#teams p {
+#teams p.unity {
   position: absolute;
   top: 100px;
   left: 30px;
@@ -4458,22 +4461,22 @@ body {
   line-height: 0.63;
   text-align: left;
 }
-#teams p [class^="char"] {
+#teams p.unity [class^="char"] {
   position: absolute;
 }
-#teams p .char1, #teams p .char2 {
+#teams p.unity .char1, #teams p.unity .char2 {
   top: 0;
 }
-#teams p .char2 {
+#teams p.unity .char2 {
   left: 0.55em;
 }
-#teams p .char3, #teams p .char4, #teams p .char5 {
+#teams p.unity .char3, #teams p.unity .char4, #teams p.unity .char5 {
   top: 0.7em;
 }
-#teams p .char4 {
+#teams p.unity .char4 {
   left: 0.25em;
 }
-#teams p .char5 {
+#teams p.unity .char5 {
   left: 0.62em;
 }
 #teams .red-dot {
@@ -4498,6 +4501,12 @@ body {
 #teams .red-dot:nth-of-type(4) {
   top: 262px;
   left: 131px;
+}
+#teams ul {
+  position: relative;
+  top: 1.1rem;
+  left: 14rem;
+  color: #fd7738;
 }
 
 #pattern-lab h1 {
@@ -5061,7 +5070,7 @@ body {
   font-family: "jubilat", derifs;
 }
 
-#style-guides h1, #component-driven ul, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #singularity h1, #breakpoint h2, #simple-trick h1, .gothic {
+#component-driven ul, #teams ul, #style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #singularity h1, #breakpoint h2, #simple-trick h1, .gothic {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
@@ -5089,7 +5098,7 @@ code, #find-typeface .code, #color-schemer .svg-cs-scheme {
   text-transform: lowercase;
 }
 
-#main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #jazzbos-are-cool h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #component-driven ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul, #performance h1, #teams p, #pattern-lab h1, #singularity ul, #breakpoint h1, #breakpoint ul, #eq ul, #thanks ul li {
+#component-driven ul, #teams ul, #main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #jazzbos-are-cool h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul, #performance h1, #teams p.unity, #pattern-lab h1, #singularity ul, #breakpoint h1, #breakpoint ul, #eq ul, #thanks ul li {
   text-transform: uppercase;
 }
 
