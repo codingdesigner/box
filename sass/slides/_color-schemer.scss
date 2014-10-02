@@ -28,6 +28,16 @@
   #wheel {
     mix-blend-mode: color;
   }
+  .svg-cs-scheme {
+    @extend %mono;
+    font-size: ms(-1);
+    fill: $black;
+  }
+  #scheme2, #scheme3 {
+    .svg-cs-scheme {
+      fill: $white;
+    }
+  }
 
   h1, h2 {
     @extend %h3;

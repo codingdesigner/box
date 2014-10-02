@@ -3418,57 +3418,57 @@ body {
   animation-fill-mode: both;
 }
 #modular-scale.present [class^="char"]:nth-of-type(1) {
-  -moz-animation-duration: 0.9702s;
-  -webkit-animation-duration: 0.9702s;
-  animation-duration: 0.9702s;
+  -moz-animation-duration: 0.61759s;
+  -webkit-animation-duration: 0.61759s;
+  animation-duration: 0.61759s;
   -moz-animation-delay: 0.33s;
   -webkit-animation-delay: 0.33s;
   animation-delay: 0.33s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(2) {
-  -moz-animation-duration: 0.86592s;
-  -webkit-animation-duration: 0.86592s;
-  animation-duration: 0.86592s;
+  -moz-animation-duration: 0.01241s;
+  -webkit-animation-duration: 0.01241s;
+  animation-duration: 0.01241s;
   -moz-animation-delay: 0.66s;
   -webkit-animation-delay: 0.66s;
   animation-delay: 0.66s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(3) {
-  -moz-animation-duration: 0.26504s;
-  -webkit-animation-duration: 0.26504s;
-  animation-duration: 0.26504s;
+  -moz-animation-duration: 0.35016s;
+  -webkit-animation-duration: 0.35016s;
+  animation-duration: 0.35016s;
   -moz-animation-delay: 0.99s;
   -webkit-animation-delay: 0.99s;
   animation-delay: 0.99s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(4) {
-  -moz-animation-duration: 1.30784s;
-  -webkit-animation-duration: 1.30784s;
-  animation-duration: 1.30784s;
+  -moz-animation-duration: 1.02993s;
+  -webkit-animation-duration: 1.02993s;
+  animation-duration: 1.02993s;
   -moz-animation-delay: 1.32s;
   -webkit-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(5) {
-  -moz-animation-duration: 4.92587s;
-  -webkit-animation-duration: 4.92587s;
-  animation-duration: 4.92587s;
+  -moz-animation-duration: 0.97755s;
+  -webkit-animation-duration: 0.97755s;
+  animation-duration: 0.97755s;
   -moz-animation-delay: 1.65s;
   -webkit-animation-delay: 1.65s;
   animation-delay: 1.65s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(6) {
-  -moz-animation-duration: 3.83364s;
-  -webkit-animation-duration: 3.83364s;
-  animation-duration: 3.83364s;
+  -moz-animation-duration: 0.02489s;
+  -webkit-animation-duration: 0.02489s;
+  animation-duration: 0.02489s;
   -moz-animation-delay: 1.98s;
   -webkit-animation-delay: 1.98s;
   animation-delay: 1.98s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(7) {
-  -moz-animation-duration: 5.39293s;
-  -webkit-animation-duration: 5.39293s;
-  animation-duration: 5.39293s;
+  -moz-animation-duration: 3.98604s;
+  -webkit-animation-duration: 3.98604s;
+  animation-duration: 3.98604s;
   -moz-animation-delay: 2.31s;
   -webkit-animation-delay: 2.31s;
   animation-delay: 2.31s;
@@ -4382,6 +4382,13 @@ body {
 #color-schemer #wheel {
   mix-blend-mode: color;
 }
+#color-schemer .svg-cs-scheme {
+  font-size: 22.24922px;
+  fill: black;
+}
+#color-schemer #scheme2 .svg-cs-scheme, #color-schemer #scheme3 .svg-cs-scheme {
+  fill: #fefefe;
+}
 #color-schemer h1, #color-schemer h2 {
   text-align: right;
   position: absolute;
@@ -5074,7 +5081,7 @@ body {
   font-family: "motor-stencil", sans-serif;
 }
 
-code, #find-typeface .code {
+code, #find-typeface .code, #color-schemer .svg-cs-scheme {
   font-family: "Source Code Pro", monospace;
 }
 
