@@ -3421,57 +3421,57 @@ body {
   animation-fill-mode: both;
 }
 #modular-scale.present [class^="char"]:nth-of-type(1) {
-  -moz-animation-duration: 0.20211s;
-  -webkit-animation-duration: 0.20211s;
-  animation-duration: 0.20211s;
+  -moz-animation-duration: 0.60767s;
+  -webkit-animation-duration: 0.60767s;
+  animation-duration: 0.60767s;
   -moz-animation-delay: 0.33s;
   -webkit-animation-delay: 0.33s;
   animation-delay: 0.33s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(2) {
-  -moz-animation-duration: 0.35122s;
-  -webkit-animation-duration: 0.35122s;
-  animation-duration: 0.35122s;
+  -moz-animation-duration: 0.6941s;
+  -webkit-animation-duration: 0.6941s;
+  animation-duration: 0.6941s;
   -moz-animation-delay: 0.66s;
   -webkit-animation-delay: 0.66s;
   animation-delay: 0.66s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(3) {
-  -moz-animation-duration: 1.12402s;
-  -webkit-animation-duration: 1.12402s;
-  animation-duration: 1.12402s;
+  -moz-animation-duration: 0.61001s;
+  -webkit-animation-duration: 0.61001s;
+  animation-duration: 0.61001s;
   -moz-animation-delay: 0.99s;
   -webkit-animation-delay: 0.99s;
   animation-delay: 0.99s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(4) {
-  -moz-animation-duration: 3.29162s;
-  -webkit-animation-duration: 3.29162s;
-  animation-duration: 3.29162s;
+  -moz-animation-duration: 2.71767s;
+  -webkit-animation-duration: 2.71767s;
+  animation-duration: 2.71767s;
   -moz-animation-delay: 1.32s;
   -webkit-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(5) {
-  -moz-animation-duration: 1.58391s;
-  -webkit-animation-duration: 1.58391s;
-  animation-duration: 1.58391s;
+  -moz-animation-duration: 4.85503s;
+  -webkit-animation-duration: 4.85503s;
+  animation-duration: 4.85503s;
   -moz-animation-delay: 1.65s;
   -webkit-animation-delay: 1.65s;
   animation-delay: 1.65s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(6) {
-  -moz-animation-duration: 2.14124s;
-  -webkit-animation-duration: 2.14124s;
-  animation-duration: 2.14124s;
+  -moz-animation-duration: 4.93712s;
+  -webkit-animation-duration: 4.93712s;
+  animation-duration: 4.93712s;
   -moz-animation-delay: 1.98s;
   -webkit-animation-delay: 1.98s;
   animation-delay: 1.98s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(7) {
-  -moz-animation-duration: 5.92484s;
-  -webkit-animation-duration: 5.92484s;
-  animation-duration: 5.92484s;
+  -moz-animation-duration: 5.14706s;
+  -webkit-animation-duration: 5.14706s;
+  animation-duration: 5.14706s;
   -moz-animation-delay: 2.31s;
   -webkit-animation-delay: 2.31s;
   animation-delay: 2.31s;
@@ -4518,6 +4518,16 @@ body {
   background-color: #fd7738;
   color: #fefefe;
   overflow: hidden;
+}
+#pattern-lab footer.links, #sass-folders footer.links, [id^="sass-variables"] footer.links, [id^="sass-extends"] footer.links, [id^="sass-elements"] footer.links, [id^="sass-components"] footer.links {
+  position: absolute;
+  top: 2.5em;
+  left: 1em;
+  font-size: 0.7em;
+}
+#pattern-lab footer.links a, #sass-folders footer.links a, [id^="sass-variables"] footer.links a, [id^="sass-extends"] footer.links a, [id^="sass-elements"] footer.links a, [id^="sass-components"] footer.links a, #pattern-lab footer.links a:link, #sass-folders footer.links a:link, [id^="sass-variables"] footer.links a:link, [id^="sass-extends"] footer.links a:link, [id^="sass-elements"] footer.links a:link, [id^="sass-components"] footer.links a:link, #pattern-lab footer.links a:hover, #sass-folders footer.links a:hover, [id^="sass-variables"] footer.links a:hover, [id^="sass-extends"] footer.links a:hover, [id^="sass-elements"] footer.links a:hover, [id^="sass-components"] footer.links a:hover, #pattern-lab footer.links a:visited, #sass-folders footer.links a:visited, [id^="sass-variables"] footer.links a:visited, [id^="sass-extends"] footer.links a:visited, [id^="sass-elements"] footer.links a:visited, [id^="sass-components"] footer.links a:visited, #pattern-lab footer.links a:active, #sass-folders footer.links a:active, [id^="sass-variables"] footer.links a:active, [id^="sass-extends"] footer.links a:active, [id^="sass-elements"] footer.links a:active, [id^="sass-components"] footer.links a:active {
+  color: #fefefe;
+  border-bottom-color: #fefefe;
 }
 
 #pattern-lab .live-examples {

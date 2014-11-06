@@ -14,6 +14,16 @@
     color: $white;
     overflow: hidden;
   }
+  footer.links {
+    position: absolute;
+    top: 2.5em;
+    left: 1em;
+    font-size: 0.7em;
+    a, a:link, a:hover, a:visited, a:active {
+      color: $white;
+      border-bottom-color: $white;
+    }
+  }
 }
 
 #pattern-lab {
