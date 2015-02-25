@@ -1965,42 +1965,42 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, #breakpoint h2, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #eq h2, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, #modular-scale h2, #color-schemer h1, #color-schemer h2, #performance h1, #teams h1, #singularity h1, #breakpoint h1, #eq h1, #simple-trick h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
+.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, #breakpoint h2, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1, #pattern-lab-site h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #eq h2, .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, #modular-scale h2, #color-schemer h1, #color-schemer h2, #performance h1, #teams h1, #singularity h1, #breakpoint h1, #eq h1, #simple-trick h1, .base--STYLED h4, .reveal h4, .base--STYLED h5, .reveal h5, .base--STYLED h6, .reveal h6 {
   font-family: "alternate-gothic-no-1-d", sans-serif;
   font-weight: normal;
 }
 
 .base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, #breakpoint h2 {
-  font-size: 4.23607em;
-  line-height: 0.72132;
-  margin-bottom: 0.64919em;
+  font-size: 4.22222em;
+  line-height: 0.72368;
+  margin-bottom: 0.65132em;
 }
 
-.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #eq h2 {
-  font-size: 2.61803em;
-  line-height: 0.93369;
-  margin-bottom: 1.05041em;
+.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1, #pattern-lab-site h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #eq h2 {
+  font-size: 2.61111em;
+  line-height: 0.93617;
+  margin-bottom: 1.05319em;
 }
 
 .base--STYLED h3, .reveal h3, #main-title h2, #what-are-we-designing h1 .word4, #what-are-we-designing .fragment, #bad-style-guides h1, #musical-thinking h1, .compare-design-music h1, #content-first-design h1, #component-second h1, #aesthetic-foundation h1, #find-typeface h2, #modular-scale h2, #color-schemer h1, #color-schemer h2, #performance h1, #teams h1, #singularity h1, #breakpoint h1, #eq h1, #simple-trick h1 {
-  font-size: 1.61803em;
-  line-height: 0.94422;
-  margin-bottom: 1.69959em;
+  font-size: 1.61111em;
+  line-height: 0.94828;
+  margin-bottom: 1.7069em;
 }
 
 .base--STYLED h4, .reveal h4 {
-  font-size: 1.61803em;
-  line-height: 0.75537;
+  font-size: 1.61111em;
+  line-height: 0.75862;
 }
 
 .base--STYLED h5, .reveal h5 {
-  font-size: 1.61803em;
-  line-height: 0.75537;
+  font-size: 1.61111em;
+  line-height: 0.75862;
 }
 
 .base--STYLED h6, .reveal h6 {
-  font-size: 1.61803em;
-  line-height: 0.75537;
+  font-size: 1.61111em;
+  line-height: 0.75862;
 }
 
 a:not(.button) {
@@ -2672,7 +2672,7 @@ body {
   top: 6px;
   left: 157px;
   color: #00ca00;
-  font-size: 94.24922px;
+  font-size: 94px;
 }
 #bad-style-guides h1 {
   text-align: right;
@@ -2688,7 +2688,7 @@ body {
   position: relative;
 }
 #bad-style-guides h1 [class^="word"]:after {
-  font-size: 22.24922px;
+  font-size: 22px;
   color: #73b3da;
   position: absolute;
   right: -88px;
@@ -2786,7 +2786,7 @@ body {
 }
 #as-design-tool figure figcaption {
   text-align: right;
-  font-size: 22.24922px;
+  font-size: 22px;
   position: absolute;
   bottom: 1em;
   right: 1em;
@@ -2807,7 +2807,7 @@ body {
 }
 #component-driven h1 .talking-about {
   color: #7f7e7b;
-  font-size: 58.24922px;
+  font-size: 58px;
 }
 #component-driven h1 .component-driven-design {
   display: block;
@@ -2857,7 +2857,7 @@ body {
   right: 0;
   bottom: 0;
   text-align: right;
-  font-size: 152.49845px;
+  font-size: 152px;
 }
 
 #hard-bop {
@@ -3128,6 +3128,17 @@ body {
 #content-first-design ul li {
   list-style-type: none;
 }
+#content-first-design .asterisk {
+  color: #fefefe;
+}
+#content-first-design .bs-detector {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  color: #fefefe;
+  text-transform: lowercase;
+  font-style: italic;
+}
 
 #component-second {
   background-image: url('../images/tina-brooks.svg');
@@ -3159,6 +3170,14 @@ body {
   height: 4.7em;
   margin-bottom: 0.5em;
   padding-top: 0.5em;
+}
+#component-second .bs-detector {
+  position: absolute;
+  bottom: 0.6em;
+  right: 1.5em;
+  color: #25221d;
+  text-transform: lowercase;
+  font-style: italic;
 }
 
 #aesthetic-foundation {
@@ -3197,7 +3216,7 @@ body {
   right: 1em;
   bottom: 0.5em;
   z-index: 3;
-  font-size: 22.24922px;
+  font-size: 22px;
   width: 100%;
 }
 .foundation footer a:link {
@@ -3350,7 +3369,7 @@ body {
   left: 0;
 }
 #modular-scale h1 .word1 {
-  font-size: 58.24922px;
+  font-size: 58px;
   color: #fd7738;
 }
 #modular-scale h1 .word2 {
@@ -3364,7 +3383,7 @@ body {
   color: #f5c45e;
 }
 #modular-scale h1 .word3 {
-  font-size: 152.49845px;
+  font-size: 152px;
   left: 41px;
   top: 30px;
   color: #d6504f;
@@ -3385,7 +3404,7 @@ body {
   top: -38px;
 }
 #modular-scale h1 .word4 {
-  font-size: 58.24922px;
+  font-size: 58px;
   display: block;
   left: 236px;
   top: 28px;
@@ -3396,7 +3415,7 @@ body {
   color: #fd7738;
 }
 #modular-scale h1 .word5 {
-  font-size: 94.24922px;
+  font-size: 94px;
   left: 298px;
   top: 18px;
   color: #f5c45e;
@@ -3421,57 +3440,57 @@ body {
   animation-fill-mode: both;
 }
 #modular-scale.present [class^="char"]:nth-of-type(1) {
-  -moz-animation-duration: 0.60767s;
-  -webkit-animation-duration: 0.60767s;
-  animation-duration: 0.60767s;
+  -moz-animation-duration: 0.91062s;
+  -webkit-animation-duration: 0.91062s;
+  animation-duration: 0.91062s;
   -moz-animation-delay: 0.33s;
   -webkit-animation-delay: 0.33s;
   animation-delay: 0.33s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(2) {
-  -moz-animation-duration: 0.6941s;
-  -webkit-animation-duration: 0.6941s;
-  animation-duration: 0.6941s;
+  -moz-animation-duration: 1.14288s;
+  -webkit-animation-duration: 1.14288s;
+  animation-duration: 1.14288s;
   -moz-animation-delay: 0.66s;
   -webkit-animation-delay: 0.66s;
   animation-delay: 0.66s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(3) {
-  -moz-animation-duration: 0.61001s;
-  -webkit-animation-duration: 0.61001s;
-  animation-duration: 0.61001s;
+  -moz-animation-duration: 1.97606s;
+  -webkit-animation-duration: 1.97606s;
+  animation-duration: 1.97606s;
   -moz-animation-delay: 0.99s;
   -webkit-animation-delay: 0.99s;
   animation-delay: 0.99s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(4) {
-  -moz-animation-duration: 2.71767s;
-  -webkit-animation-duration: 2.71767s;
-  animation-duration: 2.71767s;
+  -moz-animation-duration: 2.62547s;
+  -webkit-animation-duration: 2.62547s;
+  animation-duration: 2.62547s;
   -moz-animation-delay: 1.32s;
   -webkit-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(5) {
-  -moz-animation-duration: 4.85503s;
-  -webkit-animation-duration: 4.85503s;
-  animation-duration: 4.85503s;
+  -moz-animation-duration: 0.9101s;
+  -webkit-animation-duration: 0.9101s;
+  animation-duration: 0.9101s;
   -moz-animation-delay: 1.65s;
   -webkit-animation-delay: 1.65s;
   animation-delay: 1.65s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(6) {
-  -moz-animation-duration: 4.93712s;
-  -webkit-animation-duration: 4.93712s;
-  animation-duration: 4.93712s;
+  -moz-animation-duration: 3.12264s;
+  -webkit-animation-duration: 3.12264s;
+  animation-duration: 3.12264s;
   -moz-animation-delay: 1.98s;
   -webkit-animation-delay: 1.98s;
   animation-delay: 1.98s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(7) {
-  -moz-animation-duration: 5.14706s;
-  -webkit-animation-duration: 5.14706s;
-  animation-duration: 5.14706s;
+  -moz-animation-duration: 1.20646s;
+  -webkit-animation-duration: 1.20646s;
+  animation-duration: 1.20646s;
   -moz-animation-delay: 2.31s;
   -webkit-animation-delay: 2.31s;
   animation-delay: 2.31s;
@@ -3646,7 +3665,7 @@ body {
   width: 100%;
   bottom: 0;
   padding-bottom: 8px;
-  font-size: 22.24922px;
+  font-size: 22px;
   background-color: #d9dbda;
 }
 #modular-scale figure li.block {
@@ -4384,6 +4403,7 @@ body {
 }
 #color-schemer #wheel {
   mix-blend-mode: color;
+  opacity: 0.5;
 }
 #color-schemer .svg-cs-scheme, #color-schemer .svg-cs-primary {
   font-size: 20px;
@@ -4437,7 +4457,7 @@ body {
   height: 110px;
 }
 #performance .its-time {
-  font-size: 94.24922px;
+  font-size: 94px;
   word-wrap: break-word;
   line-height: 0.87;
   margin-top: 5px;
@@ -4456,7 +4476,7 @@ body {
   position: absolute;
   top: 100px;
   left: 30px;
-  font-size: 399.24613px;
+  font-size: 399px;
   font-weight: bold;
   line-height: 0.63;
   text-align: left;
@@ -4509,7 +4529,7 @@ body {
   color: #fd7738;
 }
 
-#pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1 {
+#pattern-lab h1, #pattern-lab-site h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1 {
   text-align: right;
   margin-top: -20px;
   padding-top: 29px;
@@ -4519,22 +4539,22 @@ body {
   color: #fefefe;
   overflow: hidden;
 }
-#pattern-lab footer.links, #sass-folders footer.links, [id^="sass-variables"] footer.links, [id^="sass-extends"] footer.links, [id^="sass-elements"] footer.links, [id^="sass-components"] footer.links {
+#pattern-lab footer.links, #pattern-lab-site footer.links, #sass-folders footer.links, [id^="sass-variables"] footer.links, [id^="sass-extends"] footer.links, [id^="sass-elements"] footer.links, [id^="sass-components"] footer.links {
   position: absolute;
   top: 2.5em;
   left: 1em;
   font-size: 0.7em;
 }
-#pattern-lab footer.links a, #sass-folders footer.links a, [id^="sass-variables"] footer.links a, [id^="sass-extends"] footer.links a, [id^="sass-elements"] footer.links a, [id^="sass-components"] footer.links a, #pattern-lab footer.links a:link, #sass-folders footer.links a:link, [id^="sass-variables"] footer.links a:link, [id^="sass-extends"] footer.links a:link, [id^="sass-elements"] footer.links a:link, [id^="sass-components"] footer.links a:link, #pattern-lab footer.links a:hover, #sass-folders footer.links a:hover, [id^="sass-variables"] footer.links a:hover, [id^="sass-extends"] footer.links a:hover, [id^="sass-elements"] footer.links a:hover, [id^="sass-components"] footer.links a:hover, #pattern-lab footer.links a:visited, #sass-folders footer.links a:visited, [id^="sass-variables"] footer.links a:visited, [id^="sass-extends"] footer.links a:visited, [id^="sass-elements"] footer.links a:visited, [id^="sass-components"] footer.links a:visited, #pattern-lab footer.links a:active, #sass-folders footer.links a:active, [id^="sass-variables"] footer.links a:active, [id^="sass-extends"] footer.links a:active, [id^="sass-elements"] footer.links a:active, [id^="sass-components"] footer.links a:active {
+#pattern-lab footer.links a, #pattern-lab-site footer.links a, #sass-folders footer.links a, [id^="sass-variables"] footer.links a, [id^="sass-extends"] footer.links a, [id^="sass-elements"] footer.links a, [id^="sass-components"] footer.links a, #pattern-lab footer.links a:link, #pattern-lab-site footer.links a:link, #sass-folders footer.links a:link, [id^="sass-variables"] footer.links a:link, [id^="sass-extends"] footer.links a:link, [id^="sass-elements"] footer.links a:link, [id^="sass-components"] footer.links a:link, #pattern-lab footer.links a:hover, #pattern-lab-site footer.links a:hover, #sass-folders footer.links a:hover, [id^="sass-variables"] footer.links a:hover, [id^="sass-extends"] footer.links a:hover, [id^="sass-elements"] footer.links a:hover, [id^="sass-components"] footer.links a:hover, #pattern-lab footer.links a:visited, #pattern-lab-site footer.links a:visited, #sass-folders footer.links a:visited, [id^="sass-variables"] footer.links a:visited, [id^="sass-extends"] footer.links a:visited, [id^="sass-elements"] footer.links a:visited, [id^="sass-components"] footer.links a:visited, #pattern-lab footer.links a:active, #pattern-lab-site footer.links a:active, #sass-folders footer.links a:active, [id^="sass-variables"] footer.links a:active, [id^="sass-extends"] footer.links a:active, [id^="sass-elements"] footer.links a:active, [id^="sass-components"] footer.links a:active {
   color: #fefefe;
   border-bottom-color: #fefefe;
 }
 
-#pattern-lab .live-examples {
+#pattern-lab .live-examples, #pattern-lab-site .live-examples {
   position: relative;
   top: -1.5rem;
 }
-#pattern-lab .illustration {
+#pattern-lab .illustration, #pattern-lab-site .illustration {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -5150,7 +5170,7 @@ input[type="checkbox"].show-cover:checked ~ footer.cover {
   font-family: "jubilat", derifs;
 }
 
-#component-driven ul, #teams ul, #style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #singularity h1, #breakpoint h2, #simple-trick h1, .gothic {
+#component-driven ul, #teams ul, #style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1, #pattern-lab-site h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #singularity h1, #breakpoint h2, #simple-trick h1, .gothic {
   font-family: "alternate-gothic-no-1-d", sans-serif;
 }
 
@@ -5178,7 +5198,7 @@ code, #find-typeface .code, #color-schemer .svg-cs-scheme, #color-schemer .svg-c
   text-transform: lowercase;
 }
 
-#component-driven ul, #teams ul, #main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #jazzbos-are-cool h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul, #performance h1, #teams p.unity, #pattern-lab h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #singularity ul, #breakpoint h1, #breakpoint ul, #eq ul, #thanks ul li {
+#component-driven ul, #teams ul, #main-title h2, #main-title p, #contact h1, #contact h2, #contact ul, #link-to-presentation h1, .my-bands h1, #jazzbos-are-cool h1, #design-in-browser h1, #design-in-browser .fragment, #what-are-we-designing h1, #what-are-we-designing .fragment, #style-guides h1, #bad-style-guides h1, #as-design-tool h1, #as-design-tool ul, #hard-bop h1, #hard-bop ul, #organizing-aesthetics h1, #musical-thinking h1, #content-first-design h1, #content-first-design ul, #component-second h1, #aesthetic-foundation ul, #find-typeface h1, #find-typeface h2, #find-typeface ul, #modular-scale h1, #modular-scale h2, #modular-scale ul, #color-schemer ul, #performance h1, #teams p.unity, #pattern-lab h1, #pattern-lab-site h1, #sass-folders h1, [id^="sass-variables"] h1, [id^="sass-extends"] h1, [id^="sass-elements"] h1, [id^="sass-components"] h1, #singularity ul, #breakpoint h1, #breakpoint ul, #eq ul, #thanks ul li {
   text-transform: uppercase;
 }
 
@@ -5269,34 +5289,34 @@ html.pl body {
   font-size: 36px;
 }
 .sg-ms .ms-1 {
-  font-size: 58.24922px;
+  font-size: 58px;
 }
 .sg-ms .ms-2 {
-  font-size: 94.24922px;
+  font-size: 94px;
 }
 .sg-ms .ms-3 {
-  font-size: 152.49845px;
+  font-size: 152px;
 }
 .sg-ms .ms-4 {
-  font-size: 246.74768px;
+  font-size: 247px;
 }
 .sg-ms .ms-5 {
-  font-size: 399.24613px;
+  font-size: 399px;
 }
 .sg-ms .ms-6 {
-  font-size: 645.99382px;
+  font-size: 646px;
 }
 .sg-ms .ms-7 {
-  font-size: 1045.23996px;
+  font-size: 1045px;
 }
 .sg-ms .ms-8 {
-  font-size: 1691.23379px;
+  font-size: 1691px;
 }
 .sg-ms .ms-9 {
-  font-size: 2736.47377px;
+  font-size: 2736px;
 }
 .sg-ms .ms-10 {
-  font-size: 4427.70761px;
+  font-size: 4428px;
 }
 
 /*# sourceMappingURL=miles.css.map */

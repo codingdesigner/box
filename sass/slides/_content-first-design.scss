@@ -89,4 +89,15 @@
       list-style-type: none;
     }
   }
+  .asterisk {
+    color: $white;
+  }
+  .bs-detector {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    color: $white;
+    text-transform: lowercase;
+    font-style: italic;
+  }
 }

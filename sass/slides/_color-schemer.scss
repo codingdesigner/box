@@ -27,6 +27,7 @@
   }
   #wheel {
     mix-blend-mode: color;
+    opacity: 0.5;
   }
   .svg-cs-scheme, .svg-cs-primary {
     @extend %mono;

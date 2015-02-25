@@ -36,4 +36,15 @@
       padding-top: 0.5em;
     }
   }
+  .asterisk {
+//    color: $white;
+  }
+  .bs-detector {
+    position: absolute;
+    bottom: 0.6em;
+    right: 1.5em;
+    color: $gray-dark;
+    text-transform: lowercase;
+    font-style: italic;
+  }
 }
