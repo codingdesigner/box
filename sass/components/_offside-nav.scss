@@ -1,0 +1,115 @@
+//////////////////////////////
+// Offside Nav Component
+//
+// The partial and folder structure for this component should be as follows:
+// _offside.scss
+// offside (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import "offside-nav/mixins";
+@import "offside-nav/extends";
+
+//////////////////////////////
+// Variables
+$bp-nav-offside: max-width 779px;
+$bp-nav-wide: 780px;
+//////////////////////////////
+
+.menu-trigger {
+  @include menu-trigger-visual;
+  @include mq($bp-nav-wide) {
+    @include a11y-hidden($a11y-focusable: true, $extend: false);
+  }
+}
+
+// offside menu inactive
+@include mq($bp-nav-offside) {
+  %nav-offside-transition {
+    // @include transition-property(all);
+    @include transition-property(-moz-transform, -webkit-transform, transform);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in);
+    @include apply-origin(0 0, true);
+  }
+  body {
+    position: relative;
+  }
+  [role="navigation"] {
+    @extend %nav-offside-transition;
+    position: absolute;
+    width: 250px;
+    top: 0;
+    left: -250px;
+    @include offside-nav-visual;
+  }
+  [role="banner"] {
+    @extend %nav-offside-transition;
+    @include offside-nav-content-visual;
+    @include offside-nav-content-banner-visual;
+  }
+  [role="main"] {
+    @extend %nav-offside-transition;
+    @include offside-nav-content-visual;
+  }
+  #clear-pane {
+    @extend %nav-offside-transition;
+  }
+}
+
+// offside menu active
+[data-nav-offside-active="true"] {
+  @include mq($bp-nav-offside) {
+    %nav-offside-transform {
+      @include transform3d( translateX(250px) );
+    }
+    [role="navigation"] {
+      @extend %nav-offside-transform;
+    }
+    [role="banner"] {
+      @extend %nav-offside-transform;
+    }
+    [role="main"] {
+      @extend %nav-offside-transform;
+    }
+    #clear-pane {
+      @extend %nav-offside-transform;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      cursor: pointer;
+      @include clear-pane-visual;
+    }
+  }
+}
+
+
+// wide menu layout
+@include mq($bp-nav-wide) {
+  body {
+    @include display-flex;
+    @include flex-direction(column);
+  }
+  [role="banner"] {
+    @include order(1);
+  }
+  [role="main"] {
+    @include order(3);
+  }
+  [role="navigation"] {
+    @include order(2);
+    @include nav-wide-visual;
+  }
+  [id="footer"] {
+    @include order(4);
+  }
+}
+
+// universal styles
+[role="navigation"] {
+  @include main-nav-visual;
+}

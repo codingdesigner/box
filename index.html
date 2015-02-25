@@ -1,0 +1,1819 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Thinking ((Inside the Box) x 3)</title>
+
+		<meta name="description" content="Design from the content-out to create a solid and responsive design system and a living style guide.">
+		<meta name="author" content="Mason Wendell">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- <link rel="stylesheet" href="css/reveal.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
+		<link rel="stylesheet" href="css/miles.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<script type="text/javascript" src="//use.typekit.net/bpy4ike.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- Slide Main Title #xx -->
+				<section id="main-title" class="foundation" data-state="rekkid">
+					<h1>“Thinking Inside the Box Inside the Box Inside the Box” !</h1>
+          <h2>Designing with Style Guides</h2>
+          <p>Mason Wendell</p>
+          <footer><kbd>Space bar</kbd> to advance. <kbd>S</kbd> for notes. You might like this better in Chrome Canary, unless you're from the future. </footer>
+
+          <!-- show a cover or streaming player -->
+          <input type="checkbox" id="main-title-cover" class="show-cover"/>
+          <label for="main-title-cover" class="show-cover-label">Show Cover</label>
+          <footer class="cover">
+            <img src="images/covers/parlan.jpg" alt="Horace Parlan"/>
+          </footer>
+          <!-- show a cover or streaming player -->
+				</section>
+
+				<!-- Slide Contactt #xx -->
+				<section id="contact" data-state="rekkid">
+          <hgroup>
+  					<h1>The Jazz Messenger</h1>
+            <h2>Mason Wendell</h2>
+          </hgroup>
+					<ul>
+           <li><strong>Senior Designer, Phase2</strong></li>
+							<li>
+								<strong>codingdesigner</strong> on the internet:
+								<a href="http://twitter.com/codingdesigner">Twitter</a>
+								<a href="http://github.com/codingdesigner">GitHub</a>
+								<a href="http://instagram.com/codingdesigner">Instagram</a>
+							</li>
+							<!--<li>-->
+								<!--<a href="http://thecodingdesigner.com">TheCodingDesigner.com</a>-->
+							<!--</li>-->
+              <li>Creator of <a href="http://breakpoint-sass.com/">Breakpoint Sass</a></li>
+							<li>
+								Co-Organizer of
+								<a href="github.com/at-import">@import</a>
+								<!--, Organizer of-->
+								<!--<a href="http://www.meetup.com/Philadelphia-SASS-Meetup-Group/">Philly Sass Meetup</a>-->
+								<!--and-->
+								<!--<a href="http://www.meetup.com/Responsive-Web-Design-Philadelphia/">Philly RWD Meetup</a>-->
+							</li>
+              <li>Designed 2014 <a href="http://sassconf.com/">SassConf.com</a></li>
+					</ul>
+          <figure class="hat-fool">
+            <img src="images/Mason-Wendell-headshot-hat-square.png" alt="Mason Wendell">
+          </figure>
+
+          <!-- show a cover or streaming player -->
+          <input type="checkbox" id="contact-cover" class="show-cover"/>
+          <label for="contact-cover" class="show-cover-label">Show Cover</label>
+          <footer class="cover">
+            <iframe width="400" height="400" src="https://rd.io/i/QFl2PkHiHQ/" frameborder="0"></iframe>
+          </footer>
+          <!-- show a cover or streaming player -->
+				</section>
+
+				<!-- Slide THIS PRESENTATION #xx -->
+				<section id="link-to-presentation" data-state="rekkid">
+					<h1>This Presentation</h1>
+					<p><a href="http://codingdesigner.github.io/box">codingdesigner.github.io/box</a></p>
+          <p class="fragment">Reid Miles &amp; Blue Note</p>
+          <p class="fragment">SVG, CSS Blend Modes</p>
+          <p class="fragment">Bugs? Let me know <a href="https://github.com/codingdesigner/box/issues">on github</a>.</p>
+
+          <!-- show a cover or streaming player -->
+          <input type="checkbox" id="link-to-presentation-cover" class="show-cover"/>
+          <label for="link-to-presentation-cover" class="show-cover-label">Show Cover</label>
+          <footer class="cover">
+            <iframe width="400" height="400" src="https://rd.io/i/QFl2PkDzYw/" frameborder="0"></iframe>
+          </footer>
+          <!-- show a cover or streaming player -->
+				</section>
+
+        <section>
+					<!-- Slide #xx -->
+					<section id="music-nerd">
+						<h1>I’m a music nerd.</h1>
+            <iframe src="//instagram.com/p/XsG6peJ_Tj/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+            <aside class="notes">
+              I'm a music nerd. I went to Berklee College of Music, a school that only taught music. I learned about deep music theory, jazz and classical composition, and intensly studied how to play the bass. And then used all that specialized knowledge to play
+            </aside>
+					</section>
+					<!-- Slide #xx -->
+          <section id="prelapse" class="my-bands">
+          	<h1>Avant Garde Noise</h1>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="prelapse-cover" class="show-cover"/>
+            <label for="prelapse-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="560" height="315" src="//www.youtube.com/embed/XNIEbqy1TGg" frameborder="0" allowfullscreen></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+          </section>
+          <!-- Slide #xx -->
+          <section id="blinder" class="my-bands">
+            <h1>Weird Punk Rock</h1>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="blinder-cover" class="show-cover"/>
+            <label for="blinder-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2Pl6llA/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+          </section>
+          <!-- Slide #xx -->
+          <section id="method-result" class="my-bands">
+            <h1>Indie Pop</h1>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="method-cover" class="show-cover"/>
+            <label for="method-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2Pl3hsw/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+            <aside class="notes">
+              Total waste of money, I agree.
+            </aside>
+          </section>
+          <!-- Slide #xx -->
+          <section id="jazzbos-are-cool" data-state="rekkid">
+            <h1>Jazzbos are cool</h1>
+            <figure class="workin">
+              <img src="images/workin.jpg" alt="Workin' with the Miles Davis Quintet">
+            </figure>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="jazzbos-cover" class="show-cover"/>
+            <label for="jazzbos-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2Pkaykw/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+            <aside class="notes">
+              <p>There are two things that I want to mention that came out of that music education. One. I wound up finding my passion in web design, but I always felt bits and pieces of this music education being quite relevant to my work as a designer. It took me years to put my finger on why I felt that way.</p>
+
+              <p>And two. That the jazz musicians that came up in the 40's through the 60's were cool. And not just cool like Fonzie. These dudes had to work for it. They made an art and a feeling that flawlessly hid the intense amount of study and craft that went into making it.</p>
+            </aside>
+          </section>
+        </section>
+
+        <!-- Slide #xx -->
+        <section id="design-in-browser" data-state="rekkid">
+          <p class="fragment css">CSS</p>
+          <p class="fragment medium">Know your medium</p>
+          <p class="fragment present">Present in the Browser</p>
+        	<h1>Design in the Browser</h1>
+          <div class="browser"></div>
+
+          <!-- show a cover or streaming player -->
+          <input type="checkbox" id="design-in-browser-cover" class="show-cover"/>
+          <label for="design-in-browser-cover" class="show-cover-label">Show Cover</label>
+          <footer class="cover">
+            <iframe width="400" height="400" src="https://rd.io/i/QFl2PkDgzA/" frameborder="0"></iframe>
+          </footer>
+          <!-- show a cover or streaming player -->
+
+          <aside class="notes">
+            I’ve been designing in the browser since like, 2009
+            <ul>
+              <li>(a) I like photoshop just fine, but I’m making web dealies.</li>
+              <li class="bullet-point">(b) **So I CSS.**</li>
+              <li>(c) CSS is my primary creative tool.</li>
+              <li>(d) which works out because it’s <span class="bullet-point">**native to the medium**</span> I work in.</li>
+              <li>(e) I <span class="bullet-point">**present in the browser**</span>, with makes it sooooooooo much easier to  </li>give the client context.
+            </ul>
+          </aside>
+        </section>
+
+        <!-- Slide #xx -->
+        <section id="what-are-we-designing" data-state="rekkid">
+        	<h1>What are we designin’?</h1>
+          <ul>
+            <li class="fragment not-web">Not web pages</li>
+            <li class="fragment design-systems">Design Systems</li>
+            <li class="fragment small-large">Small and Large Scale</li>
+          </ul>
+          <svg class="jazz-bars" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 960 700" enable-background="new 0 0 960 700" xml:space="preserve">
+            <defs>
+              <path id="rectangles" d="M57.1,597.9H31.9V45.8h25.2V597.9z M89.4,31H64.2v552.3h25.2V31z M121.6,54H96.5v552.3h25.2V54z
+     M153.9,61.6h-25.2v552.3h25.2V61.6z M186.1,91.7H161V644h25.2V91.7z M218.4,105.9h-25.2v552.3h25.2V105.9z M250.6,90.3h-25.2
+    v552.3h25.2V90.3z M282.9,73h-25.2v552.3h25.2V73z M315.2,86.9H290v552.3h25.2V86.9z M347.4,108.3h-25.2v552.3h25.2V108.3z
+     M379.7,81.6h-25.2v552.3h25.2V81.6z M411.9,52.4h-25.2v552.3h25.2V52.4z M444.2,56.6H419v552.3h25.2V56.6z M476.5,124h-25.2
+    v552.3h25.2V124z M508.7,90.3h-25.2v552.3h25.2V90.3z M541,145.6h-25.2v552.3H541V145.6z M573.2,64.8h-25.2v552.3h25.2V64.8z
+     M605.5,147.7h-25.2V700h25.2V147.7z M637.7,54.5h-25.2v552.3h25.2V54.5z M670,130.2h-25.2v552.1H670V130.2z M702.3,93.7h-25.2
+    V646h25.2V93.7z M734.5,105.6h-25.2v552.3h25.2V105.6z M766.8,56h-25.2v552.1h25.2V56z M799,99h-25.2v552.3H799V99z M831.3,67.1
+    h-25.2v552.3h25.2V67.1z M863.5,61h-25.2v552.3h25.2V61z M895.8,14h-25.2v552.1h25.2V14z M928.1,0h-25.2v552.3h25.2V0z"/>
+            </defs>
+            <clipPath id="jazzbo">
+              <use xlink:href="#rectangles" overflow="visible"/>
+            </clipPath>
+            <g clip-path="url(#jazzbo)">
+              <image overflow="visible" width="1308" height="879" xlink:href="images/wayne-shorter-red.jpg" transform="matrix(0.7478 0 0 0.7478 -38.0904 -7.8269)"/>
+            </g>
+          </svg>
+
+          <!-- show a cover or streaming player -->
+          <input type="checkbox" id="what-are-we-designing-cover" class="show-cover"/>
+          <label for="what-are-we-designing-cover" class="show-cover-label">Show Cover</label>
+          <footer class="cover">
+            <img src="images/covers/wilkerson.jpg" alt="Horace Parlan"/>
+          </footer>
+          <!-- show a cover or streaming player -->
+
+          <aside class="notes">
+            <span class="bullet-point">**Not web pages**</span>. We're <span class="bullet-point">**designing systems**</span>. We need to create a design language that will not just serve the project we're delivering, but will continue to carry the weight of new content. We need to think in both the <span class="bullet-point">**small and the large scale**</span>.
+          </aside>
+        </section>
+
+        <section>
+        	<!-- Slide #xx	 -->
+        	<section id="style-guides" data-state="rekkid">
+        		<h1>This Leads Us to Style Guides</h1>
+            <!--<figure class="illustration">-->
+              <!--<img src="images/ss-living-styleguide-1.jpg" alt="ALA pattern library">-->
+            <!--</figure>-->
+            <figure class="illustration">
+              <img src="images/ss-living-styleguide-2.jpg" alt="Code for America pattern library">
+            </figure>
+            <figure class="illustration fragment">
+              <img src="images/ss-living-styleguide-4-ibm.jpg" alt="IBM Living styleguide">
+            </figure>
+            <figure class="illustration fragment">
+              <img src="images/ss-living-styleguide-5-lonelyplanet.jpg" alt="Lonely Planet Living styleguide">
+            </figure>
+            <aside class="notes">
+              <p>A traditional product of creating a design system is for the designer to create a style guide. This might be done after a design is complete as a way to communicate that design thinking to other stakeholders or future designers.</p>
+              <p>Our design language needs to sustain a feeling and character across many different sections of content. If the brand is cool and sophisticated it probably won't do to lose sight of that and start adding tattoo flames. That's why we have style guides. They codify a design so it can be communicated to others. Recently major brands have begun **publishing html style guides publicly**. This makes it easy for new designers to create new work for them while maintaining the brand. It also helps us grow as an industry if we can see and learn from each other.</p>
+            </aside>
+        	</section>
+        	<!-- Slide #xx -->
+        	<!-- <section id="bad-style-guides" data-state="rekkid">
+            <i class="fa fa-pied-piper"></i>
+        		<h1>Bad Style Guides</h1>
+            <p>WTF</p>
+            <figure class="illustration">
+              <img src="http://dummyimage.com/960x584?text=screen+shot+of+bad+style+guide+1" alt="screen shot of a bad style guide">
+            </figure>
+        	</section> -->
+        	<!-- Slide #xx -->
+        	<section id="as-design-tool" data-state="rekkid">
+        		<h1>Style Guide as Design Tool</h1>
+        		<ul>
+        			<li class="fragment atomic">Atomic Design
+                <div class="illustration">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0" enable-background="new 0 0 132.8 132.5" xml:space="preserve"><circle fill="#D6504F" cx="66" cy="66.2" r="32"/><path fill="#CCCCCC" d="M66 2.5C30.8 2.5 2.2 31 2.2 66.2S30.8 130 66 130s63.8-28.5 63.8-63.8S101.2 2.5 66 2.5zM66 115.5c-27.2 0-49.2-22-49.2-49.2S38.8 17 66 17s49.2 22 49.2 49.2S93.2 115.5 66 115.5z"/><circle fill="#D6504F" cx="111" cy="31.8" r="14.2"/></svg>
+                </div>
+              </li>
+              <li class="fragment pattern">Pattern Lab
+                <div class="illustration">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0" enable-background="new 0 0 132.8 132.5" xml:space="preserve"><circle fill="#D6504F" cx="66.4" cy="35.2" r="15.6"/><path fill="#CCCCCC" d="M77.8 64.1c15.9-6.3 23.7-24.3 17.4-40.2C88.9 7.9 70.9 0.1 55 6.4S31.2 30.7 37.6 46.7 61.9 70.4 77.8 64.1zM57.6 13c12.3-4.9 26.2 1.2 31.1 13.4s-1.2 26.2-13.4 31.1S49 56.4 44.1 44.1 45.3 17.9 57.6 13z"/><circle fill="#D6504F" cx="52.2" cy="58.9" r="6.9"/><circle fill="#D6504F" cx="98.4" cy="89.2" r="15.6"/><path fill="#CCCCCC" d="M98.4 58.2c-17.1 0-31 13.9-31 31s13.9 31 31 31 31-13.9 31-31S115.5 58.2 98.4 58.2zM98.4 113.2c-13.2 0-23.9-10.7-23.9-23.9s10.7-23.9 23.9-23.9 23.9 10.7 23.9 23.9S111.6 113.2 98.4 113.2z"/><circle fill="#D6504F" cx="69.9" cy="90.3" r="6.9"/><circle fill="#D6504F" cx="85.8" cy="66.8" r="6.9"/><circle fill="#D6504F" cx="35.4" cy="89.2" r="15.6"/><path fill="#CCCCCC" d="M23.4 60.7C7.6 67.3 0.2 85.5 6.8 101.2s24.8 23.2 40.6 16.6S70.6 93 64 77.3 39.2 54 23.4 60.7zM44.6 111.3c-12.2 5.1-26.2-0.6-31.4-12.8s0.6-26.2 12.8-31.4S52.3 67.8 57.5 80 56.8 106.2 44.6 111.3z"/><circle fill="#D6504F" cx="49.1" cy="65.3" r="6.9"/><circle fill="#D6504F" cx="62.9" cy="90.3" r="6.9"/><circle fill="#D6504F" cx="81.9" cy="59.3" r="6.9"/></svg>
+                </div>
+              </li>
+        		</ul>
+            <figure class="illustration">
+              <img src="images/miles-birth-of-cool.jpg" alt="Miles Davis">
+            </figure>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="as-design-tool-cover" class="show-cover"/>
+            <label for="as-design-tool-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkHFAg/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              <p>I'm suggesting that we flip this process and start with the style guide and treat it like a **design tool**. I'm certainly not the first. Brad Frost has written about this extensively. You may have seen him write about the concept of <span class="bullet-point">**atomic design**</span>. He proposes starting with the smallest things you can design, calling them atoms, and working your way up through bigger and bigger constructs until you've designed full templates and pages. At Phase2 we've been using <span class="bullet-point">**Pattern Lab**</span>, his styleguide creation tool on many of our projects. We'll be looking at that later.</p>
+
+              <p>By starting with the style guide and  creating the reference for the design language as we create it we get a very valuable perspective that allows us to fine tune the minute details and  see how all the little pieces combine to create the whole.</p>
+            </aside>
+        	</section>
+        </section>
+
+        <section>
+        	<!-- Slide component-driven #xx -->
+        	<section id="component-driven" data-state="rekkid">
+        		<h1>
+              <span class="talking-about">We’re Talkin’ About </span>
+              <span class="component-driven-design">Component-Driven Design</span>
+            </h1>
+            <ul>
+              <li class="fragment">self-contained chunk of design</li>
+              <li class="fragment">extension of well-formed content</li>
+              <li class="fragment">assembled into other components and combined into layouts</li>
+            </ul>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="component-driven-cover" class="show-cover"/>
+            <label for="component-driven-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkG2SA/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              A bit more of a direct way to look at this is to see that each piece, whether it's an atom, a molecule, a menu, an image gallery, an author byline, or whatever is a Component. A design component is a **self-contained chunk of design and is an extension of well-formed content**. And components can be assembled into other components and combined into layouts. So instead of designing a page the goal is to design an interlocking family of components that become our design language.
+            </aside>
+        	</section>
+        	<!-- Slide #xx -->
+        </section>
+
+        <section>
+          <section id="blank-page-psd" class="giant-steps" data-state="rekkid">
+            <h1>Blank Page vs Style Guide</h1>
+            <figure class="initial-screen">
+              <img src="images/ss-blankpage-psd.jpg" alt="screen shot of a blank psd"></figure>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="blank-page-cover" class="show-cover"/>
+            <label for="blank-page-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkY0rw/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              When we start with an <span class="bullet-point">**empty style guide**</span> instead of an empty page we actually have a lot less emptyness. Of course you can start anywhere, but I think there are many better places to start than your favorite image editor.
+            </aside>
+          </section>
+
+          <section id="style-guide-components" class="giant-steps" data-state="rekkid">
+            <h1>Organize Content</h1>
+            <figure class="illustration">
+              <img src="images/ss-blankpage-patternlab-2-component.jpg" alt="screen shot of design components in patternlab"></figure>
+            <aside class="notes">
+              When we start with basic markup in html we get a **scaffolding** where we can <span class="bullet-point">**create our design language**</span>, understand and <span class="bullet-point">**organize our content**</span>. This is the raw result of the content modelling part of our content strategy. It's super helpful because when we start with the right content definitions it asks us the right questions about how we should design for it.
+            </aside>
+          </section>
+
+          <section id="style-guide-colors-type" class="giant-steps" data-state="rekkid">
+            <h1>Colors and Type</h1>
+            <figure class="illustration">
+              <img src="images/ss-blankpage-patternlab-1-colors.jpg" alt="screen shot of colors and typography in patternlab"></figure>
+            <aside class="notes">
+              That gives us something more substantial to work with. Now our color and typeography choices get a chance to resonate as their applied to real content right away.
+            </aside>
+          </section>
+
+          <section id="style-guide-iterations" class="giant-steps" data-state="rekkid">
+            <h1>Design Iterations</h1>
+            <figure class="illustration">
+              <img src="images/ss-blankpage-patternlab-4-iterations.jpg" alt="screen shot of a designed template in patternlab"></figure>
+            <aside class="notes">
+              Then do the hard work of <span class="bullet-point">**going over and over it as a designer**</span> until it has a consistent tone. How should these elements lay out on small and large devices? Is the design language conveying the right tone?
+            </aside>
+          </section>
+
+          <section id="style-guide-assemble-components" class="giant-steps" data-state="rekkid">
+            <h1>Assemble Components</h1>
+            <figure class="illustration">
+              <img src="images/ss-blankpage-patternlab-3-template.jpg" alt="screen shot of a template in patternlab"></figure>
+            <aside class="notes">
+              As we develop our design language we'll also combine the smaller components into more fleshed out layouts. By building it up from scratch and using the **style guide to guide our styles** it's much easier to spot patterns, redundancies, and inconsitencies and add intentional contrast and surprise.
+            </aside>
+          </section>
+        </section>
+
+        <section>
+        	<!-- Slide #xx -->
+        	<!--<section id="looks-like-jazz" class="giant-steps" data-state="rekkid">
+        		<h1>That looks like Jazz to me.</h1>
+            <div class="train">
+              <figure class="illustration">
+                <img src="images/John-Coltrane_Giant-Steps.jpg" alt="John Coltrane"></figure>
+            </div>
+        	</section>-->
+        	<!-- Slide #xx -->
+        	<section id="hard-bop" data-state="rekkid">
+        		<h1>Hard Bop</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 564.1 83.8" enable-background="new 0 0 564.1 83.8" xml:space="preserve" id="jump-monk">
+                <g class="staff">
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="456.7" y1="38.6" x2="559" y2="38.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="456.7" y1="44.3" x2="559" y2="44.3"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="456.7" y1="49.9" x2="559" y2="49.9"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="456.7" y1="55.6" x2="559" y2="55.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="456.7" y1="61.3" x2="559" y2="61.3"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="330.2" y1="38.6" x2="456.7" y2="38.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="330.2" y1="44.3" x2="456.7" y2="44.3"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="330.2" y1="49.9" x2="456.7" y2="49.9"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="330.2" y1="55.6" x2="456.7" y2="55.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="330.2" y1="61.3" x2="456.7" y2="61.3"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="203.4" y1="38.6" x2="330.2" y2="38.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="203.4" y1="44.3" x2="330.2" y2="44.3"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="203.4" y1="49.9" x2="330.2" y2="49.9"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="203.4" y1="55.6" x2="330.2" y2="55.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="203.4" y1="61.3" x2="330.2" y2="61.3"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="4.9" y1="38.6" x2="203.4" y2="38.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="4.9" y1="44.3" x2="203.4" y2="44.3"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="4.9" y1="49.9" x2="203.4" y2="49.9"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="4.9" y1="55.6" x2="203.4" y2="55.6"/>
+                    <line fill="none" stroke="#000000" stroke-width="0.4535" stroke-linejoin="bevel" stroke-miterlimit="10" x1="4.9" y1="61.3" x2="203.4" y2="61.3"/>
+                </g>
+                <g class="melody fragment" data-fragment-index="1">
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="135.8" y1="32.9" x2="144.5" y2="32.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="145.5" y1="32.9" x2="155.3" y2="32.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="89.9" y1="27.3" x2="100.7" y2="27.3"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="89.9" y1="32.9" x2="100.7" y2="32.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="109.8" y1="32.9" x2="120.6" y2="32.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="125" y1="32.9" x2="134.8" y2="32.9"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M136.3 59.6c-0.1 0-0.2 0-0.3 0s-0.2 0-0.3 0 -0.2-0.1-0.3-0.1 -0.2-0.1-0.3-0.2 -0.2-0.2-0.2-0.3 0-0.2 0-0.2 0.1-0.2 0.1-0.3c0-0.1 0.1-0.2 0.1-0.2s0-0.1 0.1-0.1 0.1-0.1 0.1-0.2c0.1-0.1 0.1-0.1 0.2-0.1 0 0 0 0 0.1 0 0.1 0 0.1 0 0.2 0 0.1 0 0.2 0.1 0.3 0.1s0.2 0.1 0.3 0.1c0.1 0 0.1 0.1 0.2 0.1 0 0 0 0 0 0 0.1 0 0.2 0 0.3-0.1 0.1 0 0.3-0.1 0.4-0.1 0.1 0 0.2-0.1 0.3-0.1 0 0 0 0 0 0 0.1 0 0.2 0 0.3 0.1 0 0 0.1 0.1 0.1 0.2 0 0 0 0.1 0 0.2 0 0 0 0 0 0 0 0.1 0 0.2-0.1 0.3s-0.1 0.2-0.2 0.3 -0.1 0.2-0.2 0.3c-0.1 0.1-0.2 0.2-0.2 0.3 -0.1 0.1-0.1 0.2-0.1 0.3 0 0.2-0.1 0.3-0.1 0.4 -0.1 0.2-0.2 0.3-0.2 0.3 0 0 0 0 0 0 0.2 0.1 0.3 0.1 0.4 0.2 0.1 0.1 0.3 0.3 0.3 0.6 0 0.3 0.1 0.5 0.1 0.5 0 0.2 0 0.3 0 0.3 -0.1 0.4-0.2 0.7-0.3 1.1 -0.1 0.3-0.6 0.7-1.4 1.1 -0.1 0-0.2 0.1-0.3 0.1s-0.2 0.1-0.3 0.1c0 0 0 0 0 0 -0.1 0-0.1 0-0.2-0.1 -0.1-0.1-0.1-0.1-0.1-0.1s0 0 0-0.1c0-0.2 0.1-0.3 0.1-0.4s0.1-0.2 0.2-0.3 0.1-0.1 0.2-0.2 0.2-0.1 0.2-0.1 0.2-0.1 0.2-0.1c0 0 0.1-0.1 0.3-0.2 0.3-0.2 0.4-0.4 0.4-0.6 0-0.1 0-0.2-0.1-0.3 0-0.1-0.1-0.2-0.2-0.3 0 0-0.1-0.1-0.3-0.1 0 0 0 0-0.1 0 -0.1 0-0.1 0-0.3 0.1 -0.1 0.1-0.2 0.1-0.3 0.1 -0.3 0.1-0.4 0.2-0.5 0.2 0 0-0.1 0-0.1 0 -0.1 0-0.2-0.1-0.2-0.3 0 0 0-0.1 0-0.1 0-0.3 0.1-0.4 0.3-0.5 0.2-0.1 0.4-0.2 0.5-0.3 0.1-0.1 0.2-0.2 0.2-0.3 0.1-0.2 0.2-0.3 0.2-0.3C136.2 59.8 136.3 59.6 136.3 59.6z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M116.7 33.5c0.4 0 0.7 0.6 1.1 1.7 0.4 1.1 0.6 2.1 0.6 3.1 0 0.8-0.2 1.7-0.6 2.5 -0.4 0.8-0.9 1.6-1.5 2.3 -0.6 0.7-1.2 1.4-1.8 2s-1.1 1.4-1.5 2.3c-0.4 0.8-0.6 1.7-0.6 2.5h-0.4v-5.7h0.4c0.7-0.4 1.3-0.8 1.8-1.2 0.5-0.4 1.1-0.8 1.6-1.3 0.6-0.5 1-1.1 1.3-1.6 0.3-0.6 0.5-1.2 0.5-1.8 0-1.4-0.4-2.8-1.2-4.2 0-0.2 0-0.3 0.1-0.4C116.4 33.5 116.5 33.5 116.7 33.5z"/>
+                    <polygon class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" points="155.9,57.5 188,63.9 188,66.6 155.9,60.2  "/>
+                    <rect class="melody-fill" x="126.7" y="51.7" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" width="20.2" height="2.7"/>
+                    <rect class="melody-fill" x="126.7" y="47.6" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" width="20.2" height="2.7"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M78 45.3c0.4 0 0.7 0.1 1 0.4 0.2 0.2 0.3 0.5 0.4 0.8 0 0.3 0.1 0.5 0.2 0.8 0.1 0.2 0.3 0.3 0.5 0.3 0.2 0 0.4-0.2 0.7-0.6s0.5-0.7 0.6-0.9c0.1-0.1 0.2-0.2 0.3-0.2S82 46 82 46.1l-2.8 9.5c-0.2 0.1-0.4 0.2-0.6 0.2s-0.5-0.1-0.6-0.2l2.7-7.4c-0.9 0.3-1.7 0.5-2.4 0.5 -0.5 0-1-0.2-1.4-0.5 -0.4-0.3-0.6-0.8-0.6-1.3 0-0.5 0.2-0.8 0.5-1.2C77.1 45.4 77.5 45.3 78 45.3z"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="146.5" y1="34" x2="146.5" y2="53"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="156.2" y1="39.7" x2="156.2" y2="58.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="171.4" y1="42.5" x2="171.4" y2="61.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="187.6" y1="48.2" x2="187.6" y2="65.2"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="136.8" y1="31.2" x2="136.8" y2="53"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="127" y1="34" x2="127" y2="53"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="92" y1="28.3" x2="92" y2="49.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="111.8" y1="31.2" x2="111.8" y2="49.9"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M160.9 35.5c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C158.5 35.9 159.6 35.5 160.9 35.5z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M176.1 38.3c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C173.7 38.8 174.8 38.3 176.1 38.3z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M192.3 44c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C189.9 44.4 191 44 192.3 44z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M141.4 27c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C139 27.4 140.2 27 141.4 27z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M151.1 29.8c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6s-0.7-0.9-0.7-1.5c0-1 0.5-2 1.6-2.9C148.8 30.2 149.9 29.8 151.1 29.8z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M96.6 24.1c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C94.2 24.6 95.4 24.1 96.6 24.1z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M116.5 27c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6s-0.7-0.9-0.7-1.5c0-1 0.5-2 1.6-2.9C114.1 27.4 115.2 27 116.5 27z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M131.7 29.8c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C129.3 30.2 130.5 29.8 131.7 29.8z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M181.2 50.2l-0.3-13.5c0.2-0.1 0.4-0.2 0.6-0.2 0.2 0 0.4 0.1 0.6 0.2l-0.2 7.8c0.6-0.5 1.3-0.8 2.1-0.8 0.6 0 1.1 0.2 1.4 0.7 0.4 0.5 0.6 1 0.6 1.6 0 0.4-0.1 0.8-0.4 1.2s-0.5 0.7-0.8 0.9c-0.3 0.2-0.6 0.5-1.1 0.9 -0.5 0.4-0.8 0.6-1.1 0.8 -0.1 0.1-0.2 0.2-0.3 0.3 -0.1 0.2-0.2 0.3-0.4 0.4 -0.1 0.1-0.2 0.1-0.4 0.1 -0.1 0-0.3-0.1-0.4-0.2S181.2 50.4 181.2 50.2zM182.1 46.2l0 1.5v0.2c0 0.6 0 1.1 0.1 1.5 0.4-0.4 0.8-0.7 1-0.9 0.2-0.2 0.5-0.6 0.7-1s0.4-0.8 0.4-1.2 -0.1-0.8-0.3-1.1c-0.2-0.3-0.4-0.4-0.7-0.4 -0.4 0-0.6 0.1-0.9 0.4C182.2 45.4 182.1 45.8 182.1 46.2z"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="211.6" y1="27.3" x2="221" y2="27.3"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="210.2" y1="32.9" x2="221" y2="32.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="224.8" y1="32.9" x2="235.7" y2="32.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="239.5" y1="32.9" x2="250.4" y2="32.9"/>
+                    <polygon class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" points="211.9,46.4 256.6,55.4 256.6,58.1 211.9,49.2  "/>
+                    <polygon class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" points="270.5,60.8 315.4,69.8 315.4,72.5 270.5,63.5  "/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="285.7" y1="48.2" x2="285.7" y2="65.2"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="300.3" y1="51" x2="300.3" y2="68.1"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="315" y1="53.8" x2="315" y2="71"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="241.6" y1="34" x2="241.6" y2="53.7"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="256.2" y1="39.7" x2="256.2" y2="56.7"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="270.9" y1="42.5" x2="270.9" y2="62.2"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="212.3" y1="28.3" x2="212.3" y2="47.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="226.9" y1="31.2" x2="226.9" y2="50.8"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M290.3 44c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6s-0.7-0.9-0.7-1.5c0-1 0.5-2 1.6-2.9S289.1 44 290.3 44z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M304.9 46.8c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6S300 51.6 300 51c0-1 0.5-2 1.6-2.9C302.6 47.3 303.7 46.8 304.9 46.8z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M319.6 49.6c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C317.3 50.1 318.4 49.6 319.6 49.6z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M260.9 35.5c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C258.5 35.9 259.6 35.5 260.9 35.5z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M275.5 38.3c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C273.2 38.8 274.3 38.3 275.5 38.3z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M216.9 24.1c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6s-0.7-0.9-0.7-1.5c0-1 0.5-2 1.6-2.9C214.5 24.6 215.7 24.1 216.9 24.1z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M231.5 27c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C229.2 27.4 230.3 27 231.5 27z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M246.2 29.8c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6s-0.7-0.9-0.7-1.5c0-1 0.5-2 1.6-2.9C243.9 30.2 245 29.8 246.2 29.8z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M283.2 49.3l0.1-4.7 -2.1 0.4 -0.1 4.7L283.2 49.3zM280.1 38.6c0.2-0.1 0.4-0.2 0.6-0.2 0.2 0 0.4 0.1 0.6 0.2l-0.1 4.1 2.4-0.4h0.1c0.3 0 0.4 0.1 0.4 0.4l0.2 12.9c-0.2 0.1-0.4 0.2-0.6 0.2s-0.4-0.1-0.6-0.2l0.1-4.1 -2.4 0.4h-0.1c-0.3 0-0.4-0.1-0.4-0.4L280.1 38.6z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M205.8 30.4l-0.3-13.5c0.2-0.1 0.4-0.2 0.6-0.2 0.2 0 0.4 0.1 0.6 0.2l-0.2 7.8c0.6-0.5 1.3-0.8 2.1-0.8 0.6 0 1.1 0.2 1.4 0.7 0.4 0.5 0.6 1 0.6 1.6 0 0.4-0.1 0.8-0.4 1.2s-0.5 0.7-0.8 0.9c-0.3 0.2-0.6 0.5-1.1 0.9 -0.5 0.4-0.8 0.6-1.1 0.8 -0.1 0.1-0.2 0.2-0.3 0.3 -0.1 0.2-0.2 0.3-0.4 0.4 -0.1 0.1-0.2 0.1-0.4 0.1 -0.1 0-0.3-0.1-0.4-0.2C205.8 30.7 205.8 30.5 205.8 30.4zM206.7 26.3l0 1.5v0.2c0 0.6 0 1.1 0.1 1.5 0.4-0.4 0.8-0.7 1-0.9 0.2-0.2 0.5-0.6 0.7-1s0.4-0.8 0.4-1.2 -0.1-0.8-0.3-1.1c-0.2-0.3-0.4-0.4-0.7-0.4 -0.4 0-0.6 0.1-0.9 0.4C206.9 25.6 206.7 25.9 206.7 26.3z"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="439.5" y1="66.9" x2="450.3" y2="66.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="424.8" y1="72.6" x2="435.7" y2="72.6"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="424.8" y1="66.9" x2="435.7" y2="66.9"/>
+                    <rect class="melody-fill" x="403.9" y="47.5" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" width="44.7" height="2.7"/>
+                    <polygon class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" points="343.7,21.9 390,31.2 390,33.9 343.7,24.6  "/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="448.2" y1="48.9" x2="448.2" y2="68.7"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="404.3" y1="48.9" x2="404.3" y2="60.2"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="418.9" y1="48.9" x2="418.9" y2="63"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="433.6" y1="48.9" x2="433.6" y2="71.5"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="358.7" y1="26.3" x2="358.7" y2="46"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="373.4" y1="29.2" x2="373.4" y2="51.7"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="389.6" y1="32.5" x2="389.6" y2="57.4"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="344.1" y1="23.4" x2="344.1" y2="40.4"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M446.1 66.7c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6s-0.7-0.9-0.7-1.5c0-1 0.5-2 1.6-2.9C443.8 67.1 444.9 66.7 446.1 66.7z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M371.3 49.6c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C369 50.1 370.1 49.6 371.3 49.6z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M387.5 55.3c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C385.1 55.8 386.3 55.3 387.5 55.3z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M402.2 58.2c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6s-0.7-0.9-0.7-1.5c0-1 0.5-2 1.6-2.9S400.9 58.2 402.2 58.2z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M416.8 61c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6s-0.7-0.9-0.7-1.5c0-1 0.5-2 1.6-2.9C414.5 61.4 415.6 61 416.8 61z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M431.5 69.5c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C429.1 69.9 430.3 69.5 431.5 69.5z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M342 38.3c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C339.6 38.8 340.8 38.3 342 38.3z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M356.6 44c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6s-0.7-0.9-0.7-1.5c0-1 0.5-2 1.6-2.9C354.3 44.4 355.4 44 356.6 44z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M376.4 61.6l-0.3-13.5c0.2-0.1 0.4-0.2 0.6-0.2s0.4 0.1 0.6 0.2l-0.2 7.8c0.6-0.5 1.3-0.8 2.1-0.8 0.6 0 1.1 0.2 1.4 0.7 0.4 0.5 0.6 1 0.6 1.6 0 0.4-0.1 0.8-0.4 1.2 -0.2 0.4-0.5 0.7-0.8 0.9s-0.6 0.5-1.1 0.9c-0.5 0.4-0.8 0.6-1.1 0.8 -0.1 0.1-0.2 0.2-0.3 0.3 -0.1 0.2-0.2 0.3-0.4 0.4 -0.1 0.1-0.2 0.1-0.4 0.1 -0.1 0-0.3-0.1-0.4-0.2S376.4 61.7 376.4 61.6zM377.3 57.5l0 1.5v0.2c0 0.6 0 1.1 0.1 1.5 0.4-0.4 0.8-0.7 1-0.9 0.2-0.2 0.5-0.6 0.7-1 0.2-0.4 0.4-0.8 0.4-1.2s-0.1-0.8-0.3-1.1c-0.2-0.3-0.4-0.4-0.7-0.4 -0.4 0-0.6 0.1-0.9 0.4C377.5 56.8 377.4 57.1 377.3 57.5z"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="464.9" y1="66.9" x2="475.8" y2="66.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="482.6" y1="72.6" x2="492" y2="72.6"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="481.1" y1="66.9" x2="492" y2="66.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="543.3" y1="27.3" x2="554.2" y2="27.3"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.6803" stroke-linejoin="bevel" stroke-miterlimit="10" x1="543.3" y1="32.9" x2="554.2" y2="32.9"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M550.2 33.5c0.4 0 0.7 0.6 1.1 1.7 0.4 1.1 0.6 2.1 0.6 3.1 0 0.8-0.2 1.7-0.6 2.5 -0.4 0.8-0.9 1.6-1.5 2.3 -0.6 0.7-1.2 1.4-1.8 2 -0.6 0.7-1.1 1.4-1.5 2.3 -0.4 0.8-0.6 1.7-0.6 2.5h-0.4v-5.7h0.4c0.7-0.4 1.3-0.8 1.8-1.2 0.5-0.4 1.1-0.8 1.6-1.3s1-1.1 1.3-1.6c0.3-0.6 0.5-1.2 0.5-1.8 0-1.4-0.4-2.8-1.2-4.2 0-0.2 0-0.3 0.1-0.4C549.9 33.5 550 33.5 550.2 33.5z"/>
+                    <polygon class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" points="473.4,47.4 490.3,50.8 490.3,53.5 473.4,50.2  "/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M513.8 48.2c0-0.3 0.1-0.6 0.4-0.9 0.3-0.3 0.6-0.6 1-0.8 0.3-0.2 0.7-0.6 1-1 0.3-0.4 0.4-0.9 0.4-1.4 0-0.6-0.2-1.1-0.6-1.6l-0.8-1c-0.1-0.1-0.1-0.1-0.1-0.2s0-0.2 0.1-0.2c0.1-0.1 0.2-0.1 0.3-0.1 0.1 0 0.2 0 0.2 0.1l3.4 4.1c0.1 0.2 0.2 0.4 0.2 0.6 0 0.3-0.1 0.6-0.4 0.9 -0.3 0.3-0.6 0.6-1 0.8 -0.3 0.2-0.7 0.6-1 1 -0.3 0.4-0.4 0.9-0.4 1.4 0 0.6 0.2 1.1 0.5 1.6l1.9 2.2c0.1 0.1 0.1 0.1 0.1 0.2 0 0.1 0 0.2-0.1 0.3 -0.1 0.1-0.2 0.1-0.3 0.1 0 0-0.2-0.1-0.4-0.3 -0.2-0.2-0.5-0.3-0.9-0.5s-0.8-0.2-1.2-0.2c-0.4 0-0.7 0.1-0.9 0.3 -0.2 0.2-0.3 0.6-0.3 1.2 0 0.9 0.2 1.6 0.6 2.1 0 0.1 0.1 0.1 0 0.2 0 0.1-0.1 0.1-0.2 0.1 -0.1 0-0.3-0.3-0.7-0.8s-0.7-1.2-1-1.9c-0.3-0.8-0.5-1.4-0.5-1.9 0-0.6 0.3-1 0.9-1 0.7 0 1.6 0.2 2.7 0.7l-3-3.6C513.9 48.5 513.8 48.3 513.8 48.2z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M537.6 45.3c0.4 0 0.7 0.1 1 0.4 0.2 0.2 0.3 0.5 0.4 0.8s0.1 0.5 0.2 0.8c0.1 0.2 0.3 0.3 0.5 0.3 0.2 0 0.4-0.2 0.7-0.6 0.3-0.4 0.5-0.7 0.6-0.9 0.1-0.1 0.2-0.2 0.3-0.2s0.3 0.1 0.3 0.2l-2.8 9.5c-0.2 0.1-0.4 0.2-0.6 0.2s-0.5-0.1-0.6-0.2l2.7-7.4c-0.9 0.3-1.7 0.5-2.4 0.5 -0.5 0-1-0.2-1.4-0.5 -0.4-0.3-0.6-0.8-0.6-1.3 0-0.5 0.2-0.8 0.5-1.2C536.8 45.4 537.2 45.3 537.6 45.3z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M494.7 48.2c0-0.3 0.1-0.6 0.4-0.9 0.3-0.3 0.6-0.6 1-0.8 0.3-0.2 0.7-0.6 1-1s0.4-0.9 0.4-1.4c0-0.6-0.2-1.1-0.6-1.6l-0.8-1c-0.1-0.1-0.1-0.1-0.1-0.2s0-0.2 0.1-0.2c0.1-0.1 0.2-0.1 0.3-0.1 0.1 0 0.2 0 0.2 0.1l3.4 4.1c0.1 0.2 0.2 0.4 0.2 0.6 0 0.3-0.1 0.6-0.4 0.9 -0.3 0.3-0.6 0.6-1 0.8 -0.3 0.2-0.7 0.6-1 1 -0.3 0.4-0.4 0.9-0.4 1.4 0 0.6 0.2 1.1 0.5 1.6l1.9 2.2c0.1 0.1 0.1 0.1 0.1 0.2 0 0.1 0 0.2-0.1 0.3 -0.1 0.1-0.2 0.1-0.3 0.1 0 0-0.2-0.1-0.4-0.3 -0.2-0.2-0.5-0.3-0.9-0.5 -0.4-0.2-0.8-0.2-1.2-0.2 -0.4 0-0.7 0.1-0.9 0.3 -0.2 0.2-0.3 0.6-0.3 1.2 0 0.9 0.2 1.6 0.6 2.1 0 0.1 0.1 0.1 0 0.2 0 0.1-0.1 0.1-0.2 0.1 -0.1 0-0.3-0.3-0.7-0.8s-0.7-1.2-1-1.9c-0.3-0.8-0.5-1.4-0.5-1.9 0-0.6 0.3-1 0.9-1 0.7 0 1.6 0.2 2.7 0.7l-3-3.6C494.7 48.5 494.7 48.3 494.7 48.2z"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="473.7" y1="48.9" x2="473.7" y2="65.9"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="489.9" y1="52.1" x2="489.9" y2="74.4"/>
+                    <line class="melody-stroke" fill="none" stroke="#73b3da" stroke-width="0.737" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" x1="545.4" y1="28.3" x2="545.4" y2="49.9"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M471.6 63.8c0.7 0 1.3 0.2 1.8 0.6s0.7 0.9 0.7 1.5c0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C469.3 64.3 470.4 63.8 471.6 63.8z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M487.8 72.3c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C485.5 72.8 486.6 72.3 487.8 72.3z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M550 24.1c0.7 0 1.3 0.2 1.8 0.6 0.5 0.4 0.7 0.9 0.7 1.5 0 1-0.5 2-1.6 2.9 -1.1 0.9-2.2 1.3-3.4 1.3 -0.7 0-1.3-0.2-1.8-0.6 -0.5-0.4-0.7-0.9-0.7-1.5 0-1 0.5-2 1.6-2.9C547.6 24.6 548.8 24.1 550 24.1z"/>
+                    <path class="melody-fill" fill="#73b3da" fill-role="evenodd" clip-rule="evenodd" d="M476.7 78.6l-0.3-13.5c0.2-0.1 0.4-0.2 0.6-0.2 0.2 0 0.4 0.1 0.6 0.2l-0.2 7.8c0.6-0.5 1.3-0.8 2.1-0.8 0.6 0 1.1 0.2 1.4 0.7 0.4 0.5 0.6 1 0.6 1.6 0 0.4-0.1 0.8-0.4 1.2 -0.2 0.4-0.5 0.7-0.8 0.9 -0.3 0.2-0.6 0.5-1.1 0.9 -0.5 0.4-0.8 0.6-1.1 0.8 -0.1 0.1-0.2 0.2-0.3 0.3 -0.1 0.2-0.2 0.3-0.4 0.4 -0.1 0.1-0.2 0.1-0.4 0.1 -0.1 0-0.3-0.1-0.4-0.2C476.8 78.9 476.7 78.7 476.7 78.6zM477.7 74.5l0 1.5v0.2c0 0.6 0 1.1 0.1 1.5 0.4-0.4 0.8-0.7 1-0.9 0.2-0.2 0.5-0.6 0.7-1 0.2-0.4 0.4-0.8 0.4-1.2s-0.1-0.8-0.3-1.1c-0.2-0.3-0.4-0.4-0.7-0.4 -0.4 0-0.6 0.1-0.9 0.4C477.8 73.8 477.7 74.1 477.7 74.5z"/>
+                </g>
+                <g class="key fragment" data-fragment-index="2">
+                    <path class="key-fill" fill="#f5c45e" fill-role="evenodd" clip-rule="evenodd" d="M42.4 47.4l-0.3-13.5c0.2-0.1 0.4-0.2 0.6-0.2s0.4 0.1 0.6 0.2l-0.2 7.8c0.6-0.5 1.3-0.8 2.1-0.8 0.6 0 1.1 0.2 1.4 0.7 0.4 0.5 0.6 1 0.6 1.6 0 0.4-0.1 0.8-0.4 1.2s-0.5 0.7-0.8 0.9c-0.3 0.2-0.6 0.5-1.1 0.9s-0.8 0.6-1.1 0.8c-0.1 0.1-0.2 0.2-0.3 0.3 -0.1 0.2-0.2 0.3-0.4 0.4S43.1 48 42.9 48c-0.1 0-0.3-0.1-0.4-0.2S42.4 47.6 42.4 47.4zM43.4 43.3l0 1.5v0.2c0 0.6 0 1.1 0.1 1.5 0.4-0.4 0.8-0.7 1-0.9 0.2-0.2 0.5-0.6 0.7-1s0.4-0.8 0.4-1.2 -0.1-0.8-0.3-1.1c-0.2-0.3-0.4-0.4-0.7-0.4 -0.4 0-0.6 0.1-0.9 0.4C43.5 42.6 43.4 42.9 43.4 43.3z"/>
+                    <path class="key-fill" fill="#f5c45e" fill-role="evenodd" clip-rule="evenodd" d="M36.8 55.9l-0.3-13.5c0.2-0.1 0.4-0.2 0.6-0.2 0.2 0 0.4 0.1 0.6 0.2l-0.2 7.8c0.6-0.5 1.3-0.8 2.1-0.8 0.6 0 1.1 0.2 1.4 0.7 0.4 0.5 0.6 1 0.6 1.6 0 0.4-0.1 0.8-0.4 1.2 -0.2 0.4-0.5 0.7-0.8 0.9 -0.3 0.2-0.6 0.5-1.1 0.9 -0.5 0.4-0.8 0.6-1.1 0.8 -0.1 0.1-0.2 0.2-0.3 0.3 -0.1 0.2-0.2 0.3-0.4 0.4 -0.1 0.1-0.2 0.1-0.4 0.1 -0.1 0-0.3-0.1-0.4-0.2C36.8 56.2 36.8 56.1 36.8 55.9zM37.7 51.8l0 1.5v0.2c0 0.6 0 1.1 0.1 1.5 0.4-0.4 0.8-0.7 1-0.9 0.2-0.2 0.5-0.6 0.7-1 0.2-0.4 0.4-0.8 0.4-1.2s-0.1-0.8-0.3-1.1c-0.2-0.3-0.4-0.4-0.7-0.4 -0.4 0-0.6 0.1-0.9 0.4S37.7 51.4 37.7 51.8z"/>
+                    <path class="key-fill" fill="#f5c45e" fill-role="evenodd" clip-rule="evenodd" d="M31.1 44.6l-0.3-13.5c0.2-0.1 0.4-0.2 0.6-0.2 0.2 0 0.4 0.1 0.6 0.2l-0.2 7.8c0.6-0.5 1.3-0.8 2.1-0.8 0.6 0 1.1 0.2 1.4 0.7 0.4 0.5 0.6 1 0.6 1.6 0 0.4-0.1 0.8-0.4 1.2 -0.2 0.4-0.5 0.7-0.8 0.9 -0.3 0.2-0.6 0.5-1.1 0.9 -0.5 0.4-0.8 0.6-1.1 0.8 -0.1 0.1-0.2 0.2-0.3 0.3 -0.1 0.2-0.2 0.3-0.4 0.4 -0.1 0.1-0.2 0.1-0.4 0.1 -0.1 0-0.3-0.1-0.4-0.2S31.1 44.7 31.1 44.6zM32 40.5l0 1.5v0.2c0 0.6 0 1.1 0.1 1.5 0.4-0.4 0.8-0.7 1-0.9 0.2-0.2 0.5-0.6 0.7-1 0.2-0.4 0.4-0.8 0.4-1.2s-0.1-0.8-0.3-1.1c-0.2-0.3-0.4-0.4-0.7-0.4 -0.4 0-0.6 0.1-0.9 0.4C32.2 39.8 32.1 40.1 32 40.5z"/>
+                    <path class="key-fill" fill="#f5c45e" fill-role="evenodd" clip-rule="evenodd" d="M25.4 53.1l-0.3-13.5c0.2-0.1 0.4-0.2 0.6-0.2 0.2 0 0.4 0.1 0.6 0.2l-0.2 7.8c0.6-0.5 1.3-0.8 2.1-0.8 0.6 0 1.1 0.2 1.4 0.7 0.4 0.5 0.6 1 0.6 1.6 0 0.4-0.1 0.8-0.4 1.2s-0.5 0.7-0.8 0.9c-0.3 0.2-0.6 0.5-1.1 0.9 -0.5 0.4-0.8 0.6-1.1 0.8 -0.1 0.1-0.2 0.2-0.3 0.3 -0.1 0.2-0.2 0.3-0.4 0.4s-0.2 0.1-0.4 0.1c-0.1 0-0.3-0.1-0.4-0.2C25.5 53.4 25.4 53.2 25.4 53.1zM26.4 49l0 1.5v0.2c0 0.6 0 1.1 0.1 1.5 0.4-0.4 0.8-0.7 1-0.9 0.2-0.2 0.5-0.6 0.7-1 0.2-0.4 0.4-0.8 0.4-1.2s-0.1-0.8-0.3-1.1c-0.2-0.3-0.4-0.4-0.7-0.4 -0.4 0-0.6 0.1-0.9 0.4C26.5 48.3 26.4 48.6 26.4 49z"/>
+                    <path class="key-fill" fill="#f5c45e" fill-role="evenodd" clip-rule="evenodd" d="M16.2 30.6c-1.1 0.7-2 1.6-2.6 2.7 -0.6 1.1-0.9 2.4-0.9 3.7 0 1 0.4 2.6 1.1 4.9 1.1-1.4 1.9-2.7 2.5-4 0.6-1.3 0.9-2.6 0.9-4 0-0.7-0.1-1.3-0.2-1.7C16.9 31.8 16.6 31.2 16.2 30.6zM14.5 58.6c-0.1 0-0.3-0.1-0.7-0.3 -0.3-0.2-0.7-0.4-1.1-0.7 -0.4-0.3-0.7-0.8-1-1.4 -0.3-0.6-0.4-1.2-0.4-1.9 0-1.1 0.3-2 1-2.9 0.7-0.9 1.6-1.4 2.8-1.6 -0.4-1.2-0.8-2.6-1.3-4.2 -0.8 1-1.4 1.8-1.8 2.3 -0.4 0.6-0.9 1.3-1.4 2.2 -0.5 0.9-0.9 1.8-1.2 2.6 -0.2 0.8-0.3 1.7-0.3 2.6 0 1.4 0.7 2.7 2 3.7 1.3 1 2.7 1.6 4.3 1.6 0.6 0 1.1 0 1.6-0.1 -0.2-2.6-0.6-5.4-1.4-8.4 -0.9 0.1-1.7 0.4-2.2 0.9 -0.6 0.5-0.8 1.2-0.8 1.9 0 1.2 0.7 2.2 2 2.8 0.1 0.1 0.2 0.2 0.2 0.4s-0.1 0.2-0.2 0.3S14.7 58.6 14.5 58.6zM18.2 60.2c0.7-0.3 1.3-0.7 1.8-1.4 0.5-0.7 0.7-1.4 0.7-2.3 0-1-0.3-2-1-2.8 -0.7-0.8-1.6-1.4-2.7-1.5C17.6 55 18.1 57.7 18.2 60.2zM22.2 55.7c0 1.3-0.4 2.5-1.1 3.5 -0.8 1-1.7 1.7-2.8 2 0 0.3 0 0.7 0 1.3 0 0.8 0 1.7-0.1 2.7 -0.1 1.4-0.6 2.7-1.5 3.7 -0.8 1-1.9 1.6-3.2 1.6 -1.3 0-2.4-0.4-3.4-1.3 -0.9-0.9-1.4-1.9-1.4-3.2 0-0.6 0.3-1.2 0.8-1.7 0.5-0.5 1.1-0.7 1.8-0.7 0.6 0 1.1 0.2 1.5 0.7 0.4 0.5 0.6 1 0.6 1.7 0 0.6-0.2 1.1-0.6 1.5 -0.4 0.4-0.9 0.6-1.5 0.6 -0.2 0-0.5 0-0.7-0.1 0.3 0.5 0.7 0.8 1.3 1.1 0.5 0.3 1.1 0.4 1.7 0.4 1 0 1.9-0.4 2.5-1.3 0.7-0.9 1.1-1.9 1.2-3.1 0.1-1 0.1-1.8 0.1-2.6 0-0.5 0-0.8 0-1.1 -0.6 0.1-1.2 0.2-1.7 0.2 -2.2 0-4.1-0.8-5.6-2.4 -1.6-1.6-2.3-3.5-2.3-5.7 0-0.5 0.1-1 0.2-1.6 0.1-0.5 0.2-1 0.3-1.4 0.1-0.4 0.3-0.9 0.6-1.4 0.3-0.6 0.5-1 0.6-1.3 0.1-0.3 0.4-0.7 0.9-1.4 0.5-0.6 0.8-1 0.9-1.2 0.1-0.1 0.4-0.6 1-1.3 0.6-0.7 0.9-1.1 0.9-1.2 -0.5-1.7-0.9-3.1-1.2-4.3s-0.4-2.5-0.4-4c0-0.8 0.1-1.6 0.3-2.4 0.2-0.8 0.5-1.5 0.8-2 0.3-0.6 0.6-1.1 1-1.5 0.3-0.4 0.6-0.8 0.9-1 0.3-0.2 0.4-0.3 0.5-0.3 0.2 0 0.6 0.4 1.2 1.3 0.6 0.9 1.2 2 1.7 3.4 0.5 1.4 0.8 2.7 0.8 3.8 0 1.6-0.3 3-1 4.4s-1.7 2.9-3 4.5c0.6 1.9 1.1 3.5 1.6 5 1.7 0 3.2 0.6 4.3 1.8C21.6 52.7 22.2 54.1 22.2 55.7z"/>
+                </g>
+                <g class="chords fragment" data-fragment-index="3">
+                    <path class="chords-fill" fill="#d3d742" fill-role="evenodd" clip-rule="evenodd" d="M472.7 11.1c0.1 0 0.3 0 0.4 0 0.9 0 1.9 0.3 2.9 1 0.1 0.1 0.2 0.1 0.2 0.2 0.1 0 0.1 0.1 0.2 0.2 0.1 0.1 0.1 0.1 0.2 0.2 0.1 0.1 0.1 0.1 0.1 0.2 0 0.1 0 0.2 0 0.2 0 0.1 0 0.2-0.1 0.3 -0.1 0.3-0.2 0.5-0.4 0.6s-0.3 0.2-0.5 0.3c-0.1 0-0.3 0-0.4 0 -0.1 0-0.1 0-0.2 0 -0.2 0-0.4-0.1-0.7-0.1 -0.2-0.1-0.5-0.2-0.7-0.3s-0.5-0.2-0.7-0.3c-0.2-0.1-0.5-0.2-0.7-0.3 -0.2-0.1-0.5-0.1-0.7-0.1 -0.1 0-0.2 0-0.3 0 -0.1 0-0.2 0-0.3 0 -0.4 0.1-0.9 0.3-1.2 0.5s-0.7 0.6-0.9 0.9 -0.4 0.7-0.5 1.1c-0.1 0.4-0.2 0.9-0.2 1.3 0 0 0 0.1 0 0.1 0 0.4 0 0.8 0.1 1.2 0.1 0.4 0.2 0.8 0.4 1.2 0.2 0.4 0.5 0.8 0.9 1.1 0.4 0.3 0.9 0.6 1.4 0.9 0.5 0.3 1.1 0.4 1.6 0.4 0.6 0 1.2-0.2 1.8-0.5 0 0 0.1-0.1 0.2-0.1s0.2-0.1 0.3-0.2c0.1 0 0.2-0.1 0.3-0.1 0.1 0 0.2-0.1 0.3-0.1s0.2 0 0.3 0c0.1 0 0.2 0.1 0.2 0.2 0.1 0.2 0.2 0.4 0.2 0.6 0 0.2 0 0.3-0.1 0.5 -0.1 0.2-0.2 0.3-0.4 0.5 -0.2 0.2-0.3 0.3-0.5 0.4 -0.2 0.1-0.4 0.2-0.6 0.3 -0.2 0.1-0.4 0.2-0.6 0.3s-0.3 0.1-0.4 0.2c-0.5 0.2-1.1 0.3-1.6 0.3 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0-1-0.1-1.5-0.2 -0.5-0.2-1-0.4-1.4-0.7 -0.5-0.3-0.9-0.7-1.2-1.1 -0.3-0.4-0.6-0.9-0.9-1.4 -0.2-0.5-0.4-1-0.5-1.6 0-0.3-0.1-0.5-0.1-0.8 0-0.3 0-0.7 0.1-1 0.1-0.6 0.3-1.2 0.5-1.8 0.2-0.6 0.6-1.1 1-1.6 0.4-0.5 0.8-1 1.3-1.4 0.5-0.4 1-0.7 1.5-1C471.6 11.4 472.1 11.2 472.7 11.1z"/>
+                    <path class="chords-fill" fill="#d3d742" fill-role="evenodd" clip-rule="evenodd" d="M481.1 12.6c-0.3 0-0.6 0-1.1 0.1 -0.5 0.1-0.8 0.1-1.1 0.1 0 0-0.1 0-0.1 0 -0.3 0-0.6 0-0.8-0.1 -0.3-0.1-0.5-0.2-0.7-0.3 -0.3-0.2-0.4-0.4-0.4-0.5 0 0 0-0.1 0-0.1 0.1-0.4 0.1-0.7 0.1-0.9 0 0 0-0.1 0-0.1 0-0.1 0-0.1 0.1-0.1 0 0 0-0.1 0.1-0.1 0 0 0.1-0.1 0.1-0.1s0-0.1 0.1-0.1 0.1-0.1 0.1-0.1c0.1-0.1 0.3-0.1 0.4-0.1s0.3 0 0.5 0.1c0.1 0 0.3 0.1 0.5 0.2 0.3 0.1 0.4 0.1 0.4 0.1 0.3 0.1 0.6 0.1 1 0.1 0.6 0 1.3-0.1 2-0.2 0.1 0 0.2 0 0.3-0.1 0.2-0.1 0.3-0.1 0.4-0.1 0.1 0 0.2 0 0.2 0 0 0 0.1 0 0.1 0 0.1 0 0.2 0.1 0.3 0.2 0.1 0.1 0.1 0.3 0.1 0.4 0 0.1 0 0.3-0.1 0.4 -0.1 0.2-0.2 0.3-0.3 0.5s-0.2 0.3-0.4 0.5 -0.3 0.3-0.4 0.5 -0.2 0.3-0.3 0.4c-0.1 0.1-0.2 0.2-0.2 0.3 -0.2 0.4-0.4 0.7-0.6 1s-0.3 0.5-0.4 0.8 -0.2 0.6-0.2 0.9c0 0.2-0.1 0.5-0.1 0.9s0 0.8-0.1 1.1c0 0.3-0.1 0.6-0.3 0.9 -0.1 0.2-0.3 0.4-0.4 0.5 -0.2 0.1-0.3 0.2-0.4 0.2h0c-0.1 0-0.3-0.1-0.3-0.2 -0.1-0.1-0.1-0.4-0.1-0.6 0-1.1 0.2-2.1 0.6-3.2 0.1-0.4 0.4-0.9 0.6-1.5C480.8 13.4 481 12.9 481.1 12.6z"/>
+                    <path class="chords-fill" fill="#d3d742" fill-role="evenodd" clip-rule="evenodd" d="M347.5 12c0-0.1 0.1-0.3 0.2-0.5s0.3-0.4 0.4-0.6c0 0 0.1-0.1 0.2-0.3 0.1-0.1 0.2-0.2 0.3-0.3l0.1-0.2 6 0c0 0.4-0.1 0.8-0.4 1.1s-0.6 0.7-0.9 0.9c0 0-0.1 0.1-0.2 0.1 -0.1 0-0.2 0-0.3 0l-5 0c0 0 0 0 0 0C347.7 12.4 347.5 12.2 347.5 12zM342.9 4.7c0.1 0 0.1 0 0.2 0 0.2 0 0.4 0 0.6 0.1 0.3 0.1 0.7 0.2 1.1 0.3 0.4 0.1 0.7 0.3 1 0.5s0.5 0.4 0.7 0.7c0.1 0.1 0.1 0.2 0.1 0.3 0 0.1 0 0.3-0.1 0.5 -0.1 0.3-0.3 0.5-0.5 0.6 -0.2 0.1-0.3 0.2-0.5 0.2 -0.2 0-0.3 0-0.5 0 -0.2 0-0.4-0.1-0.5-0.2 -0.2-0.1-0.4-0.2-0.5-0.3s-0.4-0.2-0.6-0.3 -0.4-0.2-0.6-0.2c-0.2-0.1-0.5-0.1-0.7-0.1 -0.3 0-0.7 0-1.1 0.1 -0.6 0.2-1.2 0.4-1.7 0.8 -0.4 0.3-0.7 0.6-0.9 1.1 -0.2 0.4-0.4 0.9-0.5 1.4 0 0.3-0.1 0.7-0.1 1 0 0.2 0 0.4 0 0.5 0 0.5 0.1 1 0.3 1.5 0.2 0.5 0.4 0.9 0.7 1.2 0.3 0.3 0.6 0.6 1 0.9 0.4 0.2 0.8 0.4 1.2 0.5 0.2 0 0.4 0.1 0.7 0.1 0 0 0 0 0.1 0l0.6-0.1c0.5-0.1 0.9-0.3 1.2-0.5 0.1-0.1 0.2-0.2 0.3-0.3 0.1-0.1 0.2-0.2 0.2-0.3 0-0.1 0.1-0.2 0.2-0.3 0 0 0.1-0.1 0.1-0.2 0.1-0.1 0.1-0.2 0.2-0.3s0.1-0.2 0.2-0.3c0.1-0.1 0.1-0.3 0.1-0.4 0-0.1 0-0.2 0-0.3 0-0.1 0-0.2-0.1-0.3 -0.1-0.2-0.6-0.3-1.2-0.3 -0.1 0-0.3 0-0.5 0 0 0-0.1 0-0.1 0 -0.7 0-1.1 0-1.4-0.1 -0.3-0.1-0.4-0.2-0.4-0.5 0-0.1 0.1-0.3 0.2-0.5 0-0.1 0.1-0.1 0.2-0.2 0.2-0.2 0.5-0.4 1-0.6 0.5-0.1 1-0.2 1.5-0.2 0.1 0 0.2 0 0.4 0 0 0 0.1 0 0.1 0 0.4 0 0.7 0 1.1 0.1 0.5 0.1 0.9 0.2 1.1 0.4 0.4 0.3 0.6 0.7 0.6 1.2 0 0.5-0.2 1.2-0.6 2 -0.2 0.5-0.5 0.9-0.8 1.3s-0.5 0.7-0.9 1.1c-0.3 0.3-0.7 0.6-1 0.9 -0.4 0.2-0.8 0.4-1.2 0.6 -0.5 0.2-1 0.3-1.5 0.3 -0.2 0-0.3 0-0.5 0 -0.3 0-0.6 0-0.9-0.1 -0.4-0.1-0.8-0.2-1.2-0.4s-0.7-0.4-0.9-0.7 -0.5-0.6-0.7-1c-0.2-0.4-0.4-0.7-0.5-1.2 -0.1-0.4-0.2-0.8-0.3-1.2 0-0.4-0.1-0.8-0.1-1.2 0 0 0-0.1 0-0.1 0-0.4 0-0.9 0.1-1.3 0.1-0.7 0.3-1.3 0.6-1.9s0.7-1.1 1.1-1.6 0.9-0.9 1.4-1.2 1.1-0.6 1.7-0.9C341.7 4.9 342.3 4.8 342.9 4.7z"/>
+                    <path class="chords-fill" fill="#d3d742" fill-role="evenodd" clip-rule="evenodd" d="M354.8 18.2L354.6 8c0.1-0.1 0.3-0.1 0.5-0.1 0.2 0 0.3 0 0.5 0.1l-0.1 5.9c0.5-0.4 1-0.6 1.5-0.6 0.4 0 0.8 0.2 1.1 0.5 0.3 0.3 0.4 0.8 0.4 1.2 0 0.3-0.1 0.6-0.3 0.9 -0.2 0.3-0.4 0.5-0.6 0.7 -0.2 0.2-0.5 0.4-0.9 0.7 -0.4 0.3-0.6 0.5-0.8 0.6 -0.1 0-0.1 0.1-0.2 0.3 -0.1 0.1-0.2 0.2-0.3 0.3s-0.2 0.1-0.3 0.1c-0.1 0-0.2 0-0.3-0.1C354.8 18.4 354.8 18.3 354.8 18.2zM355.5 15.1l0 1.1v0.2c0 0.4 0 0.8 0.1 1.1 0.3-0.3 0.6-0.5 0.8-0.7 0.2-0.2 0.4-0.4 0.5-0.7 0.2-0.3 0.3-0.6 0.3-0.9 0-0.3-0.1-0.6-0.2-0.8 -0.1-0.2-0.3-0.3-0.5-0.3 -0.3 0-0.5 0.1-0.6 0.3S355.5 14.8 355.5 15.1z"/>
+                    <path class="chords-fill" fill="#d3d742" fill-role="evenodd" clip-rule="evenodd" d="M361 10.3C361 10.3 361 10.3 361 10.3c0.2 0 0.5-0.1 0.7-0.2 0.3-0.2 0.5-0.3 0.7-0.3 0.2 0 0.4-0.1 0.5-0.1 0.1 0 0.2 0 0.2 0.1 0 0 0 0 0 0.1 0 0 0.3 0.2 0.7 0.6 0.2 0.2 0.4 0.5 0.5 1 0.1 0.3 0.1 0.7 0.1 1.1 0 0.1 0 0.2 0 0.3 0 0.5-0.1 0.9-0.3 1.2 -0.2 0.5-0.5 1-0.9 1.5 -0.4 0.5-0.9 1-1.4 1.4 -0.5 0.4-1 0.7-1.5 0.8 -0.1 0-0.3 0-0.4 0 -0.4 0-0.7-0.1-1-0.4 -0.2-0.2-0.3-0.3-0.4-0.5 -0.1-0.1-0.1-0.2-0.1-0.4 0-0.1 0-0.1 0-0.2 0-0.2 0.1-0.3 0.1-0.4 0-0.1 0.1-0.2 0.2-0.4 0.2-0.2 0.3-0.3 0.4-0.4 0.1 0 0.2-0.1 0.3-0.1s0.3 0 0.5 0.1c0.2 0 0.4 0.1 0.6 0.1 0.2 0 0.3 0 0.5 0 0 0 0 0 0.1 0 0.2 0 0.4 0 0.4-0.1 0-0.1 0.1-0.2 0.2-0.4 0.3-0.4 0.4-0.7 0.4-1 0 0 0-0.1 0-0.1 0-0.2 0-0.4 0-0.6 0-0.1 0-0.3 0-0.4 0-0.1-0.1-0.2-0.2-0.3 -0.1-0.1-0.2-0.1-0.3-0.2 -0.1 0-0.2 0-0.3 0 -0.1 0-0.2 0-0.3 0 -0.1 0-0.2 0.1-0.3 0.1s-0.2 0.1-0.3 0.2c-0.2 0.1-0.3 0.2-0.3 0.2 -0.2 0.1-0.2 0.2-0.3 0.2 -0.1 0-0.1 0-0.2 0 -0.3 0-0.6-0.1-0.7-0.4 -0.1-0.2-0.2-0.4-0.2-0.6 -0.1-0.4-0.1-0.7-0.1-0.9 0-0.1 0-0.2 0-0.2 0-0.1 0-0.2 0-0.4 0-0.3 0-0.8 0-1.4 0-0.3 0-0.5 0-0.8 0-0.6 0-1.1 0.1-1.5 0-0.1 0.4-0.3 1.3-0.5 0.8-0.2 1.3-0.3 1.3-0.3 0.4 0 0.7-0.1 0.9-0.2 0.2-0.1 0.5-0.2 0.8-0.3 0 0 0.3 0 0.7 0 0.1 0 0.2 0 0.2 0 0 0 0 0 0 0 0.1 0 0.2 0 0.3 0.1 0.1 0.1 0.1 0.2 0.2 0.3s0 0.2 0 0.3c0 0.1-0.1 0.2-0.1 0.4 -0.1 0.2-0.2 0.3-0.2 0.3 -0.2 0-0.4 0-0.4 0.2 -0.1 0.2-0.3 0.3-0.5 0.4 -0.4 0.2-0.6 0.2-0.6 0.3 -0.2 0.1-0.4 0.2-0.7 0.2 -0.7 0.1-1.1 0.2-1.1 0.4 0 0.1 0 0.5 0.1 1.2C361 9.8 361 10.1 361 10.3 361 10.3 361 10.3 361 10.3z"/>
+                    <path class="chords-fill" fill="#d3d742" fill-role="evenodd" clip-rule="evenodd" d="M217.1 6.6c0.2 0 0.4 0 0.5 0 0.3 0 0.6 0 1 0.1 0.5 0.1 0.9 0.3 1.3 0.6s0.7 0.6 1 1c0.3 0.4 0.5 0.8 0.7 1.2 0.2 0.4 0.3 0.9 0.4 1.4 0.1 0.3 0.1 0.7 0.1 1 0 0.1 0 0.2 0 0.4 0 0.6-0.2 1.1-0.4 1.7 -0.2 0.6-0.5 1.2-0.8 1.7 -0.3 0.5-0.8 1.1-1.2 1.5s-1 0.9-1.5 1.3 -1.1 0.6-1.7 0.9 -1.2 0.3-1.8 0.4c0 0 0 0 0 0 -0.1 0-0.2 0-0.3 0 -0.1 0-0.1-0.1-0.2-0.2s-0.1-0.1-0.1-0.2c0-0.1 0-0.2 0-0.3s0-0.2 0-0.3c0 0 0-0.1 0-0.1 0-0.3 0-0.8 0.1-1.5 0-0.6 0.1-1 0.1-1.4 0-0.1 0-0.2 0-0.3 -0.1-1.9-0.1-3.8-0.1-5.7 0-0.1 0-0.3 0-0.5s0-0.4 0-0.5c0 0 0-0.1 0-0.1 0-0.1 0-0.2 0-0.3 0-0.2 0.1-0.3 0.1-0.5s0.2-0.3 0.3-0.4c0.1-0.1 0.2-0.2 0.4-0.3S215 7 215.2 7s0.3-0.1 0.5-0.1 0.4-0.1 0.5-0.1 0.3 0 0.5-0.1S217 6.6 217.1 6.6zM216.1 17.6c0.5 0 1.1-0.2 1.5-0.4 0.5-0.2 0.9-0.6 1.2-1 0.3-0.4 0.6-0.8 0.9-1.3s0.4-1 0.5-1.5c0-0.2 0-0.4 0-0.7 0-0.3 0-0.6-0.1-0.9 -0.1-0.5-0.3-1-0.6-1.5 -0.1-0.1-0.2-0.3-0.4-0.5s-0.4-0.4-0.7-0.6 -0.5-0.4-0.8-0.5c-0.3-0.1-0.6-0.2-0.8-0.3 -0.1 0-0.1 0-0.2 0 -0.2 0-0.4 0.1-0.5 0.2 -0.1 0.1-0.2 0.2-0.2 0.5 0 0.1 0 0.2 0 0.3 0 0.1 0 0.2 0 0.3 0 0.2 0.1 0.4 0.1 0.7s0.1 0.4 0.1 0.5c0 0.7 0.1 1.4 0.1 2.1s0 1.6 0 2.5C216.1 16.4 216.1 17.1 216.1 17.6z"/>
+                    <path class="chords-fill" fill="#d3d742" fill-role="evenodd" clip-rule="evenodd" d="M222.2 20.2L222 10c0.1-0.1 0.3-0.1 0.5-0.1 0.2 0 0.3 0 0.5 0.1l-0.1 5.9c0.5-0.4 1-0.6 1.5-0.6 0.4 0 0.8 0.2 1.1 0.5 0.3 0.3 0.4 0.8 0.4 1.2 0 0.3-0.1 0.6-0.3 0.9 -0.2 0.3-0.4 0.5-0.6 0.7 -0.2 0.2-0.5 0.4-0.9 0.7 -0.4 0.3-0.6 0.5-0.8 0.6 -0.1 0-0.1 0.1-0.2 0.3 -0.1 0.1-0.2 0.2-0.3 0.3 -0.1 0.1-0.2 0.1-0.3 0.1 -0.1 0-0.2 0-0.3-0.1C222.2 20.4 222.2 20.3 222.2 20.2zM222.9 17.1l0 1.1v0.2c0 0.4 0 0.8 0.1 1.1 0.3-0.3 0.6-0.5 0.8-0.7s0.4-0.4 0.5-0.7c0.2-0.3 0.3-0.6 0.3-0.9 0-0.3-0.1-0.6-0.2-0.8 -0.1-0.2-0.3-0.3-0.5-0.3 -0.3 0-0.5 0.1-0.6 0.3S222.9 16.8 222.9 17.1z"/>
+                    <path class="chords-fill" fill="#d3d742" fill-role="evenodd" clip-rule="evenodd" d="M230.5 10.7c-0.3 0.1-0.7 0.1-1.1 0.1 -0.3 0-0.6 0-0.9 0 -0.3 0-0.6 0-0.8 0 -0.2 0-0.3 0-0.3 0 -0.1 0-0.4-0.1-0.9-0.3 -0.4-0.1-0.6-0.3-0.6-0.5 0 0 0 0 0-0.1 0-0.2 0.1-0.4 0.1-0.5 0-0.2 0.1-0.5 0.2-0.6 0 0 0-0.1 0-0.2 0 0 0-0.1 0-0.1 0-0.1 0.1-0.1 0.1-0.2 0 0 0.1-0.1 0.1-0.1s0.1-0.1 0.1-0.1c0.1-0.1 0.3-0.2 0.4-0.2s0.3 0 0.5 0.1c0.1 0.1 0.3 0.1 0.5 0.2 0.2 0.1 0.4 0.2 0.4 0.2 0.3 0.1 0.6 0.1 1 0.1 0.7 0 1.4-0.1 2.1-0.3 0.1 0 0.2-0.1 0.3-0.1 0.2-0.1 0.3-0.1 0.4-0.2 0.1 0 0.2 0 0.3 0 0 0 0.1 0 0.1 0 0.1 0 0.2 0.1 0.3 0.2 0.1 0.2 0.1 0.3 0.1 0.5 0 0.1 0 0.3 0 0.4 0 0.1 0 0.2 0 0.2 0 0.2 0 0.4-0.1 0.6 -0.1 0.2-0.1 0.4-0.2 0.6s-0.1 0.5-0.3 0.7c-0.2 0.2-0.3 0.4-0.4 0.6 -0.1 0.2-0.2 0.3-0.2 0.4 -0.2 0.6-0.4 1-0.6 1.4 -0.1 0.4-0.3 0.8-0.4 1.1 -0.1 0.6-0.2 1-0.2 1.3 0 0.6 0 1 0 1l0 0.3c0 0.3 0 0.6 0 0.9 0 0.3-0.1 0.6-0.2 0.9 -0.1 0.3-0.3 0.5-0.4 0.7 -0.1 0.1-0.4 0.2-0.6 0.2 0 0 0 0-0.1 0 -0.3 0-0.5-0.1-0.6-0.3 -0.1-0.2-0.1-0.5-0.1-0.9 0-1.2 0.2-2.3 0.5-3.5 0.1-0.5 0.4-1.3 0.8-2.4C230.2 11.8 230.4 11.1 230.5 10.7z"/>
+                    <path class="chords-fill" fill="#d3d742" fill-role="evenodd" clip-rule="evenodd" d="M84.6 16.5c0-0.1 0.1-0.3 0.2-0.5 0.2-0.2 0.3-0.4 0.4-0.6 0 0 0.1-0.1 0.2-0.3s0.2-0.2 0.3-0.3l0.1-0.2 6 0c0 0.4-0.1 0.8-0.4 1.1 -0.3 0.3-0.6 0.7-0.9 0.9 0 0-0.1 0.1-0.2 0.1 -0.1 0-0.2 0-0.3 0l-5 0c0 0 0 0 0 0C84.7 16.8 84.6 16.7 84.6 16.5zM80.2 14.6C80.2 14.6 80.2 14.6 80.2 14.6c0.2 0 0.5 0 1 0.1 0.1 0 0.2 0 0.4 0s0.4 0 0.6 0c0.2 0.1 0.3 0.2 0.4 0.4 0.1 0.1 0.1 0.3 0.1 0.5 0 0 0 0.1 0 0.1 0 0.1 0 0.3-0.1 0.6 -0.1 0.3-0.2 0.4-0.3 0.5 -0.4 0.1-0.8 0.1-1.1 0.1 0 0-0.1 0-0.1 0 -0.7 0-1 0-1.1 0l-0.6 0c-0.2 0-0.3 0-0.3 0 0 0-0.1 0-0.3 0 -0.1 0-0.2 0-0.3 0s-0.2 0-0.3 0 -0.2 0-0.3 0.1c-0.1 0-0.2 0.1-0.2 0.2 -0.1 0.2-0.2 0.4-0.2 0.6 0 0.2 0 0.3 0 0.5 0 0.1 0 0.2 0 0.2 0 0.1 0 0.4 0.1 0.8 0 0.2 0 0.5 0.1 0.9 0 0.2 0 0.3 0 0.5 0 0.1 0 0.2 0 0.3 0 0.3-0.1 0.5-0.2 0.7 -0.1 0.2-0.2 0.4-0.4 0.5 -0.1 0.1-0.4 0.2-0.8 0.3 0 0-0.1 0-0.1 0 0 0-0.1 0-0.3-0.1 -0.2-0.1-0.3-0.2-0.3-0.5 0-0.3 0-0.6 0-0.8s0-0.3 0-0.3c0-0.1 0-0.2 0-0.3 0-0.2 0-0.4 0-0.7 0 0 0-0.1 0-0.3 0-0.3 0-0.8 0-1.6 0-0.8 0.1-1.4 0.1-1.9 0-0.8 0-2.2 0-4.3 0-0.1 0-0.2 0-0.3s0-0.3 0-0.4 0-0.2 0-0.4c0-0.2 0-0.3 0-0.4s0-0.2 0.1-0.3c0-0.1 0.1-0.2 0.1-0.3s0.1-0.1 0.2-0.2c0.1-0.1 0.2-0.1 0.3-0.1 0.3-0.1 0.7-0.1 1.1-0.1 0.1 0 0.2 0 0.2 0 0.3 0 0.6 0 0.9 0 0.3 0 0.7 0 1.2 0.1 0.4 0 0.8 0 1.1 0 0.2 0 0.4 0 0.8 0 0.3 0 0.6 0 0.8 0 0.1 0 0.1 0 0.2 0 0.3 0 0.6 0 0.8 0.1 0.2 0 0.3 0.2 0.4 0.4 0.1 0.2 0.1 0.3 0.1 0.5 0 0 0 0 0 0.1 0 0.2 0 0.4-0.1 0.6 -0.1 0.2-0.2 0.4-0.3 0.5 -0.1 0.1-0.2 0.1-0.3 0.1 -0.1 0-0.2 0-0.3 0 -0.1 0-0.2 0-0.3 0s-0.2 0-0.3 0c-0.1 0-0.2 0-0.3 0 -0.4 0-0.8 0-1.4 0 -0.7 0-1.3 0-1.6 0 -0.1 0-0.2 0-0.3 0s-0.3 0-0.4 0c-0.1 0-0.2 0-0.4 0s-0.2 0.1-0.3 0.1 -0.1 0.2-0.1 0.3c0 0.2 0 0.4-0.1 0.6 0 0.4 0 0.6 0 0.8 0 0 0 0.1 0 0.1 0 0.2 0 0.5 0.1 0.7 0 0.2 0.1 0.4 0.2 0.5 0.1 0.1 0.2 0.1 0.3 0.1 0.2 0 0.3 0.1 0.4 0.1 0.2 0 0.4 0 0.4 0C79.4 14.6 79.8 14.6 80.2 14.6z"/>
+                </g>
+                <g class="form fragment" data-fragment-index="4">
+                    <path class="form-fill" fill="#d6504f" fill-role="evenodd" clip-rule="evenodd" d="M55.3 38.9c0.4 0 0.7-0.1 1.1-0.2l0.6-0.2c0.1 0 0.2 0 0.3 0.1 0.1 0.1 0.1 0.2 0 0.2l-6.4 7.5h3.8v-3c0-0.2 0.1-0.4 0.2-0.5 0.1-0.1 0.3-0.2 0.4-0.3 0.2-0.1 0.4-0.3 0.7-0.6 0.3-0.3 0.6-0.8 0.8-1.4 0-0.1 0.1-0.1 0.2-0.1 0.2 0 0.3 0.1 0.3 0.3v5.6h1.6c0.2 0 0.3 0.1 0.4 0.3 0 0.2-0.1 0.3-0.4 0.3h-1.6v0.2c0 0.6 0.1 1.1 0.4 1.5 0.3 0.4 0.7 0.6 1.2 0.6 0.2 0 0.3 0.1 0.3 0.3 0 0.2-0.1 0.3-0.3 0.3 -0.3 0-0.8 0-1.5-0.1s-1.1-0.1-1.5-0.1c-0.3 0-0.8 0-1.5 0.1 -0.7 0.1-1.2 0.1-1.5 0.1 -0.2 0-0.3-0.1-0.3-0.3 0-0.2 0.1-0.3 0.3-0.3 0.5 0 0.9-0.2 1.2-0.6s0.5-0.9 0.5-1.5v-0.2h-3.8c-0.2 0-0.4-0.1-0.5-0.2 -0.1-0.1-0.2-0.2-0.2-0.4 0 0 0.1-0.2 0.3-0.5 0.2-0.3 0.5-0.6 0.8-1.1 0.3-0.5 0.6-1 0.9-1.6 0.3-0.6 0.6-1.3 0.8-2.1s0.3-1.6 0.3-2.4c0-0.2 0.1-0.4 0.3-0.4 0 0 0.1 0 0.3 0.1 0.2 0 0.4 0.1 0.6 0.1C54.8 38.9 55 38.9 55.3 38.9z"/>
+                    <path class="form-fill" fill="#d6504f" fill-role="evenodd" clip-rule="evenodd" d="M55.3 50.2c0.4 0 0.7-0.1 1.1-0.2l0.6-0.2c0.1 0 0.2 0 0.3 0.1 0.1 0.1 0.1 0.2 0 0.2l-6.4 7.5h3.8v-3c0-0.2 0.1-0.4 0.2-0.5s0.3-0.2 0.4-0.3c0.2-0.1 0.4-0.3 0.7-0.6 0.3-0.3 0.6-0.8 0.8-1.4 0-0.1 0.1-0.1 0.2-0.1 0.2 0 0.3 0.1 0.3 0.3v5.6h1.6c0.2 0 0.3 0.1 0.4 0.3 0 0.2-0.1 0.3-0.4 0.3h-1.6v0.2c0 0.6 0.1 1.1 0.4 1.5 0.3 0.4 0.7 0.6 1.2 0.6 0.2 0 0.3 0.1 0.3 0.3 0 0.2-0.1 0.3-0.3 0.3 -0.3 0-0.8 0-1.5-0.1C56.8 61 56.3 61 55.9 61c-0.3 0-0.8 0-1.5 0.1 -0.7 0.1-1.2 0.1-1.5 0.1 -0.2 0-0.3-0.1-0.3-0.3 0-0.2 0.1-0.3 0.3-0.3 0.5 0 0.9-0.2 1.2-0.6s0.5-0.9 0.5-1.5v-0.2h-3.8c-0.2 0-0.4-0.1-0.5-0.2 -0.1-0.1-0.2-0.2-0.2-0.4 0 0 0.1-0.2 0.3-0.5 0.2-0.3 0.5-0.6 0.8-1.1 0.3-0.5 0.6-1 0.9-1.6 0.3-0.6 0.6-1.3 0.8-2.1s0.3-1.6 0.3-2.4c0-0.2 0.1-0.4 0.3-0.4 0 0 0.1 0 0.3 0.1 0.2 0 0.4 0.1 0.6 0.1C54.8 50.2 55 50.2 55.3 50.2z"/>
+                    <line class="form-stroke" fill="none" stroke="#d6504f" stroke-width="0.9071" stroke-linejoin="bevel" stroke-miterlimit="10" x1="558.6" y1="38.6" x2="558.6" y2="61.3"/>
+                    <line class="form-stroke" fill="none" stroke="#d6504f" stroke-width="0.9071" stroke-linejoin="bevel" stroke-miterlimit="10" x1="456.3" y1="38.6" x2="456.3" y2="61.3"/>
+                    <line class="form-stroke" fill="none" stroke="#d6504f" stroke-width="0.9071" stroke-linejoin="bevel" stroke-miterlimit="10" x1="329.7" y1="38.6" x2="329.7" y2="61.3"/>
+                    <line class="form-stroke" fill="none" stroke="#d6504f" stroke-width="0.9071" stroke-linejoin="bevel" stroke-miterlimit="10" x1="202.9" y1="38.6" x2="202.9" y2="61.3"/>
+                    <path class="form-fill" fill="#d6504f" fill-role="evenodd" clip-rule="evenodd" d="M67.4 48c-0.3-0.2-0.4-0.5-0.4-0.9 0-0.4 0.1-0.7 0.4-0.9s0.5-0.4 0.9-0.4c0.3 0 0.6 0.1 0.9 0.4 0.3 0.2 0.4 0.5 0.4 0.9 0 0.4-0.1 0.7-0.4 0.9 -0.3 0.2-0.5 0.4-0.9 0.4C67.9 48.4 67.6 48.2 67.4 48z"/>
+                    <path class="form-fill" fill="#d6504f" fill-role="evenodd" clip-rule="evenodd" d="M67.4 53.7c-0.3-0.2-0.4-0.5-0.4-0.9 0-0.4 0.1-0.7 0.4-0.9 0.3-0.2 0.5-0.4 0.9-0.4 0.3 0 0.6 0.1 0.9 0.4 0.3 0.2 0.4 0.5 0.4 0.9 0 0.4-0.1 0.7-0.4 0.9 -0.3 0.2-0.5 0.4-0.9 0.4C67.9 54 67.6 53.9 67.4 53.7z"/>
+                    <line class="form-stroke" fill="none" stroke="#d6504f" stroke-width="0.9071" stroke-linejoin="bevel" stroke-miterlimit="10" x1="64.9" y1="38.6" x2="64.9" y2="61.3"/>
+                    <line class="form-stroke" fill="none" stroke="#d6504f" stroke-width="1.7008" stroke-linejoin="bevel" stroke-miterlimit="10" x1="61.9" y1="38.6" x2="61.9" y2="61.3"/>
+                    <path class="form-fill" fill="#d6504f" fill-role="evenodd" clip-rule="evenodd" d="M71.2 31c0.2 0 0.4 0.1 0.4 0.4 0 0.1 0 0.1-0.1 0.2 -0.2 0.3-0.6 0.8-1.1 1.7 -0.6 0.9-1 1.5-1.3 1.9s-0.7 1-1.3 1.7c-0.6 0.7-1.1 1.2-1.6 1.6 -0.5 0.4-1 0.7-1.6 1 -0.6 0.3-1.2 0.4-1.9 0.4H61v-2c0-0.2 0.1-0.3 0.2-0.4 0.1-0.1 0.2-0.2 0.4-0.2h1.1c0.9 0 1.7-0.2 2.5-0.5 0.8-0.3 1.5-0.8 2.2-1.5s1.3-1.3 1.8-1.9c0.5-0.6 1.1-1.4 1.6-2.3C71 31.1 71.1 31 71.2 31z"/>
+                    <path class="form-fill" fill="#d6504f" fill-role="evenodd" clip-rule="evenodd" d="M71.6 68.5c0 0.1 0 0.2-0.1 0.2 -0.1 0.1-0.2 0.1-0.3 0.1 -0.1 0-0.2-0.1-0.3-0.2 -0.6-0.9-1.1-1.6-1.7-2.3s-1.1-1.3-1.8-1.9S66 63.4 65.2 63c-0.8-0.3-1.6-0.5-2.5-0.5h-1.1c-0.2 0-0.3-0.1-0.4-0.2C61.1 62.3 61 62.1 61 62v-2h1.7c0.6 0 1.3 0.1 1.9 0.4 0.6 0.3 1.2 0.6 1.6 1 0.5 0.4 1 0.9 1.6 1.6 0.6 0.7 1 1.3 1.3 1.7s0.7 1.1 1.3 1.9c0.6 0.9 0.9 1.4 1.1 1.7C71.6 68.3 71.6 68.4 71.6 68.5z"/>
+                </g>
+            </svg>
+
+        		<ul>
+        			<li class="melody fragment" data-fragment-index="1">Melody</li>
+        			<li class="key fragment" data-fragment-index="2">Tonality</li>
+        			<li class="chords fragment" data-fragment-index="3">Chords</li>
+        			<li class="form fragment" data-fragment-index="4">Form</li>
+        		</ul>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="hard-bop-cover" class="show-cover"/>
+            <label for="hard-bop-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkB3BQ/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              <p>This approach to designing strikes me as similar to how **hard bop** Jazz is stereotypically structured. We all know that there’s a lot of improvisation in Jazz, but a song doesn’t come from nowhere, and it doesn’t all come out at once. <p>
+              <ul>
+                <li><span class="bullet-point">A composer creates the **tune** </span></li>
+                <li><span class="bullet-point">in a key, creates a **tonality** and </span></li>
+                <li><span class="bullet-point">**chord progression**, and </span></li>
+                <li><span class="bullet-point">defines the song's **form**. </span></li>
+                </ul>
+                  <p>That’s what the composer writes down.  That’s the song as a document – the style guide for the song. Then he’ll take that to the band and they’ll play that tune once. It usually takes less than a minute, but the band continues playing. This is where the improvisation kicks in. </p>
+                  <p>What’s going on is that players will take turns soloing over all the source material the composer gave them. The players mine the song form and chord progression for interesting material. It’s not a free-for-all. They’re not trying to play any different songs. They’re exploiting the vocabulary the composer gave them. Sounds like design to me.</p>
+            </aside>
+        	</section>
+        </section>
+
+        <!-- Slide #xx -->
+        <!--<section id="organizing-aesthetics" data-state="rekkid">
+        	<h1>Organizing Aesthetics</h1>
+          <aside class="notes">
+            A surprisingly large amount of a designer's job can be described as making boxes to put things in and lining them up. When I realized that I made the connection about why I think design (especially designing with code) and music making seem to be so connected in my brain. You can look at both design and music composition as "problem solving with aesthetics".
+          </aside>
+        </section>-->
+
+        <section>
+        	<!-- Slide #xx -->
+        	<section id="musical-thinking" data-state="rekkid">
+        		<h1>Musical Thinking And Style Guides</h1>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="musical-thinking-cover" class="show-cover"/>
+            <label for="musical-thinking-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkBlDQ/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              The thing is, all that specialized training has served me well as a designer.  Turns out the thinking that goes into creating/finding/crafting a melody and lyrics, constructing a harmony that supports the feeling you want, considering the available instruments and players, and tying that together with a great rhythm isn't so different from designing. Let's go a little deeper:
+            </aside>
+        	</section>
+        	<!-- Slide #xx -->
+        	<section id="melody" class="compare-design-music" data-state="rekkid">
+        		<h1>Melody and Lyrics</h1>
+        		<table class="music-table">
+        			<thead>
+        				<tr>
+        					<th>Music</th>
+        					<th>Design</th>
+        					<th>Connection</th>
+        				</tr>
+        			</thead>
+        			<tbody>
+        				<tr>
+        					<td>Melody and Lyrics</td>
+        					<td>Content</td>
+        					<td>What You Hum In The Shower</td>
+        				</tr>
+        			</tbody>
+        		</table>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="melody-cover" class="show-cover"/>
+            <label for="melody-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkaA5w/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+
+            </aside>
+      		</section>
+      		<!-- Slide #xx -->
+      		<section id="content-first-design" data-state="rekkid">
+            <h1>Content Content Content Content Content</h1>
+            <ul>
+              <li class="fragment" data-fragment-index="1">Content first design <span class="asterisk">*</span></li>
+              <li class="fragment">Before we Decorate</li>
+              <li class="fragment">Content Inventory and Modelling</li>
+              <li class="fragment">Follow the Content’s Lead</li>
+            </ul>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="content-first-cover" class="show-cover"/>
+            <label for="content-first-cover" class="show-cover-label">Show Cover</label>
+            <footer class="bs-detector fragment" data-fragment-index="1">
+              <span class="asterisk">*</span> Aren’t we all sick of blablabla-first design?
+            </footer>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkAiPQ/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              <p>Let's think about that in tems of <span class="bullet-point">**content-first design**</span>.</p>
+
+              <p>Good music is not good because it's in 4/4, or 5/8, or resolves to a D Locrian with a sharp 9. Although that's pretty cool. It's all about the core melody and lyrics. The content. So let's start with that as we design.</p>
+
+              <p>We should know what our content is going to be <span class="bullet-point">**before we try to decorate**</span> it. We'll probably never have every word and image in advance, but we can do a thorough <span class="bullet-point">**content inventory and modelling**</span> and be able to map out the characteristics of the content. That's what we need in order to make our CMS after all, and it's no different for our design.</p>
+
+              <p>By starting with the content we have the opportunity to <span class="bullet-point">**follow its lead**</span>. It's the first piece of our design vocabulary.</p>
+            </aside>
+      		</section>
+      		<!-- Slide #xx -->
+      		<section id="harmony-rhythm" class="compare-design-music" data-state="rekkid">
+      			<h1>Harmony and Rhythm</h1>
+      			<table class="music-table">
+      				<thead>
+      					<tr>
+      						<th>Music</th>
+      						<th>Design</th>
+      						<th>Connection</th>
+      					</tr>
+      				</thead>
+      				<tbody>
+      					<tr>
+      						<td>Melody and Lyrics</td>
+      						<td>Content</td>
+      						<td>What You Hum In The Shower</td>
+      					</tr>
+      					<tr>
+      						<td>Harmony And Rhythm</td>
+      						<td class="fragment">Design Components</td>
+      						<td class="fragment">Give Structure And Distinction To The Content</td>
+      					</tr>
+      				</tbody>
+      			</table>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="harony-rhythm-cover" class="show-cover"/>
+            <label for="harony-rhythm-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkaA5w/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+      		</section>
+      		<!-- Slide #xx -->
+      		<section id="component-second" data-state="rekkid">
+      			<h1>Component Second<span class="asterisk">*</span> Design</h1>
+      			<ul>
+      				<li class="fragment">Look for patterns</li>
+      				<li class="fragment">Combine into bigger components</li>
+      				<li class="fragment">Assemble into templates</li>
+      			</ul>
+            <footer class="bs-detector">
+              <span class="asterisk">*</span> trite I know. see above
+            </footer>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="component-second-cover" class="show-cover"/>
+            <label for="component-second-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkGgww/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              <p>Don't just string all that content out, light a candle and hope for the best. In musical terms you can't have variations without a theme. Melodies need structure and context, and your content is no different.</p>
+
+              <p>Mold it into various components that enhance the tone and message of the content. Is it verbose or pithy? All about the hard sell? Image-heavy? <span class="bullet-point">**Look for patterns**</span> to emerge and reinforce each other. Combine and reorder the components into <span class="bullet-point">**bigger components**</span>. <span class="bullet-point">**Assemble them into page templates**</span>. We don't have any decoration, or even color yet, but if we do this right by our content it will do right by us and help keep the design on track.</p>
+            </aside>
+      		</section>
+      		<!-- Slide #xx -->
+      		<section id="instruments-players" class="compare-design-music" data-state="rekkid">
+      			<h1>Instruments and Players</h1>
+      			<table class="music-table">
+      			<thead>
+      			<tr>
+      			  <th>Music</th>
+      			  <th>Design</th>
+      			  <th>Connection</th>
+      			</tr>
+      			</thead>
+      			<tbody>
+      			<tr>
+      			  <td>Melody And Lyrics</td>
+      			  <td>Content</td>
+      			  <td>What You Hum In The Shower</td>
+      			</tr>
+      			<tr>
+      			  <td>Harmony And Rhythm</td>
+      			  <td>Design Components</td>
+      			  <td>Give Structure And Distinction To The Content</td>
+      			</tr>
+      			<tr>
+      			  <td>Instruments Players</td>
+      			  <td class="fragment">Art Direction</td>
+      			  <td class="fragment">Aesthetic Framework And Limitatons</td>
+      			</tr>
+      			</tbody>
+      			</table>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="instruments-players-cover" class="show-cover"/>
+            <label for="instruments-players-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkaA5w/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+      		</section>
+      		<!-- Slide #xx -->
+      		<section id="aesthetic-foundation" data-state="rekkid">
+      			<h1>Lay The Aesthetic Foundation</h1>
+      			<ul>
+              <li class="fragment" data-fragment-index="3">Colors</li>
+              <li class="fragment" data-fragment-index="2">Type Scale</li>
+      				<li class="fragment" data-fragment-index="1">Typefaces</li>
+      			</ul>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="aesthetic-foundation-cover" class="show-cover"/>
+            <label for="aesthetic-foundation-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkBKdQ/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              <p>Is this a small band or a Big Band, or even a rock band? Any of these could play our song, but they'd all do it differently. We need a direction.</p>
+
+              <p>Time to start adding the basic graphic elements of the design. What can we do first? I usually start with <span class="bullet-point">**typefaces**</span>, <span class="bullet-point">**sizes**</span>, and <span class="bullet-point">**colors**</span>. I've found that you can go a long way towards defining a design language by finding the right combination of these elements.</p>
+
+              <p>Everything you create in your design will use these elements so it's worth the time up front to get them right.<p>
+            </aside>
+      		</section>
+        </section>
+
+        <section>
+        	<!-- Slide #xx -->
+        	<section id="find-typeface" class="foundation" data-state="rekkid">
+        		<h1>Finding the Right Typeface</h1>
+        		<h2 class="fragment" data-fragment-index="1" >Typecast</h2>
+        		<ul>
+        			<li class="fragment roll-in" data-fragment-index="1">Choose and Combine</li>
+        			<li class="fragment roll-in" data-fragment-index="2">Style</li>
+        			<li class="fragment roll-in" data-fragment-index="3">Compare</li>
+        		</ul>
+            <figure class="illustration fragment roll-in" data-fragment-index="1">
+              <img src="images/ss-typecast-1.png" alt="screen shot of Typecast fonts">
+            </figure>
+            <figure class="illustration fragment roll-in" data-fragment-index="2">
+              <img src="images/ss-typecast-2.jpg" alt="screen shot of Typecast styling">
+            </figure>
+            <figure class="illustration fragment roll-in" data-fragment-index="3">
+              <img src="images/ss-typecast-3.jpg" alt="screen shot of Typecast comparing">
+            </figure>
+            <!--<div class="fragment code">-->
+              <!--<h3>scss/global/variables/typography</h3>-->
+              <!--<pre><code data-trim>-->
+<!--$archer: 'Archer SSm A', 'Archer SSm B', serif;-->
+<!--$landmark-inline: 'Landmark Inline A', 'Landmark Inline B';-->
+<!--$landmark-regular: 'Landmark Regular A', 'Landmark Regular B';-->
+<!--//-->
+<!--$font-sans: sans-serif;-->
+<!--$font-serifs: $archer, serif;-->
+<!--$font-slab: $archer, serif;-->
+              <!--</code></pre>-->
+              <!--<h3>scss/global/extends/typography</h3>-->
+              <!--<pre><code data-trim>-->
+<!--%font-family-archer { font-family: $archer; }-->
+<!--%font-family-landmark-regular { font-family: $landmark-regular; }-->
+<!--%font-family-landmark-inline { font-family: $landmark-inline; }-->
+<!--//-->
+<!--%sans { font-family: $font-sans; }-->
+<!--%serif { font-family: $font-serifs; }-->
+              <!--</code></pre>-->
+            <!--</div>-->
+        		<footer><a href="http://typecast.com/">typecast.com</a></footer>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="find-typeface-cover" class="show-cover"/>
+            <label for="find-typeface-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkG3Ng/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              One of my favorite online tools for typography is **Typecast**. They combine all the webfonts from the leading online providers and allow you to really play with them.
+              <ul>
+                <li><span class="bullet-point">**combine fonts**</span></li>
+                <li><span class="bullet-point">**style** as you like</span></li>
+                <li><span class="bullet-point">**compare** different treatments</span></li>
+              </ul>
+            </aside>
+        	</section>
+        	<!-- Slide #xx -->
+        	<section id="modular-scale" class="foundation" data-state="rekkid">
+        		<h1>Finding the Right Type Sizes</h1>
+        		<h2 class="fragment" data-fragment-index="4">Sassy Modular Scale</h2>
+        		<ul>
+              <li class="ratios fragment" data-fragment-index="4">Use ratios to establish sizes</li>
+              <li class="limitations fragment" data-fragment-index="4">Set of Limitations</li>
+        		</ul>
+            <div class="examples">
+              <figure class="discontent full  fragment current-visible direct" data-fragment-index="1">
+                <img src="images/ss-modularscale-discontent-big.png" alt="screen shot from thegreatdiscontent.com">
+                <h2>The Great Discontent</h2>
+              </figure>
+              <figure class="discontent full fragment current-visible direct" data-fragment-index="2">
+                <img src="images/ss-modularscale-discontent-big.png" alt="screen shot from thegreatdiscontent.com">
+                <h2>The Great Discontent</h2>
+                <figcaption>
+                  <ul>
+                    <li class="px87">87px / 5.4375em</li>
+                    <li class="px11">11px / 0.6875em</li>
+                    <li class="px16">16px / 1em</li>
+                    <li class="px24">24px / 1.5em</li>
+                    <li class="px36">36px / 2.25em</li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <figure class="discontent-blocks full fragment current-visible direct" data-fragment-index="3">
+                <img src="images/ss-modularscale-discontent-big.png" alt="screen shot from thegreatdiscontent.com">
+                <h2>The Great Discontent</h2>
+                <figcaption>
+                  <ul>
+                    <li class="px11 block">11px / 0.6875em</li>
+                    <li class="px16 block">16px / 1em</li>
+                    <li class="px24 block">24px / 1.5em</li>
+                    <li class="px36 block">36px / 2.25em</li>
+                    <li class="px87 block">87px / 5.4375em</li>
+                  </ul>
+                </figcaption>
+              </figure>
+              <figure class="illustration fragment current-visible" data-fragment-index="4">
+                <img src="images/ss-modularscale-1.jpg" alt="screen shot of a modular scale">
+                <figcaption><code>$ms-ratio: $fourth; <br/>$ms-base: 16px 44px;</code></figcaption>
+                <ul class="blocks">
+                  <li class="px16 block">16px</li>
+                  <li class="px18 block">18.5625px</li>
+                  <li class="px21 block">21.33333px</li>
+                  <li class="px24 block">24.75px</li>
+                  <li class="px28 block">28.44444px</li>
+                  <li class="px33 block">33.0px</li>
+                  <li class="px37 block">37.92593px</li>
+                  <li class="px44 block">44px</li>
+                  <li class="px50 block">50.5679px</li>
+                  <li class="px58 block">58px</li>
+                  <li class="px67 block">67px</li>
+                </ul>
+              </figure>
+              <figure class="illustration fragment current-visible" data-fragment-index="5">
+                <img src="images/ss-modularscale-2.jpg" alt="screen shot of a modular scale">
+                <figcaption><code>$ms-ratio: $minor-third; <br/>$ms-base: 16px 44px;</code></figcaption>
+                <ul class="blocks">
+                  <li class="px16 block">16px</li>
+                  <li class="px17 block">17px</li>
+                  <li class="px19 block">19px</li>
+                  <li class="px21 block">21px</li>
+                  <li class="px23 block">23px</li>
+                  <li class="px25 block">25px</li>
+                  <li class="px27 block">27px</li>
+                  <li class="px30 block">30px</li>
+                  <li class="px33 block">33px</li>
+                  <li class="px36 block">36px</li>
+                  <li class="px39 block">39px</li>
+                </ul>
+              </figure>
+              <figure class="illustration fragment current-visible" data-fragment-index="6">
+                <img src="images/ss-modularscale-3.jpg" alt="screen shot of a modular scale">
+                <figcaption><code>$ms-ratio: $golden; <br/>$ms-base: 16px 44px;</code></figcaption>
+                <ul class="blocks">
+                  <li class="px16 block">16px</li>
+                  <li class="px17 block">17px</li>
+                  <li class="px26 block">26px</li>
+                  <li class="px27 block">27px</li>
+                  <li class="px42 block">42px</li>
+                  <li class="px44 block">44px</li>
+                  <li class="px67 block">67px</li>
+                  <li class="px71 block">71px</li>
+                  <li class="px109 block">109px</li>
+                  <li class="px115 block">115px</li>
+                </ul>
+              </figure>
+            </div>
+        		<footer class="fragment" data-fragment-index="4">
+        		  <a href="http://modularscale.com/">modularscale.com</a> -
+        			<a href="http://github.com/at-import/modular-scale">github.com/at-import/modular-scale</a>
+        		</footer>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="modular-scale-cover" class="show-cover"/>
+            <label for="modular-scale-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkBuXQ/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              <p>Once I decide on a font face I like to find a set of font sizes that work harmoniously.</p>
+              <p>Let's look at an example. <span class="bullet-point">THE GREAT DISCONTENT</span></p>
+              <p>**Modular Scale** uses a concept that's been in typographic practice for hundreds of years and uses consistent <span class="bullet-point">ratios to establish relationships between type sizes</span>. In fact the ratios are often expressed as musical intervals. This is a good time to do some experimenting. </p>
+              <p>For that, my friend Scott Kellum and I wrote Sassy Modular Scale to bring Tim Brown's Modular Scale concept to Sass.</p>
+
+              <p>In the **Sass version** you have a lot of control to create a scale with a lot of wide jumps in size or something more tightly spaced. The sizes you choose should show the type at its best, and also help to give your design language a certain character. It establishes a <span class="bullet-point">**set of limitations**</span>. Just keep in mind that this is very similar to a musical scale.  You don't have to always play the notes in order.</p>
+            </aside>
+        	</section>
+        	<!-- Slide #xx -->
+        	<section id="color-schemer" class="foundation" data-state="rekkid">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 960 700" enable-background="new 0 0 960 700" xml:space="preserve" id="byrd-car">
+              <g id="Layer_0_xA0_Image_1_">
+                <image overflow="visible" width="960" height="700" id="Layer_0_xA0_Image" xlink:href="images/byrd.jpg"/>
+              </g>
+              <g id="Layer_4">
+                <defs>
+                  <path id="SVGID_1_" d="M602.7 575.6c-0.7-2.7-2.1-4.6-3.9-6 -0.1-0.8-0.3-1.5-0.4-2.2 -0.9-4.7-2.1-9.1-4.1-13.5 -4.1-9.5-10-18.2-14.4-27.5 -0.3-0.7-0.8-1.3-1.2-1.9 -0.4-1.3-0.9-2.5-1.4-3.7 -1-0.9-1.9-1.8-2.8-2.9 -0.6-0.7-1.2-1.5-1.8-2.3 -2.8-3.9-5.1-8.3-8.2-11.9 -0.5-0.6-0.9-1.2-1.1-1.8 -3.1-2.5-6.2-4.9-8.3-8.3 -1.2-1.9-2.4-3.7-3.7-5.4 -0.8-0.2-1.7-0.6-2.4-1.5 -10.7-11.5-28.5-18-35.6-32.6 0 0-0.1-0.1-0.1-0.1 -0.9-0.7-1.8-1.4-2.7-2.1 -0.6-0.5-1.3-1-1.9-1.5 -3.5-2.1-7-4.1-10.3-6.4 -6.6-4.7-13.1-9.7-19.8-14.3 -6-4.1-12.5-7.3-18.8-10.9 -0.8-0.5-1.6-0.9-2.4-1.3 -0.1-0.1-0.2-0.3-0.3-0.4 -1.2-0.4-2.3-0.9-3.3-1.5 -5.2-3-10.3-6.7-14.6-11.1 -7.8-3.3-14.4-9.2-21.7-13.4 -3.7-2.1-7-4.4-10.5-6.8 -4.1-2.9-9-4-13.4-6.2 -3.9-2-7.5-4.7-11.3-7 -3.6-1.6-7-3.4-10.4-5.4 -3.1-1.8-6.1-3.6-9.1-5.5 -0.8 0-1.6 0-2.3 0.1 -0.6-0.4-1.3-0.7-1.9-1 -5.3-2.4-10.3-5.5-15.7-7.2 -0.5-0.3-1-0.6-1.6-0.9 -8-4.6-17-6.1-25.6-9.3 -4.4-1.6-8.7-3.3-13.2-4.5 -4.6-1.3-9.4-1.7-14.1-2.8 -5.1-1.2-9.7-2.8-15.1-3.3 -4.9-0.4-9.7-0.8-14.6-1.6 -10-1.6-19.7-2.8-29.4-3.1 -1.1 1.2-2.8 1.9-4.8 1.4 -2.5-0.7-5-1.1-7.4-1.3 -5 0.2-10.1 0.7-15.3 1.4 -3 0.4-5.8 1.1-8.5 1.9 -0.7-0.1-1.5-0.1-2.2-0.1 -11.4 3.3-22.6 8-33.9 10.1 0 0 0 0 0 0 -5.2 2.6-10.2 5.5-14.9 8.9 -1.8 0.5-3.5 1.2-5.2 1.9 -0.1 0.1-0.2 0.3-0.4 0.4 0 0 0 0 0 0 -0.3 0.4-0.7 0.8-1 1 -4.7 4.8-9.8 9-15 13.3 -6.6 5.4-12.5 11.2-18.2 17.5 -5.9 6.6-11.1 12.5-14.5 20.7 -1.3 3.3-2.7 6.6-4.3 9.7 -0.3 1-0.5 2-0.7 3.1 -0.6 0.7-1.2 1.5-1.7 2.3 -3 11.9-7.3 23.5-9.5 35.6 -1.9 10.3-2.9 20.8-4.4 31.2 -0.3 7.4 0.4 14.9-0.1 22.3 -0.2 3.8 0.1 7.6 1 11.3 0.7 3 2.9 5.3 3 8.3 0.2 8.6 1.9 15.2 5.4 23 2.7 6.1 6.4 11.8 9.4 17.8 3.2 6.5 6.8 12.3 11.3 17.9 3.8 4.6 7.7 8.9 11.1 13.8 4.2 6.1 8.5 11.9 14.7 16.1 0.8 0.6 1.7 1 2.7 1.2 11.9 12.9 26.5 23 41.6 32 8.8 5.3 17.9 9.8 27.4 13.9 1 0.4 2 0.9 3 1.3 0.9 1.3 2.1 2.4 3.6 3.1 9.7 4.6 18.2 11 28.1 15.2 10.6 4.5 21.6 7.8 32.5 11.4 8.7 2.9 17.3 5.6 26.1 7.9 15.4-2.9 30.9 1.7 46.4 0.8 17.5-1 34.9-1.9 52.5-1.9 8.7 0 17.4 0.2 26 0.6 8.7 0.4 17.4-0.3 26.1 0 1 0 1.9 0.1 2.8 0.2 3.8-0.4 7.7-0.9 11.5-1.3 19.9-2.3 39.6-1.1 59.6-0.3 3.6 0.1 7.1 0.3 10.7 0.5 1.5-1 2.9-2.2 4.4-3.4 1.3-0.5 2.7-1.3 3.9-2.5 0.4 0 0.8-0.1 1.1-0.2 2.9-0.6 5.5-2 8.3-2.9 1-0.4 2-0.8 2.9-1.4 0.5 0.2 1.1 0.4 1.7 0.5 2.8-1.4 5.5-2.9 8.3-4.3 0.4-0.2 0.8-0.4 1.2-0.6 0.3-0.2 0.7-0.3 1-0.4 0.8-0.4 1.6-0.7 2.4-1.1 0.7-1.6 1-1.9 2.1-2.6 2.1-1.4 4.4-2.4 6.5-3.6 6.8-3.8 11.4-10.1 15.9-16.2 4-5.5 7.8-10.8 10.8-16.9 3.3-6.5 5.8-13.4 9-20 1.6-3.3 1.9-7.1 0.6-10.2 1.1-4.5 2-9 2.1-13.7C605.7 592.6 604.8 583.7 602.7 575.6z"/>
+                </defs>
+                <clipPath id="SVGID_2_">
+                  <use xlink:href="#SVGID_1_" overflow="visible"/>
+                </clipPath>
+                <g id="Layer_2" clip-path="url(#SVGID_2_)">
+                  <g id="spinner">
+                    <g id="wheel" class="svg-wheel">
+                      <path fill="#FE2712" d="M644.1 570.3L573.4 607l-212-56.8 -0.2 0.2 155.2 155 92.5 92.5c21.1-21.3 39.8-45.4 55.5-72.6 15.6-27.3 27.3-55.5 35-84.5L644.1 570.3z"/>
+                      <path fill="#FB9902" d="M664.3 375.2c-15.6-27.1-34.5-51.5-55.5-72.6L516.4 395c0 0 0 0 0 0.2l-155 155 211.8-56.8 0 0 126.1-33.7C691.6 430.7 680 402.3 664.3 375.2z"/>
+                      <polygon fill="#3B3F14" points="361.2,550.4 361.2,550.4 361.2,550.2    "/>
+                      <polygon fill="#3B3F14" points="361.2,550.2 359.7,550.5 359.4,552.2 361.2,550.4    "/>
+                      <polygon fill="#3B3F14" points="361.2,550.2 361.4,550.2 361.4,550.2    "/>
+                      <polygon fill="#3B3F14" points="361.2,550.2 361.2,550.2 361.2,550.4 361.4,550.2    "/>
+                      <polygon fill="#3B3F14" points="361,550.2 359.9,549.8 359.7,550.5 361.2,550.2    "/>
+                      <polygon fill="#3B3F14" points="360.1,549.1 359.9,549.8 361,550.2    "/>
+                      <path fill="#3B3F14" d="M361.2 550.2L361.2 550.2 361.2 550.2z"/>
+                      <path fill="#FD5308" d="M699.5 459.5l-108.3 29.1 0 0 -229.8 61.6 0 0L573.2 607l0 0 126.3 33.5c7.9-28.8 11.9-59.2 11.9-90.5S707.2 488.4 699.5 459.5z"/>
+                      <path fill="#3B3F14" d="M361.2 550.2L361.2 550.2 361.2 550.2z"/>
+                      <polygon fill="#3B3F14" points="361.2,550.2 361.2,550.2 361.2,550.2 361,550.2    "/>
+                      <polygon fill="#3B3F14" points="361.2,550.2 360.5,547.6 360.1,549.1 361,550.2    "/>
+                      <path fill="#0247FE" d="M149.4 607L149.4 607 23.1 640.7c7.7 29 19.4 57.4 35 84.5 15.6 27.1 34.5 51.5 55.5 72.6l92.5-92.4 153.2-153.2 0.4-1.6L149.4 607z"/>
+                      <path fill="#8601AF" d="M418 762.2L418 762.2l-56.8-211.8 -2 2 -55 210 -33.5 126.3c28.8 7.9 59.2 11.9 90.5 11.9s61.6-4.2 90.5-11.9L418 762.2z"/>
+                      <path fill="#3D01A4" d="M359.4 552.2L206.2 705.4l-12.1 12.1 -80.4 80.4c21.3 21.1 45.4 39.8 72.6 55.5 27.3 15.6 55.5 27.3 84.5 35l33.9-126.3h-0.2L359.4 552.2z"/>
+                      <path fill="#A7194B" d="M516.4 705.4L516.4 705.4l-155.2-155 0 0 61 227.8 0 0 29.5 110.1c29-7.7 57.4-19.4 84.5-35 27.1-15.6 51.5-34.5 72.6-55.5L516.4 705.4z"/>
+                      <path fill="#0392CE" d="M149.4 493.4L149.4 493.4 23.1 459.8c-7.9 28.8-11.9 59.2-11.9 90.5s4.2 61.6 11.9 90.5l108.7-29.1 0 0 228-61 0.2-0.7L149.4 493.4z"/>
+                      <path fill="#FEFE33" d="M451.7 212.1c-28.8-7.9-59.2-11.9-90.5-11.9s-61.6 4.2-90.5 11.9l33.7 126.3 0 0 56.1 209.3 56.8-207.3c0.9 0.2 0.4-0.5 0.7-2L451.7 212.1z"/>
+                      <path fill="#D0EA2B" d="M360.5 547.6l-89.8-335.5c-29 7.7-57.4 19.2-84.5 35 -27.1 15.6-51.3 34.5-72.6 55.5l92.4 92.5 0 0 154.1 154.1L360.5 547.6z"/>
+                      <path fill="#FABC02" d="M536.4 247.1c-27.3-15.6-55.5-27.3-84.5-35l-28.6 106.6c-0.9-0.2 1.1-0.4 0.2-0.5l-62.9 229.4 0.7 2.6h0.2 0.2l155-155 13.9-13.9 78.2-78.6C587.7 281.5 563.5 262.9 536.4 247.1z"/>
+                      <path fill="#66B032" d="M360.1 549.1L113.6 302.6c-21.1 21.3-39.8 45.4-55.5 72.6 -15.6 27.3-27.3 55.5-35 84.5 0 0 126.3 33.9 126.3 33.7l210.5 56.4L360.1 549.1z"/>
+                    </g>
+                    <g class="fragment" data-fragment-index="1">
+                      <circle fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" cx="210" cy="550" r="22"/>
+                    </g>
+                    <g class="fragment current-visible" data-fragment-index="3">
+                      <circle fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" cx="320" cy="450" r="22"/>
+                      <circle fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" cx="250" cy="620" r="22"/>
+                      <circle fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" cx="250" cy="480" r="22"/>
+                    </g>
+                    <g class="fragment current-visible" data-fragment-index="4">
+                      <circle fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" cx="500" cy="553.5" r="22"/>
+                      <circle fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" cx="400" cy="620" r="22"/>
+                      <circle fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" cx="410" cy="470" r="22"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g id="scheme1" class="fragment" data-fragment-index="2">
+                <text x="639.5" y="355" dx="-240" class="svg-cs-primary">$cs-primary: #0392CE;</text>
+                <rect x="639.5" y="340" fill="#0392CE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="722.5" y="340" fill="#036A8E" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="805.5" y="340" fill="#035572" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="884.5" y="340" fill="#012B3A" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <text x="639.5" y="415" dx="108" class="svg-cs-scheme">$cs-scheme: mono;</text>
+              </g>
+              <g id="scheme2" class="fragment" data-fragment-index="3">
+                <rect x="639.5" y="440" fill="#0392CE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="722.5" y="440" fill="#004aff" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="805.5" y="440" fill="#6cff00" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="884.5" y="440" fill="#e4ff00" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <text x="639.5" y="515" dx="55" class="svg-cs-scheme">$cs-scheme: analagous;</text>
+              </g>
+              <g id="scheme3" class="fragment" data-fragment-index="4">
+                <rect x="639.5" y="540" fill="#0392CE" stroke="#000000" stroke-width="4" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="722.5" y="540" fill="#FD5308" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="805.5" y="540" fill="#FABC02" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <rect x="884.5" y="540" fill="#A7194B" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" width="52" height="52"/>
+                <text x="639.5" y="615" dx="100" class="svg-cs-scheme">$cs-scheme: triad;</text>
+              </g>
+            </svg>
+        		<h1>Finding the Right Colors</h1>
+        		<h2>Color Schemer</h2>
+        		<ul>
+        			<li class="fragment" data-fragment-index="1">Single Seed Color</li>
+        			<li class="fragment" data-fragment-index="2">Harmonious Color Families</li>
+        			<li class="fragment" data-fragment-index="3">Experiment and Tweak</li>
+        		</ul>
+        		<footer><a href="http://github.com/at-import/color-schemer">github.com/at-import/color-schemer</a></footer>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="color-schemer-cover" class="show-cover"/>
+            <label for="color-schemer-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkGsBQ/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              Another Sass tool we can thank Scott Kellum for is **Color Schemer**. This gives us some very powerful color theory tools in Sass. This lets you use a <span class="bullet-point">**single seed color**</span> to generate <span class="bullet-point">**harmonious color families**</span>. This is similar to tools like Kuler and Color Scheme Designer that help you use analagous and complimentary colors from the color wheel. Since this is Sass you can <span class="bullet-point">programatically experiment</span> and tweak until you're happy.
+            </aside>
+        	</section>
+        </section>
+
+        <!-- Slide #xx -->
+        <section id="performance" data-state="rekkid">
+        	<h1>The Performance</h1>
+          <div class="its-time">“it’s&nbsp;time!”…!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</div>
+
+          <!-- show a cover or streaming player -->
+          <input type="checkbox" id="performance-cover" class="show-cover"/>
+          <label for="performance-cover" class="show-cover-label">Show Cover</label>
+          <footer class="cover">
+            <iframe width="400" height="400" src="https://rd.io/i/QFl2PkHqcQ/" frameborder="0"></iframe>
+          </footer>
+          <!-- show a cover or streaming player -->
+
+          <aside class="notes">
+            Now it's time to play the thing. When practicing component-driven design, we can shift our focus between the fine details of each component, and then step back to consider how they lock together into a page layout. And then step further back to see how they relate in various responsive layouts. And then even further back, to see how the different layouts of the site work with different components in place. And then back in to each component.
+          </aside>
+        </section>
+
+        <!-- Slide #xx -->
+        <section id="teams" data-state="rekkid">
+          <h1>Working with Teams and Clients</h1>
+          <p class="unity">Unity</p>
+          <div class="red-dot"></div>
+          <div class="red-dot"></div>
+          <div class="red-dot"></div>
+          <div class="red-dot"></div>
+          <ul>
+            <li class="fragment">splitting out the components</li>
+            <li class="fragment">designers can work simultaneously</li>
+            <li class="fragment">integrate photoshop-based designers</li>
+            <li class="fragment">pair with front end developers</li>
+          </ul>
+
+          <!-- show a cover or streaming player -->
+          <input type="checkbox" id="teams-cover" class="show-cover"/>
+          <label for="teams-cover" class="show-cover-label">Show Cover</label>
+          <footer class="cover">
+            <iframe width="400" height="400" src="https://rd.io/i/QFl2PkGKxw/" frameborder="0"></iframe>
+          </footer>
+          <!-- show a cover or streaming player -->
+
+          <aside class="notes">
+            <p>These are design iterations. What's great about working with this process is that I've found it to be helpful for working as a solo designer on a project and as part of a larger team. By <span class="bullet-point">**splitting out the components**</span> intentionally different <span class="bullet-point">**designers can work simultaneously**</span> and still be aware of how the design is changing in shape and form.<p>
+            <p> You can also <span class="bullet-point">**integrate photoshop-based designers**</span> by asking them to submit components to the style guide and having a <span class="bullet-point">**front end developer do them in css**</span> early. This gives everyone a chance to experiment while also benefiting from the rapid prototyping process.</p>
+          </aside>
+        </section>
+
+        <section>
+        	<!-- Slide #xx -->
+          <section id="pattern-lab-site" data-state="rekkid">
+            <!--<h1>SassConf 2014</h1>-->
+            <div class="live-examples">
+              <iframe src="http://sassconf.thecodingdesigner.com/" width="960px" height="710px " frameborder="0"></iframe>
+            </div>
+            <!--<footer class="links">-->
+              <!--<a href="http://sassconf.com/">sassconf.com</a>-->
+              <!--<a href="http://sassconf.com/styleguide/public/?p=pages-homepage">SassConf Styleguide</a>-->
+            <!--</footer>-->
+            <aside class="notes">
+              I've been using Pattern lab as an example here so I want to give you a brief tour of some of the things I like about it. Pattern Lab is centered arround giving you a low-friction way to define whatever design components you need, organize them into whatever categories or groupings you like, assemble them into bigger components, and then templates, and finally pages. You can add whatever CSS and JavaScript you want. You don't have to use Sass (altho *really?*) and you're really free to use any front end technique you like. One of my favourite bits of the UI is that it lets you quickly drag the width slider to see how the design works at different breakpoints. For me it's really about enabling the design iterations to go quickly and to give you clarity on the global shape of the design language as it progresses.
+            </aside>
+          </section>
+        	<!-- Slide #xx -->
+        	<section id="pattern-lab" data-state="rekkid">
+        		<h1>Pattern Lab</h1>
+            <div class="live-examples">
+              <iframe src="http://sassconf.thecodingdesigner.com/styleguide/public/?p=templates-style-tile" width="960px" height="584px" frameborder="0"></iframe>
+            </div>
+            <footer class="links">
+              <a href="http://sassconf.com/">sassconf.com</a>
+              <a href="http://sassconf.com/styleguide/public/?p=pages-homepage">SassConf Styleguide</a>
+            </footer>
+            <aside class="notes">
+              I've been using Pattern lab as an example here so I want to give you a brief tour of some of the things I like about it. Pattern Lab is centered arround giving you a low-friction way to define whatever design components you need, organize them into whatever categories or groupings you like, assemble them into bigger components, and then templates, and finally pages. You can add whatever CSS and JavaScript you want. You don't have to use Sass (altho *really?*) and you're really free to use any front end technique you like. One of my favourite bits of the UI is that it lets you quickly drag the width slider to see how the design works at different breakpoints. For me it's really about enabling the design iterations to go quickly and to give you clarity on the global shape of the design language as it progresses.
+            </aside>
+        	</section>
+          <section id="sass-folders" data-state="rekkid">
+            <h1>Sass folder structure</h1>
+            <div class="full-code-examples">
+            <pre class="half"><code data-trim>
+scss/
+  components/
+    _rhombus.scss
+    _button.scss
+    _footer.scss
+    _header.scss
+    _logo.scss
+    _navigation.scss
+    _schedule.scss
+    _speakers.scss
+  elements/
+    _body.scss
+    _forms.scss
+    _heading.scss
+    _image.scss
+            </code></pre>
+            <pre class="half"><code data-trim>
+scss/ (continued)
+  global/
+    assets/
+      _fonts.scss
+    extends/
+      _flexbox.scss
+      _helpers.scss
+      _typography.scss
+    functions/
+      _calculators.scss
+    mixins/
+      _helpers.scss
+    variables/
+      _breakpoints.scss
+      _colors.scss
+      _settings.scss
+      _type-sizes.scss
+      _typography.scss
+  layouts/
+  patternlab/
+  _scratch.scss
+  style.scss
+            </code></pre>
+            </div>
+            <aside class="notes">
+              <p>So how is this organized in Sass?</p>
+            </aside>
+          </section>
+          <section id="sass-variables-color" data-state="rekkid">
+            <h1>global/variables/_colors.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+// Color Schemer
+$cs-primary: hsl(330, 50%, 55%);
+$cs-scheme: triad; // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+$cs-hue-offset: 55; // Options: 0-100;
+$cs-brightness-offset: 0; // Options: 0-100;
+
+$color--primary: cs-primary();
+$color--secondary: adjust-color(cs-quadrary(), $lightness: -20%, $saturation: -50%);
+$color--tertiary: cs-secondary();
+$color--quadrary: adjust-color(cs-secondary(), $lightness: -10%, $saturation: -20%);
+$color--quintary: adjust-color(cs-tertiary(), $lightness: 10%, $saturation: 20%);
+
+//////////////////////////////
+// Background Colors
+//////////////////////////////
+$cs-background: $color--white;
+$cs-border-color: $color--black;
+
+// link colors
+$cs-link-normal: $color--quadrary;
+$cs-link-visited: $color--quadrary;
+$cs-link-hover: $color--tertiary;
+$cs-link-active: $color--tertiary;
+$cs-link-focus: $color--tertiary;
+$cs-link-background-normal: $color--primary;
+$cs-link-background-visited: $color--primary;
+$cs-link-background-hover: $color--secondary;
+$cs-link-background-active: $color--secondary;
+$cs-link-background-focus: $color--secondary;
+$cs-link-background-bkg: $cs-background;
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <section id="sass-variables-type" data-state="rekkid">
+            <h1>global/variables/_typography.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+// Typography
+$archer: 'Archer SSm A', 'Archer SSm B', serif;
+$landmark-inline: 'Landmark Inline A', 'Landmark Inline B';
+$landmark-regular: 'Landmark Regular A', 'Landmark Regular B';
+
+// Default font stacks
+$font-sans: sans-serif;
+$font-serifs: $archer, serif;
+$font-slab: $archer, serif;
+
+// General font variables
+$font-body: $font-serifs;
+$font-headline: $landmark-regular;
+$font-display: $landmark-inline;
+$font-logo: $font-slab;
+
+// Modular Scale
+$ms-ratio: $major-third $golden;
+$ms-base: 16px;
+
+// Font size and line-height
+$base-font-size: ms(0); // 16px
+$base-line-px: 26px;
+$base-line-em: em($base-line-px);
+$base-line-height: unitless($base-line-em);
+
+// Headings
+$heading-sizes: em(ms(6)) em(ms(5)) em(ms(4)) em(ms(3)) em(ms(2)) em(ms(1));
+$heading-line-heights: unitless(em($base-line-px * 1.5, ms(6))) unitless(em($base-line-px * 1.5, ms(5))) unitless(em($base-line-px * 1.25, ms(4))) unitless(em($base-line-px, ms(3))) unitless(em($base-line-px, ms(2))) unitless(em($base-line-px, ms(1)));
+$heading-sizes-small: em(ms(3)) em(ms(2)) em(ms(1)) em(ms(0)) em(ms(0)) em(ms(0));
+$heading-line-heights-small: unitless(em($base-line-px * 1.5, ms(3))) unitless(em($base-line-px * 1.25, ms(2))) unitless(em($base-line-px, ms(1))) false false false;
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <section id="sass-extends-type" data-state="rekkid">
+            <h1>global/extends/_typography.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+%serif { font-family: $font-serifs; }
+
+%sans { font-family: $font-sans; }
+
+%mono { font-family: $font-mono; }
+
+%uppercase { text-transform: uppercase; }
+
+%amp { font-family: $font-amp; }
+
+%slab-light { font-family: $font-slab; font-weight: 400; }
+
+%slab-medium { font-family: $font-slab; font-weight: 500; }
+
+%slab-bold { font-family: $font-slab; font-weight: 800; }
+
+%bold { font-weight: bold; }
+
+%italic { font-style: italic; }
+
+%font-family-archer { font-family: $archer; }
+
+%font-family-landmark-regular { font-family: $landmark-regular; }
+
+%font-family-landmark-inline { font-family: $landmark-inline; }
+
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <section id="sass-elements-headings" data-state="rekkid">
+            <h1>elements/_heading.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+// Headings Variables
+$heading-sizes: em(ms(6)) em(ms(5)) em(ms(4)) em(ms(3)) em(ms(2)) em(ms(1));
+$heading-line-heights: unitless(em($base-line-px * 1.5, ms(6))) unitless(em($base-line-px * 1.5, ms(5))) unitless(em($base-line-px * 1.25, ms(4))) unitless(em($base-line-px, ms(3))) unitless(em($base-line-px, ms(2))) unitless(em($base-line-px, ms(1)));
+//////////////////////////////
+
+// Header Element Default Variables
+$heading-base-extend: true !default;
+$heading-sizes: ms(6) ms(5) ms(4) ms(3) ms(2) ms(1) !default;
+
+@mixin heading-base($extend: $heading-base-extend) {
+  @if $extend {
+    @extend %heading-base-extend;
+  } @else {
+    font: {
+      family: $font-headline;
+     weight: normal;
+    }
+  }
+}
+
+@mixin heading-display($extend: $heading-base-extend) {
+  @if $extend {
+    @extend %heading-base-extend;
+  } @else {
+    font: {
+      family: $font-display;
+      weight: normal;
+    }
+  }
+}
+
+@mixin heading-size($size, $line-height: false) {
+  font-size: $size;
+  @if $line-height {
+    line-height: $line-height;
+  }
+}
+
+// Heading Element Extendable Classes
+
+%headings-extend { @include heading-base(false); }
+%headings-display-extend { @include heading-display(false); }
+
+%h1 {
+@extend %headings-display-extend;
+  @include heading-size(nth($heading-sizes, 1), nth($heading-line-heights, 1));
+  margin-bottom: base-line-calc(1, nth($heading-sizes, 1));
+}
+
+// Heading Element Styles
+h1 { @extend %h1; }
+h2 { @extend %h2; }
+h3 { @extend %h3; }
+h4 { @extend %h4; }
+h5 { @extend %h5; }
+h6 { @extend %h6; }
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <section id="sass-components-speakers" data-state="rekkid">
+            <h1>components/_speakers.scss</h1>
+            <div class="full-code-examples">
+            <pre><code class="scss" data-trim>
+.section-title {
+  @extend %h4;
+  background-color: $color--tertiary;
+  color: $color--white;
+  padding: 0.2em 0.5em;
+  clear: both;
+  display: inline-block;
+  margin-left: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+.included {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: $color--secondary;
+  display: inline-block;
+  margin-left: -1em;
+  background: $color--quintary;
+  color: $color--secondary;
+  padding: 0 0.5em 0 1.5em;
+  white-space: nowrap;
+}
+
+.speaker--section {
+  @include clearfix();
+  clear: both;
+  margin-bottom: 2rem;
+}
+
+.session {
+  margin-bottom: 2rem;
+  clear: both;
+}
+
+.title {
+  @extend %h3;
+  @extend %rhombus;
+  background-color: $color--primary;
+  color: $color--white;
+  padding: 0.2em 0.5em;
+  max-width: 80%;
+  margin-left: 0.5em;
+  margin-bottom: 0.5rem;
+  h1 {
+    @extend %rhombus-reset;
+  }
+}
+
+.images {
+  @include breakpoint($bp--sessions-wrap) {
+    float: left;
+    width: 20rem;
+  }
+  @include breakpoint($bp--sessions-2col) {
+    float: left;
+    width: 20rem;
+  }
+}
+
+.speaker-images {
+  &#{-1} {
+   shape-outside: polygon(0px 0px, 320px 0px, 263px 263px, 0px 264px);
+  }
+  &#{-2} {
+   shape-outside: polygon(0px 0px, 320px 0px, 264px 251px, 320px 520px, 0px 520px);
+  }
+  &#{-3} {
+   shape-outside: polygon(0px 0px, 316px 5px, 272px 254px, 317px 506px, 267px 776px, 0px 776px);
+  }
+  &#{-8} {
+   shape-outside: polygon(0px 0px, 254px -10px, 290px 132px, 266px 260px, 286px 429px, 266px 547px, 0px 552px);
+  }
+}
+
+.speaker-images-0 {
+  display: none;
+  ~ .people {
+    @include breakpoint($bp--sessions-wrap) {
+      .speaker,
+      .occupation {
+        margin-left: 8rem;
+      }
+    }
+  }
+}
+
+.speaker-image {
+  @extend %rhombus--image;
+  .panel & {
+    width: 120px;
+    height: 120px;
+    img {
+      width: 150px;
+      height: 150px;
+      margin-left: -1rem;
+    }
+    &:nth-of-type(2n+2) {
+      margin-top: calc(-120px - 1rem);
+      margin-left: calc(120px + 1rem);
+    }
+    &:nth-of-type(4n+3) {
+      @extend %rhombus-left;
+      img {
+        @extend %rhombus-left-reset;
+        margin-left: -2rem;
+      }
+    }
+    &:nth-of-type(4n+4) {
+      @extend %rhombus;
+      img {
+        @extend %rhombus-reset;
+      }
+    }
+  }
+}
+
+.people {
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.speaker {
+  @extend %featured-person--name;
+}
+
+.occupation {
+  @extend %uppercase;
+  border-bottom: 1px dashed $color--tertiary;
+  margin-bottom: 0.5em;
+  @include breakpoint($bp--sessions-wrap) {
+    margin-left: 10rem;
+  }
+}
+
+.section--details {
+  @include breakpoint($bp--sessions-wrap) {
+   margin-left: 8em;
+  }
+}
+
+.section-details--description {
+  max-width: 30em;
+}
+            </code></pre>
+            </div>
+            <aside class="notes"></aside>
+          </section>
+          <!-- Slide #xx -->
+          <section id="singularity" class="foundation" data-state="rekkid">
+            <h1>Singularity</h1>
+            <ul>
+              <li class="fragment" data-fragment-index="1">Sass Grid System</li>
+              <li class="fragment" data-fragment-index="2">Define Any Grid You Like</li>
+              <li class="fragment" data-fragment-index="3">Equal Or Assymetrical</li>
+            </ul>
+            <div class="columns set-one fragment current-visible" data-fragment-index="1">
+              <div class="col col-1"></div>
+              <div class="col col-2"></div>
+              <div class="col col-3"></div>
+              <div class="col col-4"></div>
+              <div class="col col-5"></div>
+              <div class="col col-6 jazzbo"></div>
+              <div class="col col-7"></div>
+              <div class="col col-8"></div>
+              <div class="col col-9"></div>
+              <div class="code-overlay">
+<pre><code class="scss" data-trim>$grid-9: 9;
+$grid-9-gutter: .25;
+.columns {
+    @include layout($grid-9, $grid-9-gutter) {
+      .col-1 { @include grid-span(1, 1); }
+      .col-2 { @include grid-span(1, 2); }
+    }
+  }
+</code></pre>
+              </div>
+            </div>
+            <div class="columns set-two fragment current-visible" data-fragment-index="2">
+              <div class="col col-1"></div>
+              <div class="col col-2"></div>
+              <div class="col col-3"></div>
+              <div class="col col-4 jazzbo"></div>
+              <div class="col col-5"></div>
+              <div class="col col-6"></div>
+              <div class="code-overlay">
+<pre><code class="scss" data-trim>$grid-6: 1 2 1 2 1 2;
+$grid-6-gutter: .25;
+.columns {
+    @include layout($grid-6, $grid-6-gutter) {
+      .col-1 { @include grid-span(1, 1); }
+      .col-2 { @include grid-span(1, 2); }
+    }
+  }
+</code></pre>
+              </div>
+            </div>
+            <div class="columns set-three fragment current-visible" data-fragment-index="3">
+              <div class="col col-1"></div>
+              <div class="col col-2"></div>
+              <div class="col col-3 jazzbo"></div>
+              <div class="col col-4"></div>
+              <div class="code-overlay">
+<pre><code class="scss" data-trim>$grid-4: 8 1 3 5;
+$grid-4-gutter: .25;
+.columns {
+    @include layout($grid-4, $grid-4-gutter) {
+      .col-1 { @include grid-span(1, 1); }
+      .col-2 { @include grid-span(1, 2); }
+    }
+  }
+</code></pre>
+            </div>
+            </div>
+            <footer><a href="http://github.com/Snugug/eq.js">github.com/Snugug/eq.js</a></footer>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="singularity-cover" class="show-cover"/>
+            <label for="singularity-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkH-Yg/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              My friends Scott Kellum and Sam Richard made my favorite grid system. Using Sass variables and mixins you can define any grid you like. You are no longer limited to the tyranny of the equal column. Assymetric or arbitrary grids are still grids. Your columns gan be any widths you want.   You can define a grid and use it on any element. You can use a totally different grid at different breakpoints. While you can have one, you definitely don't need a master grid for all your layouts, and you can define multiple master grids, as well as mini grids for components as you need them.
+            </aside>
+          </section>
+          <!-- Slide #xx -->
+          <section id="breakpoint" class="foundation" data-state="rekkid">
+            <h1>Sass Media Queries</h1>
+            <h2>Breakpoint</h2>
+            <div class="codes fragment" data-fragment-index="4">
+            <div class="code-overlay sass">
+<pre><code class="scss" data-trim>$basic: 543px;
+$pair: 456px 794px;
+
+#foo {
+  @include breakpoint($basic) {
+    content: 'Basic Media Query';
+  }
+
+  @include breakpoint($pair) {
+    content: 'Paired Media Query';
+  }
+}
+</code></pre>
+            </div>
+            <div class="code-overlay compiled">
+<pre><code class="scss"  data-trim>@media (min-width: 543px) {
+  #foo {
+    content: 'Basic Media Query';
+  }
+}
+
+@media (min-width: 456px) and (max-width: 794px) {
+  #foo {
+    content: 'Paired Media Query';
+  }
+}
+</code></pre>
+            </div>
+            </div>
+            <ul>
+              <li class="fragment" data-fragment-index="1">Organize By Setting Variables</li>
+              <li class="fragment" data-fragment-index="2">Simplify With Shorthand Syntax</li>
+              <li class="fragment" data-fragment-index="3">Easier To Experiment And Move To Production</li>
+            </ul>
+            <figure class="hubbard">
+              <img src="images/hubbard2.jpg" alt="Freddie Hubbard">
+            </figure>
+            <footer><a href="http://github.com/at-import/breakpoint">github.com/at-import/breakpoint</a></footer>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="breakpoint-cover" class="show-cover"/>
+            <label for="breakpoint-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkG0kw/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              We end up writing a lot of media queries in responsive design.
+              Breakpoint is a Sass tool I created with Sam Richard for simplifying and organizing media queries. You can assign a media query to a <span class="bullet-point">**variable name**</span> using an intuitive <span class="bullet-point">**shorthand syntax**</span>. This makes it very easy to <span class="bullet-point">experiment with responsive layouts</span> that may be used in many different places in your project.
+            </aside>
+          </section>
+          <!-- Slide #xx -->
+          <section id="eq" class="foundation" data-state="rekkid">
+            <h1>Element Queries</h1>
+            <h2>eq.js</h2>
+            <ul>
+              <li class="fragment">Not Native To Css</li>
+              <li class="fragment">Add States As A Data-attribute</li>
+              <li class="fragment">Style Based On Data Attributes</li>
+            </ul>
+            <div class="columns">
+              <div class="col col-1"></div>
+              <div class="col col-2"></div>
+              <div class="col col-3"></div>
+              <div class="col col-4"></div>
+              <div class="col col-5 jazzbo"></div>
+              <div class="col col-6"></div>
+              <div class="col col-7"></div>
+            </div>
+            <div class="codes fragment">
+<pre><code class="html" data-trim>
+<div data-eq-pts="small: 400, large: 600"></div>
+
+<div data-eq-pts="small: 400, large: 600" data-eq-state="large"></div>
+</code></pre>
+</pre>
+            </div>
+            <footer><a href="http://github.com/Snugug/eq.js">github.com/Snugug/eq.js</a></footer>
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="eq-cover" class="show-cover"/>
+            <label for="eq-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <img src="images/covers/parlan-2.jpg" alt="Horace Parlan"/>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+            <aside class="notes">
+              Unfortnuately we <span class="bullet-point">**don't have element queries in css**</span>. These would allow us to alter the styling of an element if the container that it's in changes dimensions. Fortunately my friend Sam Richard has written a lightweight javascript implementation called eq.js. It works by setting <span class="bullet-point">**data attributes**</span> to an element under different conditions.
+            </aside>
+          </section>
+        	<!-- Slide #xx -->
+        	<section id="simple-trick" class="foundation" data-state="rekkid">
+        		<h1>Learn one simple trick to keep your styleguide alive from design through launch and beyond.</h1>
+            <p class=" fragment">Use the CSS, JS, and other assets from your styleguide in production.</p>
+            <p class=" fragment">Also use Grunt to automate tasks like Sass compiling and Modernizr builds.</p>
+            <h1 class="lie fragment">I lied. That’s two tricks.</h1>
+            <!--<footer><a href="downloads/Gruntfile.js.zip">download</a></footer>-->
+
+            <!-- show a cover or streaming player -->
+            <input type="checkbox" id="simple-trick-cover" class="show-cover"/>
+            <label for="simple-trick-cover" class="show-cover-label">Show Cover</label>
+            <footer class="cover">
+              <iframe width="400" height="400" src="https://rd.io/i/QFl2PkA17A/" frameborder="0"></iframe>
+            </footer>
+            <!-- show a cover or streaming player -->
+
+        	</section>
+        </section>
+
+        <!-- Slide #xx -->
+        <!-- <section id="reid-miles">
+        	<h1>About Reid Miles and Blue Note</h1>
+        </section> -->
+
+        <!-- Slide #xx -->
+        <section id="thanks" data-state="rekkid" data-background="#FE7900">
+        	<h1>Thanks!</h1>
+        	<ul>
+            <li>Presentation: <a href="http://codingdesigner.github.io/box">codingdesigner.github.io/box</a></li>
+            <li>Patternlab: <a href="http://patternlab.io/">patternlab.io</a></li>
+            <li>Typecast: <a href="http://typecast.com/">typecast.com</a></li>
+            <li>Sassy Modular Scale: <a href="http://github.com/at-import/modular-scale">github.com/at-import/modular-scale</a></li>
+            <li>Color Schemer: <a href="http://github.com/at-import/color-schemer">github.com/at-import/color-schemer</a></li>
+            <li>eq.js: <a href="http://github.com/Snugug/eq.js">github.com/Snugug/eq.js</a></li>
+            <li>Breakpoint: <a href="http://github.com/at-import/breakpoint">github.com/at-import/breakpoint</a></li>
+					</ul>
+          <footer>
+            <div class="me">
+              <p><span class="name">Mason Wendell</span>, <strong>codingdesigner</strong> on the internet</p>
+            </div>
+            <div class="p2">
+              <img src="images/p2_logo_rgb.svg" alt="Phase2">
+            </div>
+          </footer>
+
+          <!-- show a cover or streaming player -->
+          <input type="checkbox" id="thanks-cover" class="show-cover"/>
+          <label for="thanks-cover" class="show-cover-label">Show Cover</label>
+          <footer class="cover">
+            <iframe width="400" height="400" src="https://rd.io/i/QFl2L_ceEA/" frameborder="0"></iframe>
+          </footer>
+          <!-- show a cover or streaming player -->
+
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.lettering-0.6.1.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: false,
+				history: true,
+				center: true,
+        slideNumber: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+        // transitionSpeed: 'fast',
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'images/JK_JAZZ_MAIN.jpg',
+				// parallaxBackgroundSize: '2353px 1000px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

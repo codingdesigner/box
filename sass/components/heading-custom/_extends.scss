@@ -1,0 +1,98 @@
+//////////////////////////////
+// Heading Component Extendable Classes
+//////////////////////////////
+
+%orange-block {
+  @include orange-block(false);
+}
+
+%orange-block-link {
+  @include orange-block-link(false);
+}
+
+%blue-block {
+  @include blue-block(false);
+}
+
+%article-heading {
+  @extend %headings-extend;
+  @include article-heading(false);
+}
+%article-heading-blue {
+  @extend %headings-extend;
+  @include article-heading(false);
+  color: $blue;
+}
+
+%heading-to-label {
+  @include heading-to-label(false);
+}
+
+%page-title {
+  @extend %h1;
+  @include page-title(false);
+}
+
+%field-subtitle {
+  @extend %h3;
+  @include field-subtitle(false);
+}
+
+%section-title {
+  @extend %h3;
+  @extend %orange-block;
+  @extend %triangle-notch;
+  @include section-title(false);
+}
+
+%subsection-title {
+  @extend %h4;
+  @extend %blue-block;
+  @extend %triangle-notch;
+  @include subsection-title(false);
+}
+
+%triangle-notch {
+  @extend %relative;
+  &:before {
+    @extend %absolute;
+    @include triangle($cool-white, 0.5em, 0.5em, top right);
+    top: 0;
+    right: 0;
+    content: $space;
+  }
+}
+
+%triangle-speach {
+  @extend %relative;
+  &:after {
+    @extend %absolute;
+    @include triangle($orange, 0.5em, 1em, 180);
+    top: 100%;
+    left: 0.25em;
+    content: $space;
+  }
+}
+
+%triangle-image {
+  @extend %relative;
+  &:before, &:after {
+    @extend %absolute;
+    height: 0.75em;
+    width: 100%;
+    background-color: $cool-white;
+    bottom: -1px;
+    content: $space;
+  }
+  &:before {
+    right: calc(100% - 1.5em);
+    @include transform-origin( 0 100%);
+    @include transform( skewX(45deg) );
+  }
+  &:after {
+    left: 1.5em;
+    @include transform-origin( 0 100%);
+    @include transform( skewX(-45deg) );
+  }
+}
+

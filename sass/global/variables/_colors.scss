@@ -1,0 +1,128 @@
+// COLORS
+$black      : #000000;
+$white      : #fefefe;
+$red        : #D6504F;
+$cs-primary : $red;
+
+//////////////////////////////
+// derived colors
+// $NEW              : #D9DBDA;
+// @debug hue($NEW);
+// $adjust-hue: hue($NEW) - hue($cs-primary);
+// @debug "h: " $adjust-hue;
+// @debug "---";
+// @debug saturation($NEW);
+// $adjust-sat: saturation($NEW) - saturation($cs-primary);
+// @debug "s: " $adjust-sat;
+// @debug "---";
+// @debug lightness($NEW);
+// $adjust-lightness: lightness($NEW) - lightness($cs-primary);
+// @debug "l: " $adjust-lightness;
+// @debug "---";
+// $NEW        : adjust-color($cs-primary, $hue: $adjust-hue, $saturation: $adjust-sat, $lightness: $adjust-lightness);
+// @debug hue($NEW);
+// @debug saturation($NEW);
+// @debug lightness($NEW);
+// @debug "adjust-color($cs-primary, $hue: #{$adjust-hue}, $saturation: #{$adjust-sat}, $lightness: #{$adjust-lightness});";
+$antique      : adjust-color($cs-primary, $hue: 43.55556deg, $saturation: -30.29709%, $lightness: 33.33333%);
+// $red
+$blue         : adjust-color($cs-primary, $hue: 202.274deg, $saturation: -4.01989%, $lightness: 7.84314%);
+$orange       : adjust-color($cs-primary, $hue: 40.08536deg, $saturation: 26.09211%, $lightness: 9.01961%);
+$orange-vivid : adjust-color($cs-primary, $hue: 18.74337deg, $saturation: 35.79797%, $lightness: 3.13725%);
+$yellow       : adjust-color($cs-primary, $hue: 56.02614deg, $saturation: 28.12618%, $lightness: 1.96078%);
+$green        : adjust-color($cs-primary, $hue: 61.16629deg, $saturation: 2.85352%, $lightness: -2.35294%);
+$lavender     : adjust-color($cs-primary, $hue: 280.46465deg, $saturation: -39.763%, $lightness: 23.33333%);
+// $white
+$gray-dark    : adjust-color($cs-primary, $hue: 37.05556deg, $saturation: -50.09077%, $lightness: -44.5098%);
+$gray-light   : adjust-color($cs-primary, $hue: 149.55556deg, $saturation: -59.50928%, $lightness: 28.03922%);
+$gray         : mix($gray-dark, $gray-light);
+// $black
+//////////////////////////////
+
+//////////////////////////////
+// Color Stacks
+//
+// We can utilize [Color Schemer](https://github.com/scottkellum/color-schemer)
+//   to build us awesome color guides.
+//////////////////////////////
+// Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
+$cs-scheme:             accented-analogic;
+// Options: mono, complement, triad, tetrad, analogic, accented-analogic
+$cs-hue-offset:         35;
+// Options: 0-100;
+$cs-brightness-offset:  10;
+// Options: 0-100;
+$cs-color-model:        ryb;
+// Options: rgb, ryb
+
+
+//////////////////////////////
+// Color Scheme Colors
+$red-tints           : tint-stack($red);
+$red-shades          : shade-stack($red);
+$blue-tints          : tint-stack($blue);
+$blue-shades         : shade-stack($blue);
+$orange-tints        : tint-stack($orange);
+$orange-shades       : shade-stack($orange);
+$orange-vivid-tints  : tint-stack($orange-vivid);
+$orange-vivid-shades : shade-stack($orange-vivid);
+$yellow-tints        : tint-stack($yellow);
+$yellow-shades       : shade-stack($yellow);
+$green-tints         : tint-stack($green);
+$green-shades        : shade-stack($green);
+$lavender-tints      : tint-stack($lavender);
+$lavender-shades     : shade-stack($lavender);
+$black-tints         : tint-stack($black);
+$white-shades        : shade-stack($white);
+//////////////////////////////
+
+//////////////////////////////
+// Background Colors
+//////////////////////////////
+$cs-background: $red;
+// $cs-border-color: $orange;
+
+// link colors
+$cs-link-normal: $blue;
+$cs-link-hover: $red;
+$cs-link-active: $red;
+$cs-link-visited: $blue;
+$cs-link-focus: $red;
+$cs-link-background-normal: $blue;
+$cs-link-background-hover: $lavender;
+$cs-link-background-active: $lavender;
+$cs-link-background-visited: $blue;
+$cs-link-background-focus: $lavender;
+$cs-link-background-bkg: transparent;
+
+
+//////////////////////////////
+// Text Colors
+//////////////////////////////
+$cs-text-dark: $black;
+$cs-text-light: $white;
+$cs-text: $cs-text-dark;
+
+
+//////////////////////////////
+// Border Colors
+//////////////////////////////
+$cs-border: $gray;
+
+//////////////////////////////
+// Status Colors
+//////////////////////////////
+// $cs-status-status  : nth($quaternary-tints, 4);
+// $cs-status-warning : nth($secondary-tints, 6);
+// $cs-status-error   : nth($primary-tints, 5);
+
+//////////////////////////////
+// Component defaults
+//////////////////////////////
+// Buttons
+// $cs-button-color-default: $gray;
+//////////////////////////////
+// Messages
+// $cs-message-text-color-default: nth($secondary-tints, 3);
+// $cs-message-bkg-color-default: $cs-status-status;
+//////////////////////////////

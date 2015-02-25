@@ -1,0 +1,18 @@
+%constrain-to-parent {
+  max-width: 100%;
+}
+
+%relative {
+  position: relative;
+}
+
+%absolute {
+  position: absolute;
+}
+
+%center-vert-horiz {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform( translateX(-50%) translateY(-50%) );
+}

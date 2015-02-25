@@ -1,0 +1,36 @@
+//////////////////////////////
+// Heading-custom Component
+//
+// The partial and folder structure for this component should be as follows:
+// _heading-custom.scss
+// heading-custom (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import "heading-custom/mixins";
+@import "heading-custom/extends";
+
+
+.section-title {
+  // @extend %h3;
+  // @extend %orange-block;
+  @extend %section-title;
+  a {
+    @extend %orange-block-link;
+  }
+}
+
+.page-title {
+  @extend %page-title;
+  @extend %orange-block;
+}
+
+.field-subtitle {
+  @extend %field-subtitle;
+}
+
+.typography--BLOCK-HEADING {
+  @extend %h3;
+  @extend %subsection-title;
+}

@@ -1,0 +1,179 @@
+//////////////////////////////
+// Heading Component Mixins
+//////////////////////////////
+
+//////////////////////////////
+// Headings Component Default Variables
+$orange-block-extend: true !default;
+$orange-block-link-extend: true !default;
+$blue-block-extend: true !default;
+$article-heading-extend: true !default;
+$heading-to-label-extend: true !default;
+$page-title-extend: true !default;
+$field-subtitle-extend: true !default;
+$field-section-title-extend: true !default;
+//////////////////////////////
+
+@mixin orange-block($extend: $orange-block-extend) {
+  @if $extend {
+    @extend %orange-block;
+  }
+  @else {
+    $vert-padding: em($base-font-size, nth($heading-sizes, 1)) / 2;
+    margin-bottom: 1em;
+    margin-top: 0;
+    padding: $vert-padding em(9px, nth($heading-sizes, 1));
+    background-color: $orange;
+    color: $white;
+  }
+}
+
+@mixin blue-block($extend: $blue-block-extend) {
+  @if $extend {
+    @extend %blue-block;
+  }
+  @else {
+    $vert-padding: em($base-font-size, nth($heading-sizes, 1)) / 2;
+    margin-bottom: 1em;
+    margin-top: 0;
+    padding: $vert-padding em(9px, nth($heading-sizes, 1));
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+@mixin orange-block-link($extend: $orange-block-link-extend) {
+  @if $extend {
+    @extend %orange-block-link;
+  }
+  @else {
+    @include link-colors($white, $white, $white, $white, $white);
+    @include unset-background-links();
+    &:hover {
+      text-shadow: $blue 2px 2px 0;
+    }
+  }
+}
+
+@mixin article-heading($extend: $article-heading-extend) {
+  @if $extend {
+    @extend %article-heading;
+  }
+  @else {
+    margin-bottom: 0.25em;
+    color: $blue;
+    font-size: em(ms(2), $base-font-size);
+    line-height: em(32px, ms(2));
+  }
+}
+
+@mixin heading-to-label($extend: $heading-to-label-extend) {
+  @if $extend {
+    @extend %heading-to-label;
+  }
+  @else {
+    display: inline;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    border-bottom: none;
+    background-color: transparent;
+    color: $orange;
+    &:after {
+      content: ": ";
+      margin-right: 0.25em;
+    }
+  }
+}
+
+@mixin page-title($extend: $page-title-extend) {
+  @if $extend {
+    @extend %page-title;
+  }
+  @else {
+    margin-left: em(-4px, nth($heading-sizes, 1));
+    margin-right: em(-4px, nth($heading-sizes, 1));
+    min-width: 50%;
+    @include filter( drop-shadow($white 0 4px 0) );
+    @include transform( translateZ(0) ); // fix webkit bug -- blurs when css filter is applied
+    @include breakpoint($bp-small-type) {
+      margin-left: em(-4px, nth($heading-sizes-small, 1));
+      margin-right: em(-4px, nth($heading-sizes-small, 1));
+    }
+    @extend %triangle-notch;
+    @extend %triangle-speach;
+    @include breakpoint($bp-big-logo) {
+      &:before {
+        main & {
+          border-right-color: $blue-very-light;
+        }
+      }
+    }
+    @include breakpoint($bp-nav) {
+      &:before {
+        main & {
+          border-right-color: $white;
+        }
+      }
+    }
+  }
+}
+
+@mixin field-subtitle($extend: $field-subtitle-extend) {
+  @if $extend {
+    @extend %page-title;
+  }
+  @else {
+    margin: {
+      top: em(-32px, nth($heading-sizes, 3));
+      right: em(-4px, nth($heading-sizes, 3));
+      bottom: 1em;
+      left: em(-4px, nth($heading-sizes, 3));
+    }
+    padding: {
+      top: em(22px, nth($heading-sizes, 3));
+      right: 0.5em;
+      bottom: 0.5em;
+      left: em(10px, nth($heading-sizes, 3));
+    }
+    background-color: rgba($blue, 0.5);
+    color: white;
+    @include breakpoint($bp-small-type) {
+      margin-left: em(-4px, nth($heading-sizes-small, 3));
+      margin-right: em(-4px, nth($heading-sizes-small, 3));
+    }
+  }
+}
+
+@mixin section-title($extend: $field-section-title-extend) {
+  @if $extend {
+    @extend %page-title;
+  }
+  @else {
+    margin: {
+      right: em(-4px, nth($heading-sizes, 3));
+      left: em(-4px, nth($heading-sizes, 3));
+      bottom: 0;
+    }
+    @include breakpoint($bp-small-type) {
+      margin-left: em(-4px, nth($heading-sizes-small, 3));
+      margin-right: em(-4px, nth($heading-sizes-small, 3));
+    }
+  }
+}
+
+@mixin subsection-title($extend: $field-section-title-extend) {
+  @if $extend {
+    @extend %page-title;
+  }
+  @else {
+    margin: {
+      right: em(-4px, nth($heading-sizes, 4));
+      left: em(-4px, nth($heading-sizes, 4));
+    }
+    @include breakpoint($bp-small-type) {
+      margin-left: em(-4px, nth($heading-sizes-small, 4));
+      margin-right: em(-4px, nth($heading-sizes-small, 4));
+    }
+  }
+}

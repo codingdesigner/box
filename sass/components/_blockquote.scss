@@ -1,0 +1,25 @@
+//////////////////////////////
+// Blockquote Component
+//
+// The partial and folder structure for this component should be as follows:
+// _blockquote.scss
+// blockquote (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+@import "blockquote/mixins";
+@import "blockquote/extends";
+
+blockquote {
+  @extend %blockquote-quote-extend;
+  h1 {
+    @extend %article-heading-blue;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  footer {
+    @extend %blockquote-footer-extend;
+  }
+}

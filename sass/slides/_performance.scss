@@ -1,0 +1,27 @@
+#performance {
+  h1 {
+    @extend %h3;
+    @extend %gothic;
+    @extend %uppercase;
+    color: $red;
+    text-align: right;
+    background: {
+      image: image-url('jackie-mclean.jpg');
+      repeat: no-repeat;
+      position: 100% 0;
+    }
+    margin: 0.5em 30px 0 0;
+    padding-right: 132px;
+    height: 110px;
+  }
+  .its-time {
+    @extend %script;
+    font-size: ms(2);
+    word-wrap: break-word;
+    line-height: 0.87;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+  }
+}

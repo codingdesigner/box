@@ -1,0 +1,83 @@
+@include animate(rotate) {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to   {
+    @include transform(rotate(360deg));
+  }
+}
+
+#color-schemer {
+  #byrd-car {
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+  }
+  #spinner {
+    @include transform-origin(center);
+    .fragment {
+      mix-blend-mode: screen;
+    }
+  }
+  &.present {
+    #spinner {
+      @include experimental(animation, rotate 100s linear 0s infinite none);
+    }
+  }
+  #wheel {
+    mix-blend-mode: color;
+    opacity: 0.5;
+  }
+  .svg-cs-scheme, .svg-cs-primary {
+    @extend %mono;
+    font-size: 20px;
+    fill: $black;
+  }
+  #scheme2, #scheme3 {
+    .svg-cs-scheme {
+      fill: $white;
+    }
+  }
+
+  h1, h2 {
+    @extend %h3;
+    @extend %gothic;
+    @extend %lowercase;
+    text-align: right;
+    position: absolute;
+    width: 348px;
+    left: 30px;
+    color: $red;
+  }
+  h1 {
+    top: 2.7em;
+    .word3, .word4 {
+      color: $blue;
+    }
+  }
+  h2 {
+    top: 3.5em;
+    padding-right: 12px;
+    color: $orange-vivid;
+  }
+
+  ul {
+    margin: 0;
+    position: absolute;
+    bottom: 10.5em;
+    right: 30px;
+    width: 16em;
+    text-align: right;
+    @extend %uppercase;
+    color: $blue;
+    li {
+      list-style-type: none;
+      &:nth-of-type(2) {
+        color: $orange-vivid;
+      }
+    }
+  }
+
+}
+

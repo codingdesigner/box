@@ -1,0 +1,93 @@
+#bad-style-guides {
+  background: {
+    color: $gray-dark;
+    image: repeating-linear-gradient(90deg, transparent, transparent 15px, rgba($red, 0.5) 15px, rgba($red, 0.5) 187px );
+    blend-mode: screen;
+  }
+  .fa-pied-piper {
+    font-style: normal;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 157px;
+    color: #00ca00;
+    font-size: ms(2);
+  }
+  h1 {
+    text-align: right;
+    @extend %uppercase;
+    @extend %sans;
+    @extend %h3;
+    color: $green;
+    mix-blend-mode: screen;
+    [class^="word"] {
+      padding: 0 6px;
+      border: {
+        style: solid;
+        color: $blue;
+        left-width: 2px;
+        right-width: 2px;
+      }
+      position: relative;
+      &:after {
+        font-size: ms(-1);
+        color: $blue;
+        position: absolute;
+        right: -88px;
+        top: 24px;
+      }
+    }
+    .word1 {
+      margin-right: 86.66px;
+      border-left: none;
+      // &:before {
+      //   content: "[LOGO TBD]";
+      //   font-size: ms(-1);
+      //   color: $blue;
+      //   position: absolute;
+      //   left: -200px;
+      //   top: 24px;
+      // }
+      &:after {
+        content: "86.66px";
+        right: -88px;
+      }
+    }
+    .word2 {
+      margin-right: 82.17px;
+      &:after {
+        content: "82.17px";
+        right: -78px;
+      }
+    }
+    .word3 {
+      border-right: none;
+      &:after {
+        content: "17pt ";
+        display: block;
+        border: {
+          style: solid;
+          color: $blue;
+          width: 2px 0 2px 2px;
+        }
+        width: 9px;
+        overflow: visible;
+        text-indent: -47px;
+        right: auto;
+        left: -438px;
+        white-space: nowrap;
+        height: 100%;
+        padding-right: 8px;
+        text-align: left;
+        line-height: 1.6;
+        top: 15px;
+        height: 40px;
+      }
+    }
+  }
+  .illustration {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,11 @@
+%bullet-list {
+  @extend %gothic;
+  @extend %uppercase;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-left: 0;
+  list-style: none;
+  li {
+    padding-left: 0;
+  }
+}

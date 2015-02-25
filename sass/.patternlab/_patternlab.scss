@@ -1,0 +1,54 @@
+html.pl {
+  overflow: visible;
+  font-size: $mainFontSize;
+  body {
+    overflow: visible;
+  }
+}
+
+// COLORS
+.sg-swatch {
+  @extend %no-bullets;
+  &.black { background-color: $black; }
+  &.white { background-color: $white; }
+  &.red { background-color: $red; }
+  &.blue { background-color: $blue; }
+  &.lavender { background-color: $lavender; }
+  &.gray { background-color: $gray; }
+  &.gray-dark { background-color: $gray-dark; }
+  &.gray-light { background-color: $gray-light; }
+  &.antique { background-color: $antique; }
+  &.orange { background-color: $orange; }
+  &.orange-vivid { background-color: $orange-vivid; }
+  &.yellow { background-color: $yellow; }
+  &.green { background-color: $green; }
+}
+.sg-label {
+  @include ellipsis();
+}
+
+// TYPE
+.font-franklin {
+  font-family: $franklin-gothic;
+}
+.font-alt-gothic {
+  font-family: $alt-gothic;
+}
+.font-lust-script {
+  font-family: $lust-script;
+}
+.font-jubilat {
+  font-family: $jubilat;
+}
+
+// MODULAR SCALE
+.sg-ms {
+  li {
+    white-space: nowrap;
+  }
+  @for $i from 0 through 10 {
+    .ms-#{$i} {
+      font-size: ms($i);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+body {
+    background: {
+      color: $white;
+      image: image-url('vinyl.jpg');
+      repeat: no-repeat;
+      position: 50% 50%;
+      attachment: static;
+    }
+  // .rekkid & {}
+}
+[data-state="rekkid"] {
+  background: {
+    color: $antique;
+    image: image-url('paper.jpg');
+    repeat: no-repeat;
+    position: 50% 50%;
+    attachment: static;
+    size: cover;
+    blend-mode: multiply;
+  }
+  box-shadow: rgba($gray-dark, 0.8) 0 0 1em;
+}

@@ -1,0 +1,103 @@
+#design-in-browser {
+  h1 {
+    margin-top: 19px;
+    @extend %uppercase;
+    letter-spacing: -3px;
+    color: $orange-vivid;
+    .word2, .word3 {
+      font-size: .5em;
+      color: $orange;
+    }
+    .word2 {
+      top: 13px;
+      position: absolute;
+    }
+    .word4 {
+      @include transition-property(top);
+      @include transition-duration(0.8s);
+      position: relative;
+      top: 0;
+      padding-bottom: 1em;
+    }
+  }
+  .fragment {
+    position: absolute;
+    @extend %uppercase;
+    z-index: 2;
+  }
+  .css {
+    @extend %h1;
+    @extend %script;
+    color: $yellow;
+    mix-blend-mode: overlay;
+    bottom: 0.5em;
+    left: 50%;
+    @include transform( translateX(-50%) scale(1.5));
+    text-shadow: rgba($black, 0.5) 0 0 8px;
+    &.current-fragment {
+      ~ .browser {
+        @include filter( grayscale(1));
+      }
+    }
+    &.visible:not(.current-fragment) {
+      &:after {
+        content: "CSS";
+        position: absolute;
+        display: block;
+        color: $blue;
+        mix-blend-mode: multiply;
+        left: 8px;
+        top: -1px;
+        white-space: nowrap;
+      }
+    }
+  }
+  .medium {
+    @extend %h2;
+    position: absolute;
+    top: 1.27em;
+    left: 1.23em;
+    letter-spacing: -3px;
+    text-align: left;
+    color: $blue;
+    .word3 {
+      display: block;
+      letter-spacing: 15px;
+      position: relative;
+      top: -0.15em;
+    }
+  }
+  .present {
+    @extend %h2;
+    position: absolute;
+    top: 0.5em;
+    left: 5.22em;
+    letter-spacing: -2.5px;
+    text-align: left;
+    color: $blue;
+    .word4 {
+      display: none;
+    }
+    &.current-fragment {
+      ~ h1 {
+        .word4 {
+          top: 0.75em;
+        }
+      }
+    }
+  }
+  .browser {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 68%;
+    z-index: 1;
+    background: {
+      image: image-url('monitor.svg'), image-url('time-out-painting.jpg');
+      size: 100% 133%, contain;
+      repeat: no-repeat;
+      position: 50% 0%, 50% 2em;
+    }
+  }
+}

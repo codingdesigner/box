@@ -1,0 +1,8 @@
+#music-nerd {
+  h1 {
+    @extend %center-vert-horiz;
+    color: $yellow;
+    mix-blend-mode: screen;
+    @extend %script;
+  }
+}

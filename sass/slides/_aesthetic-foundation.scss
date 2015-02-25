@@ -1,0 +1,35 @@
+#aesthetic-foundation {
+  background: {
+    color: $orange-vivid;
+  }
+  h1 {
+    background-color: $antique;
+    @extend %h3;
+    @extend %sans;
+    @extend %lowercase;
+    text-align: right;
+    height: 3em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    color: $orange;
+    padding-right: 2em;
+    .word4 {
+      color: $red;
+    }
+  }
+  ul {
+    margin: 0;
+    position: absolute;
+    bottom: 5em;
+    right: 0;
+    width: 9.4em;
+    text-align: left;
+    @extend %uppercase;
+    color: $white;
+    li {
+      list-style-type: none;
+    }
+  }
+}

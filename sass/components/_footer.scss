@@ -1,0 +1,123 @@
+//////////////////////////////
+// Footer Component
+//
+// The partial and folder structure for this component should be as follows:
+// _footer.scss
+// footer (folder)
+//   _mixins.scss
+//   _extends.scss
+//
+// Automatic Sass parsing is done through special comment blocks
+//  - Start styling block for base component: @{component}
+//  - End styling block for base component:   {component}@
+//
+//  - Start styling block for specific component configuration: @{component--configuration}
+//  - End styling block for specific component configuration:   {component--configuration}@
+//////////////////////////////
+
+@import "footer/mixins";
+@import "footer/extends";
+
+#footer {
+  margin-top: em($base-line-height * 2);
+  padding-top: em($base-line-height);
+  padding-bottom: em($base-line-height * 2);
+  border-top: 1em solid $blue-very-light;
+  background: $orange;
+  color: $white;
+  @extend %body-unpad;
+  text-align: center;
+  a {
+    // @extend %links-dark-blue;
+    @extend %links-on-orange;
+    // @extend %link-unset-background-extend;
+  }
+  .search {
+    @extend %vertical-separation;
+    > h1 {
+      @extend %a11y-hidden-base-extend;
+    }
+    form {
+      position: relative;
+    }
+    input {
+      position: relative;
+      z-index: 1;
+      margin-right: -50px;
+      padding: 3px 50px 3px 3px;
+      min-height: 44px;
+      width: 100%;
+      border: 1px solid $gray-light;
+      background: $white;
+    }
+    button {
+      position: relative;
+      z-index: 2;
+      float: right;
+      width: 44px;
+      height: 44px;
+      border: none;
+      border-left: 1px solid $gray-light;
+      background: $gray-trans;
+      color: $blue;
+      font-size: 18px;
+      @include text-shadow(rgba($white, 0.8) 1px 1px 0)
+    }
+  }
+
+  .address {
+    > h1 {
+      @extend %a11y-hidden-base-extend;
+    }
+  }
+}
+
+.footer-logo {
+  width: 70px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  position: relative;
+  display: block;
+  margin: 0 auto -66px;
+  opacity: 1;
+  @include transform3d( translateY(-5px) );
+  &:before, &:after {
+    position: absolute;
+    top: 50%;
+    display: block;
+    border-bottom: 1px solid $orange-light;
+    content: $space;
+  }
+  &:before {
+    left: -110%;
+    width: 100%;
+  }
+  &:after {
+    left: 86%;
+    width: 114%;
+  }
+  svg {
+    max-width: 100%;
+  }
+  .svg-bird {
+    fill: $white;
+  }
+}
+.footer-site-name {
+  @extend %headings-extend;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0 0.25em 0.125em;
+  text-align: center;
+  font-weight: 400;
+  font-size: nth($heading-sizes, 1);
+  line-height: em($base-line-height * 2, nth($heading-sizes, 1));
+  color: $white;
+  white-space: nowrap;
+  @include transform( translateX(6px) );
+  @include breakpoint($hidpi) {
+    font-weight: 600;
+  }
+}

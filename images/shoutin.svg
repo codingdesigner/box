@@ -1,0 +1,18 @@
+<svg class="jazz-bars" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 553 434" enable-background="new 0 0 553 434" xml:space="preserve">
+  <defs>
+    <path id="rectangles" d="M12.5,370.7h-12V28.4h12V370.7z M32.5,19.2h-12v342.4h12V19.2z M52.5,33.5h-12v342.4h12V33.5z M72.5,38.2
+h-12v342.4h12V38.2z M92.5,71.8h-12v342.4h12V71.8z M112.5,80.6h-12V423h12V80.6z M132.5,70.9h-12v342.4h12V70.9z M152.5,60.2h-12
+v342.4h12V60.2z M172.5,68.8h-12v342.4h12V68.8z M192.5,82.1h-12v342.4h12V82.1z M212.5,50.6h-12V393h12V50.6z M232.5,32.5h-12
+v342.4h12V32.5z M252.5,35.1h-12v342.4h12V35.1z M272.5,76.9h-12v342.4h12V76.9z M292.5,56h-12v342.4h12V56z M312.5,90.3h-12
+v342.4h12V90.3z M332.5,40.2h-12v342.4h12V40.2z M352.5,91.6h-12V434h12V91.6z M372.5,33.8h-12v342.4h12V33.8z M392.5,80.7h-12
+V423h12V80.7z M412.5,58.1h-12v342.4h12V58.1z M432.5,65.5h-12v342.4h12V65.5z M452.5,34.7h-12V377h12V34.7z M472.5,61.4h-12
+v342.4h12V61.4z M492.5,41.6h-12v342.4h12V41.6z M512.5,37.8h-12v342.4h12V37.8z M532.5,8.7h-12V351h12V8.7z M552.5,0h-12v342.4
+h12V0z"/>
+  </defs>
+  <clipPath id="jazzbo">
+    <use xlink:href="#rectangles" overflow="visible"/>
+  </clipPath>
+  <g clip-path="url(#jazzbo)">
+    <image overflow="visible" width="1308" height="879" xlink:href="images/miles-davis-france-67.jpg" transform="matrix(0.7478 0 0 0.7478 -38.0904 -7.8269)"/>
+  </g>
+</svg>

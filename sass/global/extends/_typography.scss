@@ -1,0 +1,80 @@
+%sans {
+  font-family: $font-sans;
+}
+.sans {
+  @extend %sans;
+}
+
+%serif {
+  font-family: $font-serifs;
+}
+.serif {
+  @extend %serif;
+}
+
+%gothic {
+  font-family: $font-gothic;
+}
+.gothic {
+  @extend %gothic;
+}
+
+%slab {
+  font-family: $font-slab;
+}
+.slab {
+  @extend %slab;
+}
+
+%slab-condensed {
+  font-family: $font-slab-condensed;
+}
+.slab-condensed {
+  @extend %slab-condensed;
+}
+
+%script {
+  font-family: $font-script;
+}
+.script {
+  @extend %script;
+}
+
+%stencil {
+  font-family: $font-stencil;
+}
+.stencil {
+  @extend %stencil;
+}
+
+%mono {
+  font-family: $font-mono;
+}
+
+%lowercase {
+  text-transform: lowercase;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%titlecase {
+  text-transform: capitalize
+}
+
+%amp {
+  font-family: $font-amp;
+}
+
+%bold {
+  font-weight: bold;
+}
+
+%italic {
+  font-style: italic;
+}
+
+%measure-to-columns {
+  @include column-width(18em);
+}

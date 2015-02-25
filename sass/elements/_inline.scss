@@ -1,0 +1,28 @@
+//////////////////////////////
+// inline Element
+//
+// The partial and folder structure for this element should be as follows:
+// _inline.scss
+// inline (folder)
+//   _mixins.scss
+//   _extends.scss
+//////////////////////////////
+
+// @import 'inline/mixins';
+// @import 'inline/extends';
+
+strong {
+  @extend %bold;
+}
+
+em {
+  @extend %italic;
+}
+
+b {
+  @extend %bold;
+}
+
+code {
+  @extend %mono;
+}

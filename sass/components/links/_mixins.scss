@@ -1,0 +1,23 @@
+//////////////////////////////
+// Links Component Mixins
+//////////////////////////////
+
+//////////////////////////////
+// Links Component Default Variables
+$links-extend: true !default;
+//////////////////////////////
+
+@mixin orange-block($extend: $links-extend) {
+  @if $extend {
+    @extend %orange-block;
+  }
+  @else {
+    $vert-padding: em($base-font-size, nth($heading-sizes, 1)) / 2;
+    margin-bottom: 1em;
+    margin-top: 0;
+    padding: $vert-padding em(9px, nth($heading-sizes, 1));
+    background-color: $orange;
+    color: $white;
+  }
+}
+

@@ -1,0 +1,302 @@
+@include animate(scale-type) {
+  from {
+    @include transform(scale(0.1));
+  }
+  to   {
+    @include transform(scale(1));
+  }
+}
+
+$modular-scale-bg-color: mix($red, $gray-dark, 25%);
+
+#modular-scale {
+  h1 {
+    font-size: ms(0);
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    @include transform(translateX(-50%));
+    width: 430px;
+    height: 5em;
+    @extend %uppercase;
+    mix-blend-mode: multiply;
+    [class^="word"] {
+      position: absolute;
+      top: -4px;
+      left: 0;
+    }
+    .word1{
+      font-size: ms(1);
+      color: $orange-vivid;
+    }
+    .word2{
+      display: block;
+      @include rotate(-90deg);
+      top: 45px;
+      left: 19px;
+      color: $orange;
+    }
+    .word3{
+      font-size: ms(3);
+      left: 41px;
+      top: 30px;
+      color: $red;
+      span {
+        position: relative;
+        &:nth-of-type(3) {
+          top: 11px;
+        }
+        &:nth-of-type(3) {
+          top: -38px;
+        }
+        &:nth-of-type(4) {
+          top: -5px;
+        }
+        &:nth-of-type(5) {
+          top: -38px;
+        }
+      }
+    }
+    .word4{
+      font-size: ms(1);
+      display: block;
+      left: 236px;
+      top: 28px;
+      @include rotate(90deg);
+      color: $orange-vivid;
+    }
+    .word5{
+      font-size: ms(2);
+      left: 298px;
+      top: 18px;
+      color: $orange;
+    }
+  }
+  &.present {
+    [class^="char"] {
+      display: inline-block;
+      @include transform(scale(0.1));
+      @include animation-name(scale-type);
+      @include animation-timing-function(ease-in);
+      @include animation-iteration-count(1);
+      @include animation-fill-mode(both);
+      @for $i from 1 through 7 {
+        &:nth-of-type(#{$i}) {
+          $duration: #{random() * $i}s;
+          $delay: 0.33s * $i;
+          @include animation-duration($duration);
+          @include animation-delay($delay);
+          //            @include animation(scale-type 0.66s ease-in $delay 1  forwards);
+        }
+      }
+    }
+  }
+  h2 {
+    @extend %h3;
+    @extend %uppercase;
+    position: absolute;
+    text-align: left;
+    bottom: 258px;
+    left: 30px;
+    color: $orange-vivid;
+    mix-blend-mode: multiply;
+    &:after {
+      content: " / ";
+    }
+  }
+  ul {
+    margin: 0;
+    position: absolute;
+    top: 8.2em;
+    left: 11.3em;
+    text-align: left;
+    @extend %gothic;
+    @extend %uppercase;
+    letter-spacing: 1px;
+    color: $gray-dark;
+    mix-blend-mode: multiply;
+    li {
+      list-style-type: none;
+      display: inline;
+      &.limitations:not(.visible) {
+        //
+      }
+      &:nth-of-type(even) {
+        color: $orange;
+      }
+    }
+  }
+  .examples {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10em;
+    background: {
+      color: $modular-scale-bg-color;
+      image: image-url('mccoy.jpg');
+      blend-mode: screen;
+      position: 100% 0;
+      size: contain;
+      repeat: no-repeat;
+    }
+  }
+  figure {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    width: 342px;
+    height: 360px;
+    z-index: 1;
+    &.full {
+      width: 100%;
+    }
+    &.giant {
+      top: -340px;
+      right: 0;
+      background: white;
+      height: 700px;
+    }
+    &[class^="discontent"] {
+      img {
+        max-width: 492px;
+      }
+      figcaption {
+        background-color: rgba($modular-scale-bg-color, 0.8);
+        left: 400px;
+        width: 560px;
+        top: 0;
+      }
+      h2 {
+        &:after {
+          content: none;
+        }
+      }
+      ul {
+        @extend %slab;
+        text-transform: none;
+      }
+    }
+    &.discontent {
+      ul {
+        top: 4em;
+        left: 1.25rem;
+        color: $white;
+        mix-blend-mode: initial;
+        li {
+          display: block;
+          position: relative;
+          &:before {
+            position: absolute;
+            content: "";
+            width: 1em;
+            height: 0;
+            top: 45%;
+            right: 100%;
+            margin-right: 0.5rem;
+            border-top: 3px solid $white;
+            border-bottom: 3px solid $modular-scale-bg-color;
+            @include transform-origin(100%, 50%);
+          }
+          &:nth-of-type(1) {
+            &:before {
+              width: 1.5em;
+            }
+          }
+          &:nth-of-type(2) {
+            &:before {
+              @include rotate(9deg);
+            }
+          }
+          &:nth-of-type(3) {
+            &:before {
+              @include rotate(-9deg);
+            }
+          }
+          &:nth-of-type(4) {
+            &:before {
+              width: 10em;
+              @include rotate(-13deg);
+            }
+          }
+          &:nth-of-type(5) {
+            &:before {
+              width: 2em;
+              @include rotate(-32deg);
+            }
+          }
+        }
+      }
+      &.giant {
+        h2 {
+          color: $red;
+          @include rotate(90deg);
+        }
+      }
+    }
+    &.discontent-blocks {
+      ul {
+        color: $white;
+        mix-blend-mode: initial;
+        left: 50%;
+        top: 50%;
+        min-width: 300px;
+        @include transform(translateX(-50%) translateY(-50%));
+        li {
+          &.px87 {
+            width: 5.4375em;
+            height: 5.4375em;
+          }
+          &.px11 {
+            width: 0.6875em;
+            height: 0.6875em;
+          }
+          &.px16 {
+            width: 1em;
+            height: 1em;
+          }
+          &.px24 {
+            width: 1.5em;
+            height: 1.5em;
+          }
+          &.px36 {
+            width: 2.25em;
+            height: 2.25em;
+          }
+        }
+      }
+    }
+    figcaption {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding-bottom: 8px;
+      font-size: ms(-1);
+      background-color: $gray-light;
+    }
+    li.block {
+      @include hide-text();
+      display: inline-block;
+      background-color: rgba($white, 0.5);
+      background-color: rgba($orange, 0.5);
+      mix-blend-mode: screen;
+    }
+    ul.blocks {
+      width: 600px;
+      position: absolute;
+      top: 12rem;
+      left: 346px;
+      @include scale(0.9);
+      li {
+        @for $i from 16 through 180 {
+          &.px#{$i} {
+            width: #{$i}px;
+            height: #{$i}px;
+          }
+        }
+      }
+    }
+  }
+}

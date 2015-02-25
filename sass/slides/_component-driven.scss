@@ -1,0 +1,34 @@
+#component-driven {
+  background: {
+    color: $orange;
+    image: image-url("into-something.jpg");
+  }
+  padding-top: 0;
+  position: relative;
+  h1 {
+    background-color: $antique;
+    @extend %h2;
+    @extend %slab-condensed;
+    @extend %lowercase;
+    margin: 0 0 0 0;
+    text-align: left;
+    padding: 0 20px;
+    line-height: 0.7;
+    .talking-about {
+      color: $gray;
+      font-size: ms(1);
+    }
+    .component-driven-design {
+      display: block;
+      position: relative;
+      left: 37px;
+    }
+  }
+  ul {
+    @extend %bullet-list;
+    position: relative;
+    color: $white;
+    left: -2.1em;
+    top: 2em;
+  }
+}

@@ -1,0 +1,47 @@
+.compare-design-music {
+  background: {
+    image: image-url('sonny-rollins-four.svg');
+    size: cover;
+  }
+  h1 {
+    @extend %h3;
+    @extend %slab-condensed;
+    letter-spacing: 1px;
+    color: $white;
+    @extend %lowercase;
+    margin: 0.25em 0 0
+  }
+}
+
+.music-table {
+  width: 80%;
+  color: $white;
+  margin: 1.5em auto 0;
+  thead {
+    @extend %slab-condensed;
+    letter-spacing: 1px;
+    border-bottom: none;
+  }
+  th, td {
+    padding: 0.25em;
+  }
+  tbody {
+    @extend %lowercase;
+  }
+  tr {
+    &:nth-of-type(2) {
+      td {
+        padding-top: 3em;
+      }
+    }
+    &:nth-of-type(3) {
+      td {
+        padding-top: 2em;
+      }
+    }
+    td {
+      vertical-align: top;
+    }
+  }
+}
+

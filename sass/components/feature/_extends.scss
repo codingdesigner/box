@@ -1,0 +1,7 @@
+//////////////////////////////
+// Feature Component Extendable Classes
+//////////////////////////////
+
+%hero-caption {
+  @include hero-caption(false);
+}

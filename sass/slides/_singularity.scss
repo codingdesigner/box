@@ -1,0 +1,112 @@
+$sg-9: 9;
+$sg-9g: .25;
+$sg-6: 1 2 1 2 1 2;
+$sg-6g: .25;
+$sg-4: 8 1 3 5;
+$sg-4g: .25;
+
+#singularity {
+  h1 {
+    @extend %h3;
+    @extend %gothic;
+    @extend %lowercase;
+    position: absolute;
+    text-align: left;
+    left: 600px;
+    bottom: 30px;
+    color: red;
+    mix-blend-mode: multiply;
+  }
+  .columns {
+    position: absolute;
+    top: 1em;
+    width: 100%;
+    mix-blend-mode: multiply;
+  }
+  .col {
+    height: 11em;
+    background-color: $gray-dark;
+    &.jazzbo {
+      background: {
+        image: image-url('hubbard.jpg');
+        position: 0 100%;
+        repeat: no-repeat;
+        blend-mode: screen;
+        size: contain;
+      }
+    }
+  }
+  .set-one {
+    @include layout($sg-9, $sg-9g) {
+      .col-1 { @include grid-span(1, 1); }
+      .col-2 { @include grid-span(1, 2); }
+      .col-3 { @include grid-span(1, 3); }
+      .col-4 { @include grid-span(1, 4); }
+      .col-5 { @include grid-span(1, 5); }
+      .col-6 { @include grid-span(1, 6); margin-top: 2em; }
+      .col-7 { @include grid-span(1, 7); }
+      .col-8 { @include grid-span(1, 8); }
+      .col-9 { @include grid-span(1, 9); }
+    }
+  }
+  .set-two {
+    @include layout($sg-6, $sg-6g) {
+      .col-1 { @include grid-span(1, 1); }
+      .col-2 { @include grid-span(1, 2); }
+      .col-3 { @include grid-span(1, 3); }
+      .col-4 { @include grid-span(1, 4); margin-top: 2em; }
+      .col-5 { @include grid-span(1, 5); }
+      .col-6 { @include grid-span(1, 6); }
+    }
+  }
+  .set-three {
+    @include layout($sg-4, $sg-4g) {
+      .col-1 { @include grid-span(1, 1); }
+      .col-2 { @include grid-span(1, 2); }
+      .col-3 { @include grid-span(1, 3); margin-top: 2em; }
+      .col-4 { @include grid-span(1, 4); }
+    }
+  }
+  ul {
+    margin: 0;
+    position: absolute;
+    bottom: 1.5em;
+    left: 30px;
+    text-align: left;
+    @extend %uppercase;
+    color: $blue;
+    mix-blend-mode: multiply;
+    li {
+      list-style-type: none;
+    }
+  }
+  .code-overlay {
+    position: relative;
+    top: 2em;
+    opacity: 0;
+  }
+  .current-fragment {
+    .code-overlay {
+      @include experimental(animation, fade-in 0.33s ease-in 2s 1 forwards);
+    }
+  }
+}
+
+.code-overlay {
+  //    color: $white;
+  display: block;
+  //    background: {
+  //      color: rgba($gray-dark, 0.8);
+  //    }
+
+  //    pre {
+  //      box-shadow: none;
+  //    }
+  pre {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  code {
+    background-color: rgba(#3F3F3F, 0.9);
+  }
+}

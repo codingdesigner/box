@@ -1,0 +1,57 @@
+#main-title {
+  h1 {
+    @extend %h2;
+    @extend %script;
+    @extend %lowercase;
+    text-align: left;
+    position: relative;
+    top: 15%;
+    left: 0.1em;
+    .word1 {
+      display: block;
+    }
+    .word2 {
+      margin-left: 1em;
+    }
+    .word9 {
+      margin-left: 5.3em;
+    }
+    .word11 {
+      position: absolute;
+      right: 51px;
+      font-size: 1.6em;
+    }
+  }
+  h2 {
+    @extend %h3;
+    position: absolute;
+    color: $red;
+    top: 2.3em;
+    left: 9em;
+    text-align: right;
+    @extend %uppercase;
+    .word4 {
+      display: block;
+    }
+  }
+  p {
+    position: absolute;
+    color: $white;
+    @extend %uppercase;
+    bottom: 2.5em;
+    right: 4em;
+    text-align: right;
+    background: $blue;
+    padding: 0 0.25em;
+    span {
+      display: block;
+    }
+    .word1 {
+      letter-spacing: 4px;
+    }
+  }
+  kbd {
+    font-weight: bold;
+    color: $red;
+  }
+}

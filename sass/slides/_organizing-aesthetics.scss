@@ -1,0 +1,21 @@
+#organizing-aesthetics {
+  background: {
+    image: image-url('sam-rivers-art.jpg'),  image-url('sam-rivers-head.jpg');
+    size: contain, 16%;
+    position: 0 440%, 759px 12px;
+  }
+  h1 {
+    @extend %h2;
+    @extend %gothic;
+    @extend %uppercase;
+    margin: 0;
+    text-align: right;
+    width: 706px;
+    position: absolute;
+    top: 2em;
+    left: 0.3em;
+    .word2 {
+      color: $red;
+    }
+  }
+}

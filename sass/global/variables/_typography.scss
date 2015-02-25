@@ -1,0 +1,63 @@
+//////////////////////////////
+// Typography
+//////////////////////////////
+
+$franklin-gothic: "franklin-gothic-urw-cond", sans-serif;
+$alt-gothic: "alternate-gothic-no-1-d", sans-serif;
+$lust-script: "lust-script-display", script;
+$jubilat: "jubilat", derifs;
+$mitigate: "mitigate", derifs;
+$motor-stencil: "motor-stencil", sans-serif;
+
+//////////////////////
+// Default font stacks
+$font-sans: $franklin-gothic;
+$font-serifs: $jubilat;
+$font-gothic: $alt-gothic;
+$font-slab: $jubilat;
+$font-slab-condensed: $mitigate;
+$font-script: $lust-script;
+$font-stencil: $motor-stencil;
+$font-mono: 'Source Code Pro', monospace;
+//////////////////////
+
+//////////////////////
+// General font variables
+$font-body: $font-sans;
+$font-headline: $font-gothic;
+// $font-logo: $font-slab;
+$font-amp: $font-script;
+//////////////////////
+
+////////////////////////////
+// Modular Scale
+//
+// Values used to determine modular scale values
+// http://modularscale.com/
+// $ms-base: 1em 2.75em;
+$ms-ratio: $phi;
+$ms-base: 36px ;
+////////////////////////////
+//@debug ms-list(0, 10, 16px 44px, $fourth);
+
+//////////////////////
+// Font size and line-height
+$base-font-size  : ms(0); // 16px
+$base-line-px    : 44px;
+$base-line-em    : em($base-line-px);
+$base-line-height: unitless($base-line-em);
+//////////////////////
+
+//////////////////////
+// Headings
+// create a list of heading sizes, H1 - H6
+// default example uses modular scale
+$heading-sizes       : em(ms(3)) em(ms(2)) em(ms(1)) em(ms(1)) em(ms(1)) em(ms(1));
+$heading-line-heights: unitless(em($base-line-px * 2.5, ms(3))) unitless(em($base-line-px * 2, ms(2))) unitless(em($base-line-px * 1.25, ms(1))) unitless(em($base-line-px, ms(1))) unitless(em($base-line-px, ms(1))) unitless(em($base-line-px, ms(1)));
+
+// $heading-sizes-small       : em(ms(3)) em(ms(2)) em(ms(1)) em(ms(0)) em(ms(0)) em(ms(0));
+// $heading-line-heights-small: unitless(em($base-line-px * 1.5, ms(3))) unitless(em($base-line-px * 1.25, ms(2))) unitless(em($base-line-px, ms(1))) false false false;
+//////////////////////
+
+
+

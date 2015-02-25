@@ -1,0 +1,153 @@
+#what-are-we-designing {
+  h1 {
+    @extend %h2;
+    @extend %uppercase;
+    margin: 13px 0 0 113px;
+    text-align: left;
+    color: $gray;
+    .word1, .word2, .word3 {
+      letter-spacing: 13px;
+      position: relative;
+      top: 20px;
+    }
+    .word4 {
+      @extend %h3;
+      position: absolute;
+      font-weight: bold;
+      left: 75px;
+      top: 85px;
+      color: $red;
+      @extend %slab-condensed;
+      @extend %lowercase;
+      [class^="char"] {
+        position: relative;
+        opacity: 0;
+      }
+      .char1{
+        top: 3px;
+      }
+      .char2{
+        top: 39px;
+      }
+      .char3{
+        top: 29px;
+      }
+      .char4{
+        top: 14px;
+      }
+      .char5{}
+      .char6{
+        top: 8px;
+      }
+      .char7{
+        top: 33px;
+      }
+      .char8{
+        top: 5px;
+      }
+      .char9{
+        top: 26px;
+        left: -18px
+      }
+      .char10{
+        font-size: 1.5em;
+        position: absolute;
+        right: -43px;
+        top: 58px;
+        z-index: 100;
+        color: $gray-dark;
+      }
+    }
+  }
+  &.present {
+    h1 {
+      .word4 {
+        @for $i from 1 through 10 {
+          .char#{$i} {
+            $delay: ($i * 0.05) + 0.5s;
+            @include experimental(animation, fade-in 0.33s ease-in $delay 1 forwards);
+          }
+        }
+      }
+    }
+  }
+  .jazz-bars {
+    mix-blend-mode: multiply;
+    position: absolute;
+    left: 0.6em;
+    top: 203px;
+    width: 614px;
+    height: 448px;
+  }
+  ul {
+    @include no-bullets;
+    margin: 160px 0 0;
+    float: right;
+    width: 100%;
+    overflow: hidden;
+    [class^="line"] {
+      float: right;
+      max-width: 300px;
+      padding-right: 0.5em;
+    }
+  }
+  .fragment {
+    @include clearfix;
+    @extend %h3;
+    line-height: 0.75;
+    margin-bottom: 0.4em;
+    padding-top: 8px;
+    color: $antique;
+    @extend %uppercase;
+    mix-blend-mode: multiply;
+    background-color: $red;
+    position: relative;
+    left: -100%;
+    @include transition-property(left);
+    @include transition-duration(0.8s);
+    &.visible {
+      left: 0;
+    }
+  }
+
+  %what-are-we-designing-hilite {
+    color: $yellow;
+    mix-blend-mode: screen;
+  }
+  .not-web {
+    .word1 {
+      @extend %what-are-we-designing-hilite;
+    }
+    .word3 {
+      display: block;
+      letter-spacing: 8px;
+    }
+  }
+  .design-systems {
+    span {
+      display: block;
+    }
+    .word1 {
+      letter-spacing: 4.5px;
+    }
+    .word2 {
+      @extend %what-are-we-designing-hilite;
+    }
+  }
+  .small-large {
+    .word1, .word2 {
+      font-size: 0.8em;
+    }
+    .word3, .word4 {
+      font-size: 1.4em;
+    }
+    .word1 {
+      @extend %what-are-we-designing-hilite;
+    }
+    .word3 {
+      display: block;
+      color: $yellow;
+      mix-blend-mode: screen;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+#hard-bop {
+  background: {
+    image: image-url('herbiehancock-pov.png');
+    size: contain;
+    position: 0 100%;
+  }
+  h1 {
+    position: absolute;
+    @extend %h1;
+    color: $gray-light;
+    text-align: left;
+    @extend %uppercase;
+    left: 30px;
+    bottom: 30px;
+    margin: 0 0 0 0;
+  }
+  #jump-monk {
+    width: 960px;
+    height: 143px;
+  }
+  ul {
+    width: 100%;
+    text-align: right;
+    @extend %uppercase;
+    margin: 0;
+    padding-right: 1em;
+    font-weight: bold;
+    li {
+      list-style-type: none;
+    }
+  }
+
+  $blue--hardbop: shade($blue, 15%);
+  $orange--hardbop: shade($orange, 20%);
+  $green--hardbop: shade($green, 20%);
+  $red--hardbop: $red;
+  .melody {
+    color: $blue--hardbop;
+  }
+  .melody-stroke {
+    stroke: $blue--hardbop;
+  }
+  .melody-fill {
+    fill: $blue--hardbop;
+  }
+  .key {
+    color: $orange--hardbop;
+  }
+  .key-stroke {
+    stroke: $orange--hardbop;
+  }
+  .key-fill {
+    fill: $orange--hardbop;
+  }
+  .chords {
+    color: $green--hardbop;
+  }
+  .chords-stroke {
+    stroke: $green--hardbop;
+  }
+  .chords-fill {
+    fill: $green--hardbop;
+  }
+  .form {
+    color: $red--hardbop;
+  }
+  .form-stroke {
+    stroke: $red--hardbop;
+  }
+  .form-fill {
+    fill: $red--hardbop;
+  }
+
+}
