@@ -26,7 +26,11 @@
   }
 }
 
-#pattern-lab, #pattern-lab-site {
+#pattern-lab,
+#pattern-lab-site,
+#sass-map-color-pallette,
+#sass-map-color-pallette-2,
+#sass-map-color-pallette-video {
   @extend %slide-orange-top-bar;
   .live-examples {
     position: relative;
@@ -65,6 +69,15 @@
   }
 }
 
+#sass-map-color-pallette {
+  @extend %code-slides;
+}
+#sass-map-color-pallette-2 {
+  @extend %code-slides;
+}
+#sass-map-color-pallette-video {
+  @extend %code-slides;
+}
 #sass-folders {
   @extend %code-slides;
 }
