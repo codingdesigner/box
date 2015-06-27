@@ -14,8 +14,22 @@
     position: absolute;
     top: 2em;
     left: 0.3em;
-    .word2 {
+    .word1 {
       color: $red;
     }
+  }
+  p {
+    @extend %h2;
+    @extend %gothic;
+    margin: 0;
+    width: auto;
+    white-space: nowrap;
+    position: absolute;
+    top: 4em;
+    left: 50%;
+    @include transform(translateX(-50%));
+    background-color: #D95A49;
+    padding: 0.25em;
+    color: $antique;
   }
 }

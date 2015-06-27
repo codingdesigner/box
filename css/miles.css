@@ -1965,7 +1965,7 @@ p {
   margin-bottom: 0.54321em;
 }
 
-.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, #breakpoint h2, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1,
+.base--STYLED h1, .reveal h1, #design-in-browser .css, #hard-bop h1, #breakpoint h2, .base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #organizing-aesthetics p, #find-typeface h1, #pattern-lab h1,
 #pattern-lab-site h1,
 #sass-map-color-pallette h1,
 #sass-map-color-pallette-2 h1,
@@ -1980,7 +1980,7 @@ p {
   margin-bottom: 0.65132em;
 }
 
-.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #find-typeface h1, #pattern-lab h1,
+.base--STYLED h2, .reveal h2, #main-title h1, #design-in-browser .medium, #design-in-browser .present, #what-are-we-designing h1, #style-guides h1, #as-design-tool h1, #component-driven h1, .giant-steps h1, #organizing-aesthetics h1, #organizing-aesthetics p, #find-typeface h1, #pattern-lab h1,
 #pattern-lab-site h1,
 #sass-map-color-pallette h1,
 #sass-map-color-pallette-2 h1,
@@ -2945,8 +2945,23 @@ body {
   top: 2em;
   left: 0.3em;
 }
-#organizing-aesthetics h1 .word2 {
+#organizing-aesthetics h1 .word1 {
   color: #d6504f;
+}
+#organizing-aesthetics p {
+  margin: 0;
+  width: auto;
+  white-space: nowrap;
+  position: absolute;
+  top: 4em;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #D95A49;
+  padding: 0.25em;
+  color: #efebe0;
 }
 
 #musical-thinking {
@@ -3448,57 +3463,57 @@ body {
   animation-fill-mode: both;
 }
 #modular-scale.present [class^="char"]:nth-of-type(1) {
-  -moz-animation-duration: 0.8818s;
-  -webkit-animation-duration: 0.8818s;
-  animation-duration: 0.8818s;
+  -moz-animation-duration: 0.53023s;
+  -webkit-animation-duration: 0.53023s;
+  animation-duration: 0.53023s;
   -moz-animation-delay: 0.33s;
   -webkit-animation-delay: 0.33s;
   animation-delay: 0.33s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(2) {
-  -moz-animation-duration: 1.78568s;
-  -webkit-animation-duration: 1.78568s;
-  animation-duration: 1.78568s;
+  -moz-animation-duration: 1.8078s;
+  -webkit-animation-duration: 1.8078s;
+  animation-duration: 1.8078s;
   -moz-animation-delay: 0.66s;
   -webkit-animation-delay: 0.66s;
   animation-delay: 0.66s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(3) {
-  -moz-animation-duration: 1.76888s;
-  -webkit-animation-duration: 1.76888s;
-  animation-duration: 1.76888s;
+  -moz-animation-duration: 1.50027s;
+  -webkit-animation-duration: 1.50027s;
+  animation-duration: 1.50027s;
   -moz-animation-delay: 0.99s;
   -webkit-animation-delay: 0.99s;
   animation-delay: 0.99s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(4) {
-  -moz-animation-duration: 1.19234s;
-  -webkit-animation-duration: 1.19234s;
-  animation-duration: 1.19234s;
+  -moz-animation-duration: 1.73504s;
+  -webkit-animation-duration: 1.73504s;
+  animation-duration: 1.73504s;
   -moz-animation-delay: 1.32s;
   -webkit-animation-delay: 1.32s;
   animation-delay: 1.32s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(5) {
-  -moz-animation-duration: 1.90783s;
-  -webkit-animation-duration: 1.90783s;
-  animation-duration: 1.90783s;
+  -moz-animation-duration: 2.18401s;
+  -webkit-animation-duration: 2.18401s;
+  animation-duration: 2.18401s;
   -moz-animation-delay: 1.65s;
   -webkit-animation-delay: 1.65s;
   animation-delay: 1.65s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(6) {
-  -moz-animation-duration: 4.14789s;
-  -webkit-animation-duration: 4.14789s;
-  animation-duration: 4.14789s;
+  -moz-animation-duration: 3.2124s;
+  -webkit-animation-duration: 3.2124s;
+  animation-duration: 3.2124s;
   -moz-animation-delay: 1.98s;
   -webkit-animation-delay: 1.98s;
   animation-delay: 1.98s;
 }
 #modular-scale.present [class^="char"]:nth-of-type(7) {
-  -moz-animation-duration: 6.43319s;
-  -webkit-animation-duration: 6.43319s;
-  animation-duration: 6.43319s;
+  -moz-animation-duration: 4.69705s;
+  -webkit-animation-duration: 4.69705s;
+  animation-duration: 4.69705s;
   -moz-animation-delay: 2.31s;
   -webkit-animation-delay: 2.31s;
   animation-delay: 2.31s;
@@ -5214,7 +5229,7 @@ input[type="checkbox"].show-cover:checked ~ footer.cover {
   font-family: "jubilat", derifs;
 }
 
-#component-driven ul, #teams ul, #style-guides h1, #organizing-aesthetics h1, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1,
+#component-driven ul, #teams ul, #style-guides h1, #organizing-aesthetics h1, #organizing-aesthetics p, #musical-thinking h1, #find-typeface ul, #modular-scale ul, #color-schemer h1, #color-schemer h2, #performance h1, #pattern-lab h1,
 #pattern-lab-site h1,
 #sass-map-color-pallette h1,
 #sass-map-color-pallette-2 h1,
